@@ -10,61 +10,71 @@
     </div>
     <div class="core">
       <div style="width:1200px;margin:0 auto;">
-      <div class="tit">
-        <i></i>
-        <p>核心成员</p>
-        <i></i>
+        <div class="tit">
+          <i></i>
+          <p style="margin:0 10px">核心成员</p>
+          <i></i>
+        </div>
+        <ul>
+          <li class="img1">
+            <div>
+              <h3>Karen New（CEO）</h3>
+              <p>Singapore</p>
+              <p
+                style="margin-top:15px;"
+              >Founder and CEO, blockchain industry expert and early practitioner of digital assets, has provided strategic guidance for blockchain projects for many times, and has rich experience in building smart contracts, tokenomics and dapps. She has been rated as the most influential female figure in Asian blockchain industry by well-known media.</p>
+            </div>
+          </li>
+          <li class="img2">
+            <div>
+              <h3>Sorbon（COO）</h3>
+              <p>Russia</p>
+              <p
+                style="margin-top:15px;"
+              >Director of corporate strategy and application business, with many years of working experience of PricewaterhouseCoopers. He has participated in the strategy formulation and promotion of large multinational companies and governments, and has many years of experience in industrial innovation projects.</p>
+            </div>
+          </li>
+          <li class="img3">
+            <div>
+              <h3>Kingsley Low（CTO）</h3>
+              <p>Singapore</p>
+              <p
+                style="margin-top:15px;"
+              >Core development member, blockchain technology and computer security experts, open source culture and software freedom pioneer. As an early thought leader of cryptocurrency, he has 20 years of experience in after-sales service and supply chain. It aims to participate in the development of large-scale commercial blockchain for developers to participate in the current large-scale development of blockchain.</p>
+            </div>
+          </li>
+        </ul>
       </div>
-      <ul>
-        <li class="img1">
-          <div>
-            <h3>Karen New（CEO）</h3>
-            <p>Singapore</p>
-            <p style="margin-top:15px;"> Founder and CEO, blockchain industry expert and early practitioner of digital assets, has provided strategic guidance for blockchain projects for many times, and has rich experience in building smart contracts, tokenomics and dapps. She has been rated as the most influential female figure in Asian blockchain industry by well-known media.</p>
-          </div>
-        </li>
-        <li class="img2">
-            <div>
-            <h3>Sorbon（COO）</h3>
-            <p>Russia</p>
-            <p style="margin-top:15px;"> Director of corporate strategy and application business, with many years of working experience of PricewaterhouseCoopers. He has participated in the strategy formulation and promotion of large multinational companies and governments, and has many years of experience in industrial innovation projects.</p>
-          </div>
-        </li>
-        <li class="img3">
-            <div>
-            <h3>Kingsley Low（CTO）</h3>
-            <p>Singapore</p>
-            <p style="margin-top:15px;"> Core development member, blockchain technology and computer security experts, open source culture and software freedom pioneer. As an early thought leader of cryptocurrency, he has 20 years of experience in after-sales service and supply chain. It aims to participate in the development of large-scale commercial blockchain for developers to participate in the current large-scale development of blockchain.</p>
-          </div>
-        </li>
-      </ul>
-    </div>
     </div>
 
     <div class="adviser">
       <div style="width:1200px;margin:0 auto;">
-      <div class="tit">
-        <i></i>
-        <p>核心成员</p>
-        <i></i>
-      </div>
-      <ul>
-        <li class="img1">
-          <div>
-            <h3>Amir Eslampanah（Adviser）</h3>
-            <p>Canada</p>
-            <p style="margin-top:15px;"> Global blockchain technology pioneer, top blockchain and encryption technology experts. Letcoin was founded by Golden River Mining Algorithm and founder of fontas btc-e pump group. He led the development of several underlying blockchain systems. Former colleague of vitalik batlin, founder of Ethereum.</p>
-          </div>
-        </li>
-        <li class="img2">
+        <div class="tit">
+          <i></i>
+          <p>核心成员</p>
+          <i></i>
+        </div>
+        <ul>
+          <li class="img4">
             <div>
-            <h3>Armstrong David（Adviser）</h3>
-            <p>Britain</p>
-            <p style="margin-top:15px;"> Entrepreneur, business director, cryptocurrency missionary, asset manager; 15 years of experience in consulting and restructuring, mainly involving financial and public sector guidance. Since 2014, he has been engaged in the blockchain industry as an angel investor, co-founder, consultant, community organizer, etc., and has a profound understanding of blockchain economy and technology.</p>
-          </div>
-        </li>
-      </ul>
-    </div>
+              <h3>Amir Eslampanah（Adviser）</h3>
+              <p>Canada</p>
+              <p
+                style="margin-top:15px;"
+              >Global blockchain technology pioneer, top blockchain and encryption technology experts. Letcoin was founded by Golden River Mining Algorithm and founder of fontas btc-e pump group. He led the development of several underlying blockchain systems. Former colleague of vitalik batlin, founder of Ethereum.</p>
+            </div>
+          </li>
+          <li class="img5">
+            <div>
+              <h3>Armstrong David（Adviser）</h3>
+              <p>Britain</p>
+              <p
+                style="margin-top:15px;"
+              >Entrepreneur, business director, cryptocurrency missionary, asset manager; 15 years of experience in consulting and restructuring, mainly involving financial and public sector guidance. Since 2014, he has been engaged in the blockchain industry as an angel investor, co-founder, consultant, community organizer, etc., and has a profound understanding of blockchain economy and technology.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </template>
@@ -107,21 +117,20 @@ export default {
     }
   }
   .core {
- 
     width: 100%;
-    
-background: #F3F8FF;
+
+    background: #f3f8ff;
     .tit {
       display: flex;
       align-items: center;
       justify-content: center;
       padding: 97px 0;
-      
-font-size: 30px;
-font-family: PingFangSC-Semibold, PingFang SC;
-font-weight: 600;
-color: #3C3C3C;
-line-height: 42px;
+
+      font-size: 30px;
+      font-family: PingFangSC-Semibold, PingFang SC;
+      font-weight: 600;
+      color: #3c3c3c;
+      line-height: 42px;
     }
   }
   i {
@@ -140,13 +149,12 @@ line-height: 42px;
       font-weight: 400;
       color: #787878;
       line-height: 17px;
-      h3{
-        
-font-size: 18px;
-font-family: PingFangSC-Semibold, PingFang SC;
-font-weight: 600;
-color: #333333;
-line-height: 25px;
+      h3 {
+        font-size: 18px;
+        font-family: PingFangSC-Semibold, PingFang SC;
+        font-weight: 600;
+        color: #333333;
+        line-height: 25px;
       }
     }
     li {
@@ -174,23 +182,22 @@ line-height: 25px;
     }
   }
 
-  .adviser{
-    
+  .adviser {
     width: 100%;
     padding-bottom: 107px;
-    
-background: #F3F8FF;
+
+    background: #f3f8ff;
     .tit {
       display: flex;
       align-items: center;
       justify-content: center;
       padding: 97px 0;
-      
-font-size: 30px;
-font-family: PingFangSC-Semibold, PingFang SC;
-font-weight: 600;
-color: #3C3C3C;
-line-height: 42px;
+
+      font-size: 30px;
+      font-family: PingFangSC-Semibold, PingFang SC;
+      font-weight: 600;
+      color: #3c3c3c;
+      line-height: 42px;
     }
   }
   i {
@@ -209,13 +216,12 @@ line-height: 42px;
       font-weight: 400;
       color: #787878;
       line-height: 17px;
-      h3{
-        
-font-size: 18px;
-font-family: PingFangSC-Semibold, PingFang SC;
-font-weight: 600;
-color: #333333;
-line-height: 25px;
+      h3 {
+        font-size: 18px;
+        font-family: PingFangSC-Semibold, PingFang SC;
+        font-weight: 600;
+        color: #333333;
+        line-height: 25px;
       }
     }
     li {
@@ -224,12 +230,12 @@ line-height: 25px;
       padding: 30px;
       box-sizing: border-box;
     }
-    .img1 {
+    .img4 {
       background: url("/imges/about/4.png") no-repeat;
       background-position: center;
       background-size: 100% 100%;
     }
-    .img2 {
+    .img5 {
       background: url("/imges/about/5.png") no-repeat;
 
       background-position: center;
