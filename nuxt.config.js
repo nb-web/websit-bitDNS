@@ -15,12 +15,14 @@ export default {
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [
     "~assets/all.css",
-    'element-ui/lib/theme-chalk/index.css'
+    'element-ui/lib/theme-chalk/index.css',
+    'swiper/swiper-bundle.css'
   ],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [
-    '@/plugins/element-ui'
+    '@/plugins/element-ui',
+    "~/plugins/vue-swiper.js"
   ],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
