@@ -1,9 +1,8 @@
 <template>
   <div>
     <Head />
-    <Banna/>
     <Nuxt />
-   <Foot />
+    <Foot />
   </div>
 </template>
 

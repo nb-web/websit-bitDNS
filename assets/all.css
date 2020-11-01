@@ -8,3 +8,9 @@ a{
 li{
     list-style: none;
 }
+
+/* 版心 */
+.common_container{
+    width: 1200px;
+    margin: 0 auto;
+}

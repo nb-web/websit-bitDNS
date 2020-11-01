@@ -1,5 +1,9 @@
 <template>
   <div class="container">
+    <Banner 
+      bgUrl="/imges/banna/编组 42@2x.png"
+      insideBgUrl="/imges/banna/编组 9@2x.png"
+    />
     <div class="block">
       <ul>
         <li>

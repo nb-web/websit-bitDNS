@@ -1,5 +1,10 @@
 <template>
   <div class="about">
+    <Banner 
+      bgUrl="/imges/banna/banner_about.png"
+      insideBgUrl="/imges/product/littleSquare.png"
+      bgText="关于我们"
+    />
     <div class="content">
       <div class="text">
         <h4>BITDNS团队</h4>
@@ -81,6 +86,9 @@
 
 <script>
 export default {
+  head: {
+    title: '关于我们'
+  },
   data() {
     return {
       list: []
