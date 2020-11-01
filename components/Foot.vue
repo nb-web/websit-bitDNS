@@ -3,41 +3,41 @@
     <div class="footer">
       <div class="f_left">
         <p>联系我们</p>
-        <div style="margin-top:60px">
-          <img src="/imges/foot/email@2x.png" alt style="width:40px;height:28px" />
+        <div style="margin-top:70px">
+          <img src="/imges/foot/email.png" alt style="width:40px;height:28px" />
           <span>support@BitDNS.vip</span>
         </div>
         <div style="margin-top:34px">
-          <img src="/imges/foot/post-it-block@2x.png" alt style="width:42px;height:40px" />
+          <img src="/imges/foot/foot_post.png" alt style="width:42px;height:40px" />
           <span>White paper</span>
         </div>
       </div>
       <div class="f_right">
-        <p>BitDNS官方社交平台</p>
+        <p style="margin-left:18px">BitDNS官方社交平台</p>
         <ul  style="margin-top:60px">
           <li>
-            <img src="/imges/foot/编组 24@2x.png" alt />
+            <img src="/imges/foot/foot_24.png" alt />
           </li>
           <li>
-            <img src="/imges/foot/编组 25@2x.png" alt />
+            <img src="/imges/foot/foot_25.png" alt />
           </li>
           <li>
-            <img src="/imges/foot/编组 27@2x.png" alt />
+            <img src="/imges/foot/foot_27.png" alt />
           </li>
           <li>
-            <img src="/imges/foot/编组 29@2x.png" alt />
+            <img src="/imges/foot/foot_29.png" alt />
           </li>
           <li>
-            <img src="/imges/foot/编组 31@2x.png" alt />
+            <img src="/imges/foot/foot_31.png" alt />
           </li>
           <li>
-            <img src="/imges/foot/编组 33@2x.png" alt />
+            <img src="/imges/foot/foot_33.png" alt />
           </li>
           <li>
-            <img src="/imges/foot/编组 35@2x.png" alt />
+            <img src="/imges/foot/foot_35.png" alt />
           </li>
           <li>
-            <img src="/imges/foot/编组 37@2x.png" alt />
+            <img src="/imges/foot/foot_37.png" alt />
           </li>
         </ul>
       </div>
@@ -60,6 +60,8 @@ export default {};
   box-sizing: border-box;
 }
 .footer {
+  padding: 0 100px;
+  box-sizing: border-box;
   width: 1200px;
   margin: 0 auto;
   display: flex;
@@ -68,9 +70,15 @@ export default {};
   .f_left {
     width: 430px;
     height: 244px;
+    img{
+      vertical-align: middle;
+      margin-right: 15px;
+    }
   }
   .f_right {
     width: 430px;
+    height: 244px;
+
     ul {
       display: flex;
       flex-wrap: wrap;

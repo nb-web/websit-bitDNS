@@ -1,25 +1,25 @@
 <template>
   <div class="container">
     <Banner 
-      bgUrl="/imges/banna/编组 42@2x.png"
-      insideBgUrl="/imges/banna/编组 9@2x.png"
+      bgUrl="/imges/banna/banna_index.png"
+      insideBgUrl="/imges/banna/big_box.png"
     />
     <div class="block">
       <ul>
         <li>
-          <img src="/imges/index/diagram_chart@2x.png" alt />
+          <img src="/imges/index/index_chart.png" alt />
           <p>用户数据绝对自主</p>
         </li>
         <li>
-          <img src="/imges/index/earth@2x.png" alt />
+          <img src="/imges/index/index_earth.png" alt />
           <p>上层完全去中心化</p>
         </li>
         <li>
-          <img src="/imges/index/online-tracking@2x.png" alt />
+          <img src="/imges/index/index_tracking.png" alt />
           <p>集合多种技术工程经验</p>
         </li>
         <li>
-          <img src="/imges/index/tools-hardware@2x.png" alt />
+          <img src="/imges/index/index_tools.png" alt />
           <p>跨链互操作性</p>
         </li>
       </ul>
@@ -74,7 +74,7 @@
         <span style="margin:0 10px">BITDNS Tech Tree</span>
         <i></i>
       </div>
-      <img src="/imges/index/编组 15@2x.png" alt />
+      <img src="/imges/index/index_tree.png" alt />
     </div>
 
     <div class="jishu">
@@ -85,7 +85,7 @@
       </div>
       <div class="list">
         <ul>
-          <li class="img1" @click="show = !show">
+          <li class="img1" @mouseover="show = true" @mouseleave="show = false">
             <p>多链架构</p>
             <div class="model">
               <el-collapse-transition>
@@ -100,7 +100,7 @@
               </el-collapse-transition>
             </div>
           </li>
-          <li class="img2" @click="show1 = !show1">
+          <li class="img2" @mouseover="show1 = true" @mouseleave="show1 = false">
             <p>预言机</p>
             <div class="model">
               <el-collapse-transition>
@@ -115,7 +115,7 @@
               </el-collapse-transition>
             </div>
           </li>
-          <li class="img3" @click="show3 = !show3">
+          <li class="img3"  @mouseover="show3 = true" @mouseleave="show3 = false">
             <p>身份认证</p>
             <div class="model">
               <el-collapse-transition>
@@ -130,7 +130,7 @@
               </el-collapse-transition>
             </div>
           </li>
-          <li class="img4" @click="show4 = !show4">
+          <li class="img4"  @mouseover="show4 = true" @mouseleave="show4 = false">
             <p>可信任的DeFi系统</p>
             <div class="model">
               <el-collapse-transition>
@@ -145,7 +145,7 @@
               </el-collapse-transition>
             </div>
           </li>
-          <li class="img5" @click="show5 = !show5">
+          <li class="img5" @mouseover="show5 = true" @mouseleave="show5 = false">
             <p>边缘计算</p>
             <div class="model">
               <el-collapse-transition>
@@ -160,7 +160,7 @@
               </el-collapse-transition>
             </div>
           </li>
-          <li class="img6" @click="show6 = !show6">
+          <li class="img6" @mouseover="show6 = true" @mouseleave="show6 = false">
             <p>云路由器</p>
             <div class="model">
               <el-collapse-transition>
@@ -175,7 +175,7 @@
               </el-collapse-transition>
             </div>
           </li>
-          <li class="img7" @click="show7 = !show7">
+          <li class="img7" @mouseover="show7 = true" @mouseleave="show7 = false">
             <p>IPv8</p>
             <div class="model">
               <el-collapse-transition>
@@ -190,7 +190,7 @@
               </el-collapse-transition>
             </div>
           </li>
-          <li class="img8" @click="show8 = !show8">
+          <li class="img8"  @mouseover="show8 = true" @mouseleave="show8= false">
             <p>抗量子计算加密算法</p>
             <div class="model">
               <el-collapse-transition>
@@ -223,7 +223,7 @@
             <p>支持网站注册/登录、会员服务收费、网站授权管理、传统密码管理、网站收藏管理、个人云盘系统</p>
           </div>
           <div>
-            <img src="/imges/index/编组@2x.png" alt />
+            <img src="/imges/index/index_2.png" alt />
           </div>
         </div>
       </div>
@@ -231,7 +231,7 @@
       <div style="background:#F3F8FF;">
         <div class="con">
           <div>
-            <img src="/imges/index/编组@2x (3).png" alt />
+            <img src="/imges/index/index_1.png" alt />
           </div>
           <div style="width:401px">
             <h3>离线钱包</h3>
@@ -247,7 +247,7 @@
             <p>支持域名解析服务、注册买卖域名、域名解析设置、传统域名映射、域名专属昵称、域名动态解析。</p>
           </div>
           <div>
-            <img src="/imges/index/编组@2x (2).png" alt />
+            <img src="/imges/index/index_3.png" alt />
           </div>
         </div>
       </div>
@@ -255,7 +255,7 @@
       <div style="background:#F3F8FF;">
         <div class="con">
           <div>
-            <img src="/imges/index/编组@2x (1).png" alt />
+            <img src="/imges/index/index_4.png" alt />
           </div>
           <div style="width:401px">
             <h3>应用市场</h3>
@@ -311,7 +311,7 @@
                 </template>
                 <p class="content">
                    好滴USA高富帅巴基耶夫个iu师傅看过的死u回复i哦舒服还不是对话费贵手给丢防护服红  豆似乎否定和苦瓜和地方iu宝贵的繁华iu 规划iu的回复的回归和读后感iu会丢韩国肯定会 给iu会丢和iu
-                  <img src="/imges/index/right-circle@2x.png" alt="">
+                  <img src="/imges/index/index-circle.png" alt="">
                   
                 </p>
             </el-collapse-item>
@@ -323,7 +323,7 @@
                 </template>
                 <p class="content">
                    好滴USA高富帅巴基耶夫个iu师傅看过的死u回复i哦舒服还不是对话费贵手给丢防护服红  豆似乎否定和苦瓜和地方iu宝贵的繁华iu 规划iu的回复的回归和读后感iu会丢韩国肯定会  给iu会丢和iu
-                  <img src="/imges/index/right-circle@2x.png" alt="">
+                  <img src="/imges/index/index-circle.png" alt="">
                   
                 </p>
             </el-collapse-item>
@@ -336,7 +336,7 @@
                 <p class="content">
                    好滴USA高富帅巴基耶夫个iu师傅看过的死u回复i哦舒服还不是对话费贵手给丢防护服红  豆似乎否定和苦瓜和地方iu宝贵的繁华iu 规划iu的回复的回归和读后感iu会丢韩国肯定会 给iu会丢和iu
                
-                  <img src="/imges/index/right-circle@2x.png" alt="">
+                  <img src="/imges/index/index-circle.png" alt="">
                   
                 </p>
               
@@ -415,7 +415,7 @@ export default {
       li {
         width: 237px;
         height: 258px;
-        background: url("/imges/index/框@2x.png") no-repeat;
+        background: url("/imges/index/index_box.png") no-repeat;
         background-position: center;
         background-size: 100% 100%;
         text-align: center;
@@ -439,7 +439,7 @@ export default {
   .bitDns {
     width: 100%;
     height: 305px;
-    background: url("/imges/index/位图@2x.png") no-repeat;
+    background: url("/imges/index/index_bit.png") no-repeat;
     background-position: center;
     background-size: 100% 100%;
     .tit {
@@ -477,7 +477,7 @@ export default {
   .swipe {
     width: 100%;
     height: 417px;
-    background: url("/imges/index/编组 47@2x.png") no-repeat;
+    background: url("/imges/index/index_lunbo.png") no-repeat;
     background-position: center;
     background-size: 100% 100%;
     .content {
@@ -598,42 +598,42 @@ line-height: 23px;
       }
       .img1 {
         width: 285px;
-        background: url("/imges/index/编组 67@2x.png") no-repeat;
+        background: url("/imges/index/index_67.png") no-repeat;
         background-size: 100% 100%;
         background-position: center;
       }
       .img2 {
-        background: url("/imges/index/编组 54@2x.png") no-repeat;
+        background: url("/imges/index/index_54.png") no-repeat;
         background-size: 100% 100%;
         background-position: center;
       }
       .img3 {
-        background: url("/imges/index/编组 56@2x.png") no-repeat;
+        background: url("/imges/index/index_56.png") no-repeat;
         background-size: 100% 100%;
         background-position: center;
       }
       .img4 {
-        background: url("/imges/index/编组 58@2x.png") no-repeat;
+        background: url("/imges/index/index_58.png") no-repeat;
         background-size: 100% 100%;
         background-position: center;
       }
       .img5 {
-        background: url("/imges/index/编组 60@2x.png") no-repeat;
+        background: url("/imges/index/index_50.png") no-repeat;
         background-size: 100% 100%;
         background-position: center;
       }
       .img6 {
-        background: url("/imges/index/编组 62@2x.png") no-repeat;
+        background: url("/imges/index/index_62.png") no-repeat;
         background-size: 100% 100%;
         background-position: center;
       }
       .img7 {
-        background: url("/imges/index/编组 64@2x.png") no-repeat;
+        background: url("/imges/index/index_64.png") no-repeat;
         background-size: 100% 100%;
         background-position: center;
       }
       .img8 {
-        background: url("/imges/index/编组 66@2x.png") no-repeat;
+        background: url("/imges/index/index_66.png") no-repeat;
         background-size: 100% 100%;
         background-position: center;
       }
@@ -675,7 +675,7 @@ line-height: 23px;
     height: 473px;
     margin: 0 auto;
     padding-top: 170px;
-    background: url("/imges/index/we.png") no-repeat;
+    background: url("/imges/index/index_ditu.png") no-repeat;
     background-position: center;
     background-size: 100% 100%;
     box-sizing: border-box;

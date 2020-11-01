@@ -104,7 +104,7 @@ export default {
     width: 100%;
     height: 453px;
     padding: 101px 0 0 300px;
-    background: url("/imges/about/位图 2@2x.png") no-repeat;
+    background: url("/imges/about/about_book.png") no-repeat;
     background-size: 100% 100%;
     box-sizing: border-box;
     h4 {
@@ -128,12 +128,13 @@ export default {
     width: 100%;
 
     background: #f3f8ff;
+
+
     .tit {
       display: flex;
       align-items: center;
       justify-content: center;
       padding: 97px 0;
-
       font-size: 30px;
       font-family: PingFangSC-Semibold, PingFang SC;
       font-weight: 600;
@@ -250,5 +251,11 @@ export default {
       background-size: 100% 100%;
     }
   }
+
+  .tit {
+ 
+  margin: 0 0 24px;
+}
+
 }
 </style>

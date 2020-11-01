@@ -3,7 +3,7 @@
     <div class="head">
       <div class="top">
         <div>
-          <img src="/logo@2x.png" alt />
+          <img src="/logo .png" alt />
         </div>
         <div class="route">
           <nuxt-link to="/" :style="$route.path=='/'?'':' blue'">首页</nuxt-link>
@@ -19,10 +19,13 @@
 
 <style lang='less'>
 .head {
+  
   width: 100%;
+
   background: white;
   .top {
   width: 1200px;
+  height: 88px;
   display: flex;
   justify-content: space-around;
   align-items: center;
