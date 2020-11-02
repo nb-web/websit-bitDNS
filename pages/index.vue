@@ -43,21 +43,13 @@
 
       <div class="content">
         <swiper ref="mySwiper" :options="swiperOptions">
-    <swiper-slide>
-      <div class="spimg"></div>
-      <h5>耶啵</h5>
-      <p>BitDNS是分布式互联网的核心基础设施，就如同IPFS解决的是下一代互联网的储存问题。</p>
+    <swiper-slide v-for=" (item,index) in swiperList2" :key="index">
+      <div class="spimg"><img :src="item.img" alt=""></div>
+      <h5>{{item.name}}</h5>
+      <h4>{{item.title}}</h4>
+      <p>{{item.content}}</p>
     </swiper-slide>
-    <swiper-slide>
-      <div class="spimg"></div>
-      <h5>耶啵</h5>
-      <p>BitDNS是分布式互联网的核心基础设施，就如同IPFS解决的是下一代互联网的储存问题。</p>
-    </swiper-slide>
-     <swiper-slide>
-       <div class="spimg"></div>
-      <h5>耶啵</h5>
-      <p>BitDNS是分布式互联网的核心基础设施，就如同IPFS解决的是下一代互联网的储存问题。</p>
-    </swiper-slide>
+
     <div class="swiper-pagination" slot="pagination"></div>
   
   </swiper>
@@ -301,8 +293,11 @@
           <p style="margin-top:270px">BitDNS链接信息互联网与价值区块链的超级枢纽</p>
           <p style="float:right;margin-right:45px;color: #BEBEBE;font-size: 16px;">2019/10/14</p>
         </div>
+        
         <div class="news_right">
+
           <div>
+
    <el-collapse accordion v-model="activeName">
             <el-collapse-item  name="1"> 
               <template slot="title">
@@ -311,7 +306,11 @@
                 </template>
                 <p class="content">
                    好滴USA高富帅巴基耶夫个iu师傅看过的死u回复i哦舒服还不是对话费贵手给丢防护服红  豆似乎否定和苦瓜和地方iu宝贵的繁华iu 规划iu的回复的回归和读后感iu会丢韩国肯定会 给iu会丢和iu
-                  <img src="/imges/index/index-circle.png" alt="">
+                  <a :href="newLinkList[0]" target="_blank">
+                        <img src="/imges/index/index-circle.png" alt="">
+                  </a>
+                  
+                 
                   
                 </p>
             </el-collapse-item>
@@ -323,8 +322,9 @@
                 </template>
                 <p class="content">
                    好滴USA高富帅巴基耶夫个iu师傅看过的死u回复i哦舒服还不是对话费贵手给丢防护服红  豆似乎否定和苦瓜和地方iu宝贵的繁华iu 规划iu的回复的回归和读后感iu会丢韩国肯定会  给iu会丢和iu
+                 <a :href="newLinkList[0]" target="_blank">
                   <img src="/imges/index/index-circle.png" alt="">
-                  
+                  </a>
                 </p>
             </el-collapse-item>
 
@@ -335,11 +335,23 @@
                 </template>
                 <p class="content">
                    好滴USA高富帅巴基耶夫个iu师傅看过的死u回复i哦舒服还不是对话费贵手给丢防护服红  豆似乎否定和苦瓜和地方iu宝贵的繁华iu 规划iu的回复的回归和读后感iu会丢韩国肯定会 给iu会丢和iu
-               
-                  <img src="/imges/index/index-circle.png" alt="">
-                  
+                 <a :href="newLinkList[0]" target="_blank">
+                    <img src="/imges/index/index-circle.png" alt="">
+                  </a>
                 </p>
-              
+            </el-collapse-item>
+            
+              <el-collapse-item style="margin:20px 0 0">
+              <template slot="title">
+              <div class="day"> <h3>14</h3><p>NOV</p>   </div>
+               <span style="display:inline-block;margin-left:30px"> BitDNS链接信息互联网与价值区块链的</span>
+                </template>
+                <p class="content">
+                   好滴USA高富帅巴基耶夫个iu师傅看过的死u回复i哦舒服还不是对话费贵手给丢防护服红  豆似乎否定和苦瓜和地方iu宝贵的繁华iu 规划iu的回复的回归和读后感iu会丢韩国肯定会 给iu会丢和iu
+                 <a :href="newLinkList[0]" target="_blank">
+                    <img src="/imges/index/index-circle.png" alt="">
+                  </a>
+                </p>
             </el-collapse-item>
           </el-collapse>
           </div>
@@ -353,6 +365,9 @@
 </template>
 
 <script>
+
+import {swiperList,newLink} from "../locales/globalData.json";
+
 export default {
   data() {
     return {
@@ -364,6 +379,8 @@ export default {
       show6: false,
       show7: false,
       show8: false,
+      swiperList2:swiperList,
+      newLinkList:newLink,
       activeName:"1",
        swiperOptions: {
           loop:true,
@@ -381,6 +398,16 @@ export default {
        }
     };
     
+  },
+
+  created(){
+function isIE() { //ie?
+ if (!!window.ActiveXObject || "ActiveXObject" in window)
+  console.log("是")
+  else
+   console.log("不是")
+ }
+ console.log(swiperList)
   },
   computed: {
       swiper() {
@@ -489,10 +516,8 @@ export default {
       transform: translateY(-50%);
       text-align: center;
       .spimg{
-     
         width: 48px;
         height: 48px;
-        background: red;
         margin: 0 auto;
         border-radius:50% ;
        margin-top: -47px;
@@ -504,6 +529,12 @@ font-family: PingFangSC-Medium, PingFang SC;
 font-weight: 500;
 color: #383838;
 line-height: 20px;
+      }
+      h4{
+font-size: 12px;
+font-family: PingFangSC-Regular, PingFang SC;
+font-weight: 400;
+color: #333333;
       }
       p{
         
@@ -519,7 +550,7 @@ line-height: 23px;
     }
     .swiper-slide{
       width: 250px !important;
-      height: 182px;
+      height: 247px;
       background: white;
       padding: 23px;
       box-sizing: border-box;
@@ -819,9 +850,14 @@ letter-spacing: 1px;
 }
     }
   }
+   .news_right::-webkit-scrollbar{
+        display:none;
+}
   .news_right{
-   
+      height: 445px;
     width: 652px;
+    overflow: auto;
+    overflow-y:none;
     .content{
        position: relative;
 font-size: 16px;
@@ -859,5 +895,6 @@ color: #FFFFFF;
 letter-spacing: 1px;
 }
   }
+ 
 }
 </style>

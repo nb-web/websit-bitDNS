@@ -2,13 +2,9 @@
   <div class="banner_box">
     <div v-if="!bgText" :style="{ backgroundImage: `url('${bgUrl}')` }" class="index_banna" >
         <div :style="{ backgroundImage: `url('${insideBgUrl}')` }" class="bg_square">
-          <p>BitDNS, The super-hub in dWeb4.0</p>
-          <h4>THE NEW ORDER OF THE INTNET IS COMING, BE READY TO BE A NEW NODE.</h4>
-          <h5>
-            BitDNS is a domain name resolution system based on blockchain,
-            Connecting the information and value between the Internet and the blockchain,
-            It is a new Internet super-hub.
-          </h5>
+          
+          <h4>Based on blockchain connection, bring DWeb4.0 technology services</h4>
+        
         </div>
     </div>
 
@@ -86,10 +82,14 @@ export default {
     line-height: 40px;
   }
   h4{
-    margin-top: 64px;
-    font-size: 43px;
-    font-weight: 600;
-    color: #FFFFFF;
+    margin-top: 174px;
+    
+font-size: 43px;
+font-family: PingFangSC-Semibold, PingFang SC;
+font-weight: 600;
+color: #FFFFFF;
+line-height: 61px;
+-webkit-background-clip: text;
 
   }
   h5{

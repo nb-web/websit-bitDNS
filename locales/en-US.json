@@ -8,7 +8,8 @@
     },
     "home": {
       "title": "Welcome",
-      "introduction": "This is an introduction in English."
+      "introduction": "This is an introduction in English.",
+      "swiperName":"Anh Nguyen"
     },
     "about": {
       "title": "About",

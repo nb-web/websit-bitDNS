@@ -103,6 +103,9 @@
         <p>BitDNS经济循环</p>
         <i></i>
       </div>
+      <div style=" text-align: center;margin-top:70px;">
+        <img src="/imges/Economic/token19.png" alt="" >
+      </div>
     </div>
   </div>
 </template>

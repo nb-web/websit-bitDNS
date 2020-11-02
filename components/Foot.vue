@@ -27,6 +27,16 @@
           <li>
             <img src="/imges/foot/foot_29.png" alt />
           </li>
+         
+            <el-tooltip placement="bottom">
+  <div slot="content"><img src="/imges/foot/code.jpg" alt="" style="width:74px;height:74px"></div>
+   <li>
+   <img src="/imges/foot/wechat.png" alt />
+     </li>
+</el-tooltip>
+             
+            
+        
           <li>
             <img src="/imges/foot/foot_31.png" alt />
           </li>
@@ -76,7 +86,7 @@ export default {};
     }
   }
   .f_right {
-    width: 430px;
+    width: 570px;
     height: 244px;
 
     ul {
