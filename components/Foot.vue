@@ -2,30 +2,38 @@
   <div class="btm">
     <div class="footer">
       <div class="f_left">
-        <p>联系我们</p>
+        <p style="font-size: 30px">联系我们</p>
         <div style="margin-top:70px">
           <img src="/imges/foot/email.png" alt style="width:40px;height:28px" />
-          <span>support@BitDNS.vip</span>
+          <a style="color: #fff" href="mailto:support@bitdns.vip">support@BitDNS.vip</a>
         </div>
         <div style="margin-top:34px">
           <img src="/imges/foot/foot_post.png" alt style="width:42px;height:40px" />
-          <span>White paper</span>
+          <a style="color: #fff" href="https://www.bitdns.vip/images/whitepaper_zh.pdf" target="_blank">White paper</a>
         </div>
       </div>
       <div class="f_right">
-        <p style="margin-left:18px">BitDNS官方社交平台</p>
+        <p style="margin-left:18px; font-size: 30px">BitDNS官方社交平台</p>
         <ul  style="margin-top:60px">
           <li>
-            <img src="/imges/foot/foot_24.png" alt />
+            <a href="https://tinyurl.com/bitdns-twitter" class="list-item" target="_blank">
+              <img src="/imges/foot/foot_24.png" alt />
+            </a>
           </li>
           <li>
-            <img src="/imges/foot/foot_25.png" alt />
+            <a href="https://m.facebook.com/BitDNSofficial" class="list-item" target="_blank">
+              <img src="/imges/foot/foot_25.png" alt />
+            </a>
           </li>
           <li>
-            <img src="/imges/foot/foot_27.png" alt />
+            <a href="https://t.me/bitdnsenglish" class="list-item" target="_blank">
+              <img src="/imges/foot/foot_27.png" alt />
+            </a>
           </li>
           <li>
-            <img src="/imges/foot/foot_29.png" alt />
+            <a href="https://medium.com/@bitdnsofficial" class="list-item" target="_blank">
+              <img src="/imges/foot/foot_29.png" alt />
+            </a>
           </li>
          
             <el-tooltip placement="bottom">
@@ -38,16 +46,24 @@
             
         
           <li>
-            <img src="/imges/foot/foot_31.png" alt />
+            <a href="https://tinyurl.com/bitdnsofficial-ins" class="list-item" target="_blank">
+              <img src="/imges/foot/foot_31.png" alt />
+            </a>
           </li>
           <li>
-            <img src="/imges/foot/foot_33.png" alt />
+            <a href="https://t.me/bitdnsenglish" class="list-item" target="_blank">
+              <img src="/imges/foot/foot_33.png" alt />
+            </a>
           </li>
           <li>
-            <img src="/imges/foot/foot_35.png" alt />
+            <a href="https://www.reddit.com/user/BitDNS" class="list-item" target="_blank">
+              <img src="/imges/foot/foot_35.png" alt />
+            </a>
           </li>
           <li>
-            <img src="/imges/foot/foot_37.png" alt />
+            <a href="https://tinyurl.com/bitdns-youtube" class="list-item" target="_blank">
+              <img src="/imges/foot/foot_37.png" alt />
+            </a>
           </li>
         </ul>
       </div>

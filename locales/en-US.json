@@ -2,13 +2,14 @@
     "links": {
         "home": "Home",
         "product": "Product tools",
-        "product_domainService": "Domain service",
-        "economic": "Economy Governance",
+        "product_domainService": "DNS services",
+        "economic": "Economy and governance",
         "about": "About us"
     },
     "home": {
       "title": "Welcome",
       "introduction": "This is an introduction in English.",
+      "bannerText": "Based on blockchain connection, bring dWeb4.0 technology services",
       "swiperName":"Anh Nguyen"
     },
     "about": {

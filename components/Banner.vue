@@ -3,7 +3,7 @@
     <div v-if="!bgText" :style="{ backgroundImage: `url('${bgUrl}')` }" class="index_banna" >
         <div :style="{ backgroundImage: `url('${insideBgUrl}')` }" class="bg_square">
           
-          <h4>Based on blockchain connection, bring DWeb4.0 technology services</h4>
+          <h4>{{ $t('home.bannerText') }}</h4>
         
         </div>
     </div>
@@ -41,6 +41,10 @@ export default {
     height: 961px;
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .other_banna {
     height: 619px;
@@ -52,22 +56,16 @@ export default {
     margin: 0 auto;
     background-repeat: no-repeat;
     background-size:100% 100%;
-    text-align: center;
     color: white;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    padding: 70px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .bg_little_square {
     width: 321px;
     height: 155px;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 
     .desText{
       font-weight: normal;
@@ -82,14 +80,11 @@ export default {
     line-height: 40px;
   }
   h4{
-    margin-top: 174px;
-    
-font-size: 43px;
-font-family: PingFangSC-Semibold, PingFang SC;
-font-weight: 600;
-color: #FFFFFF;
-line-height: 61px;
--webkit-background-clip: text;
+    font-size: 43px;
+    font-weight: 600;
+    color: #FFFFFF;
+    line-height: 61px;
+    text-align: center;
 
   }
   h5{

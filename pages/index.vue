@@ -77,122 +77,12 @@
       </div>
       <div class="list">
         <ul>
-          <li class="img1" @mouseover="show = true" @mouseleave="show = false">
-            <p>多链架构</p>
+          <li v-for="(item,index) in technologyAdvantageList" :key="index" @mouseover="show = index+1" @mouseleave="()=>{show = 0}" :class="`img${index+1}`">
+            <p>{{item.name}}</p>
             <div class="model">
               <el-collapse-transition>
-                <div v-show="show">
-                  <div class="transition-box">
-                    基于SWAN技术的网络自适应动态组网技术，能够在互联网成千上万的节点之间，
-                    组建起双层高速互联网络，能够成功突破网络围墙，大幅减少跨境网络访问延迟。
-                    未来还能接入SpaceX的StarLink星链网络，
-                    组成空地一体化互联网络。
-                  </div>
-                </div>
-              </el-collapse-transition>
-            </div>
-          </li>
-          <li class="img2" @mouseover="show1 = true" @mouseleave="show1 = false">
-            <p>预言机</p>
-            <div class="model">
-              <el-collapse-transition>
-                <div v-show="show1">
-                  <div class="transition-box">
-                    基于SWAN技术的网络自适应动态组网技术，能够在互联网成千上万的节点之间，
-                    组建起双层高速互联网络，能够成功突破网络围墙，大幅减少跨境网络访问延迟。
-                    未来还能接入SpaceX的StarLink星链网络，
-                    组成空地一体化互联网络。
-                  </div>
-                </div>
-              </el-collapse-transition>
-            </div>
-          </li>
-          <li class="img3"  @mouseover="show3 = true" @mouseleave="show3 = false">
-            <p>身份认证</p>
-            <div class="model">
-              <el-collapse-transition>
-                <div v-show="show3">
-                  <div class="transition-box">
-                    基于SWAN技术的网络自适应动态组网技术，能够在互联网成千上万的节点之间，
-                    组建起双层高速互联网络，能够成功突破网络围墙，大幅减少跨境网络访问延迟。
-                    未来还能接入SpaceX的StarLink星链网络，
-                    组成空地一体化互联网络。
-                  </div>
-                </div>
-              </el-collapse-transition>
-            </div>
-          </li>
-          <li class="img4"  @mouseover="show4 = true" @mouseleave="show4 = false">
-            <p>可信任的DeFi系统</p>
-            <div class="model">
-              <el-collapse-transition>
-                <div v-show="show4">
-                  <div class="transition-box">
-                    基于SWAN技术的网络自适应动态组网技术，能够在互联网成千上万的节点之间，
-                    组建起双层高速互联网络，能够成功突破网络围墙，大幅减少跨境网络访问延迟。
-                    未来还能接入SpaceX的StarLink星链网络，
-                    组成空地一体化互联网络。
-                  </div>
-                </div>
-              </el-collapse-transition>
-            </div>
-          </li>
-          <li class="img5" @mouseover="show5 = true" @mouseleave="show5 = false">
-            <p>边缘计算</p>
-            <div class="model">
-              <el-collapse-transition>
-                <div v-show="show5">
-                  <div class="transition-box">
-                    基于SWAN技术的网络自适应动态组网技术，能够在互联网成千上万的节点之间，
-                    组建起双层高速互联网络，能够成功突破网络围墙，大幅减少跨境网络访问延迟。
-                    未来还能接入SpaceX的StarLink星链网络，
-                    组成空地一体化互联网络。
-                  </div>
-                </div>
-              </el-collapse-transition>
-            </div>
-          </li>
-          <li class="img6" @mouseover="show6 = true" @mouseleave="show6 = false">
-            <p>云路由器</p>
-            <div class="model">
-              <el-collapse-transition>
-                <div v-show="show6">
-                  <div class="transition-box">
-                    基于SWAN技术的网络自适应动态组网技术，能够在互联网成千上万的节点之间，
-                    组建起双层高速互联网络，能够成功突破网络围墙，大幅减少跨境网络访问延迟。
-                    未来还能接入SpaceX的StarLink星链网络，
-                    组成空地一体化互联网络。
-                  </div>
-                </div>
-              </el-collapse-transition>
-            </div>
-          </li>
-          <li class="img7" @mouseover="show7 = true" @mouseleave="show7 = false">
-            <p>IPv8</p>
-            <div class="model">
-              <el-collapse-transition>
-                <div v-show="show7">
-                  <div class="transition-box">
-                    基于SWAN技术的网络自适应动态组网技术，能够在互联网成千上万的节点之间，
-                    组建起双层高速互联网络，能够成功突破网络围墙，大幅减少跨境网络访问延迟。
-                    未来还能接入SpaceX的StarLink星链网络，
-                    组成空地一体化互联网络。
-                  </div>
-                </div>
-              </el-collapse-transition>
-            </div>
-          </li>
-          <li class="img8"  @mouseover="show8 = true" @mouseleave="show8= false">
-            <p>抗量子计算加密算法</p>
-            <div class="model">
-              <el-collapse-transition>
-                <div v-show="show8">
-                  <div class="transition-box">
-                    基于SWAN技术的网络自适应动态组网技术，能够在互联网成千上万的节点之间，
-                    组建起双层高速互联网络，能够成功突破网络围墙，大幅减少跨境网络访问延迟。
-                    未来还能接入SpaceX的StarLink星链网络，
-                    组成空地一体化互联网络。
-                  </div>
+                <div v-show="show == index+1">
+                  <div class="transition-box">{{item.detail}}</div>
                 </div>
               </el-collapse-transition>
             </div>
@@ -265,17 +155,33 @@
         <i></i>
       </div>
       <div class="chart">
-        <el-steps align-center>
-          <el-step description="BitDNS域名系统 中域名注册交易 网站上线"></el-step>
-          <el-step description="BitDNS域名系统完成 BitMail邮箱系统 核心模块上线"></el-step>
-          <el-step description="BitUID系统用户名注册 /交易网站上线"></el-step>
-          <el-step description="BitMail邮箱系统完成 BitDNS钱包v1.0版上线"></el-step>
-          <el-step description="BitUID系统完成"></el-step>
-          <el-step description="BitDNS钱包v5.0版上线， 系统完成"></el-step>
-        </el-steps>
+        <!--时间线-->
+        <div class="timeLine">
+            <div class="ul_box">
+                <ul class="my_timeline" ref="mytimeline" style="margin-left: 0px;">
+                    <li class="my_timeline_item" v-for="(item,index) in timeLineList" :key="index">
+                      <div class="my_timeline_itemTop">
+                        {{item.timestamp}}
+                      </div>
+                      <div class="my_timeline_itemMiddle">
+                        <!--线-->
+                        <div class="my_timeline_item_line"></div>
+                        <!--圈圈节点-->
+                        <div class="my_timeline_node" :style = " {backgroundColor: item.bgcolor, width: item.size + 'px', height: item.size + 'px'}"></div>
+                      </div>
+                        
+                        <!--标注-->
+                        <div class="my_timeline_item_content" :style="{color: item.color, fontSize: item.fontsize + 'px'}">
+                            {{item.info}}
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
         <div class="timg">
-          <img src="/imges/index/arrow_right备份@2x.png" alt />
-          <img src="/imges/index/arrow_right@2x.png" alt />
+          <img src="/imges/index/arrow_right备份@2x.png" @click="moveLeft" />
+          <img src="/imges/index/arrow_right@2x.png" @click="moveRight" />
         </div>
       </div>
     </div>
@@ -289,75 +195,26 @@
     
       <div style="display:flex;width:1200px;margin:0 auto;justify-content: space-between;" >
         <div class="news_left">
-            <div class="day1"> <h3 style="padding-top:15px">14</h3><p>NOV</p>   </div>
+          <div class="day1" style="height: 84px;"> <h3 style="padding-top:15px">14</h3><p>NOV</p>   </div>
           <p style="margin-top:270px">BitDNS链接信息互联网与价值区块链的超级枢纽</p>
           <p style="float:right;margin-right:45px;color: #BEBEBE;font-size: 16px;">2019/10/14</p>
         </div>
         
         <div class="news_right">
-
           <div>
-
-   <el-collapse accordion v-model="activeName">
-            <el-collapse-item  name="1"> 
-              <template slot="title">
-              <div class="day"> <h3>14</h3><p>NOV</p>   </div>
-               <span style="display:inline-block;margin-left:30px"> BitDNS链接信息互联网与价值区块链的</span>
+            <el-collapse accordion v-model="activeName" style="border: none">
+              <el-collapse-item v-for=" (item,index) in newLinkList" :key="index" :name="index" style="margin-bottom: 20px"> 
+                <template slot="title">
+                  <div class="day" style="text-align: center"> <h3>{{item.day}}</h3><p>{{item.month}}</p></div>
+                  <span style="display:inline-block;margin-left:30px"> {{item.title}}</span>
                 </template>
                 <p class="content">
-                   好滴USA高富帅巴基耶夫个iu师傅看过的死u回复i哦舒服还不是对话费贵手给丢防护服红  豆似乎否定和苦瓜和地方iu宝贵的繁华iu 规划iu的回复的回归和读后感iu会丢韩国肯定会 给iu会丢和iu
-                  <a :href="newLinkList[0]" target="_blank">
-                        <img src="/imges/index/index-circle.png" alt="">
-                  </a>
-                  
-                 
-                  
+                  {{item.des}}
+                  <a :href="item.linkUrl" target="_blank"><img src="/imges/index/index-circle.png" alt=""></a>
                 </p>
-            </el-collapse-item>
-
-             <el-collapse-item style="margin:20px 0">
-              <template slot="title">
-              <div class="day"> <h3>14</h3><p>NOV</p>   </div>
-               <span style="display:inline-block;margin-left:30px"> BitDNS链接信息互联网与价值区块链的</span>
-                </template>
-                <p class="content">
-                   好滴USA高富帅巴基耶夫个iu师傅看过的死u回复i哦舒服还不是对话费贵手给丢防护服红  豆似乎否定和苦瓜和地方iu宝贵的繁华iu 规划iu的回复的回归和读后感iu会丢韩国肯定会  给iu会丢和iu
-                 <a :href="newLinkList[0]" target="_blank">
-                  <img src="/imges/index/index-circle.png" alt="">
-                  </a>
-                </p>
-            </el-collapse-item>
-
-              <el-collapse-item>
-              <template slot="title">
-              <div class="day"> <h3>14</h3><p>NOV</p>   </div>
-               <span style="display:inline-block;margin-left:30px"> BitDNS链接信息互联网与价值区块链的</span>
-                </template>
-                <p class="content">
-                   好滴USA高富帅巴基耶夫个iu师傅看过的死u回复i哦舒服还不是对话费贵手给丢防护服红  豆似乎否定和苦瓜和地方iu宝贵的繁华iu 规划iu的回复的回归和读后感iu会丢韩国肯定会 给iu会丢和iu
-                 <a :href="newLinkList[0]" target="_blank">
-                    <img src="/imges/index/index-circle.png" alt="">
-                  </a>
-                </p>
-            </el-collapse-item>
-            
-              <el-collapse-item style="margin:20px 0 0">
-              <template slot="title">
-              <div class="day"> <h3>14</h3><p>NOV</p>   </div>
-               <span style="display:inline-block;margin-left:30px"> BitDNS链接信息互联网与价值区块链的</span>
-                </template>
-                <p class="content">
-                   好滴USA高富帅巴基耶夫个iu师傅看过的死u回复i哦舒服还不是对话费贵手给丢防护服红  豆似乎否定和苦瓜和地方iu宝贵的繁华iu 规划iu的回复的回归和读后感iu会丢韩国肯定会 给iu会丢和iu
-                 <a :href="newLinkList[0]" target="_blank">
-                    <img src="/imges/index/index-circle.png" alt="">
-                  </a>
-                </p>
-            </el-collapse-item>
-          </el-collapse>
+              </el-collapse-item>
+            </el-collapse>
           </div>
-       
-
-
         </div>
       </div>
     </div>
@@ -366,7 +223,7 @@
 
 <script>
 
-import {swiperList,newLink} from "../locales/globalData.json";
+import {swiperList, newLink, home_technologyAdvantage} from "@/locales/globalData.json";
 
 export default {
   data() {
@@ -379,23 +236,68 @@ export default {
       show6: false,
       show7: false,
       show8: false,
+      technologyAdvantageList: home_technologyAdvantage,
       swiperList2:swiperList,
-      newLinkList:newLink,
+      newLinkList: newLink,
       activeName:"1",
-       swiperOptions: {
-          loop:true,
-           slidesPerView: 3,
-          spaceBetween:75,
-          pagination: {
-            el: '.swiper-pagination',
-            dynamicBullets: true
-          },
-         navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+      swiperOptions: {
+        loop:true,
+          slidesPerView: 3,
+        spaceBetween:75,
+        pagination: {
+          el: '.swiper-pagination',
+          dynamicBullets: true
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
       },
-
-       }
+      // 时间线
+      timeLineList: [{
+        timestamp: '2020.10.31',
+        color: '#333333',
+        fontsize: 12,
+        size: '15',
+        bgcolor: '#373737',
+        icon: 'el-iconprev',
+        info: 'BitDNS域名系统中域名注册交易网站上线'
+      }, {
+        timestamp: '2021.1.31',
+        color: '#333333',
+        fontsize: 12,
+        size: '15',
+        bgcolor: '#373737',
+        info: 'BitDNS域名系统完成BitMail邮箱系统核心模块上线'
+      }, {
+        timestamp: '2021.3.31',
+        color: '#333333',
+        fontsize: 12,
+        size: '15',
+        bgcolor: '#373737',
+        info: 'BitUID系统用户名注册/交易网站上线'
+      }, {
+        timestamp: '2021.4.31',
+        color: '#333333',
+        fontsize: 12,
+        size: '15',
+        bgcolor: '#373737',
+        info: 'BitMail邮箱系统完成BitDNS钱包v1.0版上线'
+      }, {
+        timestamp: '2021.5.30',
+        color: '#333333',
+        fontsize: 12,
+        size: '15',
+        bgcolor: '#373737',
+        info: 'BitUID系统完成'
+      }, {
+        timestamp: '2021.6.30',
+        color: '#333333',
+        fontsize: 12,
+        size: '15',
+        bgcolor: '#373737',
+        info: 'BitDNS钱包v5.0版上线，系统完成'
+      }]
     };
     
   },
@@ -418,12 +320,25 @@ function isIE() { //ie?
       this.swiper.slideTo(3, 1000, true)
     },
     methods: {
-		prev() {
-			this.$refs.mySwiper.$swiper.slidePrev();
-		},
-		next() {
-			this.$refs.mySwiper.$swiper.slideNext();
-		}
+      prev() {
+        this.$refs.mySwiper.$swiper.slidePrev();
+      },
+      next() {
+        this.$refs.mySwiper.$swiper.slideNext();
+      },
+      moveLeft()  {
+        let marginLeft = parseInt(this.$refs.mytimeline.style.marginLeft);
+        let listNum = 0;
+        if(marginLeft <= 10 && (marginLeft >= -175)){
+            this.$refs.mytimeline.style.marginLeft = marginLeft - 185 + 'px';
+        }
+      },
+      moveRight() {
+        let marginLeft = parseInt(this.$refs.mytimeline.style.marginLeft);
+        if(marginLeft < (-175)){
+            this.$refs.mytimeline.style.marginLeft = marginLeft + 185 + 'px';
+        }
+      }
 	}
 
 };
@@ -437,7 +352,7 @@ function isIE() { //ie?
     padding: 96px 0 86px;
     ul {
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
 
       li {
         width: 237px;
@@ -447,6 +362,7 @@ function isIE() { //ie?
         background-size: 100% 100%;
         text-align: center;
         line-height: 35px;
+        margin: 0 10px;
         img {
           width: 31px;
           height: 33px;
@@ -520,29 +436,28 @@ function isIE() { //ie?
         height: 48px;
         margin: 0 auto;
         border-radius:50% ;
-       margin-top: -47px;
+        margin-top: -47px;
       }
       h5{
-margin: 16px 0;
-font-size: 14px;
-font-family: PingFangSC-Medium, PingFang SC;
-font-weight: 500;
-color: #383838;
-line-height: 20px;
+        margin: 16px 0;
+        font-size: 14px;
+        font-family: PingFangSC-Medium, PingFang SC;
+        font-weight: 500;
+        color: #383838;
+        line-height: 20px;
       }
       h4{
-font-size: 12px;
-font-family: PingFangSC-Regular, PingFang SC;
-font-weight: 400;
-color: #333333;
+        font-size: 12px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #333333;
       }
       p{
-        
-font-size: 12px;
-font-family: PingFangSC-Regular, PingFang SC;
-font-weight: 400;
-color: #999999;
-line-height: 23px;
+        font-size: 12px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #999999;
+        line-height: 23px;
       }
     }
     .swiper-container{
@@ -562,6 +477,10 @@ line-height: 23px;
     .swiper-button-next, .swiper-container-rtl .swiper-button-prev{
        right: -50px;
        color: white;
+    }
+
+    .swiper-button-prev:after, .swiper-button-next:after{
+      font-size: 12px;
     }
   }
 }
@@ -705,11 +624,12 @@ line-height: 23px;
     width: 1200px;
     height: 473px;
     margin: 0 auto;
-    padding-top: 170px;
+    padding-top: 155px;
     background: url("/imges/index/index_ditu.png") no-repeat;
     background-position: center;
     background-size: 100% 100%;
     box-sizing: border-box;
+    overflow: hidden;
   }
   .timg {
     position: absolute;
@@ -720,44 +640,55 @@ line-height: 23px;
       height: 36px;
     }
   }
-  .el-step__icon.is-text {
-    border-radius: 0;
-    background: black;
-    border: 0;
-    width: 15px;
-    height: 15px;
-  }
-  .el-step__icon-inner {
-    display: none;
-  }
-  .el-step::before {
-    content: "2021.1.31";
-    width: 100px;
-    height: 50px;
+  // 时间线
+  .timeLine{
+    width: 10000px;
+    .ul_box {
+        width: 100%;
+        height: 180px;
+        display: inline-block;
+        // float: left;
+        margin-top: 2px;
+        overflow: hidden;
+    }
+    .my_timeline_item {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: flex-end;
 
-    font-size: 12px;
-    font-family: PingFangSC-Semibold, PingFang SC;
-    font-weight: 600;
-    color: #888888;
-    line-height: 17px;
-  }
-  .el-step__line {
-    background: #669aee;
-  }
-  .el-step.is-horizontal {
-    text-align: center;
-  }
-  .el-step__description.is-wait {
-    font-size: 12px;
-    font-family: PingFangSC-Semibold, PingFang SC;
-    font-weight: 600;
-    color: #333333;
-    line-height: 17px;
-  }
-  .el-step.is-horizontal .el-step__line {
-    top: 9px;
+        .my_timeline_itemMiddle{
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-items: center;
+        }
+    }
+    .my_timeline_node {
+        box-sizing: border-box;
+        cursor: pointer;
+    }
+    .my_timeline_item_line {
+        width: 170px;
+        border-top: 2px solid #669AEE;
+    }
+    .my_timeline_item_content, .my_timeline_itemTop {
+        display: flex;
+        justify-content: center;
+        margin-right: -50px;
+        width: 120px;
+        height: 100%;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    .my_timeline_itemTop{
+      padding-top: 0;
+      font-size: 12px;
+      color: #888888;
+    }
   }
 }
+
 .el-carousel__item h3 {
   color: #475669;
   font-size: 14px;
@@ -777,20 +708,17 @@ line-height: 23px;
 }
 .el-collapse-item__header{
   line-height: 1;
-  text-align: center;
-      height: 83px;
-background: #F5F5F5;
-font-size: 20px;
-font-family: PingFangSC-Medium, PingFang SC;
-font-weight: 500;
-color: #333333;
+  text-align: left;
+  height: 84px;
+  background: #F5F5F5;
+  font-size: 20px;
+  font-weight: 500;
+  color: #333333;
+  border: 0;
 
 }
 .el-collapse-item__content{
   padding: 0;
-}
-.el-collapse-item__header{
-  border: 0;
 }
 .el-carousel__item:nth-child(2n + 1) {
   background-color: #d3dce6;
@@ -823,31 +751,31 @@ i {
     background: url("/imges/banna/banna2x.png");
     background-size: 100% 100%;
     background-position: center;
-  text-align: center;
-font-size: 20px;
-font-family: PingFangSC-Medium, PingFang SC;
-font-weight: 500;
-color: #FFFFFF;
-line-height: 28px;
+    text-align: center;
+    font-size: 20px;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 500;
+    color: #FFFFFF;
+    line-height: 28px;
     .day1{
-       width: 84px;
-    height: 84px;
-background: #669AEE;
-color: white;
-text-align: center;
-h3{
-font-size: 40px;
-font-family: PingFangSC-Medium, PingFang SC;
-font-weight: 500;
-color: #FFFFFF;
-}
-p{
-font-size: 21px;
-font-family: PingFangSC-Regular, PingFang SC;
-font-weight: 400;
-color: #FFFFFF;
-letter-spacing: 1px;
-}
+      width: 84px;
+      height: 100%;
+      background: #669AEE;
+      color: white;
+      text-align: center;
+      h3{
+        font-size: 40px;
+        font-family: PingFangSC-Medium, PingFang SC;
+        font-weight: 500;
+        color: #FFFFFF;
+      }
+      p{
+        font-size: 21px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #FFFFFF;
+        letter-spacing: 1px;
+      }
     }
   }
    .news_right::-webkit-scrollbar{

@@ -1,16 +1,29 @@
 {
-    "swiperList":[
-        {"img":"/imges/index/swiper1.png","name":"Anh Nguyen","title":"BitDNS是一个非常适合商业和个人使用的项目","content":"BitDNS的技术架构适合各种经济体系，从商业上的角度来说，他能保证整个商业网络的去中心化，从个人的角度来看，BitDNS的域名服务可以大幅降低区块链参与的门槛。"},
-        {"img":"/imges/index/swiper2.png","name":"larueer kenbe","title":"BitDNS，一个创新的多服务平台","content":"随着商业格局的变化，BitDNS根据相应领域的用户需求进行调整，增加了很多服务和商业运营，例如BitDNS，BitMail，BitUid等。"},
-        {"img":"/imges/index/swiper3.png","name":"Luyn Hoang","title":"BitDNS是最安全轻量级产品之一，具有很大的成长性","content":"BitDNS是最安全的轻量级产品之一，具有很大的成长性，涉猎广泛，尤其是对DeFi的创新，通过将产品分红价值赋予给流动性奖励，是行业先例，非常看好。"},
-        {"img":"/imges/index/swiper4.png","name":"zet david","title":"BitDNS的易用性将更好的鼓励年轻人参与区块链","content":"BitDNS产品的易用性将更好的鼓励年轻人来参与区块链网络。"},
-        {"img":"/imges/index/swiper5.png","name":"Greg Mentayor","title":"BitDNS的技术基于点对点，无需中央管理即可运行","content":"BitDNS支付交易的验证和支付交易的确认通过网络以协商一致的方式进行。"}
-      ],
-      "newLink":["https://www.jinse.com/news/blockchain/894523.html",
-        "https://www.jinse.com/news/blockchain/846524.html",
-        "https://new.qq.com/omn/20201001/20201001A03IJM00.html",
-        "https://baijiahao.baidu.com/s?id=1678610829981707154&wfr=spider&for=pc"
-      ]
+  "newLink":[
+    {"linkurl": "https://www.jinse.com/news/blockchain/894523.html", "month":"Oct", "day":"31", "title": "Corn.BitDNS以价值锚定收益 创新经济模型打开DeFi新格局", "des":"热门新加坡项目BitDNS于上个月登陆中国市场，引发了众多技术爱好者与投资者的关注。两天前BitDNS首个DeFi产品Corn.BitDNS正式开启了流动性凭证挖矿，激活了Corn和DNS的流动性，该矿池一经上线，最高APY高达5000%。"},
+    {"linkurl": "https://new.qq.com/omn/20201001/20201001A03IJM00.html", "month":"Oct", "day":"01", "title": "BitDNS Corn：DeFi泡沫爆裂之后，价值支撑的东西才会出来", "des":"热门新加坡项目BitDNS于上个月登陆中国市场，引发了众多技术爱好者与投资者的关注。两天前BitDNS首个DeFi产品Corn.BitDNS正式开启了流动性凭证挖矿，激活了Corn和DNS的流动性，该矿池一经上线，最高APY高达5000%。"},
+    {"linkurl": "https://www.jinse.com/news/blockchain/846524.html", "month":"Sep", "day":"28", "title": "BitDNS硬核赋能域名系统 Corn的价值回归", "des":"域名解析系统 DNS 已经运行数十年，是处理互联网数十亿次访问需求的基础设施。但在传统域名系统里，域名的交易、续租都必须依赖于几个主要的域名服务提供商，原始根域名服务器全世界只有13台，换而言之，也就是非常的中心化"},
+    {"linkurl": "https://baijiahao.baidu.com/s?id=1678610829981707154&wfr=spider&for=pc", "month":"Sep", "day":"23", "title": "BitDNS在web3.0中的实践与破局", "des":"9月22日，区块链跨链域名解决方案项目BitDNS作客快链头条第60期直播间，CEO Karen小姐分享关于BitDNS的重要内容。本次直播同步转播快链头条自有20+社群，并转播三大直播平台，获得百家媒体支持。"}
+  ],
+
+  "swiperList":[
+    {"img":"/imges/index/swiper1.png","name":"Anh Nguyen","title":"BitDNS是一个非常适合商业和个人使用的项目","content":"BitDNS的技术架构适合各种经济体系，从商业上的角度来说，他能保证整个商业网络的去中心化，从个人的角度来看，BitDNS的域名服务可以大幅降低区块链参与的门槛。"},
+    {"img":"/imges/index/swiper2.png","name":"larueer kenbe","title":"BitDNS，一个创新的多服务平台","content":"随着商业格局的变化，BitDNS根据相应领域的用户需求进行调整，增加了很多服务和商业运营，例如BitDNS，BitMail，BitUid等。"},
+    {"img":"/imges/index/swiper3.png","name":"Luyn Hoang","title":"BitDNS是最安全轻量级产品之一，具有很大的成长性","content":"BitDNS是最安全的轻量级产品之一，具有很大的成长性，涉猎广泛，尤其是对DeFi的创新，通过将产品分红价值赋予给流动性奖励，是行业先例，非常看好。"},
+    {"img":"/imges/index/swiper4.png","name":"zet david","title":"BitDNS的易用性将更好的鼓励年轻人参与区块链","content":"BitDNS产品的易用性将更好的鼓励年轻人来参与区块链网络。"},
+    {"img":"/imges/index/swiper5.png","name":"Greg Mentayor","title":"BitDNS的技术基于点对点，无需中央管理即可运行","content":"BitDNS支付交易的验证和支付交易的确认通过网络以协商一致的方式进行。"}
+  ],
+
+  "home_technologyAdvantage":[
+    {"name":"多链架构", "detail":"基于SWAN技术的网络自适应动态组网技术，能够在互联网成千上万的节点之间，组建起双层高速互联网络，能够成功突破网络围墙，大幅减少跨境网络访问延迟。未来还能接入SpaceX的StarLink星链网络，组成空地一体化互联网络。"},
+    {"name":"预言机", "detail":"基于SWAN技术的网络自适应动态组网技术，能够在互联网成千上万的节点之间，组建起双层高速互联网络，能够成功突破网络围墙，大幅减少跨境网络访问延迟。未来还能接入SpaceX的StarLink星链网络，组成空地一体化互联网络。"},
+    {"name":"身份认证", "detail":"基于SWAN技术的网络自适应动态组网技术，能够在互联网成千上万的节点之间，组建起双层高速互联网络，能够成功突破网络围墙，大幅减少跨境网络访问延迟。未来还能接入SpaceX的StarLink星链网络，组成空地一体化互联网络。"},
+    {"name":"可信任的DeFi系统", "detail":"基于SWAN技术的网络自适应动态组网技术，能够在互联网成千上万的节点之间，组建起双层高速互联网络，能够成功突破网络围墙，大幅减少跨境网络访问延迟。未来还能接入SpaceX的StarLink星链网络，组成空地一体化互联网络。"},
+    {"name":"边缘计算", "detail":"基于SWAN技术的网络自适应动态组网技术，能够在互联网成千上万的节点之间，组建起双层高速互联网络，能够成功突破网络围墙，大幅减少跨境网络访问延迟。未来还能接入SpaceX的StarLink星链网络，组成空地一体化互联网络。"},
+    {"name":"云路由器", "detail":"基于SWAN技术的网络自适应动态组网技术，能够在互联网成千上万的节点之间，组建起双层高速互联网络，能够成功突破网络围墙，大幅减少跨境网络访问延迟。未来还能接入SpaceX的StarLink星链网络，组成空地一体化互联网络。"},
+    {"name":"IPv8", "detail":"基于SWAN技术的网络自适应动态组网技术，能够在互联网成千上万的节点之间，组建起双层高速互联网络，能够成功突破网络围墙，大幅减少跨境网络访问延迟。未来还能接入SpaceX的StarLink星链网络，组成空地一体化互联网络。"},
+    {"name":"抗量子计算加密算法", "detail":"基于SWAN技术的网络自适应动态组网技术，能够在互联网成千上万的节点之间，组建起双层高速互联网络，能够成功突破网络围墙，大幅减少跨境网络访问延迟。未来还能接入SpaceX的StarLink星链网络，组成空地一体化互联网络。"}
+  ]
 
 }
  

@@ -3,7 +3,9 @@
     <div class="head">
       <div class="top">
         <div>
-          <img src="/logo .png" alt />
+          <nuxt-link to="/" :style="{display:'flex', justifyContent: 'center', alignItems: 'center'}">
+            <img src="/logo .png" alt />
+          </nuxt-link>
         </div>
         <div class="route">
           <nuxt-link to="/" :style="$route.path=='/' ? {color: '#2060F4'} : ''">{{ $t('links.home') }}</nuxt-link>
@@ -19,12 +21,12 @@
           </div>
           <nuxt-link to="/Economic" :style="$route.path=='/Economic' ? {color: '#2060F4'} : ''">{{ $t('links.economic') }}</nuxt-link>
           <nuxt-link to="/about" :style="$route.path=='/about' ? {color: '#2060F4'} : ''">{{ $t('links.about') }}</nuxt-link>
-          <nuxt-link to>
+          <!-- <nuxt-link to>
             <div @click="switchLocale()">
               <span :style="locale=='zh-CN' ? {color: '#2060F4'}:''" >中</span>/
               <span :style="locale=='en-US' ? {color: '#2060F4'}:''" >EN</span>
             </div>
-          </nuxt-link>
+          </nuxt-link> -->
         </div>
       </div>
     </div>
@@ -61,7 +63,7 @@ export default {
     height: 45px;
   }
 
-  .top {
+.top {
   width: 1200px;
   height: 88px;
   display: flex;

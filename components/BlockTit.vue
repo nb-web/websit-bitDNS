@@ -1,6 +1,6 @@
 <template>
   <div class="blockTit">
-      <div class="tit">
+      <div class="commonTit">
         <i></i>
         <p>{{text}}</p>
         <i></i>
@@ -19,7 +19,7 @@ export default {
 
 <style lang="less">
     .blockTit{
-        .tit {
+        .commonTit {
             display: flex;
             align-items: center;
             justify-content: center;

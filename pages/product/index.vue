@@ -205,7 +205,7 @@
 <script>
 export default {
   head: {
-    title: '产品工具'
+    title: '域名服务'
   }
 }
 </script>

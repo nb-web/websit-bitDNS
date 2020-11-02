@@ -9,9 +9,9 @@
     },
     "home": {
       "title": "Welcome",
-      "introduction": "This is an introduction in English."
-     
-
+      "introduction": "This is an introduction in English.",
+      "bannerText": "基于区块连技术, 服务于dWeb4.0关键基础设施",
+      "swiperName":"Anh Nguyen"
 
     },
     "about": {
