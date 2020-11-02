@@ -6,11 +6,13 @@
       bgText="关于我们"
     />
     <div class="content">
-      <div class="text">
-        <h4>BITDNS团队</h4>
-        <p
-          style="margin-top:28px"
-        >BitDNS在新加坡设有办公场所，且团队国际化水平较高，核心人员来自微软、阿里、百度、普华永道、麦肯锡等，创始团队及核心开发团队均是数字资产早期从业者，以及区块链的行业专家，在区块链行业有较深的从业背景，以及技术优势。</p>
+      <div class="common_container">
+        <div class="text">
+          <h4>BITDNS团队</h4>
+          <p
+            style="margin-top:28px"
+          >BitDNS在新加坡设有办公场所，且团队国际化水平较高，核心人员来自微软、阿里、百度、普华永道、麦肯锡等，创始团队及核心开发团队均是数字资产早期从业者，以及区块链的行业专家，在区块链行业有较深的从业背景，以及技术优势。</p>
+        </div>
       </div>
     </div>
     <div class="core">
@@ -103,7 +105,7 @@ export default {
   .content {
     width: 100%;
     height: 453px;
-    padding: 101px 0 0 300px;
+    // padding: 101px 0 0 300px;
     background: url("/imges/about/about_book.png") no-repeat;
     background-size: 100% 100%;
     box-sizing: border-box;
@@ -122,6 +124,7 @@ export default {
       font-weight: 400;
       color: #3c3c3c;
       line-height: 43px;
+      padding-top: 100px;
     }
   }
   .core {
