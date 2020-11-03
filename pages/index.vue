@@ -309,7 +309,7 @@ function isIE() { //ie?
   else
    console.log("不是")
  }
- console.log(swiperList)
+//  console.log(swiperList)
   },
   computed: {
       swiper() {
