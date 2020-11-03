@@ -13,10 +13,16 @@
             <p :style="$route.path=='/product' ? {color: '#2060F4'} : ''">{{ $t('links.product') }}</p>
             <img src="/imges/navBottomJt.png" height="6px" width="10px">
 
-            <ul v-if="!!showNavChildren" class="children_nav product_children_nav">
-              <li @click="()=>{this.showNavChildren = false}">
-                <nuxt-link to="/product" :style="$route.path=='/product' ? {color: '#2060F4'} : ''">{{ $t('links.product_domainService') }}</nuxt-link>
+            <ul v-show="showNavChildren" class="children_nav product_children_nav">
+               <el-collapse-transition>
+              <li v-show="showNavChildren" @click="()=>{this.showNavChildren = false}">
+               
+                   
+                  <nuxt-link   to="/product" :style="$route.path=='/product' ? {color: '#2060F4'} : ''">{{ $t('links.product_domainService') }}</nuxt-link>
+                 
+            
               </li>
+                 </el-collapse-transition>
             </ul>
           </div>
           <nuxt-link to="/Economic" :style="$route.path=='/Economic' ? {color: '#2060F4'} : ''">{{ $t('links.economic') }}</nuxt-link>
