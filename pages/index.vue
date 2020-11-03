@@ -100,7 +100,7 @@
 
       <div>
         <div class="con">
-          <div style="width:401px">
+          <div class="con_content">
             <h3>BitUID</h3>
             <p>支持网站注册/登录、会员服务收费、网站授权管理、传统密码管理、网站收藏管理、个人云盘系统</p>
           </div>
@@ -195,10 +195,10 @@
     
       <div style="display:flex;margin:0 auto;justify-content: space-between;" >
         <div class="news_left">
-          <div class="day1"> <h3 style="padding-top:15px">14</h3><p>NOV</p>   </div>
+          <div class="day1"> <h3 style="padding-top:15px">{{this.newsDay}}</h3><p>{{this.newsMonth}}</p></div>
           <div class="news_left_botText">
-            <p>BitDNS链接信息互联网与价值区块链的超级枢纽</p>
-            <p style="color: #BEBEBE;font-size: 16px;">2019/10/14</p>
+            <p>{{this.newsTit}}</p>
+            <p style="color: #BEBEBE;font-size: 16px;">{{this.newsDate}}</p>
           </div>
           
         </div>
@@ -206,14 +206,20 @@
         <div class="news_right">
           <div>
             <el-collapse accordion v-model="activeName" style="border: none">
-              <el-collapse-item v-for=" (item,index) in newLinkList" :key="index" :name="index" style="margin-bottom: 27px"> 
+              <el-collapse-item 
+                v-for=" (item,index) in newLinkList" 
+                :key="index" 
+                :name="index" 
+                style="margin-bottom: 27px"
+                @click.native="changeNewsLeftContent(item.title, item.date, item.month, item.day)"
+              > 
                 <template slot="title">
                   <div class="day" style="text-align: center"> <h3>{{item.day}}</h3><p>{{item.month}}</p></div>
                   <span style="display:inline-block;margin-left:30px"> {{item.title}}</span>
                 </template>
                 <p class="content">
                   {{item.des}}
-                  <a :href="item.linkUrl" target="_blank"><img src="/imges/index/index-circle.png" alt=""></a>
+                  <a :href="item.linkurl" target="_blank"><img src="/imges/index/index-circle.png" alt=""></a>
                 </p>
               </el-collapse-item>
             </el-collapse>
@@ -243,13 +249,17 @@ export default {
       swiperList2:swiperList,
       newLinkList: newLink,
       activeName:"1",
+      newsTit: 'Corn.BitDNS以价值锚定收益 创新经济模型打开DeFi新格局',
+      newsDate: '2020/10/31',
+      newsMonth: 'Oct',
+      newsDay: '31',
     
       swiperOptions: {
         loop:true,
-          slidesPerView: 3,
+        slidesPerView: 3,
         spaceBetween:75,
-          observer:true,//修改swiper自己或子元素时，自动初始化swiper
-observeParents:true,//修改swiper的父元素时，自动初始化swiper
+        observer:true,//修改swiper自己或子元素时，自动初始化swiper
+        observeParents:true,//修改swiper的父元素时，自动初始化swiper
         pagination: {
           el: '.swiper-pagination',
           dynamicBullets: true
@@ -346,6 +356,12 @@ function isIE() { //ie?
         if(marginLeft < (-175)){
             this.$refs.mytimeline.style.marginLeft = marginLeft + 185 + 'px';
         }
+      },
+      changeNewsLeftContent(tit,date, month, day){
+        this.newsTit=tit;
+        this.newsDate=date;
+        this.newsMonth=month;
+        this.newsDay=day;
       }
 	}
 
@@ -610,9 +626,13 @@ function isIE() { //ie?
     width: 1200px;
     margin: 0 auto;
     padding: 83px 0;
+
+    .con_content{
+      width: 401px;
+    }
   }
   h3 {
-    font-size: 38px;
+    font-size: 30px;
     font-family: PingFangSC-Semibold, PingFang SC;
     font-weight: 600;
     color: #333333;
@@ -620,7 +640,7 @@ function isIE() { //ie?
   }
   p {
     margin-top: 22px;
-    font-size: 24px;
+    font-size: 18px;
     font-family: PingFangSC-Semibold, PingFang SC;
     font-weight: 600;
     color: #888888;
@@ -773,10 +793,12 @@ i {
       position: absolute;
       bottom: 28px;
       text-align: right;
+      width: 100%;
       p{
         font-size: 21px;
         color: #FFFFFF;
         letter-spacing: 1px;
+        padding: 0 26px;
       }
     }
     .day1{
@@ -809,26 +831,26 @@ i {
         display:none;
 }
   .news_right{
-      height: 445px;
+    height: 445px;
     width: 652px;
     overflow: auto;
     overflow-y:none;
     .content{
-       position: relative;
-font-size: 16px;
-font-family: PingFangSC-Regular, PingFang SC;
-font-weight: 400;
-color: #666666;
-padding: 26px 18px;
-border: 3px solid #F5F5F5;
-}
-img{
-  width: 18px;
-  height: 18px;
-  position: absolute;
-  right: 20px;
-  top: 100px;
-}
+      position: relative;
+      font-size: 16px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      color: #666666;
+      padding: 26px 18px;
+      border: 3px solid #F5F5F5;
+    }
+    img{
+      width: 18px;
+      height: 18px;
+      position: absolute;
+      right: 20px;
+      top: 100px;
+    }
   }
   .day{
     width: 84px;

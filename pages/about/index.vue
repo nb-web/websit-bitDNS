@@ -181,6 +181,8 @@ export default {
       height: 296px;
       padding: 30px;
       box-sizing: border-box;
+      margin: 0 21px;
+      margin-bottom: 42px;
     }
     .img1 {
       background: url("/imges/about/1.png") no-repeat;

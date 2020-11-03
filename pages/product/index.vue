@@ -236,8 +236,14 @@ export default {
     line-height: 35px;
   }
 
+  @media screen and (min-width:1920px) {
+    .imgAndText_block{
+      max-width: 1920px;
+    }
+  }
+
   .imgAndText_block{
-    max-width: 1920px;
+
     margin: 0 auto;
     .imgAndText_block_item{
       display: flex;
