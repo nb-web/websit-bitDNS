@@ -10,13 +10,13 @@
         <div class="text">
           <h4>BITDNS团队</h4>
           <p
-            style="margin-top:28px"
+            class="bitDnsTeamText"
           >BitDNS在新加坡设有办公场所，且团队国际化水平较高，核心人员来自微软、阿里、百度、普华永道、麦肯锡等，创始团队及核心开发团队均是数字资产早期从业者，以及区块链的行业专家，在区块链行业有较深的从业背景，以及技术优势。</p>
         </div>
       </div>
     </div>
     <div class="core">
-      <div style="width:1200px;margin:0 auto;">
+      <div class="common_container">
         <div class="tit">
           <i></i>
           <p style="margin:0 10px">核心成员</p>
@@ -28,7 +28,7 @@
               <h3>Karen New（CEO）</h3>
               <p>Singapore</p>
               <p
-                style="margin-top:15px;"
+                class="peopleText"
               >Founder and CEO, blockchain industry expert and early practitioner of digital assets, has provided strategic guidance for blockchain projects for many times, and has rich experience in building smart contracts, tokenomics and dapps. She has been rated as the most influential female figure in Asian blockchain industry by well-known media.</p>
             </div>
           </li>
@@ -37,7 +37,7 @@
               <h3>Sorbon（COO）</h3>
               <p>Russia</p>
               <p
-                style="margin-top:15px;"
+                class="peopleText"
               >Director of corporate strategy and application business, with many years of working experience of PricewaterhouseCoopers. He has participated in the strategy formulation and promotion of large multinational companies and governments, and has many years of experience in industrial innovation projects.</p>
             </div>
           </li>
@@ -46,7 +46,7 @@
               <h3>Kingsley Low（CTO）</h3>
               <p>Singapore</p>
               <p
-                style="margin-top:15px;"
+                class="peopleText"
               >Core development member, blockchain technology and computer security experts, open source culture and software freedom pioneer. As an early thought leader of cryptocurrency, he has 20 years of experience in after-sales service and supply chain. It aims to participate in the development of large-scale commercial blockchain for developers to participate in the current large-scale development of blockchain.</p>
             </div>
           </li>
@@ -55,10 +55,10 @@
     </div>
 
     <div class="adviser">
-      <div style="width:1200px;margin:0 auto;">
+      <div class="common_container">
         <div class="tit">
           <i></i>
-          <p>核心成员</p>
+          <p>顾问团队</p>
           <i></i>
         </div>
         <ul>
@@ -67,7 +67,7 @@
               <h3>Amir Eslampanah（Adviser）</h3>
               <p>Canada</p>
               <p
-                style="margin-top:15px;"
+                class="peopleText"
               >Global blockchain technology pioneer, top blockchain and encryption technology experts. Letcoin was founded by Golden River Mining Algorithm and founder of fontas btc-e pump group. He led the development of several underlying blockchain systems. Former colleague of vitalik batlin, founder of Ethereum.</p>
             </div>
           </li>
@@ -76,7 +76,7 @@
               <h3>Armstrong David（Adviser）</h3>
               <p>Britain</p>
               <p
-                style="margin-top:15px;"
+                class="peopleText"
               >Entrepreneur, business director, cryptocurrency missionary, asset manager; 15 years of experience in consulting and restructuring, mainly involving financial and public sector guidance. Since 2014, he has been engaged in the blockchain industry as an angel investor, co-founder, consultant, community organizer, etc., and has a profound understanding of blockchain economy and technology.</p>
             </div>
           </li>
@@ -125,6 +125,10 @@ export default {
       color: #3c3c3c;
       line-height: 43px;
       padding-top: 100px;
+
+      .bitDnsTeamText{
+        margin-top: 28px;
+      }
     }
   }
   .core {
@@ -132,6 +136,9 @@ export default {
 
     background: #f3f8ff;
 
+    .peopleText{
+      margin-top: 15px;
+    }
 
     .tit {
       display: flex;
@@ -199,6 +206,9 @@ export default {
     padding-bottom: 107px;
 
     background: #f3f8ff;
+    .peopleText{
+      margin-top: 15px;
+    }
     .tit {
       display: flex;
       align-items: center;

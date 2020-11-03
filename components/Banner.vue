@@ -41,6 +41,7 @@ export default {
     height: 961px;
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    background-position: center;
     display: flex;
     flex-direction: column;
     justify-content: center;

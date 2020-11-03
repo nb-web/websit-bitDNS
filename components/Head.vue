@@ -98,7 +98,7 @@ export default {
 
       .children_nav{
         position: absolute;
-        top: 58px;
+        top: 78px;
         left: 0;
         background-color: #fff;
         color: #666666;

@@ -34,8 +34,8 @@
         </div>
         <p>
           BitDNS是分布式互联网的核心基础设施，就如同IPFS解决的是下一代互联网的储存问题，BitDNS解决的则是下一代互联网的域名解析问题。在BitDNS的网络中，用户拥有绝对的自主权，域名完全去中心化，BitDNS通过BitUID、钱包、路由器等基础设施来构建分布式域名，
-          <br />除此之外BitDNS的愿景是通过连接多数主流公链、主流工程技术（如：IPFS技术、Etherum、EOS、Fabric、R3、IPv8技术），
-          <br />共同构成下一代分布式互联网的超级枢纽——dWeb4.0。
+          除此之外BitDNS的愿景是通过连接多数主流公链、主流工程技术（如：IPFS技术、Etherum、EOS、Fabric、R3、IPv8技术，
+          共同构成下一代分布式互联网的超级枢纽——dWeb4.0。
         </p>
       </div>
     </div>
@@ -43,16 +43,16 @@
 
       <div class="content">
         <swiper ref="mySwiper" :options="swiperOptions">
-    <swiper-slide v-for=" (item,index) in swiperList2" :key="index">
-      <div class="spimg"><img :src="item.img" alt=""></div>
-      <h5>{{item.name}}</h5>
-      <h4>{{item.title}}</h4>
-      <p>{{item.content}}</p>
-    </swiper-slide>
+          <swiper-slide v-for=" (item,index) in swiperList2" :key="index">
+            <div class="spimg"><img :src="item.img" alt=""></div>
+            <h5>{{item.name}}</h5>
+            <h4>{{item.title}}</h4>
+            <p>{{item.content}}</p>
+          </swiper-slide>
 
-    <div class="swiper-pagination" slot="pagination"></div>
-  
-  </swiper>
+          <div class="swiper-pagination" slot="pagination"></div>
+        
+        </swiper>
     <div class="swiper-button-prev" @click="prev"></div>
     <div class="swiper-button-next" @click="next"></div>
  
@@ -186,18 +186,21 @@
       </div>
     </div>
 
-    <div class="news">
+    <div class="news common_container">
       <div class="tit">
         <i></i>
         <span style="margin:0 10px">新闻资讯</span>
         <i></i>
       </div>
     
-      <div style="display:flex;width:1200px;margin:0 auto;justify-content: space-between;" >
+      <div style="display:flex;margin:0 auto;justify-content: space-between;" >
         <div class="news_left">
-          <div class="day1" style="height: 84px;"> <h3 style="padding-top:15px">14</h3><p>NOV</p>   </div>
-          <p style="margin-top:270px">BitDNS链接信息互联网与价值区块链的超级枢纽</p>
-          <p style="float:right;margin-right:45px;color: #BEBEBE;font-size: 16px;">2019/10/14</p>
+          <div class="day1"> <h3 style="padding-top:15px">14</h3><p>NOV</p>   </div>
+          <div class="news_left_botText">
+            <p>BitDNS链接信息互联网与价值区块链的超级枢纽</p>
+            <p style="color: #BEBEBE;font-size: 16px;">2019/10/14</p>
+          </div>
+          
         </div>
         
         <div class="news_right">
@@ -456,6 +459,7 @@ function isIE() { //ie?
         font-family: PingFangSC-Regular, PingFang SC;
         font-weight: 400;
         color: #333333;
+        min-height: 34px;
       }
       p{
         font-size: 12px;
@@ -469,10 +473,10 @@ function isIE() { //ie?
       padding: 30px 0;
     }
     .swiper-slide{
-      width: 250px !important;
+      width: 250px;
       height: 247px;
       background: white;
-      padding: 23px;
+      padding: 15px;
       box-sizing: border-box;
     }
     .swiper-button-prev, .swiper-container-rtl .swiper-button-next{
@@ -762,12 +766,30 @@ i {
     font-weight: 500;
     color: #FFFFFF;
     line-height: 28px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    .news_left_botText{
+      position: absolute;
+      bottom: 28px;
+      text-align: right;
+      p{
+        font-size: 21px;
+        color: #FFFFFF;
+        letter-spacing: 1px;
+      }
+    }
     .day1{
       width: 84px;
+      height: 84px!important;
       height: 100%;
       background: #669AEE;
       color: white;
       text-align: center;
+      
+      position: absolute;
+      top: 0;
+      left: 0;
       h3{
         font-size: 40px;
         font-family: PingFangSC-Medium, PingFang SC;

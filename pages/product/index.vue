@@ -57,10 +57,10 @@
     </div>
 
     <div class="bitDNSVsTraditionalDNS">
-        <BlockTit text="传统DNS域名系统的问题"/>
+        <BlockTit text="BitDNS Vs Traditional DNS"/>
 
-        <div class="common_container">
-          <img src="/imges/product/bitDNSVsTraditionalDNS.png" alt="" height="441px" width="1192px">
+        <div class="bitDNSVsTraditionalDNS_img common_container">
+          <img src="/imges/product/bitDNSVsTraditionalDNS.png" alt="">
         </div>
     </div>
 
@@ -119,19 +119,19 @@
       <BlockTit text="BITDNS域名服务特点"/>
       <div class="common_container serviceFeatures_content">
         <div class="serviceFeaturesItem">
-          <img src="/imges/product/serviceFeatures1.png" alt="" height="38px" width="34px">
+          <img src="/imges/product/serviceFeatures1.png" alt="">
           <p>去中心化</p>
           <p>BitDNS的管理和服务均通过智能合约完成，完全去中心化，安全性和可信度非常高。</p>
         </div>
 
         <div class="serviceFeaturesItem">
-          <img src="/imges/product/serviceFeatures2.png" alt="" height="38px" width="34px">
+          <img src="/imges/product/serviceFeatures2.png" alt="">
           <p>跨链交互</p>
           <p>BITDNS能够服务已有的公链生态，如以太坊、IPFS等， 让文件访问、地址转账、智能合约调用更方便、更快捷。</p>
         </div>
 
         <div class="serviceFeaturesItem">
-          <img src="/imges/product/serviceFeatures3.png" alt="" height="34px" width="38px">
+          <img src="/imges/product/serviceFeatures3.png" alt="">
           <p>可循环的经济模型</p>
           <p>BitDNS系统的流通通证DNS内置了激励池，所有系统产出费用会进入激励池，并按比例分配给DNS的持有人。</p>
         </div>
@@ -152,7 +152,11 @@
           </div>
         </div>
 
-        <div class="tokenBonus_bottomButton">获取Corn</div>
+        <div class="tokenBonus_bottomButton">
+          <a href="https://corn.bitdns.vip/" target="_blank">
+              获取Corn
+          </a>
+        </div>
       </div>
     </div>
 
@@ -233,6 +237,8 @@ export default {
   }
 
   .imgAndText_block{
+    max-width: 1920px;
+    margin: 0 auto;
     .imgAndText_block_item{
       display: flex;
       flex-direction: row;
@@ -273,12 +279,19 @@ export default {
   .bitDNSVsTraditionalDNS{
     height: 800px;
     background-color: #F3F8FF;
+    .bitDNSVsTraditionalDNS_img{
+      img{
+        height: 441px;
+        width: 1192px;
+      }
+    }
   }
 
   .bitDNSTeams{
     height: 736px;
     background: url("/imges/product/bitDNSTeams.png") no-repeat;
     background-size: 100% 100%;
+    background-position: center;
 
     .bitDNSTeams_content{
       .topText{
@@ -315,6 +328,7 @@ export default {
             padding-top: 36px;
             background: url("/imges/product/bitDNSTeams_whiteBg.png") no-repeat;
             background-size: 100% 100%;
+            background-position: center;
             align-items: center;
             flex-direction: column;
             margin-right: 20px;
@@ -360,6 +374,8 @@ export default {
 
           img{
             margin: 41px 0 13px;
+            height: 38px;
+            width: 34px;
           }
 
           p:first-child{
@@ -385,6 +401,7 @@ export default {
     height: 561px;
     background: url("/imges/product/tokenBonusBg.png") no-repeat;
     background-size: 100% 100%;
+    background-position: center;
 
     .tokenBonus_content{
       display: flex;
@@ -439,12 +456,16 @@ export default {
         height: 53px;
         width: 192px;
         background-color: #005FFC;
-        color: #fff;
-        font-size: 18px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        cursor: pointer;
+
+        a{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: #fff;
+          font-size: 18px;
+          height: 100%;
+          width: 100%;
+        }
       }
     }
   }

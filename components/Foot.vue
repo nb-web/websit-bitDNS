@@ -85,7 +85,6 @@ export default {};
   background: black;
   color: white;
   box-sizing: border-box;
-  border: 1px solid red;
 }
 .footer {
   padding: 0 100px;

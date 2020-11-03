@@ -103,7 +103,7 @@
         <p>BitDNS经济循环</p>
         <i></i>
       </div>
-      <div style=" text-align: center;margin-top:70px;">
+      <div class="economicCycle_img" style="text-align: center;">
         <img src="/imges/Economic/token19.png" alt="" >
       </div>
     </div>
@@ -143,8 +143,9 @@ export default {
   }
 
   .tokenDesign{
-    background: url('/imges/Economic/tokenDesignBg.png') no-repeat 100% 100%;
-    background-size:100% 100%;
+    background: url('/imges/Economic/tokenDesignBg.png') no-repeat;
+    background-size:cover;
+    background-position: center;
     display: flex;
     height: 736px;
     flex-direction: column;
@@ -181,13 +182,13 @@ export default {
       width: 1166px;
       border-top: 1px solid #979797;
       margin: 0 auto;
-      margin-top: 70px;
-      margin-left: 20px;
+      margin: 70px 0 70px 20px;
+      // margin-left: 20px;
     }
     
     .tokenDesign_content_bottom{
       display: flex;
-      height: 235px;
+      // height: 235px;
       justify-content: space-around;
       align-items: center;
 
@@ -229,6 +230,8 @@ export default {
 
       img{
         margin-top: 21px;
+        height: 448px;
+        width: 899px;
       }
 
       .resourceContent_bottom{
@@ -275,8 +278,17 @@ export default {
   .economicCycle{
     height: 827px;
     width: 100%;
-    background: url('/imges/Economic/economicCycle.png') no-repeat 100% 100%;
-    background-size:100% 100%;
+    background: url('/imges/Economic/economicCycle.png') no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+
+    .economicCycle_img{
+      margin-top: 70px;
+      img{
+        height: 492px;
+        width: 1006px;
+      }
+    }
 
     .tit {
         display: flex;
