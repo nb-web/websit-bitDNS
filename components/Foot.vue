@@ -78,12 +78,14 @@ export default {};
 <style lang='less'>
 .btm {
   // margin-top: 106px;
+  min-width: 1200px;
   width: 100%;
   height: 469px;
   padding: 90px;
   background: black;
   color: white;
   box-sizing: border-box;
+  border: 1px solid red;
 }
 .footer {
   padding: 0 100px;

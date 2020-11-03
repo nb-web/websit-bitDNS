@@ -203,7 +203,7 @@
         <div class="news_right">
           <div>
             <el-collapse accordion v-model="activeName" style="border: none">
-              <el-collapse-item v-for=" (item,index) in newLinkList" :key="index" :name="index" style="margin-bottom: 20px"> 
+              <el-collapse-item v-for=" (item,index) in newLinkList" :key="index" :name="index" style="margin-bottom: 27px"> 
                 <template slot="title">
                   <div class="day" style="text-align: center"> <h3>{{item.day}}</h3><p>{{item.month}}</p></div>
                   <span style="display:inline-block;margin-left:30px"> {{item.title}}</span>
@@ -240,10 +240,13 @@ export default {
       swiperList2:swiperList,
       newLinkList: newLink,
       activeName:"1",
+    
       swiperOptions: {
         loop:true,
           slidesPerView: 3,
         spaceBetween:75,
+          observer:true,//修改swiper自己或子元素时，自动初始化swiper
+observeParents:true,//修改swiper的父元素时，自动初始化swiper
         pagination: {
           el: '.swiper-pagination',
           dynamicBullets: true
@@ -252,6 +255,8 @@ export default {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         },
+        
+
       },
       // 时间线
       timeLineList: [{
@@ -748,7 +753,7 @@ i {
   .news_left {
     width: 519px;
     height: 445px;
-    background: url("/imges/banna/banna2x.png");
+    background: url("/imges/index/news1.png");
     background-size: 100% 100%;
     background-position: center;
     text-align: center;
