@@ -4,7 +4,7 @@
       bgUrl="/imges/banna/banna_index.png"
       insideBgUrl="/imges/banna/big_box.png"
     />
-    <div class="block">
+    <div class="block  common_container">
       <ul>
         <li>
           <img src="/imges/index/index_chart.png" alt />
@@ -26,7 +26,7 @@
     </div>
 
     <div class="bitDns">
-      <div class="centens">
+      <div class="centens common_container">
         <div class="tit">
           <i></i>
           <span style="margin:0 10px">BitDNS</span>
@@ -41,7 +41,7 @@
     </div>
     <div class="swipe">
 
-      <div class="content">
+      <div class="content swiperWidth">
         <swiper ref="mySwiper" :options="swiperOptions">
           <swiper-slide v-for=" (item,index) in swiperList2" :key="index">
             <div class="spimg"><img :src="item.img" alt=""></div>
@@ -66,7 +66,7 @@
         <span style="margin:0 10px">BITDNS Tech Tree</span>
         <i></i>
       </div>
-      <img src="/imges/index/index_tree.png" alt />
+      <img class="common_container Tree" src="/imges/index/index_tree.png" alt />
     </div>
 
     <div class="jishu">
@@ -74,8 +74,28 @@
         <i></i>
         <span style="margin:0 10px">BITDNS 技术优势</span>
         <i></i>
+        
       </div>
-      <div class="list">
+
+     
+      <div   class="list  common_container">
+       
+
+ <div class="swiperList">
+           <el-carousel type="card" :loop="true" indicator-position="none" arrow="never" :autoplay="false">
+    <el-carousel-item v-for="(item,index) in technologyAdvantageList" :key="index" @mouseover="show = index+1" @mouseleave="()=>{show = 0}" :class="`img${index+1}`">
+        <p>{{item.name}}</p>
+            <div class="model">
+              <el-collapse-transition>
+                <div v-show="show == index+1">
+                  <div class="transition-box">{{item.detail}}</div>
+                </div>
+              </el-collapse-transition>
+            </div>
+    </el-carousel-item>
+  </el-carousel>
+        </div>
+
         <ul>
           <li v-for="(item,index) in technologyAdvantageList" :key="index" @mouseover="show = index+1" @mouseleave="()=>{show = 0}" :class="`img${index+1}`">
             <p>{{item.name}}</p>
@@ -92,14 +112,14 @@
     </div>
     <!-- BITDNS 核心功能 -->
     <div class="gn">
+
       <div class="tit">
         <i></i>
         <span style="margin:0 10px">BITDNS 核心功能</span>
         <i></i>
       </div>
-
       <div>
-        <div class="con">
+        <div class="con common_container">
           <div class="con_content">
             <h3>BitUID</h3>
             <p>支持网站注册/登录、会员服务收费、网站授权管理、传统密码管理、网站收藏管理、个人云盘系统</p>
@@ -111,7 +131,7 @@
       </div>
 
       <div style="background:#F3F8FF;">
-        <div class="con">
+        <div class="con common_container">
           <div>
             <img src="/imges/index/index_1.png" alt />
           </div>
@@ -123,7 +143,7 @@
       </div>
 
       <div>
-        <div class="con">
+        <div class="con common_container">
           <div style="width:401px">
             <h3>域名系统</h3>
             <p>支持域名解析服务、注册买卖域名、域名解析设置、传统域名映射、域名专属昵称、域名动态解析。</p>
@@ -135,7 +155,7 @@
       </div>
 
       <div style="background:#F3F8FF;">
-        <div class="con">
+        <div class="con common_container">
           <div>
             <img src="/imges/index/index_4.png" alt />
           </div>
@@ -154,7 +174,7 @@
         <span style="margin:0 10px">BitDNS路线图</span>
         <i></i>
       </div>
-      <div class="chart">
+      <div class="chart common_container">
         <!--时间线-->
         <div class="timeLine">
             <div class="ul_box">
@@ -192,8 +212,8 @@
         <span style="margin:0 10px">新闻资讯</span>
         <i></i>
       </div>
-    
-      <div style="display:flex;margin:0 auto;justify-content: space-between;" >
+
+      <div style="display:flex;margin:0 auto;justify-content: space-between;  flex-wrap: wrap;" >
         <div class="news_left">
           <div class="day1"> <h3 style="padding-top:15px">{{this.newsDay}}</h3><p>{{this.newsMonth}}</p></div>
           <div class="news_left_botText">
@@ -237,6 +257,8 @@ import {swiperList, newLink, home_technologyAdvantage} from "@/locales/globalDat
 export default {
   data() {
     return {
+        //  screenWidth: false,     // 轮播
+        //  screenWidth2: true,     // 列表
       show: false,
       show1: false,
       show3: false,
@@ -320,15 +342,11 @@ export default {
     
   },
 
-  created(){
-function isIE() { //ie?
- if (!!window.ActiveXObject || "ActiveXObject" in window)
-  console.log("是")
-  else
-   console.log("不是")
- }
-//  console.log(swiperList)
-  },
+  // watch:{
+  //   screenWidth(val,oldval){
+  //     console.log(val,oldval)
+  //   },deep:true
+  // },
   computed: {
       swiper() {
         return this.$refs.mySwiper.$swiper
@@ -337,7 +355,9 @@ function isIE() { //ie?
    mounted() {
       this.swiper.slideTo(3, 1000, true)
     },
+    
     methods: {
+
       prev() {
         this.$refs.mySwiper.$swiper.slidePrev();
       },
@@ -371,12 +391,11 @@ function isIE() { //ie?
 <style lang='less'>
 .container {
   .block {
-    width: 1200px;
-    margin: 0 auto;
-    padding: 96px 0 86px;
+    padding: 96px 0;
     ul {
       display: flex;
       justify-content: center;
+      
 
       li {
         width: 237px;
@@ -420,12 +439,10 @@ function isIE() { //ie?
       margin: 43px 0 24px;
     }
     .centens {
-      margin: 0 auto;
-      width: 1200px;
       border: 1px solid rgba(255, 255, 255, 0.1);
     }
     p {
-      width: 867px;
+      // width: 867px;
       margin: 0 auto;
       text-align: center;
       font-size: 14px;
@@ -448,9 +465,6 @@ function isIE() { //ie?
     background-position: center;
     background-size: 100% 100%;
     .content {
-      // border: 1px solid red;
-      width: 900px;
-      margin: 0 auto;
       position: relative;
       top: 50%;
       transform: translateY(-50%);
@@ -489,7 +503,7 @@ function isIE() { //ie?
       padding: 30px 0;
     }
     .swiper-slide{
-      width: 250px;
+      width: 250px !important;
       height: 247px;
       background: white;
       padding: 15px;
@@ -510,21 +524,53 @@ function isIE() { //ie?
   }
 }
 .BITDNS {
-  text-align: center;
 
-  img {
-    width: 1200px;
-    height: 443px;
-    margin: 0 auto;
-  }
+  text-align: center;
+   @media screen and (max-width: 750px) {
+    
+    .img{
+        width: 691px;
+        height: 255px;
+    }
+}
+   
+
 }
 
 .jishu {
   .list {
-    width: 1200px;
-    // border: 1px solid red;
-    margin: 0 auto;
 
+
+.el-carousel__container{
+  width: 300px;
+  overflow: hidden;
+  margin: 0 auto;
+  border: 1px solid red;
+}
+      @media screen and (max-width:750px){
+        ul{
+          display: none !important;
+        }
+        .swiperList{
+        display: block;
+        }
+      }
+      @media screen and (min-width:750px){
+        ul{
+          display: none;
+        }
+         .swiperList{
+        display: block;
+        }
+      }
+      .el-carousel-item {
+  position: relative;
+        width: 285px;
+        height: 365px;
+          margin: 0 auto;
+        margin-top: 38px;
+        text-align: center;
+      }
     ul {
       display: flex;
       flex-wrap: wrap;
@@ -533,9 +579,13 @@ function isIE() { //ie?
         position: relative;
         width: 285px;
         height: 365px;
+          margin: 0 auto;
         margin-top: 38px;
         text-align: center;
-        p {
+      }
+      
+    }
+    p {
           margin-top: 214px;
           font-size: 24px;
           font-family: PingFangSC-Semibold, PingFang SC;
@@ -550,7 +600,7 @@ function isIE() { //ie?
           position: absolute;
           top: 0px;
         }
-        .transition {
+ .transition {
           width: 285px;
         }
         .transition-box {
@@ -570,49 +620,62 @@ function isIE() { //ie?
           color: #ffffff;
           line-height: 23px;
         }
-      }
-      .img1 {
-        width: 285px;
+    .img1 {
+        width: 318px;
+    height: 408px;
         background: url("/imges/index/index_67.png") no-repeat;
         background-size: 100% 100%;
         background-position: center;
       }
       .img2 {
+        width: 318px;
+    height: 408px;
         background: url("/imges/index/index_54.png") no-repeat;
         background-size: 100% 100%;
         background-position: center;
       }
       .img3 {
+        width: 318px;
+    height: 408px;
         background: url("/imges/index/index_56.png") no-repeat;
         background-size: 100% 100%;
         background-position: center;
       }
       .img4 {
+        width: 318px;
+    height: 408px;
         background: url("/imges/index/index_58.png") no-repeat;
         background-size: 100% 100%;
         background-position: center;
       }
       .img5 {
+        width: 318px;
+    height: 408px;
         background: url("/imges/index/index_50.png") no-repeat;
         background-size: 100% 100%;
         background-position: center;
       }
       .img6 {
+        width: 318px;
+    height: 408px;
         background: url("/imges/index/index_62.png") no-repeat;
         background-size: 100% 100%;
         background-position: center;
       }
       .img7 {
+        width: 318px;
+    height: 408px;
         background: url("/imges/index/index_64.png") no-repeat;
         background-size: 100% 100%;
         background-position: center;
       }
       .img8 {
+        width: 318px;
+    height: 408px;
         background: url("/imges/index/index_66.png") no-repeat;
         background-size: 100% 100%;
         background-position: center;
       }
-    }
   }
 }
 .gn {
@@ -623,8 +686,6 @@ function isIE() { //ie?
   .con {
     display: flex;
     justify-content: space-around;
-    width: 1200px;
-    margin: 0 auto;
     padding: 83px 0;
 
     .con_content{
@@ -650,9 +711,7 @@ function isIE() { //ie?
 .route {
   .chart {
     position: relative;
-    width: 1200px;
     height: 473px;
-    margin: 0 auto;
     padding-top: 155px;
     background: url("/imges/index/index_ditu.png") no-repeat;
     background-position: center;
@@ -774,6 +833,15 @@ i {
 
 .news {
   padding-bottom: 70px;
+  
+  @media screen and (max-width:750px){
+    .news_left {
+      width: 650px !important;
+       margin: 0 auto;
+      margin-bottom: 50px;
+     
+      }
+  }
   .news_left {
     width: 519px;
     height: 445px;
@@ -787,7 +855,7 @@ i {
     color: #FFFFFF;
     line-height: 28px;
     position: relative;
-    display: flex;
+    display: flex;  
     justify-content: center;
     .news_left_botText{
       position: absolute;
@@ -801,6 +869,7 @@ i {
         padding: 0 26px;
       }
     }
+    
     .day1{
       width: 84px;
       height: 84px!important;
@@ -831,6 +900,7 @@ i {
         display:none;
 }
   .news_right{
+       margin: 0 auto;
     height: 445px;
     width: 652px;
     overflow: auto;

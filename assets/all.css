@@ -14,3 +14,16 @@ li{
     width: 1200px;
     margin: 0 auto;
 }
+.swiperWidth{
+    width:930px;
+    margin: 0 auto;
+}
+
+@media (max-width: 750px) {
+    .common_container{
+        width: 750px;
+        margin: 0 auto;
+    }
+  
+   
+}
