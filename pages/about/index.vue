@@ -4,18 +4,16 @@
       bgUrl="/imges/banna/banner_about.png"
       insideBgUrl="/imges/product/littleSquare.png"
       bgText="关于我们"
-    /> -->
-    <div class="about_top  common_container">
-  <div class="tit">
-          <i></i>
-          <p style="margin:0 10px">关于我们</p>
-          <i></i>
-        </div>
-        <div class="brief ">
-          <p>
-            BitDNS基金会位于新加坡，致力于打造全球首个区块链域名系统，构建连接信息互联网与价值区块链的超级枢纽，为区块链及分布式WEB4.0的发展贡献自己的力量。
-          </p>
-        </div>
+    />-->
+    <div class="about_top common_container">
+      <div class="tit">
+        <i></i>
+        <p style="margin:0 10px">关于我们</p>
+        <i></i>
+      </div>
+      <div class="brief">
+        <p>BitDNS基金会位于新加坡，致力于打造全球首个区块链域名系统，构建连接信息互联网与价值区块链的超级枢纽，为区块链及分布式WEB4.0的发展贡献自己的力量。</p>
+      </div>
     </div>
     <div class="content">
       <div class="common_container">
@@ -101,7 +99,7 @@
 <script>
 export default {
   head: {
-    title: '关于我们'
+    title: "关于我们"
   },
   data() {
     return {
@@ -114,210 +112,333 @@ export default {
 <style lang='less'>
 .about {
   width: 100%;
-  .about_top{
-     padding: 112px 0;
-     text-align: center;
-      @media (min-width:1024px){
-.brief{
-    width: 867px;
-height: 88px;
-margin: 0 auto;
- text-align: center;
-font-size: 18px;
-font-family: PingFangSC-Regular, PingFang SC;
-font-weight: 400;
-color: #3C3C3C;
-line-height: 35px;
-    }
-      }
-
- @media (max-width:1024px){
-       .brief{
-         
-   width: 100%;
-height: 144px;
-margin: 0 auto;
-font-size: 22px;
-font-family: PingFangSC-Regular, PingFang SC;
-font-weight: 400;
-color: #3C3C3C;
-line-height: 45px;
-    }
-    }
-    
-  }
-
-   
-
-  .content {
-    width: 100%;
-    height: 453px;
-    // padding: 101px 0 0 300px;
-    background: url("/imges/about/about_book.png") no-repeat;
-    background-size: 100% 100%;
+  .about_top {
+    text-align: center;
+    padding-bottom: 20px;
     box-sizing: border-box;
-    h4 {
-      font-size: 30px;
-      font-family: PingFangSC-Semibold, PingFang SC;
-      font-weight: 600;
-      color: #3c3c3c;
-      line-height: 42px;
+    @media (min-width: 980px) {
+      .brief {
+        width: 867px;
+        height: 88px;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 18px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #3c3c3c;
+        line-height: 35px;
+      }
     }
-    .text {
-      width: 520px;
-      height: 181px;
-      font-size: 18px;
-      font-family: PingFangSC-Regular, PingFang SC;
-      font-weight: 400;
-      color: #3c3c3c;
-      line-height: 43px;
-      padding-top: 100px;
 
-      .bitDnsTeamText{
-        margin-top: 28px;
+    @media (max-width: 980px) {
+      .brief {
+        padding: 0 20px;
+        box-sizing: border-box;
+        width: 100%;
+        height: 144px;
+        margin: 0 auto;
+        font-size: 22px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #3c3c3c;
+        line-height: 45px;
       }
     }
   }
-  .core {
-    width: 100%;
 
-    background: #f3f8ff;
+  @media (min-width: 980px) {
+    .content {
+      width: 100%;
+      height: 453px;
+      background: url("/imges/about/about_book.png") no-repeat;
+      background-size: 100% 100%;
+      box-sizing: border-box;
 
-    .peopleText{
-      margin-top: 15px;
-    }
-
-    .tit {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 97px 0;
-      font-size: 30px;
-      font-family: PingFangSC-Semibold, PingFang SC;
-      font-weight: 600;
-      color: #3c3c3c;
-      line-height: 42px;
-    }
-  }
-  i {
-    display: inline-block;
-    width: 30px;
-    height: 3px;
-    background: #2365ff;
-  }
-  ul {
-    display: flex;
-    flex-wrap: wrap;
-    div {
-      width: 260px;
-      font-size: 12px;
-      font-family: PingFangSC-Regular, PingFang SC;
-      font-weight: 400;
-      color: #787878;
-      line-height: 17px;
-      h3 {
-        font-size: 18px;
+      h4 {
+        font-size: 30px;
         font-family: PingFangSC-Semibold, PingFang SC;
         font-weight: 600;
-        color: #333333;
-        line-height: 25px;
+        color: #3c3c3c;
+        line-height: 42px;
+      }
+      .text {
+        width: 520px;
+        height: 181px;
+        font-size: 18px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #3c3c3c;
+        line-height: 43px;
+        padding-top: 100px;
+
+        .bitDnsTeamText {
+          margin-top: 27px;
+        }
       }
     }
-    li {
-      width: 554px;
-      height: 296px;
-      padding: 30px;
+  }
+
+  @media (max-width: 980px) {
+    .content {
+      width: 100%;
+      height: 508px;
+      background: url("/imges/h5_about/about_book.png") no-repeat;
+      background-size: 100% 100%;
+      padding: 92px 29px 57px 29px;
       box-sizing: border-box;
-      margin: 0 21px;
-      margin-bottom: 42px;
-    }
-    .img1 {
-      background: url("/imges/about/1.png") no-repeat;
-      background-position: center;
-      background-size: 100% 100%;
-    }
-    .img2 {
-      background: url("/imges/about/2.png") no-repeat;
-
-      background-position: center;
-      background-size: 100% 100%;
-    }
-    .img3 {
-      background: url("/imges/about/3.png") no-repeat;
-
-      background-position: center;
-      background-size: 100% 100%;
-    }
-  }
-
-  .adviser {
-    width: 100%;
-    padding-bottom: 107px;
-
-    background: #f3f8ff;
-    .peopleText{
-      margin-top: 15px;
-    }
-    .tit {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 97px 0;
-
-      font-size: 30px;
-      font-family: PingFangSC-Semibold, PingFang SC;
-      font-weight: 600;
-      color: #3c3c3c;
-      line-height: 42px;
-    }
-  }
-  i {
-    display: inline-block;
-    width: 30px;
-    height: 3px;
-    background: #2365ff;
-  }
-  ul {
-    display: flex;
-    flex-wrap: wrap;
-    div {
-      width: 260px;
-      font-size: 12px;
-      font-family: PingFangSC-Regular, PingFang SC;
-      font-weight: 400;
-      color: #787878;
-      line-height: 17px;
-      h3 {
-        font-size: 18px;
+      h4 {
+        font-size: 32px;
         font-family: PingFangSC-Semibold, PingFang SC;
         font-weight: 600;
-        color: #333333;
-        line-height: 25px;
+        color: #3c3c3c;
+        line-height: 45px;
+      }
+      .text {
+        width: 417px;
+        font-size: 22px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #3c3c3c;
+        line-height: 43px;
+        .bitDnsTeamText {
+          margin-top: 28px;
+        }
       }
     }
-    li {
-      width: 554px;
-      height: 296px;
-      padding: 30px;
-      box-sizing: border-box;
+  }
+  @media (min-width: 980px) {
+    .core {
+      width: 100%;
+      background: #f3f8ff;
     }
-    .img4 {
-      background: url("/imges/about/4.png") no-repeat;
-      background-position: center;
-      background-size: 100% 100%;
-    }
-    .img5 {
-      background: url("/imges/about/5.png") no-repeat;
 
-      background-position: center;
-      background-size: 100% 100%;
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      div {
+        width: 260px;
+        font-size: 12px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #787878;
+        line-height: 17px;
+        h3 {
+          font-size: 18px;
+          font-family: PingFangSC-Semibold, PingFang SC;
+          font-weight: 600;
+          color: #333333;
+          line-height: 25px;
+        }
+      }
+      li {
+        width: 554px;
+        height: 296px;
+        padding: 30px;
+        box-sizing: border-box;
+        margin: 0 21px;
+        margin-bottom: 42px;
+      }
+      img {
+        margin: 0 auto;
+      }
+      .img1 {
+        background: url("/imges/about/1.png") no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+      }
+      .img2 {
+        background: url("/imges/about/2.png") no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+      }
+      .img3 {
+        background: url("/imges/about/3.png") no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+      }
+    }
+  }
+
+  @media (max-width: 980px) {
+    .core {
+      width: 100%;
+      background: #f3f8ff;
+      .peopleText {
+        margin-top: 15px;
+      }
+    }
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      div {
+        width: 337px;
+        font-size: 16px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #787878;
+        line-height: 22px;
+        h3 {
+          font-size: 22px;
+          font-family: PingFangSC-Semibold, PingFang SC;
+          font-weight: 600;
+          color: #333333;
+          line-height: 30px;
+        }
+      }
+      li {
+        width: 691px;
+        height: 369px;
+        padding: 30px;
+        box-sizing: border-box;
+        margin: 0 21px;
+        margin-bottom: 42px;
+      }
+      img {
+        margin: 0 auto;
+      }
+      .img1 {
+        margin: 0 auto;
+        background: url("/imges/h5_about/1.png") no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+      }
+      .img2 {
+        background: url("/imges/h5_about/2.png") no-repeat;
+        margin: 0 auto;
+        background-position: center;
+        background-size: 100% 100%;
+      }
+      .img3 {
+        background: url("/imges/h5_about/3.png") no-repeat;
+        margin: 0 auto;
+        background-position: center;
+        background-size: 100% 100%;
+      }
+    }
+  }
+
+  @media (min-width: 980px) {
+    .adviser {
+      width: 100%;
+      padding-bottom: 107px;
+
+      background: #f3f8ff;
+      .peopleText {
+        width: 260px;
+        margin-top: 15px;
+      }
+
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        div {
+          width: 260px;
+          font-size: 12px;
+          font-family: PingFangSC-Regular, PingFang SC;
+          font-weight: 400;
+          color: #787878;
+          line-height: 17px;
+          h3 {
+            font-size: 18px;
+            width: 300px;
+            font-family: PingFangSC-Semibold, PingFang SC;
+            font-weight: 600;
+            color: #333333;
+            line-height: 25px;
+          }
+        }
+        li {
+          width: 554px;
+          height: 296px;
+          padding: 30px;
+          box-sizing: border-box;
+        }
+        .img4 {
+          margin: 0 auto;
+          background: url("/imges/about/4.png") no-repeat;
+          background-position: center;
+          background-size: 100% 100%;
+        }
+        .img5 {
+          background: url("/imges/about/5.png") no-repeat;
+          margin: 0 auto;
+          background-position: center;
+          background-size: 100% 100%;
+        }
+      }
+    }
+  }
+  @media (max-width: 980px) {
+    .adviser {
+      width: 100%;
+      padding-bottom: 107px;
+
+      background: #f3f8ff;
+      .peopleText {
+        margin-top: 15px;
+      }
+
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+
+        div {
+          width: 337px;
+          font-size: 16px;
+          font-family: PingFangSC-Regular, PingFang SC;
+          font-weight: 400;
+          color: #787878;
+          line-height: 22px;
+          h3 {
+            font-size: 22px;
+            font-family: PingFangSC-Semibold, PingFang SC;
+            font-weight: 600;
+            color: #333333;
+            line-height: 30px;
+          }
+        }
+        li {
+          width: 691px;
+          height: 369px;
+          padding: 30px;
+          margin: 0 21px;
+          box-sizing: border-box;
+        }
+        .img4 {
+          margin: 0 auto;
+          background: url("/imges/h5_about/4.png") no-repeat;
+          background-position: center;
+          background-size: 100% 100%;
+        }
+        .img5 {
+          background: url("/imges/h5_about/5.png") no-repeat;
+          margin: 0 auto;
+          background-position: center;
+          background-size: 100% 100%;
+        }
+      }
     }
   }
 
   .tit {
- 
-  margin: 0 0 24px;
-}
-
+    margin: 0 0 24px;
+  }
+  .tit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 97px 0;
+    font-size: 30px;
+    font-family: PingFangSC-Semibold, PingFang SC;
+    font-weight: 600;
+    color: #3c3c3c;
+    line-height: 42px;
+  }
+  i {
+    display: inline-block;
+    width: 30px;
+    height: 3px;
+    background: #2365ff;
+  }
 }
 </style>

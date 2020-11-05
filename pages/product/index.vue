@@ -1,15 +1,14 @@
 <template>
   <div class="domainService">
-    <Banner 
+    <!-- <Banner 
       bgUrl="/imges/banna/banner_about.png"
       insideBgUrl="/imges/product/littleSquare.png"
       bgText="BitDNS 域名服务"
       squareWidth="438px"
       showDes
-    />
+    /> -->
     <div class="common_container systemProblems">
       <BlockTit text="传统DNS域名系统的问题"/>
-
       <div class="systemProblems_content">
         <p>传统DNS域名系统由于历史原因，设计上高度中心化，整个系统的稳定严重依赖中心节点。DNS作为整个互联网服务的底层基础之一，每天处理来自全球数以十亿计的互联网访问请求。如果DNS服务器宕机，用户就无法接入互联网。由于其体系结构的脆弱性，容易造成大规模的网络瘫痪。因此在dWeb4.0时代，想要防止中心化垄断与作恶则需要全新的DNS系统。</p>
       </div>
@@ -18,7 +17,9 @@
     <div class="imgAndText_block">
       <div class="imgAndText_block_item">
         <div class="items_left">
-          <img src="/imges/product/domainService1.png" alt="">
+          <div class="itemImg1">
+
+          </div>
         </div>
 
         <div class="items_right">
@@ -29,7 +30,7 @@
         </div>
       </div>
 
-      <div class="imgAndText_block_item">
+      <div class="imgAndText_block_item web">
         <div class="items_left">
           <p class="items_rightText">
             <span>2014年9月，</span>
@@ -38,13 +39,37 @@
         </div>
 
         <div class="items_right">
-          <img src="/imges/product/domainService2.png" alt="">
+            <div class="itemImg2">
+
+            </div>
+         
+         
         </div>
       </div>
 
+       <div class="imgAndText_block_item h5">
+          <div class="items_right">
+            <div class="itemImg2">
+
+          </div>
+        </div>
+        <div class="items_left">
+          <p class="items_rightText">
+            <span>2014年9月，</span>
+            <span>大约有500万谷歌的账户和密码的数据库被泄露给一家俄罗斯互联网网络安全论坛。这些用户大多使用了Gmail邮件服务和美国互联网巨头的其他产品。</span>
+          </p>
+        </div>
+
+       
+      </div>
+
+
+
       <div class="imgAndText_block_item">
         <div class="items_left">
-          <img src="/imges/product/domainService3.png" alt="">
+          <div class="itemImg3">
+
+          </div>
         </div>
 
         <div class="items_right">
@@ -60,53 +85,68 @@
         <BlockTit text="BitDNS Vs Traditional DNS"/>
 
         <div class="bitDNSVsTraditionalDNS_img common_container">
-          <img src="/imges/product/bitDNSVsTraditionalDNS.png" alt="">
+
+        
         </div>
     </div>
 
     <div class="bitDNSTeams">
       <div class="common_container bitDNSTeams_content">
         <div class="topText">
-          <p class="teamsTit">BITDNS团队</p>
+          <p class="teamsTit">BITDNS域名服务使用场景</p>
           <p class="teamsDes">基于BitDNS的域名服务可以大幅降低普通用户参与区块链的门槛，通过域名服务，用户再也不用记忆看不懂且难以记忆的文件地址和 Hash 值，只要知道一个单词或一个短语就能进行文件访问、汇款转账、合约调用等。</p>
         </div>
 
         <div class="teamBlocks">
           <div class="teamBlocksItems">
             <div class="teamBlocksItem">
-              <img src="/imges/product/teams1.png" alt="" height="28px" width="25px">
+                <div class="teamImg1">
+
+              </div>
               <p>文件名</p>
             </div>
 
             <div class="teamBlocksItem">
-              <img src="/imges/product/teams2.png" alt="" height="28px" width="28px">
+              <div class="teamImg2">
+
+              </div>
               <p>简化哈希值</p>
             </div>
 
             <div class="teamBlocksItem">
-              <img src="/imges/product/teams3.png" alt="" height="25px" width="29px">
+             <div class="teamImg3">
+
+              </div>
               <p>邮件通信地址</p>
             </div>
           </div>
 
           <div class="teamBlocksItems">
             <div class="teamBlocksItem">
-              <img src="/imges/product/teams4.png" alt="" height="26px" width="33px">
+              <div class="teamImg4">
+
+              </div>
               <p>昵称转账</p>
             </div>
 
             <div class="teamBlocksItem">
-              <img src="/imges/product/teams5.png" alt="" height="21px" width="26px">
+              <div class="teamImg5">
+
+              </div>
               <p>公钥昵称</p>
             </div>
 
             <div class="teamBlocksItem">
-              <img src="/imges/product/teams6.png" alt="" height="26px" width="26px">
+              <div class="teamImg6">
+
+              </div>
               <p>子域名</p>
             </div>
 
             <div class="teamBlocksItem">
-              <img src="/imges/product/teams7.png" alt="" height="26px" width="26px">
+              <div class="teamImg7">
+
+              </div>
               <p>特殊域名收藏级交易</p>
             </div>
           </div>
@@ -117,21 +157,62 @@
 
     <div class="serviceFeatures">
       <BlockTit text="BITDNS域名服务特点"/>
-      <div class="common_container serviceFeatures_content">
+
+        <div class="h5">
+    <el-carousel type="card" height="200px" :loop="true" indicator-position="none" arrow="never" :autoplay="false">
+    <el-carousel-item>
+      <div class="serviceFeaturesItem">
+         <div class="swipeImg1">
+
+          </div>
+  
+          <p>去中心化</p>
+          <p>BitDNS的管理和服务均通过智能合约完成，完全去中心化，安全性和可信度非常高。</p>
+        </div>
+    </el-carousel-item>
+    <el-carousel-item>
+      <div class="serviceFeaturesItem">
+         <div class="swipeImg2">
+
+          </div>
+  
+          <p>去中心化</p>
+          <p>BitDNS的管理和服务均通过智能合约完成，完全去中心化，安全性和可信度非常高。</p>
+        </div>
+    </el-carousel-item>
+    <el-carousel-item>
+      <div class="serviceFeaturesItem">
+         <div class="swipeImg3">
+          </div>
+          <p>去中心化</p>
+          <p>BitDNS的管理和服务均通过智能合约完成，完全去中心化，安全性和可信度非常高。</p>
+        </div>
+    </el-carousel-item>
+  </el-carousel>
+        </div>
+
+
+      <div class="common_container serviceFeatures_content web">
         <div class="serviceFeaturesItem">
-          <img src="/imges/product/serviceFeatures1.png" alt="">
+          <div class="swipeImg1">
+
+          </div>
           <p>去中心化</p>
           <p>BitDNS的管理和服务均通过智能合约完成，完全去中心化，安全性和可信度非常高。</p>
         </div>
 
         <div class="serviceFeaturesItem">
-          <img src="/imges/product/serviceFeatures2.png" alt="">
+            <div class="swipeImg2">
+
+          </div>
+         
           <p>跨链交互</p>
           <p>BITDNS能够服务已有的公链生态，如以太坊、IPFS等， 让文件访问、地址转账、智能合约调用更方便、更快捷。</p>
         </div>
 
         <div class="serviceFeaturesItem">
-          <img src="/imges/product/serviceFeatures3.png" alt="">
+            <div class="swipeImg3">
+          </div>
           <p>可循环的经济模型</p>
           <p>BitDNS系统的流通通证DNS内置了激励池，所有系统产出费用会进入激励池，并按比例分配给DNS的持有人。</p>
         </div>
@@ -168,35 +249,38 @@
         <div class="exchangeItems">
           <p>交易所</p>
           <div class="exchangeImgs">
-            <img src="/imges/product/cornExchange1.png" alt="">
+            <div class="Exchange1">
+            </div>
           </div>
         </div>
         
         <div class="walletItems">
           <p>钱包</p>
           <div class="walletImgs">
-            <img src="/imges/product/cornWallet1.png" alt="">
-            <img src="/imges/product/cornWallet2.png" alt="">
-            <img src="/imges/product/cornWallet3.png" alt="">
+            <div class="cornWallet1"></div>
+            <div class="cornWallet2"></div>
+            <div class="cornWallet3"></div>
           </div>
         </div>
       </div>
 
-      <div class="DNS_exchangeAndWallet">
-        <BlockTit text="DNS上线交易所及钱包"/>
+      <div class="corn_exchangeAndWallet">
+        <BlockTit text="CORN上线交易所及钱包"/>
+
         <div class="exchangeItems">
           <p>交易所</p>
           <div class="exchangeImgs">
-            <img src="/imges/product/cornExchange1.png" alt="">
+            <div class="Exchange1">
+            </div>
           </div>
         </div>
         
         <div class="walletItems">
           <p>钱包</p>
           <div class="walletImgs">
-            <img src="/imges/product/cornWallet1.png" alt="">
-            <img src="/imges/product/cornWallet2.png" alt="">
-            <img src="/imges/product/cornWallet3.png" alt="">
+            <div class="cornWallet1"></div>
+            <div class="cornWallet2"></div>
+            <div class="cornWallet3"></div>
           </div>
         </div>
       </div>
@@ -216,6 +300,9 @@ export default {
 
 <style lang="less">
 .domainService{
+  
+
+@media (min-width:980px) {
   .systemProblems{
     height: 413px;
     background-color: #fff;
@@ -244,6 +331,7 @@ export default {
 
   .imgAndText_block{
 
+
     margin: 0 auto;
     .imgAndText_block_item{
       display: flex;
@@ -258,9 +346,26 @@ export default {
         justify-content: flex-end;
         flex: 1;
 
-        img{
-          height: 100%;
+        .itemImg1{
+            height: 100%;
           width: 100%;
+          background: url("/imges/product/domainService1.png") no-repeat;
+          background-position: center;
+          background-size: 100% 100%;
+        }
+         .itemImg2{
+            height: 100%;
+          width: 100%;
+          background: url("/imges/product/domainService2.png") no-repeat;
+          background-position: center;
+          background-size: 100% 100%;
+        }
+         .itemImg3{
+            height: 100%;
+          width: 100%;
+          background: url("/imges/product/domainService3.png") no-repeat;
+          background-position: center;
+          background-size: 100% 100%;
         }
       }
       
@@ -281,19 +386,148 @@ export default {
       }
     }
   }
+ .h5{
+        display: none !important;
+      }
+}
 
+@media (max-width:980px) {
+  .systemProblems{
+    height: 413px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+    
+  }
+
+  .systemProblems_content{
+  
+    display: flex;
+    width: 685px;
+    word-wrap: break-word;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #3C3C3C;
+    font-size: 22px;
+    line-height: 35px;
+     padding: 0 30px;
+    box-sizing: border-box;
+  }
+
+  @media screen and (min-width:1920px) {
+    .imgAndText_block{
+      max-width: 1920px;
+    }
+  }
+
+  .imgAndText_block{
+      
+    margin: 0 auto;
+      .test{
+        display: none;
+      }
+      
+    .imgAndText_block_item{
+      
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 100%;
+
+
+      .items_left, .items_right{
+        height: 363px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex: 1;
+
+      .itemImg1{
+            height: 100%;
+          width: 100%;
+          background: url("/imges/h5_product/domainService2.png") no-repeat;
+          background-position: center;
+          background-size: 100% 100%;
+        }
+         .itemImg2{
+            height: 100%;
+          width: 100%;
+          background: url("/imges/h5_product/domainService1.png") no-repeat;
+          background-position: center;
+          background-size: 100% 100%;
+        }
+         .itemImg3{
+            height: 100%;
+          width: 100%;
+          background: url("/imges/h5_product/domainService3.png") no-repeat;
+          background-position: center;
+          background-size: 100% 100%;
+        }
+      }
+      
+      .items_right{
+        justify-content: flex-start;
+      }
+
+      .items_rightText, .items_leftText{
+        
+        width: 688px;
+        color: #3C3C3C;
+        font-size: 20px;
+        line-height: 53px;
+        margin: 0 auto;
+        padding: 61px 30px;
+        span:first-child{
+          font-size: 30px;
+        }
+      }
+    }
+
+  
+  }
+  .web{
+        display: none !important;
+      }
+}
+
+
+@media (min-width:980px) {
   .bitDNSVsTraditionalDNS{
     height: 800px;
     background-color: #F3F8FF;
     .bitDNSVsTraditionalDNS_img{
-      img{
-        height: 441px;
+      height: 441px;
         width: 1192px;
-      }
+        background: url("/imges/product/bitDNSVsTraditionalDNS.png") no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
     }
   }
+}
 
-  .bitDNSTeams{
+  @media (max-width:980px) {
+    .bitDNSVsTraditionalDNS{
+    height: 1286px;
+    background-color: #F3F8FF;
+    .bitDNSVsTraditionalDNS_img{
+       height: 791px;
+        width: 691px;
+        
+        background: url("/imges/h5_product/bitDNSVsTraditionalDNS.png") no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+    }
+  }
+  }
+
+
+ 
+
+    @media (min-width:960px){
+       .bitDNSTeams{
     height: 736px;
     background: url("/imges/product/bitDNSTeams.png") no-repeat;
     background-size: 100% 100%;
@@ -339,10 +573,62 @@ export default {
             flex-direction: column;
             margin-right: 20px;
 
-            img{
+            .teamImg1{
+              width: 28px;
+              height: 28px;
+              background: url("/imges/product/teams1.png") no-repeat;
+              background-size: 100% 100%;
+              background-position: center;
               margin-bottom: 15px;
             }
-            
+            .teamImg2{
+              width: 28px;
+              height: 28px;
+              background: url("/imges/product/teams2.png") no-repeat;
+              background-size: 100% 100%;
+              background-position: center;
+              margin-bottom: 15px;
+            }
+            .teamImg3{
+              width: 28px;
+              height: 28px;
+              background: url("/imges/product/teams3.png") no-repeat;
+              background-size: 100% 100%;
+              background-position: center;
+              margin-bottom: 15px;
+            }
+            .teamImg4{
+              width: 28px;
+              height: 28px;
+              background: url("/imges/product/teams4.png") no-repeat;
+              background-size: 100% 100%;
+              background-position: center;
+              margin-bottom: 15px;
+            }
+            .teamImg5{
+              width: 28px;
+              height: 28px;
+              background: url("/imges/product/teams5.png") no-repeat;
+              background-size: 100% 100%;
+              background-position: center;
+              margin-bottom: 15px;
+            }
+            .teamImg6{
+              width: 28px;
+              height: 28px;
+              background: url("/imges/product/teams6.png") no-repeat;
+              background-size: 100% 100%;
+              background-position: center;
+              margin-bottom: 15px;
+            }
+            .teamImg7{
+              width: 28px;
+              height: 28px;
+              background: url("/imges/product/teams7.png") no-repeat;
+              background-size: 100% 100%;
+              background-position: center;
+              margin-bottom: 15px;
+            }
             p{
               font-size: 14px;
               color: #333333;
@@ -358,7 +644,132 @@ export default {
 
   }
 
-  .serviceFeatures{
+    }
+
+    @media (max-width:960px) {
+       .bitDNSTeams{
+    padding: 0 30px 155px;
+    
+    background: url("/imges/h5_product/bitDNSTeams.png") no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+
+    .bitDNSTeams_content{
+      .topText{
+        .teamsTit{
+          padding: 84px 0 32px;  
+          font-size: 30px;
+          font-weight: 600;
+          color: #FFFFFF;
+        }
+
+        .teamsDes{
+          width: 629px;
+          font-size: 18px;
+          font-weight: 400;
+          color: #FFFFFF;
+          line-height: 37px;
+        }
+      }
+
+      .teamBlocks{
+        display: flex;
+        flex-direction: column;
+        margin-top: 70px;
+
+        .teamBlocksItems{
+          display: flex;
+          flex-direction: row;
+          margin-bottom: 20px;
+
+          .teamBlocksItem{
+            display: flex;
+            height: 100px;
+            width: 136px;
+            padding-top: 36px;
+            background: url("/imges/product/bitDNSTeams_whiteBg.png") no-repeat;
+            background-size: 100% 100%;
+            background-position: center;
+            align-items: center;
+            flex-direction: column;
+            margin-right: 20px;
+
+          .teamImg1{
+              width: 28px;
+              height: 28px;
+              background: url("/imges/h5_product/teams1.png") no-repeat;
+              background-size: 100% 100%;
+              background-position: center;
+              margin-bottom: 15px;
+            }
+            .teamImg2{
+              width: 28px;
+              height: 28px;
+              background: url("/imges/h5_product/teams2.png") no-repeat;
+              background-size: 100% 100%;
+              background-position: center;
+              margin-bottom: 15px;
+            }
+            .teamImg3{
+              width: 28px;
+              height: 28px;
+              background: url("/imges/h5_product/teams3.png") no-repeat;
+              background-size: 100% 100%;
+              background-position: center;
+              margin-bottom: 15px;
+            }
+            .teamImg4{
+              width: 28px;
+              height: 28px;
+              background: url("/imges/h5_product/teams4.png") no-repeat;
+              background-size: 100% 100%;
+              background-position: center;
+              margin-bottom: 15px;
+            }
+            .teamImg5{
+              width: 28px;
+              height: 28px;
+              background: url("/imges/h5_product/teams5.png") no-repeat;
+              background-size: 100% 100%;
+              background-position: center;
+              margin-bottom: 15px;
+            }
+            .teamImg6{
+              width: 28px;
+              height: 28px;
+              background: url("/imges/h5_product/teams6.png") no-repeat;
+              background-size: 100% 100%;
+              background-position: center;
+              margin-bottom: 15px;
+            }
+            .teamImg7{
+              width: 28px;
+              height: 28px;
+              background: url("/imges/h5_product/teams7.png") no-repeat;
+              background-size: 100% 100%;
+              background-position: center;
+              margin-bottom: 15px;
+            }
+            p{
+              font-size: 14px;
+              color: #333333;
+              max-width: 84px;
+              text-align: center;
+            }
+          }
+          
+        }
+
+      }
+    }
+
+  }
+
+    }
+
+
+    @media (min-width:980px) {
+      .serviceFeatures{
     height: 503px;
 
     .serviceFeatures_content{
@@ -368,7 +779,9 @@ export default {
         
         margin-top: 15px;
 
-        .serviceFeaturesItem{
+       
+      }
+       .serviceFeaturesItem{
           width: 219px;
           height: 240px;
           background: #FFFFFF;
@@ -378,11 +791,30 @@ export default {
           align-items: center;
           flex-direction: column;
 
-          img{
+          .swipeImg1{
             margin: 41px 0 13px;
             height: 38px;
             width: 34px;
-          }
+            background: url("/imges/product/serviceFeatures1.png") no-repeat;
+            background-position: center;
+            background-size: 100% 100%;
+            }
+             .swipeImg2{
+            margin: 41px 0 13px;
+            height: 38px;
+            width: 34px;
+            background: url("/imges/product/serviceFeatures2.png") no-repeat;
+            background-position: center;
+            background-size: 100% 100%;
+            }
+             .swipeImg3{
+            margin: 41px 0 13px;
+            height: 38px;
+            width: 34px;
+            background: url("/imges/product/serviceFeatures3.png") no-repeat;
+            background-position: center;
+            background-size: 100% 100%;
+            }
 
           p:first-child{
             font-size: 14px;
@@ -400,10 +832,80 @@ export default {
             margin-top: 20px;
           }
         }
-      }
+  }
+  .h5{
+  display: none;
+  }
+    }
+  
+  @media (max-width:980px) {
+    .serviceFeatures{
+    height: 620px;
+
+    border: 1xp solid red;
+.el-carousel{
+  
+  padding: 30px;
+}
+       .serviceFeaturesItem{
+          width: 321px;
+          height:353px;
+          background: #FFFFFF;
+          
+          box-shadow: 0px 1px 7px 2px rgba(215, 215, 215, 0.5);
+          margin: 0 15px;
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          
+            .swipeImg1{
+            margin: 41px 0 13px;
+            height: 38px;
+            width: 34px;
+            background: url("/imges/h5_product/serviceFeatures1.png") no-repeat;
+            background-position: center;
+            background-size: 100% 100%;
+            }
+             .swipeImg2{
+            margin: 41px 0 13px;
+            height: 38px;
+            width: 34px;
+            background: url("/imges/h5_product/serviceFeatures2.png") no-repeat;
+            background-position: center;
+            background-size: 100% 100%;
+            }
+             .swipeImg3{
+            margin: 41px 0 13px;
+            height: 38px;
+            width: 34px;
+            background: url("/imges/h5_product/serviceFeatures3.png") no-repeat;
+            background-position: center;
+            background-size: 100% 100%;
+            }
+          p:first-child{
+            font-size: 14px;
+            font-weight: bold;
+            color: #656565;
+          }
+
+          p:last-child{
+            width: 169px;
+            font-size: 12px;
+            font-weight: normal;
+            color: #4A4A4A;
+            line-height: 19px;
+            text-align: center;
+            margin-top: 20px;
+          }
+        }
+  }
+  .web{
+    display: none;
+  }
   }
 
-  .tokenBonus{
+    @media (min-width:980px) {
+      .tokenBonus{
     height: 561px;
     background: url("/imges/product/tokenBonusBg.png") no-repeat;
     background-size: 100% 100%;
@@ -476,10 +978,94 @@ export default {
     }
   }
 
-  .exchangeAndWallet{
+    }
+
+    @media (max-width:980px) {
+      
+.tokenBonus{
+    height: 756px;
+    background: url("/imges/h5_product/tokenBonusBg.png") no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+
+    .tokenBonus_content{
+      display: flex;
+      flex-direction: column;
+
+      .tokenBonus_topContent{
+        // margin: 94px 0 71px;
+        // display: flex;
+        // justify-content: space-around;
+ 
+        .tokenBonus_topContent_left{
+          padding: 78px 32px 53px;
+             
+          p:first-child{
+            font-size: 20px;
+            font-weight: 600;
+            color: #333333;
+          }
+
+          p:last-child{
+            width: 629px;
+            font-size: 18px;
+            font-weight: 400;
+            color: #333333;
+            line-height: 37px;
+            margin-top: 25px;
+          }
+        }
+
+        .tokenBonus_topContent_right{
+          display: flex;
+          flex-direction: row;
+
+          div{
+            height: 95px;
+            width: 329px;
+            margin: 0 auto;
+            border: 1px solid #A9A9A9;
+            color: #666666;
+            font-size: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 600;
+          }
+
+          div:first-child{
+            margin-bottom: 55px;
+          }
+        }
+      }
+
+      .tokenBonus_bottomButton{
+        margin: 0 auto;
+        width: 297px;
+        height: 82px;
+        background-color: #005FFC;
+
+        a{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: #fff;
+          font-size: 18px;
+          height: 100%;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+    } 
+
+
+
+    @media (min-width: 980px) {
+      .exchangeAndWallet{
     height: 1484px;
     background-color: #fff;
-
     .corn_exchangeAndWallet, .DNS_exchangeAndWallet{
 
       .exchangeItems, .walletItems{
@@ -492,17 +1078,119 @@ export default {
         }
 
         .exchangeImgs, .walletImgs{
-          img{
-            height: 125px;
+           display: flex;
+          flex-wrap: wrap;
+          
+          width: 625px;
+            .Exchange1{
+           height: 125px;
             width: 285px;
             margin-right: 20px;
             margin-bottom: 38px;
+            background: url("/imges/product/cornExchange1.png") no-repeat;
+            background-size: 100% 100%;
+            background-position: center;
+          }
+          .cornWallet1{
+             height: 125px;
+            width: 285px;
+            margin-right: 20px;
+            margin-bottom: 38px;
+            background: url("/imges/product/cornWallet1.png") no-repeat;
+            background-size: 100% 100%;
+            background-position: center;
+          }
+          .cornWallet2{
+             height: 125px;
+            width: 285px;
+            margin-right: 20px;
+            margin-bottom: 38px;
+            background: url("/imges/product/cornWallet2.png") no-repeat;
+            background-size: 100% 100%;
+            background-position: center;
+          }
+          .cornWallet3{
+              height: 125px;
+            width: 285px;
+            margin-right: 20px;
+            margin-bottom: 38px;
+            background: url("/imges/product/cornWallet3.png") no-repeat;
+            background-size: 100% 100%;
+            background-position: center;
           }
         }
       }
     }
   }
-  
-}
+    }
 
+   
+ @media (max-width:980px) {
+   .exchangeAndWallet{
+       
+       padding: 0 30px;
+       box-sizing: border-box;
+    height: 1575px;
+    background-color: #fff;
+    .corn_exchangeAndWallet, .DNS_exchangeAndWallet{
+  
+      .exchangeItems, .walletItems{
+
+        p{
+          font-size: 30px;
+          font-weight: 600;
+          color: #333333;
+          margin-bottom: 38px;
+        }
+
+        .exchangeImgs, .walletImgs{
+          display: flex;
+          flex-wrap: wrap;
+          
+          width: 625px;
+            .Exchange1{
+          height: 100px;
+            width: 290px;
+            margin-right: 20px;
+            margin-bottom: 38px;
+            background: url("/imges/h5_product/cornExchange1.png") no-repeat;
+            background-size: 100% 100%;
+            background-position: center;
+          }
+          .cornWallet1{
+            height: 100px;
+            width: 290px;
+            margin-right: 20px;
+            margin-bottom: 38px;
+            background: url("/imges/h5_product/cornWallet1.png") no-repeat;
+            background-size: 100% 100%;
+            background-position: center;
+          }
+          .cornWallet2{
+            height: 100px;
+            width: 290px;
+            margin-right: 20px;
+            margin-bottom: 38px;
+            background: url("/imges/h5_product/cornWallet2.png") no-repeat;
+            background-size: 100% 100%;
+            background-position: center;
+          }
+          .cornWallet3{
+            height: 100px;
+            width: 290px;
+            margin-right: 20px;
+            margin-bottom: 38px;
+            background: url("/imges/h5_product/cornWallet3.png") no-repeat;
+            background-size: 100% 100%;
+            background-position: center;
+          }
+        }
+      }
+    }
+  }
+ }
+
+}
+ 
+    
 </style>
