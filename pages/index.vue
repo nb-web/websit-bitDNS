@@ -539,10 +539,11 @@ export default {
 
 .jishu {
   .list {
-
+  width: 1200px;
+      margin: 0 auto;
 
 .el-carousel__container{
-  width: 300px;
+  width: 700px;
   overflow: hidden;
   margin: 0 auto;
   border: 1px solid red;
@@ -572,6 +573,7 @@ export default {
         text-align: center;
       }
     ul {
+    width: 100%;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
@@ -583,9 +585,7 @@ export default {
         margin-top: 38px;
         text-align: center;
       }
-      
-    }
-    p {
+       p {
           margin-top: 214px;
           font-size: 24px;
           font-family: PingFangSC-Semibold, PingFang SC;
@@ -605,7 +605,7 @@ export default {
         }
         .transition-box {
           position: relative;
-          width: 285px;
+          width: 318px;
           height: 339px;
           border-radius: 4px;
           background-color: #2365ff;
@@ -613,65 +613,53 @@ export default {
           color: #fff;
           padding: 125px 20px 0;
           box-sizing: border-box;
-
           font-size: 12px;
           font-family: PingFangSC-Regular, PingFang SC;
           font-weight: 400;
           color: #ffffff;
           line-height: 23px;
         }
+      
+    }
+   
     .img1 {
-        width: 318px;
-    height: 408px;
+
         background: url("/imges/index/index_67.png") no-repeat;
         background-size: 100% 100%;
         background-position: center;
       }
       .img2 {
-        width: 318px;
-    height: 408px;
+
         background: url("/imges/index/index_54.png") no-repeat;
         background-size: 100% 100%;
         background-position: center;
       }
       .img3 {
-        width: 318px;
-    height: 408px;
         background: url("/imges/index/index_56.png") no-repeat;
         background-size: 100% 100%;
         background-position: center;
       }
       .img4 {
-        width: 318px;
-    height: 408px;
         background: url("/imges/index/index_58.png") no-repeat;
         background-size: 100% 100%;
         background-position: center;
       }
       .img5 {
-        width: 318px;
-    height: 408px;
         background: url("/imges/index/index_50.png") no-repeat;
         background-size: 100% 100%;
         background-position: center;
       }
       .img6 {
-        width: 318px;
-    height: 408px;
         background: url("/imges/index/index_62.png") no-repeat;
         background-size: 100% 100%;
         background-position: center;
       }
       .img7 {
-        width: 318px;
-    height: 408px;
         background: url("/imges/index/index_64.png") no-repeat;
         background-size: 100% 100%;
         background-position: center;
       }
       .img8 {
-        width: 318px;
-    height: 408px;
         background: url("/imges/index/index_66.png") no-repeat;
         background-size: 100% 100%;
         background-position: center;

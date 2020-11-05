@@ -1,10 +1,22 @@
 <template>
   <div class="about">
-    <Banner 
+    <!-- <Banner 
       bgUrl="/imges/banna/banner_about.png"
       insideBgUrl="/imges/product/littleSquare.png"
       bgText="关于我们"
-    />
+    /> -->
+    <div class="about_top  common_container">
+  <div class="tit">
+          <i></i>
+          <p style="margin:0 10px">关于我们</p>
+          <i></i>
+        </div>
+        <div class="brief ">
+          <p>
+            BitDNS基金会位于新加坡，致力于打造全球首个区块链域名系统，构建连接信息互联网与价值区块链的超级枢纽，为区块链及分布式WEB4.0的发展贡献自己的力量。
+          </p>
+        </div>
+    </div>
     <div class="content">
       <div class="common_container">
         <div class="text">
@@ -102,6 +114,41 @@ export default {
 <style lang='less'>
 .about {
   width: 100%;
+  .about_top{
+     padding: 112px 0;
+     text-align: center;
+      @media (min-width:1024px){
+.brief{
+    width: 867px;
+height: 88px;
+margin: 0 auto;
+ text-align: center;
+font-size: 18px;
+font-family: PingFangSC-Regular, PingFang SC;
+font-weight: 400;
+color: #3C3C3C;
+line-height: 35px;
+    }
+      }
+
+ @media (max-width:1024px){
+       .brief{
+         
+   width: 100%;
+height: 144px;
+margin: 0 auto;
+font-size: 22px;
+font-family: PingFangSC-Regular, PingFang SC;
+font-weight: 400;
+color: #3C3C3C;
+line-height: 45px;
+    }
+    }
+    
+  }
+
+   
+
   .content {
     width: 100%;
     height: 453px;
