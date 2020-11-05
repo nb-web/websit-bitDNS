@@ -32,15 +32,17 @@
           <span style="margin:0 10px">BitDNS</span>
           <i></i>
         </div>
-        <p>
-          BitDNS是分布式互联网的核心基础设施，就如同IPFS解决的是下一代互联网的储存问题，BitDNS解决的则是下一代互联网的域名解析问题。在BitDNS的网络中，用户拥有绝对的自主权，域名完全去中心化，BitDNS通过BitUID、钱包、路由器等基础设施来构建分布式域名，
-          除此之外BitDNS的愿景是通过连接多数主流公链、主流工程技术（如：IPFS技术、Etherum、EOS、Fabric、R3、IPv8技术，
-          共同构成下一代分布式互联网的超级枢纽——dWeb4.0。
-        </p>
+        <div class="centens_text">
+          <p>
+            BitDNS是分布式互联网的核心基础设施，就如同IPFS解决的是下一代互联网的储存问题，BitDNS解决的则是下一代互联网的域名解析问题。在BitDNS的网络中，用户拥有绝对的自主权，域名完全去中心化，BitDNS通过BitUID、钱包、路由器等基础设施来构建分布式域名，
+            除此之外BitDNS的愿景是通过连接多数主流公链、主流工程技术（如：IPFS技术、Etherum、EOS、Fabric、R3、IPv8技术，
+            共同构成下一代分布式互联网的超级枢纽——dWeb4.0。
+          </p>
+        </div>
+        
       </div>
     </div>
     <div class="swipe">
-
       <div class="content swiperWidth">
         <swiper ref="mySwiper" :options="swiperOptions">
           <swiper-slide v-for=" (item,index) in swiperList2" :key="index">
@@ -60,13 +62,13 @@
 
     </div>
 
-    <div class="BITDNS">
+    <div class="BITDNS common_container">
       <div class="tit">
         <i></i>
         <span style="margin:0 10px">BITDNS Tech Tree</span>
         <i></i>
       </div>
-      <img class="common_container Tree" src="/imges/index/index_tree.png" alt />
+      <img class="Tree" src="/imges/index/index_tree.png" alt />
     </div>
 
     <div class="jishu">
@@ -78,22 +80,20 @@
       </div>
 
      
-      <div   class="list  common_container">
-       
-
- <div class="swiperList">
-           <el-carousel type="card" :loop="true" indicator-position="none" arrow="never" :autoplay="false">
-    <el-carousel-item v-for="(item,index) in technologyAdvantageList" :key="index" @mouseover="show = index+1" @mouseleave="()=>{show = 0}" :class="`img${index+1}`">
-        <p>{{item.name}}</p>
-            <div class="model">
-              <el-collapse-transition>
-                <div v-show="show == index+1">
-                  <div class="transition-box">{{item.detail}}</div>
+      <div class="list  common_container">
+        <div class="swiperList">
+          <el-carousel type="card" :loop="true" indicator-position="none" arrow="never" :autoplay="false">
+            <el-carousel-item v-for="(item,index) in technologyAdvantageList" :key="index" @mouseover="show = index+1" @mouseleave="()=>{show = 0}" :class="`img${index+1}`">
+                <p>{{item.name}}</p>
+                <div class="model">
+                  <el-collapse-transition>
+                    <div v-show="show == index+1">
+                      <div class="transition-box">{{item.detail}}</div>
+                    </div>
+                  </el-collapse-transition>
                 </div>
-              </el-collapse-transition>
-            </div>
-    </el-carousel-item>
-  </el-carousel>
+            </el-carousel-item>
+          </el-carousel>
         </div>
 
         <ul>
@@ -135,7 +135,7 @@
           <div>
             <img src="/imges/index/index_1.png" alt />
           </div>
-          <div style="width:401px">
+          <div class="con_content">
             <h3>离线钱包</h3>
             <p>支持主流区块链钱包；作为域名系统、BitUID系统、dWeb4.0应用市场的载体；支持PC/手机/路由器多端多设备。</p>
           </div>
@@ -144,7 +144,7 @@
 
       <div>
         <div class="con common_container">
-          <div style="width:401px">
+          <div class="con_content">
             <h3>域名系统</h3>
             <p>支持域名解析服务、注册买卖域名、域名解析设置、传统域名映射、域名专属昵称、域名动态解析。</p>
           </div>
@@ -159,7 +159,7 @@
           <div>
             <img src="/imges/index/index_4.png" alt />
           </div>
-          <div style="width:401px">
+          <div class="con_content">
             <h3>应用市场</h3>
             <p>dMail加密邮箱、dWeb分布式网站、dSNS社交网络、dChat分布式聊天、dVideo短视频、dGame游戏/VR。</p>
           </div>
@@ -402,7 +402,7 @@ export default {
         height: 258px;
         background: url("/imges/index/index_box.png") no-repeat;
         background-position: center;
-        background-size: 100% 100%;
+        background-size: cover;
         text-align: center;
         line-height: 35px;
         margin: 0 10px;
@@ -427,7 +427,7 @@ export default {
     height: 305px;
     background: url("/imges/index/index_bit.png") no-repeat;
     background-position: center;
-    background-size: 100% 100%;
+    background-size: cover;
     .tit {
       display: flex;
       align-items: center;
@@ -436,7 +436,7 @@ export default {
       font-family: PingFangSC-Semibold, PingFang SC;
       font-weight: 600;
       color: #3c3c3c;
-      margin: 43px 0 24px;
+      // margin: 43px 0 24px;
     }
     .centens {
       border: 1px solid rgba(255, 255, 255, 0.1);
@@ -463,18 +463,25 @@ export default {
     height: 417px;
     background: url("/imges/index/index_lunbo.png") no-repeat;
     background-position: center;
-    background-size: 100% 100%;
+    background-size: cover;
     .content {
       position: relative;
       top: 50%;
       transform: translateY(-50%);
       text-align: center;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
       .spimg{
         width: 48px;
         height: 48px;
         margin: 0 auto;
         border-radius:50% ;
-        margin-top: -47px;
+        margin-top: -40px;
+        img{
+          height: 100%;
+          width: 100%;
+        }
       }
       h5{
         margin: 16px 0;
@@ -503,7 +510,7 @@ export default {
       padding: 30px 0;
     }
     .swiper-slide{
-      width: 250px !important;
+      width: 250px;
       height: 247px;
       background: white;
       padding: 15px;
@@ -522,8 +529,56 @@ export default {
       font-size: 12px;
     }
   }
+
+  @media (min-width: 2880px) and (max-width: 3840px) {
+    .centens {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .centens_text{
+        height: 215px;
+        width: 867px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+    .swipe {
+      height: 626px;
+    }
+    .bitDns {
+      height: 458px;
+    }
+  }
+
+  @media (max-width: 1680px) {
+    .swipe {
+      height: 365px;
+    }
+    .bitDns {
+      height: 267px;
+    }
+  }
+
+  @media (min-width: 1024px) and (max-width: 1440px) {
+    .swipe {
+      height: 313px;
+    }
+    .bitDns {
+      height: 229px;
+    }
+  }
 }
 .BITDNS {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .Tree{
+    height: 364px;
+    width: 989px;
+  }
 
   text-align: center;
    @media screen and (max-width: 750px) {
@@ -539,41 +594,41 @@ export default {
 
 .jishu {
   .list {
-  width: 1200px;
-      margin: 0 auto;
+    width: 1200px;
+    margin: 0 auto;
 
-.el-carousel__container{
-  width: 700px;
-  overflow: hidden;
-  margin: 0 auto;
-  border: 1px solid red;
-}
-      @media screen and (max-width:750px){
-        ul{
-          display: none !important;
-        }
+    .el-carousel__container{
+      width: 700px;
+      overflow: hidden;
+      margin: 0 auto;
+      border: 1px solid red;
+    }
+    @media screen and (max-width:750px){
+      ul{
+        display: none !important;
+      }
+      .swiperList{
+      display: block;
+      }
+    }
+    @media screen and (min-width:750px){
+      ul{
+        display: none;
+      }
         .swiperList{
-        display: block;
-        }
+      display: block;
       }
-      @media screen and (min-width:750px){
-        ul{
-          display: none;
-        }
-         .swiperList{
-        display: block;
-        }
-      }
-      .el-carousel-item {
-  position: relative;
-        width: 285px;
-        height: 365px;
-          margin: 0 auto;
-        margin-top: 38px;
-        text-align: center;
-      }
+    }
+    .el-carousel-item {
+      position: relative;
+      width: 285px;
+      height: 365px;
+      margin: 0 auto;
+      margin-top: 38px;
+      text-align: center;
+    }
     ul {
-    width: 100%;
+      width: 100%;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
@@ -581,7 +636,7 @@ export default {
         position: relative;
         width: 285px;
         height: 365px;
-          margin: 0 auto;
+        margin: 0 auto;
         margin-top: 38px;
         text-align: center;
       }
@@ -600,18 +655,22 @@ export default {
           position: absolute;
           top: 0px;
         }
- .transition {
+        .transition {
           width: 285px;
         }
         .transition-box {
           position: relative;
-          width: 318px;
+          // width: 318px;
           height: 339px;
           border-radius: 4px;
           background-color: #2365ff;
           text-align: center;
           color: #fff;
-          padding: 125px 20px 0;
+          // padding: 125px 20px 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 0 10px;
           box-sizing: border-box;
           font-size: 12px;
           font-family: PingFangSC-Regular, PingFang SC;
@@ -625,43 +684,43 @@ export default {
     .img1 {
 
         background: url("/imges/index/index_67.png") no-repeat;
-        background-size: 100% 100%;
+        background-size: cover;
         background-position: center;
       }
       .img2 {
 
         background: url("/imges/index/index_54.png") no-repeat;
-        background-size: 100% 100%;
+        background-size: cover;
         background-position: center;
       }
       .img3 {
         background: url("/imges/index/index_56.png") no-repeat;
-        background-size: 100% 100%;
+        background-size: cover;
         background-position: center;
       }
       .img4 {
         background: url("/imges/index/index_58.png") no-repeat;
-        background-size: 100% 100%;
+        background-size: cover;
         background-position: center;
       }
       .img5 {
         background: url("/imges/index/index_50.png") no-repeat;
-        background-size: 100% 100%;
+        background-size: cover;
         background-position: center;
       }
       .img6 {
         background: url("/imges/index/index_62.png") no-repeat;
-        background-size: 100% 100%;
+        background-size: cover;
         background-position: center;
       }
       .img7 {
         background: url("/imges/index/index_64.png") no-repeat;
-        background-size: 100% 100%;
+        background-size: cover;
         background-position: center;
       }
       .img8 {
         background: url("/imges/index/index_66.png") no-repeat;
-        background-size: 100% 100%;
+        background-size: cover;
         background-position: center;
       }
   }
@@ -678,6 +737,9 @@ export default {
 
     .con_content{
       width: 401px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
   }
   h3 {
@@ -703,7 +765,7 @@ export default {
     padding-top: 155px;
     background: url("/imges/index/index_ditu.png") no-repeat;
     background-position: center;
-    background-size: 100% 100%;
+    background-size: cover;
     box-sizing: border-box;
     overflow: hidden;
   }
@@ -834,7 +896,7 @@ i {
     width: 519px;
     height: 445px;
     background: url("/imges/index/news1.png");
-    background-size: 100% 100%;
+    background-size: cover;
     background-position: center;
     text-align: center;
     font-size: 20px;
@@ -885,10 +947,10 @@ i {
     }
   }
    .news_right::-webkit-scrollbar{
-        display:none;
-}
+    display:none;
+  }
   .news_right{
-       margin: 0 auto;
+    margin: 0 auto;
     height: 445px;
     width: 652px;
     overflow: auto;
@@ -913,23 +975,194 @@ i {
   .day{
     width: 84px;
     height: 84px;
-background: #669AEE;
-color: white;
+    background: #669AEE;
+    color: white;
 
-h3{
-font-size: 53px;
-font-family: PingFangSC-Medium, PingFang SC;
-font-weight: 500;
-color: #FFFFFF;
-}
-p{
-font-size: 21px;
-font-family: PingFangSC-Regular, PingFang SC;
-font-weight: 400;
-color: #FFFFFF;
-letter-spacing: 1px;
-}
+    h3{
+      font-size: 53px;
+      font-family: PingFangSC-Medium, PingFang SC;
+      font-weight: 500;
+      color: #FFFFFF;
+    }
+    p{
+      font-size: 21px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      color: #FFFFFF;
+      letter-spacing: 1px;
+    }
   }
  
 }
+
+// @media (min-width: 2880px) and (max-width: 3840px) {
+  //   .Tree{
+  //     height: 243px;
+  //     width: 243px;
+  //   }
+  // }
+
+  @media (max-width: 1680px) {
+    .BITDNS{
+      .Tree{
+        height: 319px;
+        width: 865px;
+      }
+    }
+    .jishu{
+      .list{
+        ul{
+          width: 897px;
+          margin: 0 auto;
+          p {
+            margin-top: 164px;
+            font-size: 16px;
+          }
+          li, .transition-box {
+            height: 273px;
+            width: 213px;
+          }
+          .transition-box{
+            height: 251px;
+            padding: 0 10px;
+            font-size: 12px;
+            line-height: normal;
+          }
+        }
+      }
+    }
+
+    .gn {
+      
+      img {
+        height: 271px;
+      }
+      .con {
+        width: 1054px!important;
+        margin: 0 auto;
+        padding: 55px 0;
+
+        .con_content{
+          width: 267px;
+        }
+      }
+      h3 {
+        font-size: 26px;
+        line-height: normal;
+      }
+      p {
+        margin-top: 19px;
+        font-size: 16px;
+        line-height: normal;
+      }
+    }
+    .route{}
+  }
+
+  @media (max-width: 1440px) {
+    .BITDNS{
+    .Tree{
+      height: 273px;
+      width: 742px;
+    }
+    }
+    .jishu{
+      .list{
+        ul{
+          width: 770px;
+          margin: 0 auto;
+          p {
+            margin-top: 140px;
+            font-size: 14px;
+          }
+          li, .transition-box {
+            height: 234px;
+            width: 182px;
+          }
+          .transition-box{
+            height: 212px;
+            padding: 0 10px;
+            font-size: 12px;
+            line-height: normal;
+          }
+        }
+      }
+    }
+    .gn {
+      img {
+        height: 233px;
+      }
+      .con {
+        width: 903px!important;
+        padding: 62px 0;
+
+        .con_content{
+          width: 300px;
+        }
+      }
+      h3 {
+        font-size: 23px;
+        line-height: normal;
+      }
+      p {
+        margin-top: 17px;
+        font-size: 14px;
+        line-height: normal;
+      }
+    }
+  }
+
+  @media (min-width: 1024px) and (max-width: 1280px) {
+    .BITDNS{
+    .Tree{
+      height: 243px;
+      width: 659px;
+    }
+    }
+    .jishu{
+      .list{
+        ul{
+          width: 682px;
+          margin: 0 auto;
+          p {
+            margin-top: 124px;
+            font-size: 12px;
+          }
+          li, .transition-box {
+            height: 208px;
+            width: 162px;
+          }
+          .transition-box{
+            height: 190px;
+            padding: 0 10px;
+            font-size: 12px;
+            line-height: normal;
+          }
+        }
+      }
+    }
+
+    .gn {
+      img {
+        height: 207px;
+      }
+      .con {
+        width: 803px!important;
+        padding: 55px 0;
+
+        .con_content{
+          width: 267px;
+        }
+      }
+      h3 {
+        font-size: 20px;
+        line-height: normal;
+      }
+      p {
+        margin-top: 15px;
+        font-size: 12px;
+        line-height: normal;
+      }
+    }
+  }
 </style>

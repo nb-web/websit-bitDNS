@@ -486,7 +486,7 @@ export default {
     }
   }
 
-  @media (min-width: 950px) {
+  @media (min-width: 980px) {
     .economicCycle {
       height: 827px;
       width: 100%;
@@ -531,7 +531,7 @@ export default {
     }
   }
 
-  @media (max-width: 950px) {
+  @media (max-width: 980px) {
     .economicCycle {
        
       padding: 94px 30px;

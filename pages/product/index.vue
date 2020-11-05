@@ -351,21 +351,21 @@ export default {
           width: 100%;
           background: url("/imges/product/domainService1.png") no-repeat;
           background-position: center;
-          background-size: 100% 100%;
+          background-size: cover;
         }
          .itemImg2{
             height: 100%;
           width: 100%;
           background: url("/imges/product/domainService2.png") no-repeat;
           background-position: center;
-          background-size: 100% 100%;
+          background-size: cover;
         }
          .itemImg3{
             height: 100%;
           width: 100%;
           background: url("/imges/product/domainService3.png") no-repeat;
           background-position: center;
-          background-size: 100% 100%;
+          background-size: cover;
         }
       }
       
@@ -450,21 +450,21 @@ export default {
           width: 100%;
           background: url("/imges/h5_product/domainService2.png") no-repeat;
           background-position: center;
-          background-size: 100% 100%;
+          background-size: cover;
         }
          .itemImg2{
             height: 100%;
           width: 100%;
           background: url("/imges/h5_product/domainService1.png") no-repeat;
           background-position: center;
-          background-size: 100% 100%;
+          background-size: cover;
         }
          .itemImg3{
             height: 100%;
           width: 100%;
           background: url("/imges/h5_product/domainService3.png") no-repeat;
           background-position: center;
-          background-size: 100% 100%;
+          background-size: cover;
         }
       }
       
@@ -498,12 +498,13 @@ export default {
   .bitDNSVsTraditionalDNS{
     height: 800px;
     background-color: #F3F8FF;
+    text-align: center;
     .bitDNSVsTraditionalDNS_img{
       height: 441px;
         width: 1192px;
         background: url("/imges/product/bitDNSVsTraditionalDNS.png") no-repeat;
         background-position: center;
-        background-size: 100% 100%;
+        background-size: cover;
     }
   }
 }
@@ -518,7 +519,7 @@ export default {
         
         background: url("/imges/h5_product/bitDNSVsTraditionalDNS.png") no-repeat;
         background-position: center;
-        background-size: 100% 100%;
+        background-size: cover;
     }
   }
   }
@@ -526,11 +527,11 @@ export default {
 
  
 
-    @media (min-width:960px){
+    @media (min-width:980px){
        .bitDNSTeams{
     height: 736px;
     background: url("/imges/product/bitDNSTeams.png") no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
     background-position: center;
 
     .bitDNSTeams_content{
@@ -567,7 +568,7 @@ export default {
             width: 136px;
             padding-top: 36px;
             background: url("/imges/product/bitDNSTeams_whiteBg.png") no-repeat;
-            background-size: 100% 100%;
+            background-size: cover;
             background-position: center;
             align-items: center;
             flex-direction: column;
@@ -577,7 +578,7 @@ export default {
               width: 28px;
               height: 28px;
               background: url("/imges/product/teams1.png") no-repeat;
-              background-size: 100% 100%;
+              background-size: cover;
               background-position: center;
               margin-bottom: 15px;
             }
@@ -585,7 +586,7 @@ export default {
               width: 28px;
               height: 28px;
               background: url("/imges/product/teams2.png") no-repeat;
-              background-size: 100% 100%;
+              background-size: cover;
               background-position: center;
               margin-bottom: 15px;
             }
@@ -593,7 +594,7 @@ export default {
               width: 28px;
               height: 28px;
               background: url("/imges/product/teams3.png") no-repeat;
-              background-size: 100% 100%;
+              background-size: cover;
               background-position: center;
               margin-bottom: 15px;
             }
@@ -601,7 +602,7 @@ export default {
               width: 28px;
               height: 28px;
               background: url("/imges/product/teams4.png") no-repeat;
-              background-size: 100% 100%;
+              background-size: cover;
               background-position: center;
               margin-bottom: 15px;
             }
@@ -609,7 +610,7 @@ export default {
               width: 28px;
               height: 28px;
               background: url("/imges/product/teams5.png") no-repeat;
-              background-size: 100% 100%;
+              background-size: cover;
               background-position: center;
               margin-bottom: 15px;
             }
@@ -617,7 +618,7 @@ export default {
               width: 28px;
               height: 28px;
               background: url("/imges/product/teams6.png") no-repeat;
-              background-size: 100% 100%;
+              background-size: cover;
               background-position: center;
               margin-bottom: 15px;
             }
@@ -625,7 +626,7 @@ export default {
               width: 28px;
               height: 28px;
               background: url("/imges/product/teams7.png") no-repeat;
-              background-size: 100% 100%;
+              background-size: cover;
               background-position: center;
               margin-bottom: 15px;
             }
@@ -646,12 +647,12 @@ export default {
 
     }
 
-    @media (max-width:960px) {
+    @media (max-width:980px) {
        .bitDNSTeams{
     padding: 0 30px 155px;
     
     background: url("/imges/h5_product/bitDNSTeams.png") no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
     background-position: center;
 
     .bitDNSTeams_content{
@@ -688,7 +689,7 @@ export default {
             width: 136px;
             padding-top: 36px;
             background: url("/imges/product/bitDNSTeams_whiteBg.png") no-repeat;
-            background-size: 100% 100%;
+            background-size: cover;
             background-position: center;
             align-items: center;
             flex-direction: column;
@@ -698,7 +699,7 @@ export default {
               width: 28px;
               height: 28px;
               background: url("/imges/h5_product/teams1.png") no-repeat;
-              background-size: 100% 100%;
+              background-size: cover;
               background-position: center;
               margin-bottom: 15px;
             }
@@ -706,7 +707,7 @@ export default {
               width: 28px;
               height: 28px;
               background: url("/imges/h5_product/teams2.png") no-repeat;
-              background-size: 100% 100%;
+              background-size: cover;
               background-position: center;
               margin-bottom: 15px;
             }
@@ -714,7 +715,7 @@ export default {
               width: 28px;
               height: 28px;
               background: url("/imges/h5_product/teams3.png") no-repeat;
-              background-size: 100% 100%;
+              background-size: cover;
               background-position: center;
               margin-bottom: 15px;
             }
@@ -722,7 +723,7 @@ export default {
               width: 28px;
               height: 28px;
               background: url("/imges/h5_product/teams4.png") no-repeat;
-              background-size: 100% 100%;
+              background-size: cover;
               background-position: center;
               margin-bottom: 15px;
             }
@@ -730,7 +731,7 @@ export default {
               width: 28px;
               height: 28px;
               background: url("/imges/h5_product/teams5.png") no-repeat;
-              background-size: 100% 100%;
+              background-size: cover;
               background-position: center;
               margin-bottom: 15px;
             }
@@ -738,7 +739,7 @@ export default {
               width: 28px;
               height: 28px;
               background: url("/imges/h5_product/teams6.png") no-repeat;
-              background-size: 100% 100%;
+              background-size: cover;
               background-position: center;
               margin-bottom: 15px;
             }
@@ -746,19 +747,61 @@ export default {
               width: 28px;
               height: 28px;
               background: url("/imges/h5_product/teams7.png") no-repeat;
-              background-size: 100% 100%;
+              background-size: cover;
               background-position: center;
               margin-bottom: 15px;
+              height: 28px;
+              width: 25px;
             }
             p{
               font-size: 14px;
               color: #333333;
-              max-width: 84px;
+              // max-width: 84px;
               text-align: center;
             }
-          }
-          
+          }          
         }
+
+        .teamBlocksItems:nth-child(1){
+            .teamBlocksItem:nth-child(1){
+              img{
+                height: 28px;
+                width: 25px
+              }
+            }
+            .teamBlocksItem:nth-child(2){
+              img{
+                height: 28px;
+                width: 28px
+              }
+            }
+            .teamBlocksItem:nth-child(3){
+              img{
+                height: 25px;
+                width: 29px
+              }
+            }
+          }
+          .teamBlocksItems:nth-child(2){
+            .teamBlocksItem:nth-child(1){
+              img{
+                height: 26px;
+                width: 33px
+              }
+            }
+            .teamBlocksItem:nth-child(2){
+              img{
+                height: 21px;
+                width: 26px
+              }
+            }
+            .teamBlocksItem:nth-child(3), .teamBlocksItem:nth-child(4){
+              img{
+                height: 26px;
+                width: 26px
+              }
+            }
+          }
 
       }
     }
@@ -790,6 +833,7 @@ export default {
           display: flex;
           align-items: center;
           flex-direction: column;
+          padding: 10px 20px;
 
           .swipeImg1{
             margin: 41px 0 13px;
@@ -797,7 +841,7 @@ export default {
             width: 34px;
             background: url("/imges/product/serviceFeatures1.png") no-repeat;
             background-position: center;
-            background-size: 100% 100%;
+            background-size: cover;
             }
              .swipeImg2{
             margin: 41px 0 13px;
@@ -805,7 +849,7 @@ export default {
             width: 34px;
             background: url("/imges/product/serviceFeatures2.png") no-repeat;
             background-position: center;
-            background-size: 100% 100%;
+            background-size: cover;
             }
              .swipeImg3{
             margin: 41px 0 13px;
@@ -813,7 +857,7 @@ export default {
             width: 34px;
             background: url("/imges/product/serviceFeatures3.png") no-repeat;
             background-position: center;
-            background-size: 100% 100%;
+            background-size: cover;
             }
 
           p:first-child{
@@ -864,7 +908,7 @@ export default {
             width: 34px;
             background: url("/imges/h5_product/serviceFeatures1.png") no-repeat;
             background-position: center;
-            background-size: 100% 100%;
+            background-size: cover;
             }
              .swipeImg2{
             margin: 41px 0 13px;
@@ -872,7 +916,7 @@ export default {
             width: 34px;
             background: url("/imges/h5_product/serviceFeatures2.png") no-repeat;
             background-position: center;
-            background-size: 100% 100%;
+            background-size: cover;
             }
              .swipeImg3{
             margin: 41px 0 13px;
@@ -880,7 +924,7 @@ export default {
             width: 34px;
             background: url("/imges/h5_product/serviceFeatures3.png") no-repeat;
             background-position: center;
-            background-size: 100% 100%;
+            background-size: cover;
             }
           p:first-child{
             font-size: 14px;
@@ -889,7 +933,7 @@ export default {
           }
 
           p:last-child{
-            width: 169px;
+            // width: 169px;
             font-size: 12px;
             font-weight: normal;
             color: #4A4A4A;
@@ -908,7 +952,7 @@ export default {
       .tokenBonus{
     height: 561px;
     background: url("/imges/product/tokenBonusBg.png") no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
     background-position: center;
 
     .tokenBonus_content{
@@ -985,7 +1029,7 @@ export default {
 .tokenBonus{
     height: 756px;
     background: url("/imges/h5_product/tokenBonusBg.png") no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
     background-position: center;
 
     .tokenBonus_content{
@@ -1088,7 +1132,7 @@ export default {
             margin-right: 20px;
             margin-bottom: 38px;
             background: url("/imges/product/cornExchange1.png") no-repeat;
-            background-size: 100% 100%;
+            background-size: cover;
             background-position: center;
           }
           .cornWallet1{
@@ -1097,7 +1141,7 @@ export default {
             margin-right: 20px;
             margin-bottom: 38px;
             background: url("/imges/product/cornWallet1.png") no-repeat;
-            background-size: 100% 100%;
+            background-size: cover;
             background-position: center;
           }
           .cornWallet2{
@@ -1106,7 +1150,7 @@ export default {
             margin-right: 20px;
             margin-bottom: 38px;
             background: url("/imges/product/cornWallet2.png") no-repeat;
-            background-size: 100% 100%;
+            background-size: cover;
             background-position: center;
           }
           .cornWallet3{
@@ -1115,14 +1159,14 @@ export default {
             margin-right: 20px;
             margin-bottom: 38px;
             background: url("/imges/product/cornWallet3.png") no-repeat;
-            background-size: 100% 100%;
+            background-size: cover;
             background-position: center;
           }
         }
       }
     }
   }
-    }
+  }
 
    
  @media (max-width:980px) {
@@ -1154,7 +1198,7 @@ export default {
             margin-right: 20px;
             margin-bottom: 38px;
             background: url("/imges/h5_product/cornExchange1.png") no-repeat;
-            background-size: 100% 100%;
+            background-size: cover;
             background-position: center;
           }
           .cornWallet1{
@@ -1163,7 +1207,7 @@ export default {
             margin-right: 20px;
             margin-bottom: 38px;
             background: url("/imges/h5_product/cornWallet1.png") no-repeat;
-            background-size: 100% 100%;
+            background-size: cover;
             background-position: center;
           }
           .cornWallet2{
@@ -1172,7 +1216,7 @@ export default {
             margin-right: 20px;
             margin-bottom: 38px;
             background: url("/imges/h5_product/cornWallet2.png") no-repeat;
-            background-size: 100% 100%;
+            background-size: cover;
             background-position: center;
           }
           .cornWallet3{
@@ -1181,16 +1225,290 @@ export default {
             margin-right: 20px;
             margin-bottom: 38px;
             background: url("/imges/h5_product/cornWallet3.png") no-repeat;
-            background-size: 100% 100%;
+            background-size: cover;
             background-position: center;
+          }
+      }
+      }
+    }
+   }
+ }
+
+
+ @media (max-width:1680px) {
+    .imgAndText_block{
+      .imgAndText_block_item{
+
+        .items_left, .items_right{
+          height: 405px;
+        }
+
+        .items_rightText, .items_leftText{
+          width: auto;
+        }
+      }
+    }
+
+    .bitDNSVsTraditionalDNS{
+      height: 700px;
+      
+      .bitDNSVsTraditionalDNS_img{
+        img{
+          height: 386px;
+          width: 1043px;
+        }
+      }
+    }
+
+    .bitDNSTeams{
+      height: 644px;
+      .bitDNSTeams_content{
+        width: 990px;
+        .teamBlocks{
+          margin-top: 30px;
+        }
+        .topText .teamsTit{
+          padding: 73px 0 29px;  
+        }
+      } 
+    }
+
+    .tokenBonus{
+      height: 491px;
+      .tokenBonus_content{
+        .tokenBonus_topContent{
+          margin: 82px 0;
+          .tokenBonus_topContent_left{
+            p:first-child{
+              font-size: 26px;
+            }
+
+            p:last-child{
+              width: 550px;
+              font-size: 16px;
+              line-height: 27px;
+              margin-top: 22px;
+            }
+          }
+          .tokenBonus_topContent_right{
+            div{
+              width: 288px;
+              height: 83px;
+              font-size: 26px;
+            }
+            div:first-child{
+              margin-bottom: 48px;
+            }
+          }
+        }
+      }
+    }
+
+    .exchangeAndWallet{
+      height: 1299px;
+      width: 990px;
+      .corn_exchangeAndWallet, .DNS_exchangeAndWallet{
+        .exchangeItems, .walletItems{
+          p{
+            font-size: 26px;
+            margin-bottom: 33px;
+          }
+
+          .exchangeImgs, .walletImgs{
+            img{
+              height: 88px;
+              width: 249px;
+              margin-right: 18px;
+              margin-bottom: 28px;
+            }
           }
         }
       }
     }
   }
- }
 
-}
+  @media (max-width:1440px) {
+    .imgAndText_block{
+      .imgAndText_block_item{
+
+        .items_left, .items_right{
+          height: 347px;
+        }
+
+        .items_rightText, .items_leftText{
+          width: auto;
+        }
+      }
+    }
+
+    .bitDNSVsTraditionalDNS{
+      height: 600px;
+      
+      .bitDNSVsTraditionalDNS_img{
+        img{
+          height: 331px;
+          width: 894px;
+        }
+      }
+    }
+
+    .bitDNSTeams{
+      height: 552px;
+      .bitDNSTeams_content{
+        width: 960px;
+        .teamBlocks{
+          margin-top: 30px;
+        }
+        .topText .teamsTit{
+          padding: 22px 0 18px;  
+        }
+      } 
+    }
+    .tokenBonus{
+      height: 421px;
+      .tokenBonus_content{
+        .tokenBonus_topContent{
+          margin: 60px 0;
+          .tokenBonus_topContent_left{
+            p:first-child{
+              font-size: 23px;
+            }
+
+            p:last-child{
+              width: 472px;
+              font-size: 14px;
+              line-height: 27px;
+              margin-top: 19px;
+            }
+          }
+          .tokenBonus_topContent_right{
+            div{
+              width: 247px;
+              height: 71px;
+              font-size: 23px;
+            }
+            div:first-child{
+              margin-bottom: 41px;
+            }
+          }
+        }
+      }
+      
+    }
+
+    .exchangeAndWallet{
+      height: 1113px;
+      width: 960px;
+      .corn_exchangeAndWallet, .DNS_exchangeAndWallet{
+        .exchangeItems, .walletItems{
+          p{
+            font-size: 23px;
+            margin-bottom: 29px;
+          }
+
+          .exchangeImgs, .walletImgs{
+            img{
+              height: 75px;
+              width: 214px;
+              margin-right: 15px;
+              margin-bottom: 22px;
+            }
+          }
+        }
+      }
+    }
+  }
  
     
+
+  @media (min-width:980px) and (max-width:1280px) {
+  .imgAndText_block{
+    .imgAndText_block_item{
+
+      .items_left, .items_right{
+        height: 309px;
+      }
+
+      .items_rightText, .items_leftText{
+        width: auto;
+        line-height: normal;
+      }
+    }
+  }
+
+  .bitDNSVsTraditionalDNS{
+    height: 533px;
+
+    .bitDNSVsTraditionalDNS_img{
+      img{
+        height: 294px;
+        width: 795px;
+      }
+    }
+  }
+
+  .bitDNSTeams{
+      height: 491px;
+      .bitDNSTeams_content{
+        width: 890px;
+        padding: 22px 0 20px;
+        // width: 1080px;
+        .teamBlocks{
+          margin-top: 22px;
+        }
+        .topText{
+          .teamsTit{
+            padding: 16px 0 8px; 
+            font-size: 20px;
+          }
+
+          .teamsDes{
+            width: 419px;
+            font-size: 12px;
+            line-height: normal;
+          }
+        }
+      }
+  }
+
+  .tokenBonus{
+    height: 374px;
+    .tokenBonus_content{
+      .tokenBonus_topContent{
+        margin: 63px 0;
+        .tokenBonus_topContent_left{
+          p:first-child{
+            font-size: 20px;
+          }
+
+          p:last-child{
+            width: 419px;
+            font-size: 12px;
+            line-height: 27px;
+            margin-top: 10px;
+          }
+        }
+        .tokenBonus_topContent_right{
+          div{
+            width: 219px;
+            height: 63px;
+            font-size: 20px;
+          }
+          div:first-child{
+            margin-bottom: 37px;
+          }
+        }
+      }
+    }
+    
+  }
+
+  .exchangeAndWallet{
+    width: 890px;
+  }
+  }
+}
+
+
+
 </style>

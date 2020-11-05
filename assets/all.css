@@ -24,30 +24,18 @@ li{
         width: 100%;
         margin: 0 auto;
     }
-  
-   
 }
-@media (min-width:320px) {
+@media (max-width:320px) {
     body,html{font-size: 10px;}
 }
-@media (min-width:375px) {
+@media (max-width:375px) {
     body,html{font-size: 12px;}
 }
-@media (min-width: 1280px) {
-    body,html{font-size: 14px;}
-}
-/* @media (min-width: 1366px) {
-    body,html{font-size: 15px;}
+
+/* @media (min-width:980px) and (max-width:1024px){
+    .common_container{
+        width: 980px;
+        margin: 0 auto;
+    }
 } */
-@media (min-width: 1440px) {
-    body,html{font-size: 19px;}
-}
-@media (min-width: 1680px) {
-    body,html{font-size: 17px;}
-}
-@media (min-width: 1920px) {
-    body,html{font-size: 33px;}
-}
-@media (min-width: 2880px) {
-    body,html{font-size: 33px;}
-}
+   

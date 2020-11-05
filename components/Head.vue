@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="head">
-      <div class="top">
+      <div class="top common_container">
         <div>
           <nuxt-link to="/" :style="{display:'flex', justifyContent: 'center', alignItems: 'center'}">
             <img src="/logo .png" alt />
@@ -70,12 +70,34 @@ export default {
   }
 
 .top {
-  width: 1200px;
   height: 88px;
   display: flex;
   justify-content: space-around;
   align-items: center;
   margin: 0 auto;
+}
+@media (min-width: 2880px) and (max-width: 3840px) {
+    .top {
+      height: 132px;
+    }
+  }
+
+@media (max-width: 1680px) {
+  .top {
+    height: 77px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .top {
+    height: 66px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+  .top {
+    height: 59px;
+  }
 }
 .route{
     width: 50%;
@@ -104,7 +126,7 @@ export default {
 
       .children_nav{
         position: absolute;
-        top: 78px;
+        top: 68%;
         left: 0;
         background-color: #fff;
         color: #666666;

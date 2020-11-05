@@ -1,10 +1,10 @@
 <template>
   <div class="about">
-    <!-- <Banner 
+    <Banner 
       bgUrl="/imges/banna/banner_about.png"
       insideBgUrl="/imges/product/littleSquare.png"
       bgText="关于我们"
-    />-->
+    />
     <div class="about_top common_container">
       <div class="tit">
         <i></i>
@@ -151,7 +151,7 @@ export default {
       width: 100%;
       height: 453px;
       background: url("/imges/about/about_book.png") no-repeat;
-      background-size: 100% 100%;
+      background-size: cover;
       box-sizing: border-box;
 
       h4 {

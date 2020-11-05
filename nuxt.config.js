@@ -47,7 +47,7 @@ export default {
     transpile: [/^element-ui/],
     postcss:[
       require("postcss-px2rem")({
-        remUnit: 19.2
+        remUnit: 19
       })
     ],
   }
