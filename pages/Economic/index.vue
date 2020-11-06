@@ -260,7 +260,7 @@ export default {
       box-sizing: border-box;
       .tokenDesign_content_top {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         flex-wrap: wrap;
         justify-content: space-between;
         margin-top: 119px;
@@ -291,7 +291,7 @@ export default {
 
         .topContent_right {
           margin: 0 auto;
-          width: 687px;
+          width: 688px;
           height: 502px;
           background: url("/imges/h5_Economic/tokenDesign_rightImg.png")
             no-repeat;
@@ -546,8 +546,8 @@ export default {
         background: url("/imges/h5_Economic/token19.png") no-repeat;
         background-position: center;
         background-size: 100% 100%;
-        height: 390px;
-        width: 680px;
+        height: 400px;
+        
       }
 
       .tit {

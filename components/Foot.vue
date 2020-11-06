@@ -88,6 +88,7 @@ export default {};
   justify-content: space-between;
   align-items: center;
   .f_left {
+    border: 1px solid red;
     width: 430px;
     height: 244px;
     img{

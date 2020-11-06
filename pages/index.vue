@@ -390,7 +390,8 @@ export default {
 
 <style lang='less'>
 .container {
-  .block {
+  @media (min-width:980px) {
+    .block {
     padding: 96px 0;
     ul {
       display: flex;
@@ -420,6 +421,11 @@ export default {
         }
       }
     }
+  }
+  }
+  
+  @media screen {
+    
   }
 
   .bitDns {
