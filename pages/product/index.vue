@@ -29,34 +29,36 @@
           </p>
         </div>
       </div>
+      <div class="web">
+        <div class="imgAndText_block_item">
+          <div class="items_left">
+            <p class="items_rightText">
+              <span>2014年9月，</span>
+              <span>大约有500万谷歌的账户和密码的数据库被泄露给一家俄罗斯互联网网络安全论坛。这些用户大多使用了Gmail邮件服务和美国互联网巨头的其他产品。</span>
+            </p>
+          </div>
 
-      <div class="imgAndText_block_item web">
-        <div class="items_left">
-          <p class="items_rightText">
-            <span>2014年9月，</span>
-            <span>大约有500万谷歌的账户和密码的数据库被泄露给一家俄罗斯互联网网络安全论坛。这些用户大多使用了Gmail邮件服务和美国互联网巨头的其他产品。</span>
-          </p>
-        </div>
-
-        <div class="items_right">
-            <img src="/imges/product/domainService2.png" alt="" class="web">
+          <div class="items_right">
+              <img src="/imges/product/domainService2.png" alt="" class="web">
+          </div>
         </div>
       </div>
+      
+      <div class="h5">
+        <div class="imgAndText_block_item">
+          <div class="items_right">
+            <img src="/imges/h5_product/domainService1.png" alt="">
+          </div>
 
-           <div class="imgAndText_block_item h5">
-                <div class="items_right">
-               <img src="/imges/h5_product/domainService1.png" class="h5" alt="">
-              </div>
-
-        <div class="items_left">
-          <p class="items_rightText">
-            <span>2014年9月，</span>
-            <span>大约有500万谷歌的账户和密码的数据库被泄露给一家俄罗斯互联网网络安全论坛。这些用户大多使用了Gmail邮件服务和美国互联网巨头的其他产品。</span>
-          </p>
+          <div class="items_left">
+            <p class="items_rightText">
+              <span>2014年9月，</span>
+              <span>大约有500万谷歌的账户和密码的数据库被泄露给一家俄罗斯互联网网络安全论坛。这些用户大多使用了Gmail邮件服务和美国互联网巨头的其他产品。</span>
+            </p>
+          </div>
         </div>
-
-        
       </div>
+      
 
       <div class="imgAndText_block_item">
         <div class="items_left">
@@ -151,7 +153,6 @@
       <div class="serviceFeaturesItem">
           
             <img src="/imges/h5_product/serviceFeatures1.png" class="h5" alt="">
-            <img src="/imges/h5_product/serviceFeatures1.png" class="web" alt="">
           <p>去中心化</p>
           <p>BitDNS的管理和服务均通过智能合约完成，完全去中心化，安全性和可信度非常高。</p>
         </div>
@@ -175,8 +176,8 @@
   </el-carousel>
         </div>
 
-
-      <div class="common_container serviceFeatures_content web">
+      <div class="web">
+      <div class="common_container serviceFeatures_content">
         <div class="serviceFeaturesItem">
         <img src="/imges/product/serviceFeatures1.png" class="web" alt="">
           <p>去中心化</p>
@@ -194,6 +195,7 @@
            <img src="/imges/product/serviceFeatures3.png" class="web" alt="">
           <p>可循环的经济模型</p>
           <p>BitDNS系统的流通通证DNS内置了激励池，所有系统产出费用会进入激励池，并按比例分配给DNS的持有人。</p>
+        </div>
         </div>
       </div>
     </div>
@@ -248,7 +250,7 @@
             </div>
           </div>
         </div>
-
+  <BlockTit text="DNS上线交易所及钱包"/>
    <div class="exchangeItems">
           <p>交易所</p>
           <div class="exchangeImgs">
@@ -292,6 +294,358 @@ export default {
 
 <style lang="less">
 .domainService{
+  .systemProblems{
+    height: 413px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .systemProblems_content{
+    display: flex;
+    width: 867px;
+    word-wrap: break-word;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #3C3C3C;
+    font-size: 18px;
+    line-height: 35px;
+  }
+  @media (min-width:1921px){
+    .imgAndText_block{
+      max-width: 1920px;
+    }
+  }
+  
+  @media (min-width:1440px) and (max-width:1680px) {
+    .imgAndText_block{
+      max-width: 1680px;
+    }
+  }
+
+  @media (min-width:1280px) and (max-width:1440px) {
+    .imgAndText_block{
+      max-width: 1440px;
+    }
+  }
+
+  @media (min-width:1024px) and (max-width:1280px) {
+    .imgAndText_block{
+      max-width: 1280px;
+    }
+  }
+
+  
+
+  .imgAndText_block{
+    margin: 0 auto;
+    width: 100%;
+    .imgAndText_block_item{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+
+      .items_left, .items_right{
+        height: 463px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex: 1;
+
+        img{
+          height: 100%;
+          width: 100%;
+        }
+      }
+      
+      .items_right{
+        justify-content: flex-start;
+      }
+
+      .items_rightText, .items_leftText{
+        width: 512px;
+        color: #3C3C3C;
+        font-size: 20px;
+        line-height: 53px;
+        margin: 0 88px;
+
+        span:first-child{
+          font-size: 30px;
+        }
+      }
+    }
+  }
+
+  .bitDNSVsTraditionalDNS{
+    height: 800px;
+    background-color: #F3F8FF;
+    text-align: center;
+
+    img{
+      height: 441px;
+      width: 1192px;
+    }
+  }
+
+  .bitDNSTeams{
+    height: 736px;
+    background: url("/imges/product/bitDNSTeams.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    .bitDNSTeams_content{
+      .topText{
+        .teamsTit{
+          padding: 84px 0 32px;  
+          font-size: 30px;
+          font-weight: 600;
+          color: #FFFFFF;
+        }
+
+        .teamsDes{
+          width: 629px;
+          font-size: 18px;
+          font-weight: 400;
+          color: #FFFFFF;
+          line-height: 37px;
+        }
+      }
+
+      .teamBlocks{
+        display: flex;
+        flex-direction: column;
+        margin-top: 70px;
+
+        .teamBlocksItems{
+          display: flex;
+          flex-direction: row;
+          margin-bottom: 20px;
+
+          .teamBlocksItem{
+            display: flex;
+            height: 100px;
+            width: 136px;
+            padding-top: 36px;
+            background: url("/imges/product/bitDNSTeams_whiteBg.png") no-repeat;
+            background-size: cover;
+            background-position: center;
+            align-items: center;
+            flex-direction: column;
+            margin-right: 20px;
+
+            img{
+              margin-bottom: 15px;
+              height: 28px;
+              width: 25px;
+            }
+            
+            p{
+              font-size: 14px;
+              color: #333333;
+              // max-width: 84px;
+              text-align: center;
+            }
+          }          
+        }
+
+        .teamBlocksItems:nth-child(1){
+            .teamBlocksItem:nth-child(1){
+              img{
+                height: 28px;
+                width: 25px
+              }
+            }
+            .teamBlocksItem:nth-child(2){
+              img{
+                height: 28px;
+                width: 28px
+              }
+            }
+            .teamBlocksItem:nth-child(3){
+              img{
+                height: 25px;
+                width: 29px
+              }
+            }
+          }
+          .teamBlocksItems:nth-child(2){
+            .teamBlocksItem:nth-child(1){
+              img{
+                height: 26px;
+                width: 33px
+              }
+            }
+            .teamBlocksItem:nth-child(2){
+              img{
+                height: 21px;
+                width: 26px
+              }
+            }
+            .teamBlocksItem:nth-child(3), .teamBlocksItem:nth-child(4){
+              img{
+                height: 26px;
+                width: 26px
+              }
+            }
+          }
+
+      }
+    }
+
+  }
+
+  .serviceFeatures{
+    height: 503px;
+
+    .serviceFeatures_content{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        
+        margin-top: 15px;
+
+        .serviceFeaturesItem{
+          width: 219px;
+          height: 240px;
+          background: #FFFFFF;
+          box-shadow: 0px 1px 7px 2px rgba(215, 215, 215, 0.5);
+          margin: 0 15px;
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          padding: 10px 20px;
+
+          img{
+            margin: 41px 0 13px;
+            height: 38px;
+            width: 34px;
+          }
+          p{
+            font-size: 14px;
+            font-weight: bold;
+            color: #656565;
+          }
+
+          p:last-child{
+            padding: 0 20px;
+            font-size: 12px;
+            font-weight: normal;
+            color: #4A4A4A;
+            line-height: 40px;
+            text-align: center;
+            margin-top: 20px;
+            box-sizing: border-box;
+          }
+        }
+      }
+  }
+
+  .tokenBonus{
+    height: 561px;
+    background: url("/imges/product/tokenBonusBg.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    .tokenBonus_content{
+      display: flex;
+      flex-direction: column;
+
+      .tokenBonus_topContent{
+        margin: 94px 0 71px;
+        display: flex;
+        justify-content: space-around;
+
+        .tokenBonus_topContent_left{
+          p:first-child{
+            font-size: 30px;
+            font-weight: 600;
+            color: #333333;
+          }
+
+          p:last-child{
+            width: 629px;
+            font-size: 18px;
+            font-weight: 400;
+            color: #333333;
+            line-height: 37px;
+            margin-top: 25px;
+          }
+        }
+
+        .tokenBonus_topContent_right{
+          display: flex;
+          flex-direction: column;
+
+          div{
+            height: 95px;
+            width: 329px;
+            border: 1px solid #A9A9A9;
+            color: #666666;
+            font-size: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 600;
+          }
+
+          div:first-child{
+            margin-bottom: 55px;
+          }
+        }
+      }
+
+      .tokenBonus_bottomButton{
+        margin: 0 auto;
+        height: 53px;
+        width: 192px;
+        background-color: #005FFC;
+
+        a{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: #fff;
+          font-size: 18px;
+          height: 100%;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .exchangeAndWallet{
+    height: 1484px;
+    background-color: #fff;
+
+    .corn_exchangeAndWallet, .DNS_exchangeAndWallet{
+
+      .exchangeItems, .walletItems{
+
+        p{
+          font-size: 30px;
+          font-weight: 600;
+          color: #333333;
+          margin-bottom: 38px;
+        }
+
+        .exchangeImgs, .walletImgs{
+          img{
+            height: 125px;
+            width: 285px;
+            margin-right: 20px;
+            margin-bottom: 38px;
+          }
+        }
+      }
+    }
+  }
+
+  .h5{
+    display: none;
+  }
   
  @media (min-width:1440px)and(max-width:1680px) {
     .imgAndText_block{
@@ -399,12 +753,10 @@ export default {
 
     .bitDNSVsTraditionalDNS{
       height: 600px;
-      
-      .bitDNSVsTraditionalDNS_img{
-        img{
-          height: 331px;
-          width: 894px;
-        }
+
+      img{
+        height: 331px;
+        width: 894px;
       }
     }
 
@@ -494,13 +846,10 @@ export default {
 
   .bitDNSVsTraditionalDNS{
     height: 533px;
-
-    .bitDNSVsTraditionalDNS_img{
       img{
         height: 294px;
         width: 795px;
       }
-    }
   }
 
   .bitDNSTeams{
@@ -531,7 +880,7 @@ export default {
     height: 374px;
     .tokenBonus_content{
       .tokenBonus_topContent{
-        margin: 63px 0;
+        margin: 63px 0 47px;
         .tokenBonus_topContent_left{
           p:first-child{
             font-size: 20px;
@@ -564,75 +913,15 @@ export default {
   }
   }
 
-@media (min-width:980px) {
-  .systemProblems{
-    height: 413px;
-    background-color: #fff;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
-
-  .systemProblems_content{
-    display: flex;
-    width: 867px;
-    word-wrap: break-word;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: #3C3C3C;
-    font-size: 18px;
-    line-height: 35px;
-  }
-
-  @media screen and (min-width:1920px) {
-    .imgAndText_block{
-      max-width: 1920px;
-    }
-  }
-
-  .imgAndText_block{
-    margin: 0 auto;
-    .imgAndText_block_item{
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      width: 100%;
-      .items_left, .items_right{
-        height: 463px;
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        flex: 1;
-          img{
-            height: 100%;
-          width: 100%;
-          }
-      }
-      
-      .items_right{
-        justify-content: flex-start;
-      }
-
-      .items_rightText, .items_leftText{
-        width: 512px;
-        color: #3C3C3C;
-        font-size: 20px;
-        line-height: 53px;
-        margin: 0 88px;
-
-        span:first-child{
-          font-size: 30px;
-        }
-      }
-    }
-  }
- .h5{
-        display: none !important;
-      }
-}
 
 @media (max-width:980px) {
+  .web{
+      display: none;
+  }
+  .h5{
+    display: inline-block;
+    width: 100%;
+  }
   .systemProblems{
     height: 430px;
     background-color: #fff;
@@ -685,13 +974,13 @@ export default {
         align-items: center;
         justify-content: flex-end;
         flex: 1;
-img{
-  width: 100%;
-  height: 100%;
-  max-width: 750px;
-  max-height: 362px;
-  margin: 0 auto;
-}
+        img{
+          width: 100%;
+          height: 100%;
+          max-width: 750px;
+          max-height: 362px;
+          margin: 0 auto;
+        }
       }
       
       .items_right{
@@ -711,529 +1000,269 @@ img{
         }
       }
     }
-
-  
   }
-  .web{
-        display: none !important;
-      }
-}
 
-
-@media (min-width:980px) {
   .bitDNSVsTraditionalDNS{
-    height: 800px;
-    background-color: #F3F8FF;
-    text-align: center;
-  img{
-        height: 441px;
-        width: 1192px;
-  }
-  }
-}
-
-  @media (max-width:980px) {
-    .bitDNSVsTraditionalDNS{
-    height: 1286px;
-    background-color: #F3F8FF;
-    text-align: center;
-img{
- height: 791px;
+      height: 1286px;
+      background-color: #F3F8FF;
+      text-align: center;
+      img{
+        height: 791px;
         width: 691px;
-}
+      }
       
-  }
-  }
+    }
 
-
- 
-
-    @media (min-width:980px){
-       .bitDNSTeams{
-    height: 736px;
-    background: url("/imges/product/bitDNSTeams.png") no-repeat;
-    background-size: cover;
-    background-position: center;
-
-    .bitDNSTeams_content{
-      .topText{
-        .teamsTit{
-          padding: 84px 0 32px;  
-          font-size: 30px;
-          font-weight: 600;
-          color: #FFFFFF;
-        }
-
-        .teamsDes{
-          width: 629px;
-          font-size: 18px;
-          font-weight: 400;
-          color: #FFFFFF;
-          line-height: 37px;
-        }
-      }
-
-      .teamBlocks{
-        display: flex;
-        flex-direction: column;
-        margin-top: 70px;
-
-        .teamBlocksItems{
-          display: flex;
-          flex-direction: row;
-          margin-bottom: 20px;
-
-          .teamBlocksItem{
-            display: flex;
-            height: 100px;
-            width: 136px;
-            padding-top: 36px;
-            background: url("/imges/product/bitDNSTeams_whiteBg.png") no-repeat;
-            background-size: cover;
-            background-position: center;
-            align-items: center;
-            flex-direction: column;
-            margin-right: 20px;
-            p{
-              font-size: 14px;
-              color: #333333;
-              max-width: 84px;
-              text-align: center;
-            }
-          }
+    .bitDNSTeams{
+          padding: 0 30px 155px;
           
+          background: url("/imges/h5_product/bitDNSTeams.png") no-repeat;
+          background-size: cover;
+          background-position: center;
+
+          .bitDNSTeams_content{
+            .topText{
+              .teamsTit{
+                padding: 84px 0 32px;  
+                font-size: 30px;
+                font-weight: 600;
+                color: #FFFFFF;
+              }
+
+              .teamsDes{
+                width: 629px;
+                font-size: 18px;
+                font-weight: 400;
+                color: #FFFFFF;
+                line-height: 37px;
+              }
+            }
+
+            .teamBlocks{
+              display: flex;
+              flex-direction: column;
+              margin-top: 70px;
+
+              .teamBlocksItems{
+                display: flex;
+                flex-direction: row;
+                margin-bottom: 20px;
+
+                .teamBlocksItem{
+                  display: flex;
+                  height: 120px;
+                  width: 156px;
+                  padding-top: 36px;
+                  background: url("/imges/product/bitDNSTeams_whiteBg.png") no-repeat;
+                  background-size: cover;
+                  background-position: center;
+                  align-items: center;
+                  flex-direction: column;
+                  margin-right: 20px;
+                  img{
+                      width: 28px;
+                      height: 28px;
+                      margin-bottom: 15px;
+                  }
+                  p{
+                    font-size: 14px;
+                    color: #333333;
+                    // max-width: 84px;
+                    text-align: center;
+                  }
+                }          
+              }
+
+              .teamBlocksItems:nth-child(1){
+                  .teamBlocksItem:nth-child(1){
+                    img{
+                      height: 28px;
+                      width: 25px
+                    }
+                  }
+                  .teamBlocksItem:nth-child(2){
+                    img{
+                      height: 28px;
+                      width: 28px
+                    }
+                  }
+                  .teamBlocksItem:nth-child(3){
+                    img{
+                      height: 25px;
+                      width: 29px
+                    }
+                  }
+                }
+                .teamBlocksItems:nth-child(2){
+                  .teamBlocksItem:nth-child(1){
+                    img{
+                      height: 26px;
+                      width: 33px
+                    }
+                  }
+                  .teamBlocksItem:nth-child(2){
+                    img{
+                      height: 21px;
+                      width: 26px
+                    }
+                  }
+                  .teamBlocksItem:nth-child(3), .teamBlocksItem:nth-child(4){
+                    img{
+                      height: 26px;
+                      width: 26px
+                    }
+                  }
+                }
+
+            }
+          }
+
         }
-
-      }
-    }
-
-  }
-
-    }
-
-    @media (max-width:980px) {
-       .bitDNSTeams{
-    padding: 0 30px 155px;
     
-    background: url("/imges/h5_product/bitDNSTeams.png") no-repeat;
-    background-size: cover;
-    background-position: center;
-
-    .bitDNSTeams_content{
-      .topText{
-        .teamsTit{
-          padding: 84px 0 32px;  
-          font-size: 30px;
-          font-weight: 600;
-          color: #FFFFFF;
-        }
-
-        .teamsDes{
-          width: 629px;
-          font-size: 18px;
-          font-weight: 400;
-          color: #FFFFFF;
-          line-height: 37px;
-        }
-      }
-
-      .teamBlocks{
-        display: flex;
-        flex-direction: column;
-        margin-top: 70px;
-
-        .teamBlocksItems{
-          display: flex;
-          flex-direction: row;
-          margin-bottom: 20px;
-
-          .teamBlocksItem{
-            display: flex;
-            height: 120px;
-            width: 156px;
-            padding-top: 36px;
-            background: url("/imges/product/bitDNSTeams_whiteBg.png") no-repeat;
-            background-size: cover;
-            background-position: center;
-            align-items: center;
-            flex-direction: column;
-            margin-right: 20px;
-          img{
-                width: 28px;
-                height: 28px;
-                margin-bottom: 15px;
-          }
-            p{
-              font-size: 14px;
-              color: #333333;
-              // max-width: 84px;
-              text-align: center;
-            }
-          }          
-        }
-
-        .teamBlocksItems:nth-child(1){
-            .teamBlocksItem:nth-child(1){
-              img{
-                height: 28px;
-                width: 25px
-              }
-            }
-            .teamBlocksItem:nth-child(2){
-              img{
-                height: 28px;
-                width: 28px
-              }
-            }
-            .teamBlocksItem:nth-child(3){
-              img{
-                height: 25px;
-                width: 29px
-              }
-            }
-          }
-          .teamBlocksItems:nth-child(2){
-            .teamBlocksItem:nth-child(1){
-              img{
-                height: 26px;
-                width: 33px
-              }
-            }
-            .teamBlocksItem:nth-child(2){
-              img{
-                height: 21px;
-                width: 26px
-              }
-            }
-            .teamBlocksItem:nth-child(3), .teamBlocksItem:nth-child(4){
-              img{
-                height: 26px;
-                width: 26px
-              }
-            }
-          }
-
-      }
-    }
-
-  }
-
-    }
-
-
-    @media (min-width:980px) {
-      .serviceFeatures{
-    height: 503px;
-
-    .serviceFeatures_content{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        
-        margin-top: 15px;
-
-       
-      }
-       .serviceFeaturesItem{
-          width: 219px;
-          height: 240px;
-          background: #FFFFFF;
-          box-shadow: 0px 1px 7px 2px rgba(215, 215, 215, 0.5);
-          margin: 0 15px;
-          display: flex;
-          align-items: center;
-          flex-direction: column;
-          padding: 10px 20px;
-
-         img{
-          margin: 41px 0 13px;
-         }
-          p:first-child{
-            font-size: 14px;
-            font-weight: bold;
-            color: #656565;
-          }
-
-          p:last-child{
-            width: 169px;
-            font-size: 12px;
-            font-weight: normal;
-            color: #4A4A4A;
-            line-height: 19px;
-            text-align: center;
-            margin-top: 20px;
-          }
-        }
-  }
-  .h5{
-  display: none;
-  }
-    }
-  
-  @media (max-width:980px) {
     .serviceFeatures{
-    height: 620px;
+       height: 620px;
     
-.el-carousel{
-  padding: 30px;
-}
-       .serviceFeaturesItem{
-          width: 321px;
-          height:353px;
-          background: #FFFFFF;
-          
-          box-shadow: 0px 1px 7px 2px rgba(215, 215, 215, 0.5);
-          margin: 0 15px;
-          display: flex;
-          align-items: center;
-          flex-direction: column;
-            img{
-            margin: 41px 0 13px;
-            height: 38px;
-            width: 34px;
-            }
-          p:first-child{
-            font-size: 14px;
-            font-weight: bold;
-            color: #656565;
-          }
-
-          p:last-child{
-            padding: 0 20px;
-            font-size: 12px;
-            font-weight: normal;
-            color: #4A4A4A;
-            line-height: 40px;
-            text-align: center;
-            margin-top: 20px;
-            box-sizing: border-box;
-          }
-        }
-  }
-  .web{
-    display: none;
-  }
-  }
-
-    @media (min-width:980px) {
-      .tokenBonus{
-    height: 561px;
-    background: url("/imges/product/tokenBonusBg.png") no-repeat;
-    background-size: cover;
-    background-position: center;
-
-    .tokenBonus_content{
-      display: flex;
-      flex-direction: column;
-
-      .tokenBonus_topContent{
-        margin: 94px 0 71px;
+      .el-carousel{
+        padding: 30px;
+      }
+      .serviceFeaturesItem{
+        width: 321px;
+        height:353px;
+        background: #FFFFFF;
+        
+        box-shadow: 0px 1px 7px 2px rgba(215, 215, 215, 0.5);
+        margin: 0 15px;
         display: flex;
-        justify-content: space-around;
-
-        .tokenBonus_topContent_left{
-          p:first-child{
-            font-size: 30px;
-            font-weight: 600;
-            color: #333333;
-          }
-
-          p:last-child{
-            width: 629px;
-            font-size: 18px;
-            font-weight: 400;
-            color: #333333;
-            line-height: 37px;
-            margin-top: 25px;
-          }
+        align-items: center;
+        flex-direction: column;
+        img{
+          margin: 41px 0 13px;
+          height: 38px;
+          width: 34px;
+        }
+        p:first-child{
+          font-size: 14px;
+          font-weight: bold;
+          color: #656565;
         }
 
-        .tokenBonus_topContent_right{
+        p:last-child{
+          // width: 169px;
+          font-size: 12px;
+          font-weight: normal;
+          color: #4A4A4A;
+          line-height: normal;
+          text-align: center;
+          margin-top: 20px;
+          padding: 0 30px;
+
+        }
+      }
+    }
+
+    .tokenBonus{
+        height: 756px !important;
+        background: url("/imges/h5_product/tokenBonusBg.png") no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        .tokenBonus_content{
           display: flex;
           flex-direction: column;
 
-          div{
-            height: 95px;
-            width: 329px;
-            border: 1px solid #A9A9A9;
-            color: #666666;
-            font-size: 30px;
+          .tokenBonus_topContent{
+            margin: 20px 0 11px;
             display: flex;
-            justify-content: center;
-            align-items: center;
-            font-weight: 600;
+            flex-direction: column;
+    
+            .tokenBonus_topContent_left{
+              padding: 78px 32px 53px;
+                
+              p:first-child{
+                font-size: 20px;
+                font-weight: 600;
+                color: #333333;
+              }
+
+              p:last-child{
+                width: 629px;
+                font-size: 18px;
+                font-weight: 400;
+                color: #333333;
+                line-height: 37px;
+                margin-top: 25px;
+              }
+            }
+
+            .tokenBonus_topContent_right{
+              display: flex;
+              flex-direction: row;
+
+              div{
+                height: 95px;
+                width: 329px;
+                margin: 0 auto;
+                border: 1px solid #A9A9A9;
+                color: #666666;
+                font-size: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-weight: 600;
+              }
+
+              div:first-child{
+                margin-bottom: 55px;
+              }
+            }
           }
 
-          div:first-child{
-            margin-bottom: 55px;
-          }
-        }
-      }
-
-      .tokenBonus_bottomButton{
-        margin: 0 auto;
-        height: 53px;
-        width: 192px;
-        background-color: #005FFC;
-
-        a{
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          color: #fff;
-          font-size: 18px;
-          height: 100%;
-          width: 100%;
-        }
-      }
-    }
-  }
-
-    }
-
-    @media (max-width:980px) {
-      
-.tokenBonus{
-    height: 756px !important;
-    background: url("/imges/h5_product/tokenBonusBg.png") no-repeat;
-    background-size: cover;
-    background-position: center;
-
-    .tokenBonus_content{
-      display: flex;
-      flex-direction: column;
-
-      .tokenBonus_topContent{
-        // margin: 94px 0 71px;
-        // display: flex;
-        // justify-content: space-around;
- 
-        .tokenBonus_topContent_left{
-          padding: 78px 32px 53px;
-             
-          p:first-child{
-            font-size: 20px;
-            font-weight: 600;
-            color: #333333;
-          }
-
-          p:last-child{
-            width: 629px;
-            font-size: 18px;
-            font-weight: 400;
-            color: #333333;
-            line-height: 37px;
-            margin-top: 25px;
-          }
-        }
-
-        .tokenBonus_topContent_right{
-          display: flex;
-          flex-direction: row;
-
-          div{
-            height: 95px;
-            width: 329px;
+          .tokenBonus_bottomButton{
             margin: 0 auto;
-            border: 1px solid #A9A9A9;
-            color: #666666;
+            width: 297px;
+            height: 82px;
+            background-color: #005FFC;
+
+            a{
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              color: #fff;
+              font-size: 18px;
+              height: 100%;
+              width: 100%;
+            }
+          }
+        }
+      }
+
+    .exchangeAndWallet{
+      padding: 0 30px;
+      box-sizing: border-box;
+      height: 1575px;
+      background-color: #fff;
+      .corn_exchangeAndWallet, .DNS_exchangeAndWallet{
+        .exchangeItems, .walletItems{
+          p{
             font-size: 30px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
             font-weight: 600;
+            color: #333333;
+            margin-bottom: 38px;
           }
 
-          div:first-child{
-            margin-bottom: 55px;
-          }
-        }
-      }
-
-      .tokenBonus_bottomButton{
-        margin: 0 auto;
-        width: 297px;
-        height: 82px;
-        background-color: #005FFC;
-
-        a{
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          color: #fff;
-          font-size: 18px;
-          height: 100%;
-          width: 100%;
-        }
-      }
-    }
-  }
-
-    } 
-
-
-
-    @media (min-width: 980px) {
-      .exchangeAndWallet{
-    height: 1484px;
-    background-color: #fff;
-    .corn_exchangeAndWallet, .DNS_exchangeAndWallet{
-
-      .exchangeItems, .walletItems{
-
-        p{
-          font-size: 30px;
-          font-weight: 600;
-          color: #333333;
-          margin-bottom: 38px;
-        }
-
-        .exchangeImgs, .walletImgs{
-           display: flex;
-          flex-wrap: wrap;
-          width: 625px;
+          .exchangeImgs, .walletImgs{
+            display: flex;
+            flex-wrap: wrap;
+            width: 625px;
             img{
-            width: 285px;
-            height: 100px;
-          }
+              width: 285px;
+              height: 100px;
+            }
+        }
         }
       }
-    }
-  }
-  }
-
-   
- @media (max-width:980px) {
-   .exchangeAndWallet{
-       
-       padding: 0 30px;
-       box-sizing: border-box;
-    height: 1575px;
-    background-color: #fff;
-    .corn_exchangeAndWallet, .DNS_exchangeAndWallet{
-      .exchangeItems, .walletItems{
-        p{
-          font-size: 30px;
-          font-weight: 600;
-          color: #333333;
-          margin-bottom: 38px;
-        }
-
-        .exchangeImgs, .walletImgs{
-          display: flex;
-          flex-wrap: wrap;
-          width: 625px;
-          img{
-            width: 285px;
-            height: 100px;
-          }
-      }
-      }
-    }
    }
- }
-
-
+  }
 }
 
 

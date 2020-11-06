@@ -126,59 +126,30 @@ export default {
 
 <style lang='less'>
 .economic {
-  @media (min-width: 980px) {
-    .bitDNS_economic {
-      height: 413px;
-      background-color: #fff;
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-    }
 
-    .bitDNS_economic_content {
-      display: flex;
-      width: 867px;
-      word-wrap: break-word;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      color: #3c3c3c;
-      font-size: 18px;
-      line-height: 35px;
-    }
+  .bitDNS_economic{
+    height: 413px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
   }
 
-  @media (max-width: 980px) {
-    .bitDNS_economic {
-      width: 100%;
-       
-      height: 387px;
-      background-color: #fff;
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-    }
-
-    .bitDNS_economic_content {
-      display: flex;
-      width: 100%;
-      padding: 0 20px;
-      box-sizing: border-box;
-      word-wrap: break-word;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      color: #3c3c3c;
-      font-size: 22px;
-      line-height: 35px;
-      font-weight: 400;
-    }
+  .bitDNS_economic_content{
+    display: flex;
+    width: 867px;
+    word-wrap: break-word;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #3C3C3C;
+    font-size: 18px;
+    line-height: 35px;
   }
 
-  @media (min-width: 980px) {
-    .tokenDesign {
+  .tokenDesign {
       background: url("/imges/Economic/tokenDesignBg.png") no-repeat;
-      background-size: 100% 100%;
+      background-size: cover;
       background-position: center;
       display: flex;
       height: 736px;
@@ -254,29 +225,437 @@ export default {
         }
       }
     }
+
+  .chainResourceAllocation{
+    height: 1058px;
+
+    .chainResourceAllocation_content{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      p{
+        font-size: 18px;
+        font-weight: 400;
+        color: #3C3C3C;
+        line-height: 35px;
+        text-align: center;
+        width: 867px;
+      }
+
+      img{
+        margin-top: 21px;
+        height: 448px;
+        width: 899px;
+      }
+
+      .resourceContent_bottom {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 816px;
+        margin-top: 14px;
+        border-top: 1px solid #EEEEEE;
+        
+        @media screen and (min-width: 980px){
+          .bottom_content{
+            display: flex;
+            flex-direction: row; 
+            justify-content: space-between;
+            width: 816px;
+          }
+        }
+
+        .resourceContent_bottom_left, .resourceContent_bottom_right{
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          margin-top: 49px;
+          
+          .resource_item{
+            display: flex;
+            align-items: center;
+            margin-right: 50px;
+            margin-bottom: 32px;
+
+            span:first-child{
+              display: inline-block;
+              height: 19px;
+              width: 19px;
+              margin-right: 16px;
+            }
+
+            span:last-child{
+              display: inline-flex;
+              font-size: 18px;
+              font-weight: 600;
+              color: #3C3C3C;
+            }
+          }
+
+        }
+      }
+    }
+
   }
 
-  @media (max-width: 980px) {
+  .economicCycle{
+    height: 827px;
+    width: 100%;
+    background: url('/imges/Economic/economicCycle.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    .economicCycle_img{
+      margin-top: 70px;
+      img{
+        height: 492px;
+        width: 1006px;
+      }
+    }
+
+    .tit {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 74px 0 45px 0;
+
+        font-size: 30px;
+        font-family: PingFangSC-Semibold, PingFang SC;
+        font-weight: 600;
+        color: #3c3c3c;
+        line-height: 42px;
+    }
+    i {
+        display: inline-block;
+        width: 30px;
+        height: 3px;
+        background: #fff;
+    }
+
+    p {
+        margin: 0 20px;
+        color: #fff;
+    }
+
+  }
+
+  .h5{
+    display: none;
+  }
+  // @media (max-width:1680px){
+
+  // }
+  @media (max-width:1440px){
+    .bitDNS_economic{
+      height: 310px;
+    }
     .tokenDesign {
+      height: 552px;
+      .tokenDesign_content{
+        width: 1000px;
+        margin: 0 auto;
+      }
+      .tokenDesign_content_top {
+        margin-top: 90px;
+
+        .topContent_left {
+          margin: 0 auto;
+          // 
+          p {
+            max-width: 419px;
+            font-size: 14px;
+            line-height: 28px;
+          }
+          p:first-child {
+            margin-bottom: 16px;
+            height: 28;
+            font-size: 23px;
+          }
+        }
+
+        .topContent_right {
+          margin: 0 auto;
+        
+          img{
+            width: 318px;
+            height: 233px;
+          }
+        }
+      }
+
+      .tokenDesign_middleLine {
+        height: 1px;
+        width: 875px;
+        margin: 0 auto;
+        margin: 53px;
+      }
+      .hr1 {
+        width: 21px;
+        height: 23px;
+      }
+      .tokenDesign_content_bottom {
+        margin: 0 53px;
+        p {
+          font-size: 23px;
+        }
+        .tokenflex {
+          div {
+            width: 117px;
+            height: 39px;
+            text-align: center;
+            line-height: 39px;
+            font-size: 15px;
+          }
+        }
+      }
+    }
+
+    .chainResourceAllocation{
+      height: 677px;
+      .chainResourceAllocation_content{
+
+        img{
+          margin-top: 26px;
+          height: 336px;
+          width: 674px;
+        }
+
+        .resourceContent_bottom {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          width: 674px;
+          margin-top: 11px;
+
+          .resourceContent_bottom_left, .resourceContent_bottom_right{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin-top: 37px;
+            
+            .resource_item{
+              display: flex;
+              align-items: center;
+              margin-right: 34px;
+              margin-bottom: 21px;
+
+              span:first-child{
+                display: inline-block;
+                height: 13px;
+                width: 13px;
+                margin-right: 11px;
+              }
+
+              span:last-child{
+                font-size: 12px;
+              }
+            }
+
+          }
+        }
+      }
+    }
+
+    .economicCycle{
+      height: 620px;
+
+      .economicCycle_img{
+        margin-top: 36px;
+        
+        img{
+          height: 369px;
+          width: 755px;
+        }
+      }
+    }
+  }
+  @media (min-width:1024px) and (max-width:1280px){
+    .tokenDesign {
+      height: 491px;
+      .tokenDesign_content{
+        width: 900px;
+        margin: 0 auto;
+      }
+      .tokenDesign_content_top {
+        margin-top: 80px;
+
+        .topContent_left {
+          margin: 0 auto;
+          // 
+          p {
+            max-width: 372px;
+            font-size: 12px;
+            line-height: 25px;
+          }
+          p:first-child {
+            margin-bottom: 14px;
+            width: 139px;
+            height: 28;
+            font-size: 20px;
+          }
+        }
+
+        .topContent_right {
+          margin: 0 auto;
+        
+          img{
+            width: 283px;
+            height: 207px;
+          }
+        }
+      }
+
+      .tokenDesign_middleLine {
+        height: 1px;
+        width: 777px;
+        border-top: 1px solid #979797;
+        margin: 0 auto;
+        margin: 47px 0 47px 11px;
+        margin-left: 20px;
+      }
+      .hr1 {
+        width: 19px;
+        height: 21px;
+      }
+      .tokenDesign_content_bottom {
+        p {
+          // margin: 65px 0 63px;
+          font-size: 20px;
+        }
+        .tokenflex {
+          div {
+            width: 104px;
+            height: 35px;
+            text-align: center;
+            line-height: 35;
+            font-size: 13px;
+          }
+        }
+      }
+    }
+
+    .bitDNS_economic{
+      height: 275px;
+    }
+
+    .chainResourceAllocation{
+      height: 600px;
+      .chainResourceAllocation_content{
+        p{
+          font-size: 18px;
+          line-height: 35px;
+          text-align: center;
+          width: 600px;
+        }
+
+        img{
+          margin-top: 21px;
+          height: 300px;
+          width: 600px;
+        }
+
+        .resourceContent_bottom {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          width: 600px;
+          margin-top: 8px;
+
+          .resourceContent_bottom_left, .resourceContent_bottom_right{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin-top: 23px;
+            
+            .resource_item{
+              display: flex;
+              align-items: center;
+              margin-right: 34px;
+              margin-bottom: 21px;
+
+              span:first-child{
+                display: inline-block;
+                height: 13px;
+                width: 13px;
+                margin-right: 11px;
+              }
+
+              span:last-child{
+                font-size: 12px;
+              }
+            }
+
+          }
+        }
+      }
+    }
+
+    .economicCycle{
+      height: 551px;
+
+      .economicCycle_img{
+        margin-top: 16px;
+        
+        img{
+          height: 328px;
+          width: 671px;
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 980px) {
+    .web{
+      display: none;
+    }
+    .h5{
+      display: inline-block;
+      width: 100%;
+    }
+    .bitDNS_economic {
+      width: 100%;
        
-      padding-top: 44px;
+      height: 387px;
+      background-color: #fff;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .bitDNS_economic_content {
+      display: flex;
+      width: 100%;
+      padding: 0 20px;
+      box-sizing: border-box;
+      word-wrap: break-word;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #3c3c3c;
+      font-size: 22px;
+      line-height: 35px;
+      font-weight: 400;
+    }
+
+    .tokenDesign {
       background: url("/imges/h5_Economic/tokenDesignBg.png") no-repeat;
-      background-size: 100% 100%;
+      background-size: cover;
       background-position: center;
-      height: 1257px !important;
+      height: 1257px;
       box-sizing: border-box;
       .tokenDesign_content_top {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         justify-content: space-between;
-        margin-top: 119px;
+        margin-top: 88px;
 
         .topContent_left {
           margin: 0 auto;
           // 
           p {
-            width: 685px;
+            max-width: 685px;
             height: 255px;
             font-size: 22px;
             font-family: PingFangSC-Regular, PingFang SC;
@@ -300,8 +679,8 @@ export default {
           margin: 0 auto;
         
           img{
-          width: 688px;
-          height: 502px;
+            width: 685px;
+            height: 502px;
           }
         }
       }
@@ -321,9 +700,10 @@ export default {
         display: none;
       }
       .tokenDesign_content_bottom {
-        width: 685px;
-        justify-content: space-around;
-        align-items: center;
+        max-width: 685px;
+        justify-content: initial;
+        align-items: initial;
+        flex-direction: column;
         margin: 0 auto;
         p {
           margin: 85px 0 49px;
@@ -333,8 +713,8 @@ export default {
         }
         .tokenflex {
           display: flex;
-          justify-content: space-around;
-          align-items: center;
+          justify-content: initial;
+          align-items:initial;
           div {
             width: 210px;
             height: 70px;
@@ -343,81 +723,16 @@ export default {
 
             border: 1px solid #ffffff;
             color: #fff;
+            margin: 0;
+          }
+
+          div:nth-child(2){
+            margin: 0 30px;
           }
         }
       }
     }
-  }
 
-  @media (min-width: 980px) {
-    .chainResourceAllocation {
-      height: 1058px;
-      .chainResourceAllocation_content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        p {
-          font-size: 18px;
-          font-weight: 400;
-          color: #3c3c3c;
-          line-height: 35px;
-          text-align: center;
-          width: 867px;
-        }
-
-        .chainimg {
-          img{
-height: 448px;
-          width: 899px;
-          }
-          margin: 0 auto;
-          margin-top: 21px;
-        }
-
-        .resourceContent_bottom {
-          .bottom_content {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            width: 816px;
-            margin-top: 14px;
-            border-top: 1px solid #eeeeee;
-          }
-          .resourceContent_bottom_left,
-          .resourceContent_bottom_right {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            margin-top: 49px;
-
-            .resource_item {
-              display: flex;
-              align-items: center;
-              margin-right: 50px;
-              margin-bottom: 32px;
-
-              span:first-child {
-                display: inline-block;
-                height: 19px;
-                width: 19px;
-                margin-right: 16px;
-              }
-
-              span:last-child {
-                display: inline-flex;
-                font-size: 18px;
-                font-weight: 600;
-                color: #3c3c3c;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-
-  @media (max-width: 980px) {
     .chainResourceAllocation {
        
       height: 895px;
@@ -440,7 +755,7 @@ height: 448px;
           margin-top: 21px;
          
           img{
- height: 344px;
+          height: 344px;
           width: 690px;
           }
         }
@@ -448,12 +763,12 @@ height: 448px;
         .resourceContent_bottom {
           display: flex;
           flex-direction: column;
-          justify-content: space-between;
           width: 100%;
-          padding-left: 70px;
-          
+          padding-left: 0;
           box-sizing: border-box;
+          margin: 0 auto;
           margin-top: 14px;
+          border: 0;
           .bottom_content {
             margin: 0 auto;
             //  width: 690px !important;
@@ -469,7 +784,7 @@ height: 448px;
               width: 150px;
               
               align-items: center;
-              margin-right: 80px;
+              margin: 0 40px;
               margin-bottom: 32px;
               span:first-child {
                 display: inline-block;
@@ -489,67 +804,23 @@ height: 448px;
         }
       }
     }
-  }
 
-  @media (min-width: 980px) {
-    .economicCycle {
-      height: 827px;
-      width: 100%;
-      background: url("/imges/Economic/economicCycle.png") no-repeat;
-      background-size: 100% 100%;
-      background-position: center;
-        
-      .economicCycle_img {
-        margin: 0 auto;
-        margin-top: 70px;
-        img{
- height: 492px;
-        width: 1006px;
-        }
-      }
-
-      .tit {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 74px 0 45px 0;
-
-        font-size: 30px;
-        font-family: PingFangSC-Semibold, PingFang SC;
-        font-weight: 600;
-        color: #3c3c3c;
-        line-height: 42px;
-      }
-      i {
-        display: inline-block;
-        width: 30px;
-        height: 3px;
-        background: #fff;
-      }
-
-      p {
-        margin: 0 20px;
-        color: #fff;
-      }
-    }
-  }
-
-  @media (max-width: 980px) {
     .economicCycle {
        
-      padding: 94px 30px;
+      padding: 94px 0;
       height: 587px;
       width: 100%;
       background: url("/imges/h5_Economic/economicCycle.png") no-repeat;
-      background-size: 100% 100%;
+      background-size: cover;
       background-position: center;
       box-sizing: border-box;
       .economicCycle_img {
+        width: 690px;
+        height: 387px;
         margin: 0 auto;
-       
         img{
-width: 690px;
-height: 387px;
+          width: 100%;
+          height: 100%;
         }
       }
 
@@ -569,19 +840,5 @@ height: 387px;
       }
     }
   }
-
-    @media (min-width:980px) {
-      .h5{
-        display: none;
-      }
-
-    }
-
-     @media (max-width:980px) {
-      .web{
-        display: none;
-      }
-
-    }
 }
 </style>
