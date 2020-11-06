@@ -1,10 +1,10 @@
 <template>
   <div class="economic ">
-    <!-- <Banner 
+    <Banner 
       bgUrl="/imges/banna/banner_economic.png"
       insideBgUrl="/imges/product/littleSquare.png"
       bgText="经济与治理"
-    />-->
+    />
     <div class="common_container bitDNS_economic">
       <BlockTit text="BITDNS经济与治理" />
 

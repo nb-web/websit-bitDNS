@@ -1,12 +1,12 @@
 <template>
   <div class="domainService">
-    <!-- <Banner 
+    <Banner 
       bgUrl="/imges/banna/banner_about.png"
       insideBgUrl="/imges/product/littleSquare.png"
       bgText="BitDNS 域名服务"
       squareWidth="438px"
       showDes
-    /> -->
+    />
     <div class="common_container systemProblems">
       <BlockTit text="传统DNS域名系统的问题"/>
       <div class="systemProblems_content">
@@ -150,30 +150,26 @@
     <el-carousel type="card" height="200px" :loop="true" indicator-position="none" arrow="never" :autoplay="false">
     <el-carousel-item>
       <div class="serviceFeaturesItem">
-         <div class="swipeImg1">
-
-          </div>
-  
+          
+            <img src="/imges/h5_product/serviceFeatures1.png" class="h5" alt="">
           <p>去中心化</p>
           <p>BitDNS的管理和服务均通过智能合约完成，完全去中心化，安全性和可信度非常高。</p>
         </div>
     </el-carousel-item>
     <el-carousel-item>
       <div class="serviceFeaturesItem">
-         <div class="swipeImg2">
-
-          </div>
-  
-          <p>去中心化</p>
-          <p>BitDNS的管理和服务均通过智能合约完成，完全去中心化，安全性和可信度非常高。</p>
+          
+            <img src="/imges/h5_product/serviceFeatures2.png" class="h5" alt="">
+          <p>跨链交互</p>
+          <p>BITDNS能够服务已有的公链生态，如以太坊、IPFS等， 让文件访问、地址转账、智能合约调用更方便、更快捷。</p>
         </div>
     </el-carousel-item>
     <el-carousel-item>
       <div class="serviceFeaturesItem">
-         <div class="swipeImg3">
-          </div>
-          <p>去中心化</p>
-          <p>BitDNS的管理和服务均通过智能合约完成，完全去中心化，安全性和可信度非常高。</p>
+       
+        <img src="/imges/h5_product/serviceFeatures3.png" class="h5"  alt="">
+          <p>可循环的经济模型</p>
+          <p>BitDNS系统的流通通证DNS内置了激励池，所有系统产出费用会进入激励池，并按比例分配给DNS的持有人。</p>
         </div>
     </el-carousel-item>
   </el-carousel>
@@ -182,25 +178,20 @@
 
       <div class="common_container serviceFeatures_content web">
         <div class="serviceFeaturesItem">
-          <div class="swipeImg1">
-
-          </div>
+        <img src="/imges/product/serviceFeatures1.png" class="web" alt="">
           <p>去中心化</p>
           <p>BitDNS的管理和服务均通过智能合约完成，完全去中心化，安全性和可信度非常高。</p>
         </div>
 
         <div class="serviceFeaturesItem">
-            <div class="swipeImg2">
-
-          </div>
+             <img src="/imges/product/serviceFeatures2.png" class="web" alt="">
          
           <p>跨链交互</p>
           <p>BITDNS能够服务已有的公链生态，如以太坊、IPFS等， 让文件访问、地址转账、智能合约调用更方便、更快捷。</p>
         </div>
 
         <div class="serviceFeaturesItem">
-            <div class="swipeImg3">
-          </div>
+           <img src="/imges/product/serviceFeatures3.png" class="web" alt="">
           <p>可循环的经济模型</p>
           <p>BitDNS系统的流通通证DNS内置了激励池，所有系统产出费用会进入激励池，并按比例分配给DNS的持有人。</p>
         </div>
@@ -1062,30 +1053,12 @@ img{
           flex-direction: column;
           padding: 10px 20px;
 
-          .swipeImg1{
-            margin: 41px 0 13px;
+         img{
+  margin: 41px 0 13px;
             height: 38px;
             width: 34px;
-            background: url("/imges/product/serviceFeatures1.png") no-repeat;
-            background-position: center;
-            background-size: cover;
-            }
-             .swipeImg2{
-            margin: 41px 0 13px;
-            height: 38px;
-            width: 34px;
-            background: url("/imges/product/serviceFeatures2.png") no-repeat;
-            background-position: center;
-            background-size: cover;
-            }
-             .swipeImg3{
-            margin: 41px 0 13px;
-            height: 38px;
-            width: 34px;
-            background: url("/imges/product/serviceFeatures3.png") no-repeat;
-            background-position: center;
-            background-size: cover;
-            }
+         }
+          
 
           p:first-child{
             font-size: 14px;
@@ -1126,30 +1099,10 @@ img{
           display: flex;
           align-items: center;
           flex-direction: column;
-          
-            .swipeImg1{
-            margin: 41px 0 13px;
+            img{
+  margin: 41px 0 13px;
             height: 38px;
             width: 34px;
-            background: url("/imges/h5_product/serviceFeatures1.png") no-repeat;
-            background-position: center;
-            background-size: cover;
-            }
-             .swipeImg2{
-            margin: 41px 0 13px;
-            height: 38px;
-            width: 34px;
-            background: url("/imges/h5_product/serviceFeatures2.png") no-repeat;
-            background-position: center;
-            background-size: cover;
-            }
-             .swipeImg3{
-            margin: 41px 0 13px;
-            height: 38px;
-            width: 34px;
-            background: url("/imges/h5_product/serviceFeatures3.png") no-repeat;
-            background-position: center;
-            background-size: cover;
             }
           p:first-child{
             font-size: 14px;
@@ -1158,13 +1111,14 @@ img{
           }
 
           p:last-child{
-            // width: 169px;
+            padding: 0 20px;
             font-size: 12px;
             font-weight: normal;
             color: #4A4A4A;
-            line-height: 19px;
+            line-height: 40px;
             text-align: center;
             margin-top: 20px;
+            box-sizing: border-box;
           }
         }
   }

@@ -2,14 +2,21 @@
   <div class="btm">
     <div class="footer common_container">
       <div class="f_left">
-        <p style="font-size: 30px">联系我们</p>
-        <div style="margin-top:70px">
-          <img src="/imges/foot/email.png" alt style="width:40px;height:28px" />
+        <p>联系我们</p>
+        <div class="email">
+          <img src="/imges/foot/email.png" class="web" alt style="width:40px;height:28px" />
+          <img src="/imges/h5_foot/email.png" class="h5" alt style="width:52px;height:37px" />
+
           <a style="color: #fff" href="mailto:support@bitdns.vip">support@BitDNS.vip</a>
         </div>
         <div style="margin-top:34px">
-          <img src="/imges/foot/foot_post.png" alt style="width:42px;height:40px" />
-          <a style="color: #fff" href="https://www.bitdns.vip/images/whitepaper_zh.pdf" target="_blank">White paper</a>
+          <img src="/imges/foot/foot_post.png" class="web" alt style="width:42px;height:40px" />
+          <img src="/imges/h5_foot/foot_post.png" class="h5" alt style="width:52px;height:49px" />
+          <a
+            style="color: #fff"
+            href="https://www.bitdns.vip/images/whitepaper_zh.pdf"
+            target="_blank"
+          >White paper</a>
         </div>
       </div>
       <div class="f_right">
@@ -17,50 +24,63 @@
         <ul>
           <li>
             <a href="https://tinyurl.com/bitdns-twitter" class="list-item" target="_blank">
-              <img src="/imges/foot/foot_24.png" alt />
+              <img src="/imges/foot/foot_24.png" class="web" alt />
+              <img src="/imges/h5_foot/foot_24.png" class="h5" alt />
             </a>
           </li>
           <li>
             <a href="https://m.facebook.com/BitDNSofficial" class="list-item" target="_blank">
-              <img src="/imges/foot/foot_25.png" alt />
+              <img src="/imges/foot/foot_25.png" class="web"  alt />
+              <img src="/imges/h5_foot/foot_25.png"  class="h5" alt />
             </a>
           </li>
           <li>
             <a href="https://t.me/bitdnsenglish" class="list-item" target="_blank">
-              <img src="/imges/foot/foot_27.png" alt />
+              <img src="/imges/foot/foot_27.png"  class="web" alt />
+              <img src="/imges/h5_foot/foot_27.png"  class="h5" alt />
             </a>
           </li>
           <li>
             <a href="https://medium.com/@bitdnsofficial" class="list-item" target="_blank">
-              <img src="/imges/foot/foot_29.png" alt />
+              <img src="/imges/foot/foot_29.png" class="web"  alt />
+              <img src="/imges/h5_foot/foot_29.png"  class="h5" alt />
             </a>
           </li>
-         
+
           <el-tooltip placement="bottom">
-            <div slot="content"><img src="/imges/foot/code.jpg" alt="" style="width:74px;height:74px"></div>
+            <div slot="content">
+              <img src="/imges/foot/code.jpg" class="web"  alt style="width:95px;height:95px" />
+
+              <img src="/imges/foot/code.jpg" class="h5" alt style="width:70px;height:70px" />
+            </div>
             <li>
-              <img src="/imges/foot/wechat.png" alt />
+              <img src="/imges/foot/wechat.png" class="web"  alt />
+              <img src="/imges/h5_foot/wechat.png" class="h5"  alt />
             </li>
           </el-tooltip>
-        
+
           <li>
             <a href="https://tinyurl.com/bitdnsofficial-ins" class="list-item" target="_blank">
-              <img src="/imges/foot/foot_31.png" alt />
+              <img src="/imges/foot/foot_31.png" class="web"  alt />
+              <img src="/imges/h5_foot/foot_31.png"  class="h5" alt />
             </a>
           </li>
           <li>
             <a href="https://t.me/bitdnsenglish" class="list-item" target="_blank">
-              <img src="/imges/foot/foot_33.png" alt />
+              <img src="/imges/foot/foot_33.png" class="web"  alt />
+              <img src="/imges/h5_foot/foot_33.png" class="h5"  alt />
             </a>
           </li>
           <li>
             <a href="https://www.reddit.com/user/BitDNS" class="list-item" target="_blank">
-              <img src="/imges/foot/foot_35.png" alt />
+              <img src="/imges/foot/foot_35.png" class="web"  alt />
+              <img src="/imges/h5_foot/foot_35.png" class="h5"  alt />
             </a>
           </li>
           <li>
             <a href="https://tinyurl.com/bitdns-youtube" class="list-item" target="_blank">
-              <img src="/imges/foot/foot_37.png" alt />
+              <img src="/imges/foot/foot_37.png"  class="web" alt />
+              <img src="/imges/h5_foot/foot_37.png" class="h5" alt />
             </a>
           </li>
         </ul>
@@ -80,42 +100,119 @@ export default {};
   background: black;
   color: white;
   box-sizing: border-box;
-}
-.footer {
-  padding: 90px 100px;
-  box-sizing: border-box;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  .f_left {
-    border: 1px solid red;
-    width: 430px;
-    height: 244px;
-    img{
-      vertical-align: middle;
-      margin-right: 15px;
-    }
-  }
-  .f_right {
-    width: 570px;
-    height: 244px;
-    p{
-      margin-left: 18px;
-      font-size: 30px;
-    }
 
-    ul {
-      display: flex;
-      flex-wrap: wrap;
-      margin-top: 52px;
-      li {
-        margin: 16.5px;
+  .footer {
+    padding: 90px 100px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .f_left {
+      // border: 1px solid red;
+      width: 430px;
+      height: 244px;
+      .email {
+        margin-top: 70px;
       }
       img {
-        width: 74px;
-        height: 74px;
+        vertical-align: middle;
+        margin-right: 15px;
+      }
+      p {
+        font-size: 26px;
+      }
+    }
+    .f_right {
+      width: 570px;
+      height: 244px;
+      p {
+        margin-left: 18px;
+        font-size: 26px;
+      }
+
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 52px;
+        li {
+          margin: 16.5px;
+        }
+        img {
+          width: 74px;
+          height: 74px;
+        }
       }
     }
   }
+}
+  @media (min-width:980px) {
+    .h5{
+      display:none
+    }
+  }
+@media (max-width: 980px) {
+  .web{
+    display: none;
+  }
+  .btm {
+    width: 100%;
+    height: 893px;
+    background: black;
+    color: white;
+    box-sizing: border-box;
+
+    .footer {
+      padding: 80px 32px 150px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start !important;
+      .f_left {
+        .email {
+          margin-top: 50px;
+        }
+        img {
+          vertical-align: middle;
+          margin-right: 15px;
+        }
+        p {
+          font-size: 30px;
+        }
+        a{
+          
+font-size: 28px;
+font-family: PingFangSC-Medium, PingFang SC;
+font-weight: 500;
+color: #FFFFFF;
+line-height: 40px;
+        }
+      }
+      .f_right {
+        width: 570px;
+        margin-top: 120px;
+      
+        p {
+            margin-left: 0;
+          font-size: 30px;
+        }
+        ul {
+          width: 670px;
+          display: flex;
+          flex-wrap: wrap;
+          margin-top: 52px;
+          li {
+            margin: 16.5px;
+          }
+          img {
+            width: 100px;
+            height: 100px;
+          }
+        }
+      }
+    }
+  }
+
+
 }
 </style>
