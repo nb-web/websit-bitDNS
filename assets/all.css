@@ -28,7 +28,7 @@ li{
 @media (max-width:320px) {
     body,html{font-size: 10px;}
 } 
- @media (min-width:375px) {
+ @media (min-width:375px) and (max-width: 980px) {
     body,html{font-size: 12px;}
 }
 

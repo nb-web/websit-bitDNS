@@ -390,7 +390,6 @@ export default {
 
 <style lang='less'>
 .container {
-  @media (min-width:980px) {
     .block {
     padding: 96px 0;
     ul {
@@ -422,12 +421,9 @@ export default {
       }
     }
   }
-  }
   
-  @media screen {
-    
-  }
-
+  
+ 
   .bitDns {
     width: 100%;
     height: 305px;
@@ -694,7 +690,6 @@ export default {
         background-position: center;
       }
       .img2 {
-
         background: url("/imges/index/index_54.png") no-repeat;
         background-size: cover;
         background-position: center;
@@ -1169,6 +1164,16 @@ i {
         font-size: 12px;
         line-height: normal;
       }
+    }
+
+    @media (max-width:980px) {
+      
+
+
+
+
+
+
     }
   }
 </style>

@@ -21,7 +21,9 @@
             <p>DNS是BitDNS系统中的生态通证，亦是BitDNS的价值支撑，它保证了BitDNS生态系统的去中心化，使生态中的权益者能够自由公平的参与网络治理。当官方开放域名二级交易市场时，DNS将作为支付代币进行域名的买卖。在未来，DNS的使用场景也会不断拓宽。在BitDNS系统上线后，用户注册新的域名也将获得一定数量的DNS作为奖励，BitDNS基金会也将会拿出部分DNS来激励用户注册域名。</p>
           </div>
 
-          <div class="topContent_right"></div>
+          <div class="topContent_right">
+            <img src="/imges/Economic/tokenDesign_rightImg.png" alt="">
+          </div>
         </div>
 
         <div class="tokenDesign_middleLine"></div>
@@ -42,7 +44,9 @@
       <BlockTit text="链上资源分配模型" />
 
       <div class="common_container chainResourceAllocation_content">
-        <div class="chainimg"></div>
+        <div class="chainimg">
+          <img src="/imges/Economic/resourceAllocation.png" alt="">
+        </div>
 
         <div class="resourceContent_bottom">
           <div class="bottom_content">
@@ -104,7 +108,10 @@
         <p>BitDNS经济循环</p>
         <i></i>
       </div>
-      <div class="economicCycle_img" style="text-align: center;"></div>
+      <div class="economicCycle_img" style="text-align: center;">
+        <img src="/imges/Economic/token19.png" class="web" alt="">
+        <img src="/imges/h5_Economic/token19.png" class="h5" alt="">
+      </div>
     </div>
   </div>
 </template>
@@ -201,11 +208,11 @@ export default {
 
         .topContent_right {
           margin-right: 50px;
+        
+        img{
           width: 424px;
           height: 311px;
-          background: url("/imges/Economic/tokenDesign_rightImg.png") no-repeat;
-          background-position: center;
-          background-size: 100% 100%;
+        }
         }
       }
 
@@ -291,12 +298,11 @@ export default {
 
         .topContent_right {
           margin: 0 auto;
+        
+          img{
           width: 688px;
           height: 502px;
-          background: url("/imges/h5_Economic/tokenDesign_rightImg.png")
-            no-repeat;
-          background-position: center;
-          background-size: 100% 100%;
+          }
         }
       }
 
@@ -361,13 +367,12 @@ export default {
         }
 
         .chainimg {
+          img{
+height: 448px;
+          width: 899px;
+          }
           margin: 0 auto;
           margin-top: 21px;
-          height: 448px;
-          width: 899px;
-          background: url("/imges/Economic/resourceAllocation.png") no-repeat;
-          background-size: 100% 100%;
-          background-position: center;
         }
 
         .resourceContent_bottom {
@@ -433,11 +438,11 @@ export default {
         .chainimg {
           margin: 0 auto;
           margin-top: 21px;
-          height: 344px;
+         
+          img{
+ height: 344px;
           width: 690px;
-          background: url("/imges/h5_Economic/resourceAllocation.png") no-repeat;
-          background-size: 100% 100%;
-          background-position: center;
+          }
         }
 
         .resourceContent_bottom {
@@ -461,7 +466,7 @@ export default {
             margin: 0 auto;
             .resource_item {
               display: flex;
-              width: 130px;
+              width: 150px;
               
               align-items: center;
               margin-right: 80px;
@@ -496,13 +501,11 @@ export default {
         
       .economicCycle_img {
         margin: 0 auto;
-
         margin-top: 70px;
-        background: url("/imges/Economic/token19.png") no-repeat;
-        background-position: center;
-        background-size: 100% 100%;
-        height: 492px;
+        img{
+ height: 492px;
         width: 1006px;
+        }
       }
 
       .tit {
@@ -543,11 +546,11 @@ export default {
       box-sizing: border-box;
       .economicCycle_img {
         margin: 0 auto;
-        background: url("/imges/h5_Economic/token19.png") no-repeat;
-        background-position: center;
-        background-size: 100% 100%;
-        height: 400px;
-        
+       
+        img{
+width: 690px;
+height: 387px;
+        }
       }
 
       .tit {
@@ -566,5 +569,19 @@ export default {
       }
     }
   }
+
+    @media (min-width:980px) {
+      .h5{
+        display: none;
+      }
+
+    }
+
+     @media (max-width:980px) {
+      .web{
+        display: none;
+      }
+
+    }
 }
 </style>
