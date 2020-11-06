@@ -237,6 +237,7 @@ export default {
         box-sizing: border-box;
         margin: 0 21px;
         margin-bottom: 42px;
+       
       }
       img {
         margin: 0 auto;
@@ -292,6 +293,8 @@ export default {
         box-sizing: border-box;
         margin: 0 21px;
         margin-bottom: 42px;
+        overflow: hidden;
+
       }
       img {
         margin: 0 auto;

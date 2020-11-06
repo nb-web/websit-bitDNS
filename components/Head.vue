@@ -67,26 +67,41 @@
         <el-collapse-transition>
           <div v-show="show">
             <ul>
-             
-                <nuxt-link to="/"> <li @click="close">{{ $t('links.home') }}  </li></nuxt-link>
-            
+              <nuxt-link to="/" :style="$route.path=='/' ? {color: '#2060F4'} : ''">
+                <li @click="close">{{ $t('links.home') }}</li>
+              </nuxt-link>
+
               <el-divider></el-divider>
-              <li>
+              <li @click="setshow2()">
                 产品工具
                 <img src="/pull.png" alt />
               </li>
               <el-divider></el-divider>
-              <li @click="close">
-                <p class="ym">域名服务</p>
-              </li>
-              <el-divider></el-divider>
+              <el-collapse-transition>
+                <div v-show="show3">
+                 
+                    <nuxt-link
+                      to="/product"
+                      :style="$route.path=='/product' ? {color: '#2060F4'} : ''"
+                    >
+                     <li @click="close">
+                      <p class="ym">{{ $t('links.product_domainService') }}</p>
+                        </li>
+                    </nuxt-link>
+                
+                  <el-divider></el-divider>
+                </div>
+              </el-collapse-transition>
+
               <li @click="close">
                 <nuxt-link to="/Economic">{{ $t('links.economic') }}</nuxt-link>
               </li>
               <el-divider></el-divider>
-              
-                <nuxt-link to="/about"><li @click="close">{{ $t('links.about') }}</li></nuxt-link>
-              
+
+              <nuxt-link to="/about">
+                <li @click="close">{{ $t('links.about') }}</li>
+              </nuxt-link>
+
               <el-divider></el-divider>
               <li>
                 <span style="color:blue">中</span>/英
@@ -104,6 +119,7 @@ export default {
   data() {
     return {
       show: false,
+      show3: false,
       locale: this.$store.state.locale,
       showNavChildren: false
     };
@@ -122,6 +138,14 @@ export default {
         this.show = true;
       }
       console.log(this.show);
+    },
+    setshow2() {
+      if (this.show3) {
+        this.show3 = false;
+      } else {
+        this.show3 = true;
+      }
+      console.log(this.show3);
     },
     close() {
       this.show = false;
@@ -232,7 +256,7 @@ export default {
   }
 }
 
-@media (max-width: 960px) {
+@media (max-width: 980px) {
   .web {
     display: none !important;
   }
@@ -253,7 +277,6 @@ export default {
       .all {
         width: 50px;
         img {
-         
           width: 31px;
           height: 30px;
         }

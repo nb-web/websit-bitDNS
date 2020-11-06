@@ -88,53 +88,52 @@
         <div class="teamBlocks">
           <div class="teamBlocksItems">
             <div class="teamBlocksItem">
-                <div class="teamImg1">
+                <!-- <div class="teamImg1"> </div> -->
 
-              </div>
+             
+              <img src="/imges/h5_product/teams1.png" class="h5" alt="">
+              <img src="/imges/product/teams1.png" class="web" alt="">
+
               <p>文件名</p>
             </div>
 
             <div class="teamBlocksItem">
-              <div class="teamImg2">
 
-              </div>
+              <img src="/imges/h5_product/teams2.png"  class="h5" alt="">
+              <img src="/imges/product/teams2.png"  class="web" alt="">
               <p>简化哈希值</p>
             </div>
 
             <div class="teamBlocksItem">
-             <div class="teamImg3">
-
-              </div>
+              <img src="/imges/h5_product/teams3.png"  class="h5" alt="">
+              <img src="/imges/product/teams3.png"  class="web" alt="">
               <p>邮件通信地址</p>
             </div>
           </div>
 
           <div class="teamBlocksItems">
             <div class="teamBlocksItem">
-              <div class="teamImg4">
-
-              </div>
+              <img src="/imges/h5_product/teams4.png"  class="h5" alt="">
+              <img src="/imges/product/teams4.png"  class="web" alt="">
               <p>昵称转账</p>
             </div>
 
             <div class="teamBlocksItem">
-              <div class="teamImg5">
-
-              </div>
+              <img src="/imges/h5_product/teams5.png"  class="h5" alt="">
+              <img src="/imges/product/teams5.png"  class="web" alt="">
               <p>公钥昵称</p>
             </div>
 
             <div class="teamBlocksItem">
-              <div class="teamImg6">
+              <img src="/imges/h5_product/teams6.png"  class="h5" alt="">
+              <img src="/imges/product/teams6.png"  class="web" alt="">
 
-              </div>
               <p>子域名</p>
             </div>
 
             <div class="teamBlocksItem">
-              <div class="teamImg7">
-
-              </div>
+    <img src="/imges/product/teams7.png" class="web" alt="">
+              <img src="/imges/h5_product/teams7.png"  class="h5" alt="">
               <p>特殊域名收藏级交易</p>
             </div>
           </div>
@@ -152,6 +151,7 @@
       <div class="serviceFeaturesItem">
           
             <img src="/imges/h5_product/serviceFeatures1.png" class="h5" alt="">
+            <img src="/imges/h5_product/serviceFeatures1.png" class="web" alt="">
           <p>去中心化</p>
           <p>BitDNS的管理和服务均通过智能合约完成，完全去中心化，安全性和可信度非常高。</p>
         </div>
@@ -634,7 +634,7 @@ export default {
 
 @media (max-width:980px) {
   .systemProblems{
-    height: 413px;
+    height: 430px;
     background-color: #fff;
     display: flex;
     align-items: center;
@@ -688,6 +688,9 @@ export default {
 img{
   width: 100%;
   height: 100%;
+  max-width: 750px;
+  max-height: 362px;
+  margin: 0 auto;
 }
       }
       
@@ -791,63 +794,6 @@ img{
             align-items: center;
             flex-direction: column;
             margin-right: 20px;
-
-            .teamImg1{
-              width: 28px;
-              height: 28px;
-              background: url("/imges/product/teams1.png") no-repeat;
-              background-size: cover;
-              background-position: center;
-              margin-bottom: 15px;
-            }
-            .teamImg2{
-              width: 28px;
-              height: 28px;
-              background: url("/imges/product/teams2.png") no-repeat;
-              background-size: cover;
-              background-position: center;
-              margin-bottom: 15px;
-            }
-            .teamImg3{
-              width: 28px;
-              height: 28px;
-              background: url("/imges/product/teams3.png") no-repeat;
-              background-size: cover;
-              background-position: center;
-              margin-bottom: 15px;
-            }
-            .teamImg4{
-              width: 28px;
-              height: 28px;
-              background: url("/imges/product/teams4.png") no-repeat;
-              background-size: cover;
-              background-position: center;
-              margin-bottom: 15px;
-            }
-            .teamImg5{
-              width: 28px;
-              height: 28px;
-              background: url("/imges/product/teams5.png") no-repeat;
-              background-size: cover;
-              background-position: center;
-              margin-bottom: 15px;
-            }
-            .teamImg6{
-              width: 28px;
-              height: 28px;
-              background: url("/imges/product/teams6.png") no-repeat;
-              background-size: cover;
-              background-position: center;
-              margin-bottom: 15px;
-            }
-            .teamImg7{
-              width: 28px;
-              height: 28px;
-              background: url("/imges/product/teams7.png") no-repeat;
-              background-size: cover;
-              background-position: center;
-              margin-bottom: 15px;
-            }
             p{
               font-size: 14px;
               color: #333333;
@@ -903,8 +849,8 @@ img{
 
           .teamBlocksItem{
             display: flex;
-            height: 100px;
-            width: 136px;
+            height: 120px;
+            width: 156px;
             padding-top: 36px;
             background: url("/imges/product/bitDNSTeams_whiteBg.png") no-repeat;
             background-size: cover;
@@ -912,65 +858,11 @@ img{
             align-items: center;
             flex-direction: column;
             margin-right: 20px;
-
-          .teamImg1{
-              width: 28px;
-              height: 28px;
-              background: url("/imges/h5_product/teams1.png") no-repeat;
-              background-size: cover;
-              background-position: center;
-              margin-bottom: 15px;
-            }
-            .teamImg2{
-              width: 28px;
-              height: 28px;
-              background: url("/imges/h5_product/teams2.png") no-repeat;
-              background-size: cover;
-              background-position: center;
-              margin-bottom: 15px;
-            }
-            .teamImg3{
-              width: 28px;
-              height: 28px;
-              background: url("/imges/h5_product/teams3.png") no-repeat;
-              background-size: cover;
-              background-position: center;
-              margin-bottom: 15px;
-            }
-            .teamImg4{
-              width: 28px;
-              height: 28px;
-              background: url("/imges/h5_product/teams4.png") no-repeat;
-              background-size: cover;
-              background-position: center;
-              margin-bottom: 15px;
-            }
-            .teamImg5{
-              width: 28px;
-              height: 28px;
-              background: url("/imges/h5_product/teams5.png") no-repeat;
-              background-size: cover;
-              background-position: center;
-              margin-bottom: 15px;
-            }
-            .teamImg6{
-              width: 28px;
-              height: 28px;
-              background: url("/imges/h5_product/teams6.png") no-repeat;
-              background-size: cover;
-              background-position: center;
-              margin-bottom: 15px;
-            }
-            .teamImg7{
-              width: 28px;
-              height: 28px;
-              background: url("/imges/h5_product/teams7.png") no-repeat;
-              background-size: cover;
-              background-position: center;
-              margin-bottom: 15px;
-              height: 28px;
-              width: 25px;
-            }
+          img{
+                width: 28px;
+                height: 28px;
+                margin-bottom: 15px;
+          }
             p{
               font-size: 14px;
               color: #333333;
@@ -1054,12 +946,8 @@ img{
           padding: 10px 20px;
 
          img{
-  margin: 41px 0 13px;
-            height: 38px;
-            width: 34px;
+          margin: 41px 0 13px;
          }
-          
-
           p:first-child{
             font-size: 14px;
             font-weight: bold;
@@ -1100,7 +988,7 @@ img{
           align-items: center;
           flex-direction: column;
             img{
-  margin: 41px 0 13px;
+            margin: 41px 0 13px;
             height: 38px;
             width: 34px;
             }

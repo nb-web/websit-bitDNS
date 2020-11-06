@@ -26,16 +26,14 @@ li{
     }
 }
 @media (max-width:320px) and (min-width:375px){
-    body,html{font-size: 12px;}
+    body,html{font-size: 8px;}
 } 
  @media (min-width:375px) and (max-width: 980px) {
-    body,html{font-size: 12px;}
+    body,html{font-size: 8px;}
 }
 
-/* @media (min-width:980px) and (max-width:1024px){
-    .common_container{
-        width: 980px;
-        margin: 0 auto;
-    }
+/* @media (min-width:1519px){
+    
+    body,html{font-size: 16px;}
 } */
    
