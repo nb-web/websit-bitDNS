@@ -60,15 +60,14 @@
       </div>
     </div>
 
+    <BlockTit text="BITDNS Tech Tree" />
     <div class="BITDNS common_container">
-      <BlockTit text="BITDNS Tech Tree" />
       <img class="Tree h5" src="/imges/index/index_tree.png" alt />
       <img class="Tree web" src="/imges/index/index_tree.png" alt />
     </div>
 
+    <BlockTit text="BITDNS 技术优势" />
     <div class="jishu">
-      <BlockTit text="BITDNS 技术优势" />
-
       <div class="list common_container">
         <div class="swiperList h5">
           <el-carousel
@@ -173,9 +172,8 @@
       </div>
     </div>
     <!-- BitDNS路线图 -->
-
+    <BlockTit text="BitDNS 路线图" />
     <div class="route">
-      <BlockTit text="BitDNS 路线图" />
       <div class="chart common_container chartMediaWidth">
         <!--时间线-->
         <div class="timeLine">
@@ -207,9 +205,8 @@
       </div>
     </div>
 
+    <BlockTit text="新闻资讯" />
     <div class="news common_container">
-      <BlockTit text="新闻资讯" />
-
       <div class="newsContent">
         <div class="news_left">
           <div class="day1">
@@ -1321,34 +1318,34 @@ created(){
       background-size: cover;
       padding: 11px 57px 0;
       box-sizing: border-box;
-      .tit {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 22px;
-        font-family: PingFangSC-Semibold, PingFang SC;
-        font-weight: 400;
-        color: #3c3c3c;
-      }
+      // .tit {
+      //   display: flex;
+      //   align-items: center;
+      //   justify-content: center;
+      //   font-size: 22px;
+      //   font-family: PingFangSC-Semibold, PingFang SC;
+      //   font-weight: 400;
+      //   color: #3c3c3c;
+      // }
       .centens {
         border: 1px solid rgba(255, 255, 255, 0.1);
       }
-      p {
-        // width: 867px;
-        margin: 0 auto;
-        text-align: center;
-        font-size: 22px;
-        font-family: PingFangSC-Regular, PingFang SC;
-        font-weight: 400;
-        color: #3c3c3c;
-        line-height: 35px;
-      }
-      i {
-        display: inline-block;
-        width: 30px;
-        height: 3px;
-        background: #2365ff;
-      }
+      // p {
+      //   // width: 867px;
+      //   margin: 0 auto;
+      //   text-align: center;
+      //   font-size: 22px;
+      //   font-family: PingFangSC-Regular, PingFang SC;
+      //   font-weight: 400;
+      //   color: #3c3c3c;
+      //   line-height: 35px;
+      // }
+      // i {
+      //   display: inline-block;
+      //   width: 30px;
+      //   height: 3px;
+      //   background: #2365ff;
+      // }
     }
 
     .swipe {
