@@ -102,15 +102,17 @@
       </div>
     </div>
 
-    <div class="economicCycle common_container">
-      <div class="tit">
-        <i></i>
-        <p>BitDNS经济循环</p>
-        <i></i>
-      </div>
-      <div class="economicCycle_img" style="text-align: center;">
-        <img src="/imges/Economic/token19.png" class="web" alt="">
-        <img src="/imges/h5_Economic/token19.png" class="h5" alt="">
+    <div class="economicCycle">
+      <div class="common_container">
+        <div class="tit">
+          <i></i>
+          <p>BitDNS经济循环</p>
+          <i></i>
+        </div>
+        <div class="economicCycle_img" style="text-align: center;">
+          <img src="/imges/Economic/token19.png" class="web" alt="">
+          <img src="/imges/h5_Economic/token19.png" class="h5" alt="">
+        </div>
       </div>
     </div>
   </div>
@@ -470,7 +472,7 @@ export default {
       }
     }
   }
-  @media (min-width:1024px) and (max-width:1280px){
+  @media (min-width:980px) and (max-width:1280px){
     .tokenDesign {
       height: 491px;
       .tokenDesign_content{
@@ -530,6 +532,7 @@ export default {
             text-align: center;
             line-height: 35;
             font-size: 13px;
+            margin: 0 36px;
           }
         }
       }

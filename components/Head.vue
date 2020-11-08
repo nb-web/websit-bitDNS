@@ -102,10 +102,10 @@
                 <li @click="close"><p :style="$route.path=='/about' ? {color: '#2060F4'} : ''">{{ $t('links.about') }}</p></li>
               </nuxt-link>
 
-              <el-divider></el-divider>
+              <!-- <el-divider></el-divider>
               <li>
                 <span style="color:blue">中</span>/英
-              </li>
+              </li> -->
             </ul>
           </div>
         </el-collapse-transition>
@@ -170,29 +170,7 @@ export default {
     align-items: center;
     margin: 0 auto;
   }
-  @media (min-width: 2880px) and (max-width: 3840px) {
-    .top {
-      height: 132px;
-    }
-  }
 
-  @media (max-width: 1680px) {
-    .top {
-      height: 77px;
-    }
-  }
-
-  @media (max-width: 1440px) {
-    .top {
-      height: 66px;
-    }
-  }
-
-  @media (min-width: 1024px) and (max-width: 1280px) {
-    .top {
-      height: 59px;
-    }
-  }
   .route {
     width: 50%;
     display: flex;
@@ -246,6 +224,76 @@ export default {
     }
   }
 
+  @media (min-width: 2880px) and (max-width: 3840px) {
+    .top {
+      height: 132px;
+    }
+  }
+
+  @media (max-width: 1680px) {
+    .top {
+      height: 77px;
+    }
+    .route{
+      .parents_nav{
+        .children_nav {
+          li {
+            height: 41px;
+            width: 111px;
+
+            a {
+              height: 41px;
+              line-height: 41px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1440px) {
+    .top {
+      height: 66px;
+    }
+    .route{
+      .parents_nav{
+        .children_nav {
+          li {
+            height: 35px;
+            width: 95px;
+
+            a {
+              height: 35px;
+              line-height: 35px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width: 1024px) and (max-width: 1280px) {
+    .top {
+      height: 59px;
+    }
+    .route{
+      .parents_nav{
+        .children_nav {
+          li {
+            height: 31px;
+            width: 85px;
+
+            a {
+              height: 31px;
+              line-height: 31px;
+            }
+          }
+        }
+      }
+    }
+    
+  }
+
   a {
     font-size: 14px;
     font-family: PingFangSC-Semibold, PingFang SC;
@@ -253,6 +301,13 @@ export default {
     color: #4a4a4a;
     height: 88px;
     line-height: 88px;
+  }
+}
+@media (min-width:980px) and (max-width: 1279px) {
+  .head{
+    .top{
+      justify-content: space-between;
+    }
   }
 }
 

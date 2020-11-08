@@ -147,54 +147,55 @@
     <div class="serviceFeatures">
       <BlockTit text="BITDNS域名服务特点"/>
 
-        <div class="h5">
-    <el-carousel type="card" height="200px" :loop="true" indicator-position="none" arrow="never" :autoplay="false">
-    <el-carousel-item>
-      <div class="serviceFeaturesItem">
+      <div class="h5 common_container">
+        <el-carousel type="card" height="200px" :loop="true" indicator-position="none" arrow="never" :autoplay="false">
+        <el-carousel-item>
+          <div class="serviceFeaturesItem">
+              
+                <img src="/imges/h5_product/serviceFeatures1.png" class="h5" alt="">
+              <p>去中心化</p>
+              <p>BitDNS的管理和服务均通过智能合约完成，完全去中心化，安全性和可信度非常高。</p>
+            </div>
+        </el-carousel-item>
+        <el-carousel-item>
+          <div class="serviceFeaturesItem">
+              
+                <img src="/imges/h5_product/serviceFeatures2.png" class="h5" alt="">
+              <p>跨链交互</p>
+              <p>BITDNS能够服务已有的公链生态，如以太坊、IPFS等， 让文件访问、地址转账、智能合约调用更方便、更快捷。</p>
+            </div>
+        </el-carousel-item>
+        <el-carousel-item>
+          <div class="serviceFeaturesItem">
           
-            <img src="/imges/h5_product/serviceFeatures1.png" class="h5" alt="">
-          <p>去中心化</p>
-          <p>BitDNS的管理和服务均通过智能合约完成，完全去中心化，安全性和可信度非常高。</p>
-        </div>
-    </el-carousel-item>
-    <el-carousel-item>
-      <div class="serviceFeaturesItem">
-            <img src="/imges/h5_product/serviceFeatures2.png" class="h5" alt="">
-          <p>跨链交互</p>
-          <p>BITDNS能够服务已有的公链生态，如以太坊、IPFS等， 让文件访问、地址转账、智能合约调用更方便、更快捷。</p>
-        </div>
-    </el-carousel-item>
-    <el-carousel-item>
-      <div class="serviceFeaturesItem">
-       
-        <img src="/imges/h5_product/serviceFeatures3.png" class="h5"  alt="">
-          <p>可循环的经济模型</p>
-          <p>BitDNS系统的流通通证DNS内置了激励池，所有系统产出费用会进入激励池，并按比例分配给DNS的持有人。</p>
-        </div>
-    </el-carousel-item>
-  </el-carousel>
-        </div>
+            <img src="/imges/h5_product/serviceFeatures3.png" class="h5"  alt="">
+              <p>可循环的经济模型</p>
+              <p>BitDNS系统的流通通证DNS内置了激励池，所有系统产出费用会进入激励池，并按比例分配给DNS的持有人。</p>
+            </div>
+        </el-carousel-item>
+      </el-carousel>
+      </div>
 
-      <div class="web">
-      <div class="common_container serviceFeatures_content">
-        <div class="serviceFeaturesItem">
-        <img src="/imges/product/serviceFeatures1.png" class="web" alt="">
-          <p>去中心化</p>
-          <p>BitDNS的管理和服务均通过智能合约完成，完全去中心化，安全性和可信度非常高。</p>
-        </div>
+      <div class="web common_container">
+        <div class="common_container serviceFeatures_content">
+          <div class="serviceFeaturesItem">
+            <img src="/imges/product/serviceFeatures1.png" class="web" alt="">
+            <p>去中心化</p>
+            <p>BitDNS的管理和服务均通过智能合约完成，完全去中心化，安全性和可信度非常高。</p>
+          </div>
 
-        <div class="serviceFeaturesItem">
-             <img src="/imges/product/serviceFeatures2.png" class="web" alt="">
-         
-          <p>跨链交互</p>
-          <p>BITDNS能够服务已有的公链生态，如以太坊、IPFS等， 让文件访问、地址转账、智能合约调用更方便、更快捷。</p>
-        </div>
+          <div class="serviceFeaturesItem">
+            <img src="/imges/product/serviceFeatures2.png" class="web" alt="">
+        
+            <p>跨链交互</p>
+            <p>BITDNS能够服务已有的公链生态，如以太坊、IPFS等， 让文件访问、地址转账、智能合约调用更方便、更快捷。</p>
+          </div>
 
-        <div class="serviceFeaturesItem">
-           <img src="/imges/product/serviceFeatures3.png" class="web" alt="">
-          <p>可循环的经济模型</p>
-          <p>BitDNS系统的流通通证DNS内置了激励池，所有系统产出费用会进入激励池，并按比例分配给DNS的持有人。</p>
-        </div>
+          <div class="serviceFeaturesItem">
+            <img src="/imges/product/serviceFeatures3.png" class="web" alt="">
+            <p>可循环的经济模型</p>
+            <p>BitDNS系统的流通通证DNS内置了激励池，所有系统产出费用会进入激励池，并按比例分配给DNS的持有人。</p>
+          </div>
         </div>
       </div>
     </div>
@@ -498,7 +499,9 @@ export default {
 
   .serviceFeatures{
     height: 503px;
-
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     .serviceFeatures_content{
         display: flex;
         flex-direction: row;
@@ -510,7 +513,7 @@ export default {
           width: 219px;
           height: 240px;
           // background: #FFFFFF;
-          box-shadow: 0px 1px 7px 2px rgba(215, 215, 215, 0.5);
+          // box-shadow: 0px 1px 7px 2px rgba(215, 215, 215, 0.5);
           margin: 0 15px;
           display: flex;
           align-items: center;
@@ -716,7 +719,7 @@ export default {
     }
 
     .exchangeAndWallet{
-      height: 1299px;
+      height: 1199px;
       width: 990px;
       .corn_exchangeAndWallet, .DNS_exchangeAndWallet{
         .exchangeItems, .walletItems{
@@ -809,7 +812,7 @@ export default {
     }
 
     .exchangeAndWallet{
-      height: 1113px;
+      height: 989px;
       width: 960px;
       .corn_exchangeAndWallet, .DNS_exchangeAndWallet{
         .exchangeItems, .walletItems{
@@ -914,10 +917,27 @@ export default {
     }
     
   }
-
   .exchangeAndWallet{
-    width: 890px;
-  }
+      height: 989px;
+      width: 890px;
+      .corn_exchangeAndWallet, .DNS_exchangeAndWallet{
+        .exchangeItems, .walletItems{
+          p{
+            font-size: 23px;
+            margin-bottom: 29px;
+          }
+
+          .exchangeImgs, .walletImgs{
+            img{
+              height: 75px;
+              width: 214px;
+              margin-right: 15px;
+              margin-bottom: 22px;
+            }
+          }
+        }
+      }
+    }
   }
 
 

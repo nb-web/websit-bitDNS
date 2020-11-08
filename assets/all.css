@@ -32,8 +32,9 @@ li{
     body,html{font-size: 8px;}
 }
 
-/* @media (min-width:1519px){
-    
-    body,html{font-size: 16px;}
-} */
-   
+@media (min-width:375px) and (max-width: 1279px){
+    .common_container{
+        width: 100%;
+        max-width: 750px;
+    }
+} 

@@ -164,25 +164,30 @@ export default {
 
   @media (max-width: 980px) {
     .index_banna {
-      height: 529px;
+      height: 500px;
     }
     .other_banna {
-      height: 413px;
+      height: 400px;
     }
     .bg_square {
-      width: 691px;
-      height: 333px;
+      width: 571px;
+      height: 274px;
+      padding: 0 15px;
+      box-sizing: border-box;
     }
     .bg_little_square {
       width: 440px;
       height: 179px;
+      padding: 20px;
+      box-sizing: border-box;
       .desText {
         font-weight: normal;
-        font-size: 15px;
+        font-size: 18px;
+        text-align: center;
       }
     }
     h4 {
-      font-size: 32px;
+      font-size: 42px;
     }
   }
 }

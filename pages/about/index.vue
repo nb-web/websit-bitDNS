@@ -6,17 +6,13 @@
       bgText="关于我们"
     />
     <div class="about_top common_container">
-      <div class="tit">
-        <i></i>
-        <p style="margin:0 10px">关于我们</p>
-        <i></i>
-      </div>
+      <BlockTit text="关于我们" />
       <div class="brief">
         <p>BitDNS基金会位于新加坡，致力于打造全球首个区块链域名系统，构建连接信息互联网与价值区块链的超级枢纽，为区块链及分布式WEB4.0的发展贡献自己的力量。</p>
       </div>
     </div>
     <div class="content">
-      <div class="common_container">
+      <div class="common_container teamContent">
         <div class="text">
           <h4>BITDNS团队</h4>
           <p
@@ -27,11 +23,7 @@
     </div>
     <div class="core">
       <div class="common_container">
-        <div class="tit">
-          <i></i>
-          <p style="margin:0 10px">核心成员</p>
-          <i></i>
-        </div>
+        <BlockTit text="核心成员" />
         <ul>
           <li class="img1">
             <div>
@@ -66,11 +58,7 @@
 
     <div class="adviser">
       <div class="common_container">
-        <div class="tit">
-          <i></i>
-          <p>顾问团队</p>
-          <i></i>
-        </div>
+        <BlockTit text="顾问团队" />
         <ul>
           <li class="img4">
             <div>
@@ -116,9 +104,8 @@ export default {
     text-align: center;
     padding-bottom: 20px;
     box-sizing: border-box;
-    @media (min-width: 980px) {
-      .brief {
-        width: 867px;
+    .brief {
+        max-width: 867px;
         height: 88px;
         margin: 0 auto;
         text-align: center;
@@ -128,26 +115,9 @@ export default {
         color: #3c3c3c;
         line-height: 35px;
       }
-    }
-
-    @media (max-width: 980px) {
-      .brief {
-        padding: 0 20px;
-        box-sizing: border-box;
-        width: 100%;
-        height: 144px;
-        margin: 0 auto;
-        font-size: 22px;
-        font-family: PingFangSC-Regular, PingFang SC;
-        font-weight: 400;
-        color: #3c3c3c;
-        line-height: 45px;
-      }
-    }
   }
 
-  @media (min-width: 980px) {
-    .content {
+  .content {
       width: 100%;
       height: 453px;
       background: url("/imges/about/about_book.png") no-repeat;
@@ -176,43 +146,13 @@ export default {
         }
       }
     }
+
+  .core {
+    width: 100%;
+    background: #f3f8ff;
   }
 
-  @media (max-width: 980px) {
-    .content {
-      width: 100%;
-      height: 508px;
-      background: url("/imges/h5_about/about_book.png") no-repeat;
-      background-size: 100% 100%;
-      padding: 92px 29px 57px 29px;
-      box-sizing: border-box;
-      h4 {
-        font-size: 32px;
-        font-family: PingFangSC-Semibold, PingFang SC;
-        font-weight: 600;
-        color: #3c3c3c;
-        line-height: 45px;
-      }
-      .text {
-        width: 417px;
-        font-size: 22px;
-        font-family: PingFangSC-Regular, PingFang SC;
-        font-weight: 400;
-        color: #3c3c3c;
-        line-height: 43px;
-        .bitDnsTeamText {
-          margin-top: 28px;
-        }
-      }
-    }
-  }
-  @media (min-width: 980px) {
-    .core {
-      width: 100%;
-      background: #f3f8ff;
-    }
-
-    ul {
+  ul {
       display: flex;
       flex-wrap: wrap;
       div {
@@ -237,7 +177,7 @@ export default {
         box-sizing: border-box;
         margin: 0 21px;
         margin-bottom: 42px;
-       
+        
       }
       img {
         margin: 0 auto;
@@ -258,9 +198,142 @@ export default {
         background-size: 100% 100%;
       }
     }
+
+  .adviser {
+    width: 100%;
+    padding-bottom: 107px;
+
+    background: #f3f8ff;
+    .peopleText {
+      width: 260px;
+      margin-top: 15px;
+    }
+
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      div {
+        width: 260px;
+        font-size: 12px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #787878;
+        line-height: 17px;
+        h3 {
+          font-size: 18px;
+          width: 300px;
+          font-family: PingFangSC-Semibold, PingFang SC;
+          font-weight: 600;
+          color: #333333;
+          line-height: 25px;
+        }
+      }
+      li {
+        width: 554px;
+        height: 296px;
+        padding: 30px;
+        box-sizing: border-box;
+      }
+      .img4 {
+        margin: 0 auto;
+        background: url("/imges/about/4.png") no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+      }
+      .img5 {
+        background: url("/imges/about/5.png") no-repeat;
+        margin: 0 auto;
+        background-position: center;
+        background-size: 100% 100%;
+      }
+    }
   }
 
+  @media (min-width: 1440px) and (max-width: 1680px) {
+    .content{
+      height: 396px;
+      .text {
+        width: 520px;
+        height: 181px;
+        font-size: 18px;
+        line-height: 43px;
+        padding-top: 88px;
+
+        .bitDnsTeamText {
+          margin-top: 25px;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 1280px) and (max-width: 1440px) {
+    .content{
+      height: 340px;
+      .teamContent{
+        width: 900px;
+      }
+      h4 {
+        font-size: 28px;
+      }
+      .text {
+        width: 455px;
+        height: 158px;
+        font-size: 16px;
+        line-height: 38px;
+        padding-top: 68px;
+
+        .bitDnsTeamText {
+          margin-top: 21px;
+        }
+      }
+    }
+  }
+
+
   @media (max-width: 980px) {
+    .about_top {
+      .brief {
+        padding: 0 20px;
+        box-sizing: border-box;
+        width: 100%;
+        height: 144px;
+        margin: 0 auto;
+        font-size: 22px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #3c3c3c;
+        line-height: 45px;
+      }
+    }
+
+    .content {
+      width: 100%;
+      height: 508px;
+      background: url("/imges/h5_about/about_book.png") no-repeat;
+      background-size: 100% 100%;
+      padding: 92px 29px 57px 29px;
+      box-sizing: border-box;
+      h4 {
+        font-size: 32px;
+        font-family: PingFangSC-Semibold, PingFang SC;
+        font-weight: 600;
+        color: #3c3c3c;
+        line-height: 45px;
+      }
+      .text {
+        width: 417px;
+        font-size: 22px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #3c3c3c;
+        line-height: 43px;
+        padding-top: 0;
+        .bitDnsTeamText {
+          margin-top: 28px;
+        }
+      }
+    }
+
     .core {
       width: 100%;
       background: #f3f8ff;
@@ -318,60 +391,7 @@ export default {
         background-size: 100% 100%;
       }
     }
-  }
 
-  @media (min-width: 980px) {
-    .adviser {
-      width: 100%;
-      padding-bottom: 107px;
-
-      background: #f3f8ff;
-      .peopleText {
-        width: 260px;
-        margin-top: 15px;
-      }
-
-      ul {
-        display: flex;
-        flex-wrap: wrap;
-        div {
-          width: 260px;
-          font-size: 12px;
-          font-family: PingFangSC-Regular, PingFang SC;
-          font-weight: 400;
-          color: #787878;
-          line-height: 17px;
-          h3 {
-            font-size: 18px;
-            width: 300px;
-            font-family: PingFangSC-Semibold, PingFang SC;
-            font-weight: 600;
-            color: #333333;
-            line-height: 25px;
-          }
-        }
-        li {
-          width: 554px;
-          height: 296px;
-          padding: 30px;
-          box-sizing: border-box;
-        }
-        .img4 {
-          margin: 0 auto;
-          background: url("/imges/about/4.png") no-repeat;
-          background-position: center;
-          background-size: 100% 100%;
-        }
-        .img5 {
-          background: url("/imges/about/5.png") no-repeat;
-          margin: 0 auto;
-          background-position: center;
-          background-size: 100% 100%;
-        }
-      }
-    }
-  }
-  @media (max-width: 980px) {
     .adviser {
       width: 100%;
       padding-bottom: 107px;
@@ -423,25 +443,36 @@ export default {
     }
   }
 
-  .tit {
-    margin: 0 0 24px;
-  }
-  .tit {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 97px 0 50px;
-    font-size: 30px;
-    font-family: PingFangSC-Semibold, PingFang SC;
-    font-weight: 600;
-    color: #3c3c3c;
-    line-height: 42px;
-  }
-  i {
-    display: inline-block;
-    width: 30px;
-    height: 3px;
-    background: #2365ff;
+  @media (min-width: 980px) and (max-width: 1279px){
+    .content{
+      height: 340px;
+      .teamContent{
+        width: 900px;
+      }
+      h4 {
+        font-size: 28px;
+      }
+      .text {
+        width: 455px;
+        height: 158px;
+        font-size: 16px;
+        line-height: 38px;
+        padding-top: 68px;
+
+        .bitDnsTeamText {
+          margin-top: 21px;
+        }
+      }
+    }
+
+      ul{
+        justify-content: center;
+      }
+      .core .adviser{
+        ul{
+          justify-content: center;
+        }
+      }
   }
 }
 </style>

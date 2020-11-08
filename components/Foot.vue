@@ -4,14 +4,14 @@
       <div class="f_left">
         <p>联系我们</p>
         <div class="email">
-          <img src="/imges/foot/email.png" class="web" alt style="width:40px;height:28px" />
-          <img src="/imges/h5_foot/email.png" class="h5" alt style="width:52px;height:37px" />
+          <img src="/imges/foot/email.png" class="web" alt />
+          <img src="/imges/h5_foot/email.png" class="h5" alt />
 
           <a style="color: #fff" href="mailto:support@bitdns.vip">support@BitDNS.vip</a>
         </div>
-        <div style="margin-top:34px">
-          <img src="/imges/foot/foot_post.png" class="web" alt style="width:42px;height:40px" />
-          <img src="/imges/h5_foot/foot_post.png" class="h5" alt style="width:52px;height:49px" />
+        <div class="whitePaper" style="margin-top:34px">
+          <img src="/imges/foot/foot_post.png" class="web" alt />
+          <img src="/imges/h5_foot/foot_post.png" class="h5" alt />
           <a
             style="color: #fff"
             href="https://www.bitdns.vip/images/whitepaper_zh.pdf"
@@ -96,7 +96,7 @@ export default {};
 <style lang='less'>
 .btm {
   width: 100%;
-  height: 469px;
+  min-height: 499px;
   background: black;
   color: white;
   box-sizing: border-box;
@@ -110,13 +110,24 @@ export default {};
     .f_left {
       // border: 1px solid red;
       width: 430px;
-      height: 244px;
+      min-height: 244px;
       .email {
         margin-top: 70px;
+        img{
+          width:40px;
+          height:28px;
+        }
+      }
+      .whitePaper{
+        img{
+          width:40px;
+          height:28px;
+        }
       }
       img {
         vertical-align: middle;
         margin-right: 15px;
+        
       }
       p {
         font-size: 26px;
@@ -145,6 +156,11 @@ export default {};
     }
   }
 }
+@media (min-width:980px) and (max-width: 1279px) {
+  .footer{
+    max-width: 100%!important;
+  }
+}
   @media (min-width:980px) {
     .h5{
       display:none
@@ -156,7 +172,7 @@ export default {};
   }
   .btm {
     width: 100%;
-    height: 893px;
+    min-height: 893px;
     background: black;
     color: white;
     box-sizing: border-box;
@@ -166,11 +182,21 @@ export default {};
       box-sizing: border-box;
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+      justify-content: center;
       align-items: flex-start !important;
       .f_left {
         .email {
           margin-top: 50px;
+          img{
+            width:52px;
+            height:37px
+          }
+        }
+        .whitePaper{
+          img{
+            width:52px;
+            height:49px
+          }
         }
         img {
           vertical-align: middle;

@@ -235,7 +235,7 @@
                     <h3>{{item.day}}</h3>
                     <p>{{item.month}}</p>
                   </div>
-                  <span style="display:inline-block;margin-left:30px">{{item.title}}</span>
+                  <span class="newsText" style="display:inline-block;">{{item.title}}</span>
                 </template>
                 <p class="content">
                   {{item.des}}
@@ -399,8 +399,9 @@ created(){
     },
     moveLeft() {
       let marginLeft = parseInt(this.$refs.mytimeline.style.marginLeft);
-      let listNum = 0;
-      if (marginLeft <= 10 && marginLeft >= -175) {
+      let moveNum = 0;
+      this.windowWidth > 980 ? moveNum = -175 : moveNum = -275
+      if (marginLeft <= 10 && marginLeft >= moveNum) {
         this.$refs.mytimeline.style.marginLeft = marginLeft - 185 + "px";
       }
     },
@@ -436,6 +437,8 @@ created(){
         text-align: center;
         line-height: 35px;
         margin: 0 10px;
+        padding: 0 17px;
+        box-sizing: border-box;
         img {
           width: 31px;
           height: 33px;
@@ -443,7 +446,7 @@ created(){
         }
         p {
           font-size: 14px;
-          font-family: PingFangSC-Semibold, PingFang SC;
+          
           font-weight: 600;
           color: #656565;
           line-height: 78px;
@@ -604,7 +607,7 @@ created(){
         p {
           margin-top: 214px;
           font-size: 24px;
-          font-family: PingFangSC-Semibold, PingFang SC;
+          
           font-weight: 600;
           color: #ffffff;
           line-height: 33px;
@@ -702,7 +705,7 @@ created(){
     }
     h3 {
       font-size: 30px;
-      font-family: PingFangSC-Semibold, PingFang SC;
+      
       font-weight: 600;
       color: #333333;
       line-height: 53px;
@@ -710,7 +713,7 @@ created(){
     p {
       margin-top: 22px;
       font-size: 18px;
-      font-family: PingFangSC-Semibold, PingFang SC;
+      
       font-weight: 600;
       color: #888888;
       line-height: 33px;
@@ -781,7 +784,7 @@ created(){
         width: 123px;
         height: 34px;
         font-size: 12px;
-        font-family: PingFangSC-Semibold, PingFang SC;
+        
         font-weight: 600;
         color: #333333;
         line-height: 17px;
@@ -932,12 +935,17 @@ created(){
         width: 100%;
         height: 100%;
       }
+
+      .newsText{
+        margin-left:30px
+      }
     }
     .day {
       height: 84px;
+      width: 84px;
       background: #669aee;
       color: white;
-      padding: 0 20px;
+      // padding: 0 20px;
       h3 {
         font-size: 53px;
         font-family: PingFangSC-Medium, PingFang SC;
@@ -1046,7 +1054,7 @@ created(){
     }
   }
 
-  @media (min-width: 1024px) and (max-width: 1440px) {
+  @media (min-width: 980px) and (max-width: 1440px) {
     .centens {
       display: flex;
       flex-direction: column;
@@ -1061,26 +1069,26 @@ created(){
     }
 
     .block {
-    padding: 72px 0;
-    ul {
+      padding: 72px 0;
+      ul {
 
-      li {
-        width: 178px;
-        height: 193px;
-        line-height: normal;
-        img {
-          width: 26px;
-          height: 26px;
-          margin-top: 58px;
-        }
-        p {
-          font-size: 12px;
+        li {
+          width: 178px;
+          height: 193px;
           line-height: normal;
-          margin-top: 26px;
+          img {
+            width: 26px;
+            height: 26px;
+            margin-top: 58px;
+          }
+          p {
+            font-size: 12px;
+            line-height: normal;
+            margin-top: 26px;
+          }
         }
       }
     }
-  }
 
     .swipe {
       height: 313px;
@@ -1221,11 +1229,32 @@ created(){
   // }
 
 
-  @media (min-width: 1024px) and (max-width: 1280px) {
+  @media (min-width: 980px) and (max-width: 1279px) {
     .BITDNS {
       .Tree {
         height: 243px;
         width: 659px;
+      }
+    }
+    .block {
+      padding: 72px 0;
+      ul {
+        flex-wrap: wrap;
+        li {
+          width: 178px;
+          height: 193px;
+          line-height: normal;
+          img {
+            width: 26px;
+            height: 26px;
+            margin-top: 58px;
+          }
+          p {
+            font-size: 12px;
+            line-height: normal;
+            margin-top: 26px;
+          }
+        }
       }
     }
     .jishu {
@@ -1274,6 +1303,17 @@ created(){
         line-height: normal;
       }
     }
+    .news {
+      .newsContent{
+        width: 100%;
+        justify-content: center;
+      }
+      .news_left{
+        margin: 0 auto;
+        margin-bottom: 50px;
+      }
+      
+    }
   }
 
   @media (min-width: 980px) {
@@ -1281,6 +1321,7 @@ created(){
       display: none !important;
     }
   }
+
   @media (max-width: 980px) {
     .web {
       display: none !important;
@@ -1307,12 +1348,11 @@ created(){
             margin-top: 27px;
           }
           p {
-            
-font-size: 20px;
-font-family: PingFangSC-Regular, PingFang SC;
-font-weight: 400;
-color: #656565;
-line-height: 28px;
+            font-size: 20px;
+            margin-top: 28px;
+            font-weight: 400;
+            color: #656565;
+            line-height: 28px;
           }
         }
       }
@@ -1326,34 +1366,9 @@ line-height: 28px;
       background-size: cover;
       padding: 11px 57px 0;
       box-sizing: border-box;
-      // .tit {
-      //   display: flex;
-      //   align-items: center;
-      //   justify-content: center;
-      //   font-size: 22px;
-      //   font-family: PingFangSC-Semibold, PingFang SC;
-      //   font-weight: 400;
-      //   color: #3c3c3c;
-      // }
       .centens {
         border: 1px solid rgba(255, 255, 255, 0.1);
       }
-      // p {
-      //   // width: 867px;
-      //   margin: 0 auto;
-      //   text-align: center;
-      //   font-size: 22px;
-      //   font-family: PingFangSC-Regular, PingFang SC;
-      //   font-weight: 400;
-      //   color: #3c3c3c;
-      //   line-height: 35px;
-      // }
-      // i {
-      //   display: inline-block;
-      //   width: 30px;
-      //   height: 3px;
-      //   background: #2365ff;
-      // }
     }
 
     .swipe {
@@ -1423,7 +1438,7 @@ line-height: 28px;
       p {
         margin-top: 214px;
         font-size: 26px;
-        font-family: PingFangSC-Semibold, PingFang SC;
+        
         font-weight: 600;
         color: #ffffff;
         line-height: 37px;
@@ -1457,7 +1472,7 @@ line-height: 28px;
       }
       h3 {
         font-size: 32px;
-        font-family: PingFangSC-Semibold, PingFang SC;
+        
         font-weight: 600;
         color: #333333;
         line-height: 45px;
@@ -1465,7 +1480,7 @@ line-height: 28px;
       p {
         margin-top: 22px;
         font-size: 24px;
-        font-family: PingFangSC-Semibold, PingFang SC;
+        
         font-weight: 600;
         color: #888888;
         line-height: 39px;
@@ -1475,8 +1490,9 @@ line-height: 28px;
     .route {
       .chart {
         position: relative;
-        height: 300px;
-        padding-top: 155px;
+        height: 271px;
+        width: 690px;
+        padding-top: 110px;
         background: url("/imges/h5_index/index_ditu.png") no-repeat;
         background-position: center;
         background-size: cover;
@@ -1497,7 +1513,7 @@ line-height: 28px;
         width: 10000px;
         .ul_box {
           width: 100%;
-          height: 200px;
+          height: 230px;
           display: inline-block;
           // float: left;
           margin-top: -100px;
@@ -1534,7 +1550,7 @@ line-height: 28px;
           text-align: center;
         }
         .my_timeline_item_content {
-          width: 198px;
+          width: 158px;
           height: 120px;
           font-size: 18px;
           font-family: PingFangSC-Regular, PingFang SC;
@@ -1554,8 +1570,17 @@ line-height: 28px;
       .newsContent{
         width: 100%;
       }
+      .news_left{
+        margin: 0 auto;
+        margin-bottom: 50px;
+      }
       .news_right{
         height: 500px;
+      }
+
+      .day {
+        min-width: 84px;
+        min-height: 84px;
       }
     }
   }
