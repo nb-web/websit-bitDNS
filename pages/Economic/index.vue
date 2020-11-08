@@ -346,7 +346,7 @@ export default {
   // @media (max-width:1680px){
 
   // }
-  @media (max-width:1440px){
+  @media (min-width:1280px) and (max-width:1440px){
     .bitDNS_economic{
       height: 310px;
     }
