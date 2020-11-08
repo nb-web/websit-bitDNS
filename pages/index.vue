@@ -76,6 +76,7 @@
             indicator-position="none"
             arrow="never"
             :autoplay="false"
+            
           >
             <el-carousel-item
               v-for="(item,index) in technologyAdvantageList"
@@ -568,12 +569,15 @@ created(){
 
   .jishu {
     .list {
+      
       ul {
         display: none;
       }
       .swiperList {
         display: block;
+
       }
+
       .el-carousel-item {
         position: relative;
         width: 285px;
@@ -581,6 +585,8 @@ created(){
         margin: 0 auto;
         margin-top: 38px;
         text-align: center;
+      
+         
       }
       ul {
         width: 100%;
@@ -928,11 +934,10 @@ created(){
       }
     }
     .day {
-      width: 84px;
       height: 84px;
       background: #669aee;
       color: white;
-
+      padding: 0 20px;
       h3 {
         font-size: 53px;
         font-family: PingFangSC-Medium, PingFang SC;
@@ -1294,17 +1299,20 @@ created(){
           text-align: center;
           line-height: 35px;
           margin: 0 10px;
+          padding: 0 30px;
+          box-sizing: border-box;
           img {
             width: 40px;
             height: 40px;
             margin-top: 27px;
           }
           p {
-            font-size: 20px;
-            font-family: PingFangSC-Semibold, PingFang SC;
-            font-weight: 600;
-            color: #656565;
-            line-height: 28px;
+            
+font-size: 20px;
+font-family: PingFangSC-Regular, PingFang SC;
+font-weight: 400;
+color: #656565;
+line-height: 28px;
           }
         }
       }
@@ -1408,7 +1416,7 @@ created(){
 
     .jishu {
       .el-carousel__container {
-        width: 640px;
+        width: 680px;
         overflow: hidden;
         margin: 0 auto;
       }
@@ -1467,7 +1475,7 @@ created(){
     .route {
       .chart {
         position: relative;
-        height: 271px;
+        height: 300px;
         padding-top: 155px;
         background: url("/imges/h5_index/index_ditu.png") no-repeat;
         background-position: center;
@@ -1477,7 +1485,7 @@ created(){
       }
       .timg {
         position: absolute;
-        top: 230px;
+        top: 250px;
         right: 34px;
         img {
           width: 41px;
@@ -1489,7 +1497,7 @@ created(){
         width: 10000px;
         .ul_box {
           width: 100%;
-          height: 180px;
+          height: 200px;
           display: inline-block;
           // float: left;
           margin-top: -100px;

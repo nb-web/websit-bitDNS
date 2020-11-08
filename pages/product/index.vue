@@ -18,7 +18,7 @@
       <div class="imgAndText_block_item">
         <div class="items_left">
           <img src="/imges/product/domainService1.png" class="web" alt="">
-          <img src="/imges/product/domainService1.png" class="h5" alt="">
+          <img src="/imges/h5_product/domainService2.png" class="h5" alt="">
 
         </div>
 
@@ -159,7 +159,6 @@
     </el-carousel-item>
     <el-carousel-item>
       <div class="serviceFeaturesItem">
-          
             <img src="/imges/h5_product/serviceFeatures2.png" class="h5" alt="">
           <p>跨链交互</p>
           <p>BITDNS能够服务已有的公链生态，如以太坊、IPFS等， 让文件访问、地址转账、智能合约调用更方便、更快捷。</p>
@@ -510,14 +509,16 @@ export default {
         .serviceFeaturesItem{
           width: 219px;
           height: 240px;
-          background: #FFFFFF;
+          // background: #FFFFFF;
           box-shadow: 0px 1px 7px 2px rgba(215, 215, 215, 0.5);
           margin: 0 15px;
           display: flex;
           align-items: center;
           flex-direction: column;
           padding: 10px 20px;
-
+          background: url("/imges/index/index_box.png") no-repeat;
+          background-position: center;
+          background-size: 100% 100%;
           img{
             margin: 41px 0 13px;
             height: 38px;
@@ -1136,11 +1137,13 @@ export default {
         height:353px;
         background: #FFFFFF;
         
-        box-shadow: 0px 1px 7px 2px rgba(215, 215, 215, 0.5);
         margin: 0 15px;
         display: flex;
         align-items: center;
         flex-direction: column;
+        background: url("/imges/index/index_box.png") no-repeat;
+          background-position: center;
+          background-size: 100% 100%;
         img{
           margin: 41px 0 13px;
           height: 38px;

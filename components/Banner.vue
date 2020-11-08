@@ -174,8 +174,8 @@ export default {
       height: 333px;
     }
     .bg_little_square {
-      width: 293px;
-      height: 119px;
+      width: 440px;
+      height: 179px;
       .desText {
         font-weight: normal;
         font-size: 15px;

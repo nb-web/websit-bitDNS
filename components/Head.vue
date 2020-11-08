@@ -67,8 +67,8 @@
         <el-collapse-transition>
           <div v-show="show">
             <ul>
-              <nuxt-link to="/" :style="$route.path=='/' ? {color: '#2060F4'} : ''">
-                <li @click="close">{{ $t('links.home') }}</li>
+              <nuxt-link to="/">
+                <li @click="close" :style="$route.path=='/' ? {color: '#2060F4'} : ''">{{ $t('links.home') }}</li>
               </nuxt-link>
 
               <el-divider></el-divider>
@@ -82,10 +82,10 @@
                  
                     <nuxt-link
                       to="/product"
-                      :style="$route.path=='/product' ? {color: '#2060F4'} : ''"
+
                     >
                      <li @click="close">
-                      <p class="ym">{{ $t('links.product_domainService') }}</p>
+                      <p :style="$route.path=='/product' ? {color: '#2060F4'} : ''" class="ym">{{ $t('links.product_domainService') }}</p>
                         </li>
                     </nuxt-link>
                 
@@ -94,12 +94,12 @@
               </el-collapse-transition>
 
               <li @click="close">
-                <nuxt-link to="/Economic">{{ $t('links.economic') }}</nuxt-link>
+                <nuxt-link to="/Economic"><p  :style="$route.path=='/Economic' ? {color: '#2060F4'} : ''">{{ $t('links.economic') }}</p></nuxt-link>
               </li>
               <el-divider></el-divider>
 
               <nuxt-link to="/about">
-                <li @click="close">{{ $t('links.about') }}</li>
+                <li @click="close"><p :style="$route.path=='/about' ? {color: '#2060F4'} : ''">{{ $t('links.about') }}</p></li>
               </nuxt-link>
 
               <el-divider></el-divider>

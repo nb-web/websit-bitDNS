@@ -676,7 +676,7 @@ export default {
         }
 
         .topContent_right {
-          margin: 0 auto;
+          margin: 30px auto 0;
         
           img{
             width: 685px;

@@ -430,7 +430,7 @@ export default {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 97px 0;
+    padding: 97px 0 50px;
     font-size: 30px;
     font-family: PingFangSC-Semibold, PingFang SC;
     font-weight: 600;
