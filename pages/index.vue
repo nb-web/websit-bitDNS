@@ -1490,7 +1490,7 @@ created(){
     .route {
       .chart {
         position: relative;
-        height: 271px;
+        height: 300px;
         width: 690px;
         padding-top: 110px;
         background: url("/imges/h5_index/index_ditu.png") no-repeat;
@@ -1513,7 +1513,7 @@ created(){
         width: 10000px;
         .ul_box {
           width: 100%;
-          height: 230px;
+          height: 260px;
           display: inline-block;
           // float: left;
           margin-top: -100px;
@@ -1550,7 +1550,7 @@ created(){
           text-align: center;
         }
         .my_timeline_item_content {
-          width: 158px;
+          width: 138px;
           height: 120px;
           font-size: 18px;
           font-family: PingFangSC-Regular, PingFang SC;
