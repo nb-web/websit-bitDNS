@@ -23,7 +23,7 @@ export default {
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 100px 0 45px 0;
+            padding: 100px 0 45px;
 
             font-size: 30px;
             font-family: PingFangSC-Semibold, PingFang SC;
@@ -41,6 +41,28 @@ export default {
 
         p {
             margin: 0 20px;
+        }
+
+
+        @media (max-width: 1680px) {
+            .commonTit {
+                padding: 67px 0 45px;
+                font-size: 26px;
+            }
+        }
+
+        @media (max-width: 1440px) {
+            .commonTit {
+                padding: 58px 0 42px;
+                font-size: 23px;
+            }
+        }
+
+        @media (min-width: 1024px) and (max-width: 1280px) {
+            .commonTit {
+                padding: 51px 0 39px;
+                font-size: 20px;
+            }
         }
     }
     

@@ -30,12 +30,8 @@
     </div>
 
     <div class="bitDns">
+      <BlockTit text="BitDNS" />
       <div class="centens common_container">
-        <div class="tit">
-          <i></i>
-          <span style="margin:0 10px">BitDNS</span>
-          <i></i>
-        </div>
         <div class="centens_text">
           <p>
             BitDNS是分布式互联网的核心基础设施，就如同IPFS解决的是下一代互联网的储存问题，BitDNS解决的则是下一代互联网的域名解析问题。在BitDNS的网络中，用户拥有绝对的自主权，域名完全去中心化，BitDNS通过BitUID、钱包、路由器等基础设施来构建分布式域名，
@@ -65,21 +61,13 @@
     </div>
 
     <div class="BITDNS common_container">
-      <div class="tit">
-        <i></i>
-        <span style="margin:0 10px">BITDNS Tech Tree</span>
-        <i></i>
-      </div>
+      <BlockTit text="BITDNS Tech Tree" />
       <img class="Tree h5" src="/imges/index/index_tree.png" alt />
       <img class="Tree web" src="/imges/index/index_tree.png" alt />
     </div>
 
     <div class="jishu">
-      <div class="tit">
-        <i></i>
-        <span style="margin:0 10px">BITDNS 技术优势</span>
-        <i></i>
-      </div>
+      <BlockTit text="BITDNS 技术优势" />
 
       <div class="list common_container">
         <div class="swiperList h5">
@@ -130,12 +118,8 @@
       </div>
     </div>
     <!-- BITDNS 核心功能 -->
+    <BlockTit text="BITDNS 核心功能" />
     <div class="gn">
-      <div class="tit">
-        <i></i>
-        <span style="margin:0 10px">BITDNS 核心功能</span>
-        <i></i>
-      </div>
       <div>
         <div class="con common_container">
           <div class="con_content">
@@ -191,12 +175,8 @@
     <!-- BitDNS路线图 -->
 
     <div class="route">
-      <div class="tit">
-        <i></i>
-        <span style="margin:0 10px">BitDNS路线图</span>
-        <i></i>
-      </div>
-      <div class="chart common_container">
+      <BlockTit text="BitDNS 路线图" />
+      <div class="chart common_container chartMediaWidth">
         <!--时间线-->
         <div class="timeLine">
           <div class="ul_box">
@@ -228,13 +208,9 @@
     </div>
 
     <div class="news common_container">
-      <div class="tit">
-        <i></i>
-        <span style="margin:0 10px">新闻资讯</span>
-        <i></i>
-      </div>
+      <BlockTit text="新闻资讯" />
 
-      <div style="display:flex;margin:0 auto;justify-content: space-between;  flex-wrap: wrap;">
+      <div class="newsContent">
         <div class="news_left">
           <div class="day1">
             <h3 style="padding-top:15px">{{this.newsDay}}</h3>
@@ -484,35 +460,21 @@ created(){
     background: url("/imges/index/index_bit.png") no-repeat;
     background-position: center;
     background-size: cover;
-    .tit {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 30px;
-      font-family: PingFangSC-Semibold, PingFang SC;
-      font-weight: 600;
-      color: #3c3c3c;
-      // margin: 43px 0 24px;
-    }
+    
     .centens {
       border: 1px solid rgba(255, 255, 255, 0.1);
+      p {
+        // width: 867px;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 14px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #3c3c3c;
+        line-height: 35px;
+      }
     }
-    p {
-      // width: 867px;
-      margin: 0 auto;
-      text-align: center;
-      font-size: 14px;
-      font-family: PingFangSC-Regular, PingFang SC;
-      font-weight: 400;
-      color: #3c3c3c;
-      line-height: 35px;
-    }
-    i {
-      display: inline-block;
-      width: 30px;
-      height: 3px;
-      background: #2365ff;
-    }
+    
   }
 
   .swipe {
@@ -587,48 +549,8 @@ created(){
     //    color: white;
     // }
 
-    // .swiper-button-prev:after, .swiper-button-next:after{
-    //   font-size: 12px;
-    // }
-  }
-
-  @media (min-width: 2880px) and (max-width: 3840px) {
-    .centens {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      .centens_text {
-        height: 215px;
-        width: 867px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-    }
-    .swipe {
-      height: 626px;
-    }
-    .bitDns {
-      height: 458px;
-    }
-  }
-
-  @media (max-width: 1680px) {
-    .swipe {
-      height: 365px;
-    }
-    .bitDns {
-      height: 267px;
-    }
-  }
-
-  @media (min-width: 1024px) and (max-width: 1440px) {
-    .swipe {
-      height: 313px;
-    }
-    .bitDns {
-      height: 229px;
+    .swiper-button-prev:after, .swiper-button-next:after{
+      font-size: 12px;
     }
   }
 
@@ -673,7 +595,7 @@ created(){
           width: 285px;
           height: 365px;
           margin: 0 auto;
-          margin-top: 38px;
+          margin-bottom: 38px;
           text-align: center;
         }
         p {
@@ -905,25 +827,17 @@ created(){
   .el-carousel__item--card {
     width: 250px;
   }
-  i {
-    display: inline-block;
-    width: 30px;
-    height: 3px;
-    background: #2365ff;
-  }
-  .tit {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 30px;
-    font-family: PingFangSC-Semibold, PingFang SC;
-    font-weight: 600;
-    color: #3c3c3c;
-    margin: 43px 0 24px;
-  }
+  
 
   .news {
     padding-bottom: 70px;
+    .newsContent{
+      display:flex;
+      width: 908px;
+      margin:0 auto;
+      justify-content: space-between; 
+      flex-wrap: wrap;
+    }
 
     @media screen and (max-width: 750px) {
       .news_left {
@@ -1004,12 +918,16 @@ created(){
         padding: 26px 18px;
         border: 3px solid #f5f5f5;
       }
-      img {
+      a{
         width: 18px;
         height: 18px;
         position: absolute;
-        right: 20px;
-        top: 100px;
+        right: 18px;
+        bottom: 26px;
+      }
+      img {
+        width: 100%;
+        height: 100%;
       }
     }
     .day {
@@ -1034,14 +952,38 @@ created(){
     }
   }
 
-  // @media (min-width: 2880px) and (max-width: 3840px) {
-  //   .Tree{
-  //     height: 243px;
-  //     width: 243px;
-  //   }
-  // }
+  @media (min-width: 2880px) and (max-width: 3840px) {
+    .centens {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .centens_text {
+        height: 215px;
+        width: 867px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+    .swipe {
+      height: 626px;
+    }
+    .bitDns {
+      height: 458px;
+    }
+  }
 
-  @media (max-width: 1680px) {
+  @media (min-width: 1441px) and (max-width: 1680px) {
+    .swipe {
+      height: 365px;
+    }
+    .bitDns {
+      height: 267px;
+      .commonTit{
+        padding: 40px 0 30px;
+      }
+    }
     .BITDNS {
       .Tree {
         height: 319px;
@@ -1095,11 +1037,58 @@ created(){
         line-height: normal;
       }
     }
-    .route {
+    .news{
+      .newsContent{
+        width: 100%;
+      }
     }
   }
 
-  @media (max-width: 1440px) {
+  @media (min-width: 1024px) and (max-width: 1440px) {
+    .centens {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .centens_text {
+        width: 750px;
+        p{
+          line-height: 19px;
+        }
+      }
+    }
+
+    .block {
+    padding: 72px 0;
+    ul {
+
+      li {
+        width: 178px;
+        height: 193px;
+        line-height: normal;
+        img {
+          width: 26px;
+          height: 26px;
+          margin-top: 58px;
+        }
+        p {
+          font-size: 12px;
+          line-height: normal;
+          margin-top: 26px;
+        }
+      }
+    }
+  }
+
+    .swipe {
+      height: 313px;
+    }
+    .bitDns {
+      height: 229px;
+      .commonTit{
+        padding: 32px 0 18px;
+      }
+    }
     .BITDNS {
       .Tree {
         height: 273px;
@@ -1151,7 +1140,84 @@ created(){
         line-height: normal;
       }
     }
+    .route{
+      .chart{
+        padding-top: 116px;
+        .timeLine .my_timeline_item_line{
+          width: 130px;
+        }
+      }
+      .chartMediaWidth{
+        width: 903px;
+        height: 355px;
+      }
+    }
+
+    .news {
+      .el-carousel__item h3 {
+        font-size: 14px;
+        opacity: 0.75;
+        line-height: 200px;
+        margin: 0;
+      }
+
+      .el-collapse-item__header {
+        height: 63px;
+        font-size: 15px;
+      }
+      .el-carousel__item--card {
+        width: 250px;
+      }
+
+      .news_left {
+        width: 390px;
+        height: 334px;
+        font-size: 15px;
+
+        .news_left_botText {
+          bottom: 21px;
+          p {
+            font-size: 15px;
+            line-height: normal;
+            padding: 0 26px;
+          }
+        }
+      }
+      
+      .news_right {
+        margin: 0 auto;
+        height: 334px;
+        width: 426px;
+        .content {
+          font-size: 15px;
+          padding: 26px 18px;
+          border: 2px solid #f5f5f5;
+        }
+        
+      }
+      .day {
+        max-width: 63px;
+        max-height: 63px;
+        background: #669aee;
+        color: white;
+
+        h3 {
+          font-size: 40px;
+        }
+        p {
+          font-size: 16px;
+        }
+      }
+    }
   }
+
+  // @media (min-width: 2880px) and (max-width: 3840px) {
+  //   .Tree{
+  //     height: 243px;
+  //     width: 243px;
+  //   }
+  // }
+
 
   @media (min-width: 1024px) and (max-width: 1280px) {
     .BITDNS {
@@ -1479,8 +1545,13 @@ created(){
       }
     }
 
-    .news .news_right{
-      height: 500px;
+    .news{
+      .newsContent{
+        width: 100%;
+      }
+      .news_right{
+        height: 500px;
+      }
     }
   }
 }

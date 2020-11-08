@@ -227,7 +227,7 @@ export default {
     }
 
   .chainResourceAllocation{
-    height: 1058px;
+    height: 789px;
 
     .chainResourceAllocation_content{
       display: flex;
@@ -395,7 +395,7 @@ export default {
         height: 23px;
       }
       .tokenDesign_content_bottom {
-        margin: 0 53px;
+        margin: 0 auto;
         p {
           font-size: 23px;
         }
@@ -511,8 +511,8 @@ export default {
         width: 777px;
         border-top: 1px solid #979797;
         margin: 0 auto;
-        margin: 47px 0 47px 11px;
-        margin-left: 20px;
+        margin: 47px auto;
+        // margin-left: 40px;
       }
       .hr1 {
         width: 19px;

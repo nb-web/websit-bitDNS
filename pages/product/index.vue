@@ -534,7 +534,7 @@ export default {
             font-size: 12px;
             font-weight: normal;
             color: #4A4A4A;
-            line-height: 40px;
+            line-height: 19px;
             text-align: center;
             margin-top: 20px;
             box-sizing: border-box;
@@ -738,6 +738,9 @@ export default {
   }
 
   @media (min-width:1280px) and(max-width:1440px) {
+    .systemProblems {
+        height: 341px;
+    }
     .imgAndText_block{
       .imgAndText_block_item{
 
@@ -830,6 +833,9 @@ export default {
     
 
   @media (min-width:980px) and (max-width:1280px) {
+    .systemProblems {
+        height: 341px;
+    }
   .imgAndText_block{
     .imgAndText_block_item{
 
