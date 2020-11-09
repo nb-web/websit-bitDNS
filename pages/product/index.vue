@@ -94,7 +94,7 @@
     <div class="bitDNSTeams">
       <div class="common_container bitDNSTeams_content">
         <div class="topText">
-          <p class="teamsTit">BITDNS域名服务使用场景</p>
+          <p class="teamsTit">BitDNS域名服务使用场景</p>
           <p class="teamsDes">基于BitDNS的域名服务可以大幅降低普通用户参与区块链的门槛，通过域名服务，用户再也不用记忆看不懂且难以记忆的文件地址和 Hash 值，只要知道一个单词或一个短语就能进行文件访问、汇款转账、合约调用等。</p>
         </div>
 
@@ -156,7 +156,7 @@
 
 
     <div class="serviceFeatures">
-      <BlockTit text="BITDNS域名服务特点"/>
+      <BlockTit text="BitDNS域名服务特点"/>
 
       <div class="h5 common_container">
         <el-carousel type="card" height="200px" :loop="true" indicator-position="none" arrow="never" :autoplay="false">
@@ -173,7 +173,7 @@
               
                 <img src="/imges/h5_product/serviceFeatures2.png" class="h5" alt="">
               <p>跨链交互</p>
-              <p>BITDNS能够服务已有的公链生态，如以太坊、IPFS等， 让文件访问、地址转账、智能合约调用更方便、更快捷。</p>
+              <p>BitDNS能够服务已有的公链生态，如以太坊、IPFS等， 让文件访问、地址转账、智能合约调用更方便、更快捷。</p>
             </div>
         </el-carousel-item>
         <el-carousel-item>
@@ -199,7 +199,7 @@
             <img src="/imges/product/serviceFeatures2.png" class="web" alt="">
         
             <p>跨链交互</p>
-            <p>BITDNS能够服务已有的公链生态，如以太坊、IPFS等， 让文件访问、地址转账、智能合约调用更方便、更快捷。</p>
+            <p>BitDNS能够服务已有的公链生态，如以太坊、IPFS等， 让文件访问、地址转账、智能合约调用更方便、更快捷。</p>
           </div>
 
           <div class="serviceFeaturesItem">

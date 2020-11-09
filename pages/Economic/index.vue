@@ -15,7 +15,7 @@
       />
     </div>
     <div class="common_container bitDNS_economic">
-      <BlockTit text="BITDNS经济与治理" />
+      <BlockTit text="BitDNS经济与治理" />
 
       <div class="bitDNS_economic_content">
         <p>BitDNS经济和治理在项目的生态及核心业务流程上起到加强协作的重要作用。通过激励行业内各方参与者的加入，推动整个BitDNS生态的价值增长；采取更为合理的分配规则，对整个BitDNS参与方及贡献者进行经济激励，促进BitDNS生态健康持续发展</p>

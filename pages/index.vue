@@ -60,13 +60,13 @@
       </div>
     </div>
 
-    <BlockTit text="BITDNS Tech Tree" />
+    <BlockTit text="BitDNS Tech Tree" />
     <div class="BITDNS common_container">
       <img class="Tree h5" src="/imges/index/index_tree.png" alt />
       <img class="Tree web" src="/imges/index/index_tree.png" alt />
     </div>
 
-    <BlockTit text="BITDNS 技术优势" />
+    <BlockTit text="BitDNS 技术优势" />
     <div class="jishu">
       <div class="list common_container">
         <div class="swiperList h5">
@@ -118,7 +118,7 @@
       </div>
     </div>
     <!-- BITDNS 核心功能 -->
-    <BlockTit text="BITDNS 核心功能" />
+    <BlockTit text="BitDNS 核心功能" />
     <div class="gn">
       <div>
         <div class="con common_container">
@@ -1356,7 +1356,7 @@ created(){
           }
           p {
             font-size: 20px;
-            margin-top: 28px;
+            margin-top: 16px;
             font-weight: 400;
             color: #656565;
             line-height: 28px;
