@@ -238,7 +238,7 @@ export default {
     }
 
   .chainResourceAllocation{
-    height: 789px;
+    height: 900px;
 
     .chainResourceAllocation_content{
       display: flex;
