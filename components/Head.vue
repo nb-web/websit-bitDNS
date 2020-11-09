@@ -68,44 +68,64 @@
           <div v-show="show">
             <ul>
               <nuxt-link to="/">
-                <li @click="close" :style="$route.path=='/' ? {color: '#2060F4'} : ''">{{ $t('links.home') }}</li>
+                <li
+                  @click="close"
+                  :style="$route.path=='/' ? {color: '#2060F4'} : ''"
+                >{{ $t('links.home') }}</li>
               </nuxt-link>
+              <hr
+                style=" height:2px;border:none;border-top:1px solid #EEEEEE;margin:20px 0;box-sizing:border-box"
+              />
+              <!-- <el-divider></el-divider> -->
 
-              <el-divider></el-divider>
               <li @click="setshow2()">
                 产品工具
                 <img src="/pull.png" alt />
               </li>
-              <el-divider></el-divider>
+
+              <hr
+                style=" height:2px;border:none;border-top:1px solid #EEEEEE;margin:20px 0;box-sizing:border-box"
+              />
+
               <el-collapse-transition>
                 <div v-show="show3">
-                 
-                    <nuxt-link
-                      to="/product"
-
-                    >
-                     <li @click="close">
-                      <p :style="$route.path=='/product' ? {color: '#2060F4'} : ''" class="ym">{{ $t('links.product_domainService') }}</p>
-                        </li>
-                    </nuxt-link>
-                
-                  <el-divider></el-divider>
+                  <nuxt-link to="/product">
+                    <li @click="close">
+                      <p
+                        :style="$route.path=='/product' ? {color: '#2060F4'} : ''"
+                        class="ym"
+                      >{{ $t('links.product_domainService') }}</p>
+                    </li>
+                  </nuxt-link>
+                  <hr
+                    style=" height:2px;border:none;border-top:1px solid #EEEEEE;margin:20px 0;box-sizing:border-box"
+                  />
                 </div>
               </el-collapse-transition>
 
               <li @click="close">
-                <nuxt-link to="/Economic"><p  :style="$route.path=='/Economic' ? {color: '#2060F4'} : ''">{{ $t('links.economic') }}</p></nuxt-link>
+                <nuxt-link to="/Economic">
+                  <p
+                    :style="$route.path=='/Economic' ? {color: '#2060F4'} : ''"
+                  >{{ $t('links.economic') }}</p>
+                </nuxt-link>
               </li>
-              <el-divider></el-divider>
+              <hr
+                style=" height:2px;border:none;border-top:1px solid #EEEEEE;margin:20px 0;box-sizing:border-box"
+              />
 
               <nuxt-link to="/about">
-                <li @click="close"><p :style="$route.path=='/about' ? {color: '#2060F4'} : ''">{{ $t('links.about') }}</p></li>
+                <li @click="close">
+                  <p
+                    :style="$route.path=='/about' ? {color: '#2060F4'} : ''"
+                  >{{ $t('links.about') }}</p>
+                </li>
               </nuxt-link>
 
               <!-- <el-divider></el-divider>
               <li>
                 <span style="color:blue">中</span>/英
-              </li> -->
+              </li>-->
             </ul>
           </div>
         </el-collapse-transition>
@@ -158,6 +178,9 @@ export default {
 .head {
   width: 100%;
   background: white;
+  hr {
+    background: #ffffff;
+  }
   img {
     width: 140px;
     height: 45px;
@@ -234,8 +257,8 @@ export default {
     .top {
       height: 77px;
     }
-    .route{
-      .parents_nav{
+    .route {
+      .parents_nav {
         .children_nav {
           li {
             height: 41px;
@@ -255,8 +278,8 @@ export default {
     .top {
       height: 66px;
     }
-    .route{
-      .parents_nav{
+    .route {
+      .parents_nav {
         .children_nav {
           li {
             height: 35px;
@@ -276,8 +299,8 @@ export default {
     .top {
       height: 59px;
     }
-    .route{
-      .parents_nav{
+    .route {
+      .parents_nav {
         .children_nav {
           li {
             height: 31px;
@@ -291,7 +314,6 @@ export default {
         }
       }
     }
-    
   }
 
   a {
@@ -303,9 +325,9 @@ export default {
     line-height: 88px;
   }
 }
-@media (min-width:980px) and (max-width: 1279px) {
-  .head{
-    .top{
+@media (min-width: 980px) and (max-width: 1279px) {
+  .head {
+    .top {
       justify-content: space-between;
     }
   }
@@ -317,6 +339,7 @@ export default {
   }
   .head {
     position: relative;
+    max-width: 100% !important;
     .top {
       display: flex;
       justify-content: space-between;
