@@ -1,10 +1,19 @@
 <template>
   <div class="about">
-    <Banner 
-      bgUrl="/imges/banna/banner_about.png"
-      insideBgUrl="/imges/product/littleSquare.png"
-      bgText="关于我们"
-    />
+    <div class="web">
+      <Banner 
+        bgUrl="/imges/banna/banner_about.png"
+        insideBgUrl="/imges/product/littleSquare.png"
+        bgText="关于我们"
+      />
+    </div>
+    <div class="h5">
+      <Banner 
+        bgUrl="/imges/h5_banner/h5Banner_about.png"
+        insideBgUrl="/imges/product/littleSquare.png"
+        bgText="关于我们"
+      />
+    </div>
     <div class="about_top common_container">
       <BlockTit text="关于我们" />
       <div class="brief">

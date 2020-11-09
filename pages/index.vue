@@ -839,7 +839,7 @@ created(){
     padding-bottom: 70px;
     .newsContent{
       display:flex;
-      width: 908px;
+      width: 100%;
       margin:0 auto;
       justify-content: space-between; 
       flex-wrap: wrap;
@@ -1164,6 +1164,13 @@ created(){
     }
 
     .news {
+      .newsContent{
+        display:flex;
+        width: 908px;
+        margin:0 auto;
+        justify-content: space-between; 
+        flex-wrap: wrap;
+      }
       .el-carousel__item h3 {
         font-size: 14px;
         opacity: 0.75;

@@ -1,12 +1,23 @@
 <template>
   <div class="domainService">
-    <Banner 
-      bgUrl="/imges/banna/banner_about.png"
-      insideBgUrl="/imges/product/littleSquare.png"
-      bgText="BitDNS 域名服务"
-      squareWidth="438px"
-      showDes
-    />
+    <div class="web">
+      <Banner 
+        bgUrl="/imges/banna/banner_domainService.png"
+        insideBgUrl="/imges/product/littleSquare.png"
+        bgText="BitDNS 域名服务"
+        squareWidth="438px"
+        showDes
+      />
+    </div>
+    <div class="h5">
+      <Banner 
+        bgUrl="/imges/h5_banner/h5Banner_product.png"
+        insideBgUrl="/imges/product/littleSquare.png"
+        bgText="BitDNS 域名服务"
+        squareWidth="438px"
+        showDes
+      />
+    </div>
     <div class="common_container systemProblems">
       <BlockTit text="传统DNS域名系统的问题"/>
       <div class="systemProblems_content">

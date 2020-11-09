@@ -1,10 +1,19 @@
 <template>
   <div class="economic ">
-    <Banner 
-      bgUrl="/imges/banna/banner_economic.png"
-      insideBgUrl="/imges/product/littleSquare.png"
-      bgText="经济与治理"
-    />
+    <div class="web">
+      <Banner 
+        bgUrl="/imges/banna/banner_economic.png"
+        insideBgUrl="/imges/product/littleSquare.png"
+        bgText="经济与治理"
+      />
+    </div>
+    <div class="h5">
+      <Banner 
+        bgUrl="/imges/h5_banner/h5Banner_Economic.png"
+        insideBgUrl="/imges/product/littleSquare.png"
+        bgText="经济与治理"
+      />
+    </div>
     <div class="common_container bitDNS_economic">
       <BlockTit text="BITDNS经济与治理" />
 
