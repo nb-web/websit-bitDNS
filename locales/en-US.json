@@ -7,10 +7,11 @@
         "about": "About us"
     },
     "home": {
-      "title": "Welcome",
-      "introduction": "This is an introduction in English.",
       "bannerText": "Based on blockchain connection, bring dWeb4.0 technology services",
-      "swiperName":"Anh Nguyen"
+      "fourBlock1": "Autonomous user data",
+      "fourBlock2": "Decentralized upper layer",
+      "fourBlock3": "Has a vast engineering experience",
+      "fourBlock4": "Cross chain interoperability"
     },
     "about": {
       "title": "About",

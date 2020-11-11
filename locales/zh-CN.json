@@ -8,10 +8,11 @@
       "about": "关于我们"
     },
     "home": {
-      "title": "Welcome",
-      "introduction": "This is an introduction in English.",
       "bannerText": "基于区块链技术, 服务于dWeb4.0关键基础设施",
-      "swiperName":"Anh Nguyen"
+      "fourBlock1": "用户数据绝对自主",
+      "fourBlock2": "上层完全去中心化",
+      "fourBlock3": "集合多种技术工程经验",
+      "fourBlock4": "跨链互操作性"
 
     },
     "about": {

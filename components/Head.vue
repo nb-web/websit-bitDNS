@@ -43,12 +43,12 @@
             to="/about"
             :style="$route.path=='/about' ? {color: '#2060F4'} : ''"
           >{{ $t('links.about') }}</nuxt-link>
-          <!-- <nuxt-link to>
+          <nuxt-link to>
             <div @click="switchLocale()">
               <span :style="locale=='zh-CN' ? {color: '#2060F4'}:''" >中</span>/
               <span :style="locale=='en-US' ? {color: '#2060F4'}:''" >EN</span>
             </div>
-          </nuxt-link>-->
+          </nuxt-link>
         </div>
       </div>
     </div>

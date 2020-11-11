@@ -9,22 +9,22 @@
         <li>
           <img src="/imges/index/index_chart.png" class="web" alt />
           <img src="/imges/h5_index/index_chart.png" class="h5" alt />
-          <p>用户数据绝对自主</p>
+          <p>{{$t('home.fourBlock1')}}</p>
         </li>
         <li>
           <img src="/imges/index/index_earth.png" class="web" alt />
           <img src="/imges/h5_index/index_earth.png" class="h5" alt />
-          <p>上层完全去中心化</p>
+          <p>{{$t('home.fourBlock2')}}</p>
         </li>
         <li>
           <img src="/imges/index/index_tracking.png" class="web" alt />
           <img src="/imges/h5_index/index_tracking.png" class="h5" alt />
-          <p>集合多种技术工程经验</p>
+          <p>{{$t('home.fourBlock3')}}</p>
         </li>
         <li>
           <img src="/imges/index/index_tools.png" class="web" alt />
           <img src="/imges/h5_index/index_tools.png" class="h5" alt />
-          <p>跨链互操作性</p>
+          <p>{{$t('home.fourBlock4')}}</p>
         </li>
       </ul>
     </div>
