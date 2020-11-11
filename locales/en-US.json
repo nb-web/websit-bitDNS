@@ -1,4 +1,39 @@
 {
+    "dnsService": {
+      "bannerText": "BitDNS DNS services",
+      "bannerText2": "The world's first cross chain based distributed domain name service",
+      "systomProblemTit": "Major Internet incidents caused by attacks on traditional DNS",
+      "systomProblemContent": "The traditional DNS system is highly centralized.  The stability of the entire system relies heavily on the central node. DNS is the foundation of the entire Internet service; it processes billions of Internet access requests from all around the world every day. If the DNS stop operating, users will lose access to the Internet. To avoid such mishaps, a new DNS system is needed to prevent centralized monopolisation. We name this new era dWeb4.0.",
+      "systomProblemContent1Date": "In February 2014, ",
+      "systomProblemContent1": "Mt.Gox - the world's largest bitcoin trading platform had 750,000 bitcoins and approximately 100,000 bitcoins in the trading system were lost due to a loophole in the trading system.",
+
+      "bitDNSVsTraditionalDNS": "BitDNS Vs Traditional DNS",
+
+      "domainUsedTit": "BitDNS domain name service usage scenarios",
+      "domainUsedContent": "The domain name service based on BitDNS can greatly . accelerate mass adoption of the Blockchain technology. Through the domain name service, users no longer have to memorise file addresses and hash values that are incomprehensible and difficult to remember. Users can send cryptos, access data and smart contract with a word or phrase."
+    },
+    "economic": {
+      "economicBannerTest": "Economy and Governance",
+      "economicTit": "BitDNS Economy and Governance",
+      "economicContent": "BitDNS economy and governance play an important role in strengthening collaboration in the project's ecology and core business processes. It motivates all participants in the industry to join, promote the value growth of the entire BitDNS ecosystem. All of the factors mentioned above will allow BitDNS participants and contributors to promote a healthy and sustainable development of the BitDNS ecosystem.",
+      "economicTokenTit": "Token model’s design",
+      "economicTokenContent": "DNS is the governance token in the BitDNS system. It ensures the decentralization of the BitDNS ecosystem and enables stakeholders in the ecosystem to participate in network governance fairly.",
+      "dnsUsage": "DNS usage scenarios",
+      "governance": "Governance and Investment",
+      "domainRegistration": "Domain registration",
+      "crossDapp": "Cross Dapp application",
+
+      "modelOnChain": "Resource allocation model on Chain",
+      "mining": "Mining",
+      "ecologyContributor": "Ecology contributor",
+      "communityFund": "Community fund",
+      "team": "Team",
+      "developers": "Developers",
+      "donation": "Donation",
+      "other": "Other",
+
+      "economicCycle": "BitDNS economic cycle"
+    },
     "links": {
         "home": "Home",
         "product": "Product tools",
@@ -25,8 +60,9 @@
     "about": {
       "title": "About",
       "tit_top":"About us",
-      "introduction": "This page is made to give you more informations.",
-      "brief":"Blockchain Technology as the key infrastructure building block of dWeb4.0"
+      "brief":"Blockchain Technology as the key infrastructure building block of dWeb4.0",
+      "bitDnsTeamTit": "BitDNS team",
+      "bitDnsTeamContent": "BitDNS headquarters is located in Singapore with an international in Singapore and Russia. The core team is from Mildsoft, Alibaba, Baidu, PricewaterhouseCoopers, Kenxi, and etc. The founding team are experts in digital assets. And our development team have deep understanding of the Blockchain Technology. "
 
     }
 }

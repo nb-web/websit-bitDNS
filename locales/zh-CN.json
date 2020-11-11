@@ -1,5 +1,40 @@
 
 {
+    "dnsService": {
+      "bannerText": "BitDNS域名服务",
+      "bannerText2": "全球首家基于跨链的分布式域名服务",
+      "systomProblemTit": "传统DNS被攻击引发的互联网重大事故",
+      "systomProblemContent": "传统DNS城名系统由于历史原因，设计上高度中心化，整个系统的稳定严重依赖中心节点。DNS作为整个互联网服务底层基础之一，每天处理来自全球数以十亿计的互联网访问请求。如果DNS服务器宕机，用户就无法接入互联网。由于其体系结构的脆弱性，容易造成大规模的瘫痪。因此在dWeb4.0时代，想要防止中心化垄断与作恶则需要全新的DNS系统。",
+      "systomProblemContent1Date": "2014年2月，",
+      "systomProblemContent1": "全球最大的比特币交易平台Mt.Gox由于交易系统出现漏洞，75万个比特币以及Mt.Gox自身账号中约10万个比特币。",
+
+      "bitDNSVsTraditionalDNS": "BitDNS与传统DNS",
+
+      "domainUsedTit": "BitDNS域名服务使用场景",
+      "domainUsedContent": "基于BitDNS的域名服务可以大幅降低普通用户参与区块链的门槛，通过域名服务，用户再也不用记忆看不懂且难以记忆的文件地址和 Hash 值，只要知道一个单词或一个短语就能进行文件访问、汇款转账、合约调用等。"
+    },
+    "economic": {
+      "economicBannerTest": "经济与治理",
+      "economicTit": "BitDNS 经济与治理",
+      "economicContent": "BitDNS经济和治理在项目的生态及核心业务流程上起到加强协作的重要作用。通过激励行业内各方参与者的加入,推动整个 BitDNS生态的价值增长;采取更为合理的分配规则,对整个 BitDNS参与方及贡献者进行经济激励,促进 BitDNS生态健康持续发展",
+      "economicTokenTit": "Token 设计模型",
+      "economicTokenContent": "DNS是BitDNS系统中的生态通证，亦是BitDNS的价值支撑，它保证了BitDNS生态系统的去中心化，使生态中的权益者能够自由公平的参与网络治理。当官方开放域名二级交易市场时，DNS将作为支付代币进行域名的买卖。在未来，DNS的使用场景也会不断拓宽。在BitDNS系统上线后，用户注册新的域名也将获得一定数量的DNS作为奖励，BitDNS基金会也将会拿出部分DNS来激励用户注册域名。",
+      "dnsUsage": "DNS的使用场景",
+      "governance": "治理与投资",
+      "domainRegistration": "域名注册",
+      "crossDapp": "跨Dapp应用",
+
+      "modelOnChain": "链上资源分配模型",
+      "mining": "挖矿",
+      "ecologyContributor": "生态贡献者",
+      "communityFund": "社区资金会",
+      "team": "团队",
+      "developers": "开发者",
+      "donation": "捐赠",
+      "other": "其他",
+
+      "economicCycle": "BitDNS经济循环"
+    },
     "links": {
       "home": "首页",
       "product": "产品工具",
@@ -29,8 +64,9 @@
     "about": {
       "title": "About",
       "tit_top":"关于我们",
-      "introduction": "This page is made to give you more informations.",
-      "brief":"BitDNS基金会位于新加坡，致力于打造全球首个区块链域名系统，构建连接信息互联网与价值区块链的超级枢纽，为区块链及分布式WEB4.0的发展贡献自己的力量。"
+      "brief":"BitDNS基金会位于新加坡，致力于打造全球首个区块链域名系统，构建连接信息互联网与价值区块链的超级枢纽，为区块链及分布式WEB4.0的发展贡献自己的力量。",
+      "bitDnsTeamTit": "BitDNS团队",
+      "bitDnsTeamContent": "BitDNS在新加坡设有办公场所,且团队国际化水平较高,核心人员来自黴软、阿里、百度、普华永道、肯锡等,每始团队及核自开发团队均是数字资产早期业者,以及区块链的行业专家,在区块链行业有较深的从背,以及技术优势。"
     }
 
 }
