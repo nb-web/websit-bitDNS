@@ -12,12 +12,25 @@
       "fourBlock1": "用户数据绝对自主",
       "fourBlock2": "上层完全去中心化",
       "fourBlock3": "集合多种技术工程经验",
-      "fourBlock4": "跨链互操作性"
-
+      "fourBlock4": "跨链互操作性",
+      "bitDns":"BitDNS是分布式互联网的核心基础设施，就如同IPFS解决的是下一代互联网的储存问题，BitDNS解决的则是下一代互联网的域名解析问题。在BitDNS的网络中，用户拥有绝对的自主权，域名完全去中心化，BitDNS通过BitUID、钱包、路由器等基础设施来构建分布式域名，除此之外BitDNS的愿景是通过连接多数主流公链、主流工程技术（如：IPFS技术、Etherum、EOS、Fabric、R3、IPv8技术，共同构成下一代分布式互联网的超级枢纽——dWeb4.0",
+      "gn1":"支持网站注册/登录、会员服务收费、网站授权管理、传统密码管理、网站收藏管理、个人云盘系统",
+      "gn1tit":"BitUID",
+      "gn2":"支持主流区块链钱包；作为域名系统、BitUID系统、dWeb4.0应用市场的载体；支持PC/手机/路由器多端多设备。",
+      "gn2tit":"离线钱包",
+      
+      "gn3":"支持域名解析服务、注册买卖域名、域名解析设置、传统域名映射、域名专属昵称、域名动态解析。",
+      "gn3tit":"域名系统",
+      
+      "gn4":"dMail加密邮箱、dWeb分布式网站、dSNS社交网络、dChat分布式聊天、dVideo短视频、dGame游戏/VR。",
+      "gn4tit":"应用市场"
+      
     },
     "about": {
       "title": "About",
-      "introduction": "This page is made to give you more informations."
+      "tit_top":"关于我们",
+      "introduction": "This page is made to give you more informations.",
+      "brief":"BitDNS基金会位于新加坡，致力于打造全球首个区块链域名系统，构建连接信息互联网与价值区块链的超级枢纽，为区块链及分布式WEB4.0的发展贡献自己的力量。"
     }
 
 }

@@ -11,10 +11,22 @@
       "fourBlock1": "Autonomous user data",
       "fourBlock2": "Decentralized upper layer",
       "fourBlock3": "Has a vast engineering experience",
-      "fourBlock4": "Cross chain interoperability"
+      "fourBlock4": "Cross chain interoperability",
+      "bitDns":"BitDNS is the core infrastructure of the distributed Internet. On the BitDNS network, users are autonomous and domain names are decentralized. BitDNS builds distributed domain names through BitUID infrastructure, wallets, and routers. In addition, BitDNS plans to connect most mainstream public chains. BitDNS maybe the first project  to include key with mainstream technologies like: IPFS technology, Etherum, EOS, Fabric, R3, IPv8 technology. The commingled ecosystem will become the Super Hub of distributed Internet-dWeb4.0.",
+      "gn1":"Support website registration/login, membership service charges, website authorization management, traditional password management, website collection management, and personal cloud disk system storage.",
+      "gn1tit":"BitUID",
+      "gn2":"Support mainstream blockchain wallet; as the carrier of domain name system, BitUID system, dWeb4.0 application marketplace; support PC/mobile phone/router multi-terminal multi-device.",
+      "gn2tit":"Offline wallet",
+      "gn3":"Support domain name resolution services, domain name registration and sale, domain name resolution settings, traditional domain name mapping, domain name exclusive nicknames, and dynamic domain name resolution.",
+      "gn3tit":"Domain Name System",
+      "gn4":"dMail encrypted mailbox, dWeb distributed website, dSNS social network, dChat distributed chat, dVideo short video, dGame game/VR.",
+      "gn4tit":"Application market"
     },
     "about": {
       "title": "About",
-      "introduction": "This page is made to give you more informations."
+      "tit_top":"About us",
+      "introduction": "This page is made to give you more informations.",
+      "brief":"Blockchain Technology as the key infrastructure building block of dWeb4.0"
+
     }
 }

@@ -15,9 +15,9 @@
       />
     </div>
     <div class="about_top common_container">
-      <BlockTit text="关于我们" />
+      <BlockTit :text='$t("about.tit_top")' />
       <div class="brief">
-        <p>BitDNS基金会位于新加坡，致力于打造全球首个区块链域名系统，构建连接信息互联网与价值区块链的超级枢纽，为区块链及分布式WEB4.0的发展贡献自己的力量。</p>
+        <p>{{$t("about.brief")}}</p>
       </div>
     </div>
     <div class="content">
@@ -100,7 +100,7 @@ export default {
   },
   data() {
     return {
-      list: []
+      list: [],
     };
   }
 };

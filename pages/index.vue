@@ -34,9 +34,7 @@
       <div class="centens common_container">
         <div class="centens_text">
           <p>
-            BitDNS是分布式互联网的核心基础设施，就如同IPFS解决的是下一代互联网的储存问题，BitDNS解决的则是下一代互联网的域名解析问题。在BitDNS的网络中，用户拥有绝对的自主权，域名完全去中心化，BitDNS通过BitUID、钱包、路由器等基础设施来构建分布式域名，
-            除此之外BitDNS的愿景是通过连接多数主流公链、主流工程技术（如：IPFS技术、Etherum、EOS、Fabric、R3、IPv8技术，
-            共同构成下一代分布式互联网的超级枢纽——dWeb4.0。
+           {{$t('home.bitDns')}}
           </p>
         </div>
       </div>
@@ -76,7 +74,6 @@
             indicator-position="none"
             arrow="never"
             :autoplay="false"
-            
           >
             <el-carousel-item
               v-for="(item,index) in technologyAdvantageList"
@@ -123,8 +120,8 @@
       <div>
         <div class="con common_container">
           <div class="con_content">
-            <h3>BitUID</h3>
-            <p>支持网站注册/登录、会员服务收费、网站授权管理、传统密码管理、网站收藏管理、个人云盘系统</p>
+             <h3>{{$t("home.gn1tit")}}</h3>
+            <p>{{$t("home.gn1")}}</p>
           </div>
           <div>
             <img src="/imges/index/index_2.png" class="web" alt />
@@ -140,8 +137,8 @@
             <img src="/imges/h5_index/index_1.png" class="h5" alt />
           </div>
           <div class="con_content">
-            <h3>离线钱包</h3>
-            <p>支持主流区块链钱包；作为域名系统、BitUID系统、dWeb4.0应用市场的载体；支持PC/手机/路由器多端多设备。</p>
+            <h3>{{$t("home.gn2tit")}}</h3>
+            <p>{{$t("home.gn2")}}</p>
           </div>
         </div>
       </div>
@@ -149,8 +146,8 @@
       <div>
         <div class="con common_container">
           <div class="con_content">
-            <h3>域名系统</h3>
-            <p>支持域名解析服务、注册买卖域名、域名解析设置、传统域名映射、域名专属昵称、域名动态解析。</p>
+            <h3>{{$t("home.gn3tit")}}</h3>
+            <p>{{$t("home.gn3")}}</p>
           </div>
           <div>
             <img src="/imges/index/index_3.png" class="web" alt />
@@ -166,8 +163,8 @@
             <img src="/imges/h5_index/index_4.png" class="h5" alt />
           </div>
           <div class="con_content">
-            <h3>应用市场</h3>
-            <p>dMail加密邮箱、dWeb分布式网站、dSNS社交网络、dChat分布式聊天、dVideo短视频、dGame游戏/VR。</p>
+              <h3>{{$t("home.gn4tit")}}</h3>
+            <p>{{$t("home.gn4")}}</p>
           </div>
         </div>
       </div>
@@ -255,8 +252,10 @@
 <script>
 import {
   swiperList,
+  swiperList3,
   newLink,
-  home_technologyAdvantage
+  home_technologyAdvantage,
+  home_technologyAdvantage2
 } from "@/locales/globalData.json";
 
 export default {
@@ -273,7 +272,9 @@ export default {
       show6: false,
       show7: false,
       show8: false,
+      locale: this.$store.state.locale,
       technologyAdvantageList: home_technologyAdvantage,
+      // technologyAdvantageList2:,
       swiperList2: swiperList,
       newLinkList: newLink,
       activeName: "1",
@@ -353,7 +354,21 @@ export default {
     };
   },
 
+
+
   watch: {
+      locallang(val,oldval){
+        console.log(val)
+        if(val=="en-US"){
+          this.technologyAdvantageList=home_technologyAdvantage2
+          this.swiperList2=swiperList3
+          }else{
+ this.technologyAdvantageList=home_technologyAdvantage
+          this.swiperList2=swiperList
+
+            }
+      },deep:true,
+
     windowWidth(val) {
       let that = this;
       val > 980
@@ -366,9 +381,13 @@ export default {
   computed: {
     swiper() {
       return this.$refs.mySwiper.$swiper;
+    },
+    locallang(){
+      return this.$store.state.locale
     }
   },
   mounted() {
+    console.log(this.locale)
     var that = this;
     window.fullWidth = document.documentElement.clientWidth;
     that.windowWidth = window.fullWidth; // 宽
@@ -449,7 +468,7 @@ created(){
           
           font-weight: 600;
           color: #656565;
-          line-height: 78px;
+          line-height: 35px;
         }
       }
     }

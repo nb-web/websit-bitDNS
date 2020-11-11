@@ -13,7 +13,13 @@
     {"img":"/imges/index/swiper4.png","name":"zet david","title":"BitDNS的易用性将更好的鼓励年轻人参与区块链","content":"BitDNS产品的易用性将更好的鼓励年轻人来参与区块链网络。"},
     {"img":"/imges/index/swiper5.png","name":"Greg Mentayor","title":"BitDNS的技术基于点对点，无需中央管理即可运行","content":"BitDNS支付交易的验证和支付交易的确认通过网络以协商一致的方式进行。"}
   ],
-
+  "swiperList3":[
+    {"img":"/imges/index/swiper1.png","name":"Anh Nguyen","title":"BitDNS - suitable for commercial and personal use","content":"BitDNS accelerates mass adoption with readable domain nameInstead of long wallet address, BitDNS provides a readable domain name, that can be linked to cryptocurrencies address for users to receive and send crypto. Enterprise with a decentralised domain name ensures business continuity as it is secured and belongs to the enterprise forever. "},
+    {"img":"/imges/index/swiper2.png","name":"larueer kenbe","title":"BitDNS is an innovative multi-service platform that serves exchange valuable information safely","content":"BitDNS’s infrastructure platform innovates continuously by increasing their product range to keep up with the rapid industry demands. Products includes; BitDNS, BitMail, BitUid, BitChat, BitAPP etc."},
+    {"img":"/imges/index/swiper3.png","name":"Luyn Hoang","title":"BitDNS is one of the most secure with light client, with great growth potential","content":"BitDNS is one of the most secure and lightweight client. Light clients are crucial elements in blockchain ecosystems. It helps us access and interact with a blockchain without having to sync the full blockchain. OR By holding on the their governance token- CORN, I receive dividends. It’s great! "},
+    {"img":"/imges/index/swiper4.png","name":"zet david","title":"BitDNS的易用性将更好的鼓励年轻人参与区块链","content":"BitDNS产品的易用性将更好的鼓励年轻人来参与区块链网络。"},
+    {"img":"/imges/index/swiper5.png","name":"Greg Mentayor","title":"BitDNS的技术基于点对点，无需中央管理即可运行","content":"BitDNS支付交易的验证和支付交易的确认通过网络以协商一致的方式进行。"}
+  ],
   "home_technologyAdvantage":[
     {"name":"多链架构", "detail":"同时支持网关层及Level2层跨链协议（包括波卡和Cosmos），全新分布式多链域名系统。"},
     {"name":"预言机", "detail":"支持ChainLink预言机，并以BitDNS域名系统为预言服务命名。"},
@@ -23,6 +29,17 @@
     {"name":"云路由器", "detail":"以硬件钱包、智能路由、家庭NAS系统为核心的云路由器，未来的智慧家庭中心，通过区块链技术解决物联网设备之间的信任和用户数据保护问题，避免目前传统摄像头被侵入导致的隐私泄漏问题。"},
     {"name":"IPv8", "detail":"基于SWAN技术的网络自适应动态组网技术，能够在互联网成千上万的节点之间，组建起双层高速互联网络，能够成功突破网络围墙，大幅减少跨境网络访问延迟。未来还能接入SpaceX的StarLink星链网络，组成空地一体化互联网络。"},
     {"name":"抗量子计算加密算法", "detail":"BitDNS将在后续版本中，全面支持抗量子计算的加密算法，做好迎接量子计算时代的准备，防止量子计算机普及后对区块链网络造成的巨大影响。"}
+  ],
+
+  "home_technologyAdvantage2":[
+    {"name":"Multi Chain Architecture", "detail":"BitDNS uses multi-chain architecture which supports both gateway layer and layer cross-chain protocols (including Polkadot and Cosmos), and a new distributed multi-chain domain name system."},
+    {"name":"Oracles", "detail":" Support ChainLink which can name the oracle service after BitDNS domain name system"},
+    {"name":"Identity authentication", "detail":"biometrics using fingerprint, face and iris as one of the user's blockchain key random seeds. Biometrics are used to identify users, and at the same time blockchain technology with zero knowledge proof to ensure user’s privacy."},
+    {"name":"Trusted DeFi system", "detail":" supports DEX and DAO+ exchanges. The uniqueness of Token is determined by the domain name, and counterfeit coins and altcoins are avoided."},
+    {"name":"Edge computing technology", "detail":"BitDNS mining machine not only provides computing nodes for the public chain, but also provides storage nodes for IPFS. It can also provide cloud computers, cloud live broadcasts, and cloud games based on edge cloud computing services. It can directly benchmark Alibaba's latest cloud computing technology."},
+    {"name":"Cloud router", "detail":"a cloud router supports hardware wallets, smart routers, and home NAS systems as the core. Through blockchain technology we aim to solve the problem of trust between IoT devices and protects users data privacy by preventing camera data leakage."},
+    {"name":"IPv8", "detail":"The adaptive dynamic networking technology is based on SWAN technology and can form a double-layer high-speed interconnection network between thousands of nodes on the Internet. These nodes can successfully break through firewall and greatly increase speed of cross-border network access. In the future, it can access SpaceX's StarLink network to form an integrated interconnection network."},
+    {"name":"Anti-quantum computing encryption algorithm", "detail":"BitDNS will fully support anti-quantum computing encryption algorithms in subsequent versions and will prepare for quantum computing. BitDNS will be quantum resistant."}
   ]
 
 }
