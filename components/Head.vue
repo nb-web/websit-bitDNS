@@ -43,6 +43,7 @@
             to="/about"
             :style="$route.path=='/about' ? {color: '#2060F4'} : ''"
           >{{ $t('links.about') }}</nuxt-link>
+          
           <nuxt-link to>
             <div @click="switchLocale()">
               <span :style="locale=='zh-CN' ? {color: '#2060F4'}:''" >中</span>/
@@ -79,7 +80,7 @@
               <!-- <el-divider></el-divider> -->
 
               <li @click="setshow2()">
-                产品工具
+                {{ $t('links.product') }}
                 <img src="/pull.png" alt />
               </li>
 
@@ -121,11 +122,18 @@
                   >{{ $t('links.about') }}</p>
                 </li>
               </nuxt-link>
-
-              <!-- <el-divider></el-divider>
-              <li>
-                <span style="color:blue">中</span>/英
-              </li>-->
+              <hr
+                style=" height:2px;border:none;border-top:1px solid #EEEEEE;margin:20px 0;box-sizing:border-box"
+              />
+              
+              <li @click="close">
+                <nuxt-link to>
+                  <div @click="switchLocale()">
+                    <span :style="locale=='zh-CN' ? {color: '#2060F4'}:''" >中</span>/
+                    <span :style="locale=='en-US' ? {color: '#2060F4'}:''" >EN</span>
+                  </div>
+                </nuxt-link>
+              </li>
             </ul>
           </div>
         </el-collapse-transition>
@@ -231,7 +239,8 @@ export default {
           justify-content: center;
           align-items: center;
           height: 47px;
-          width: 127px;
+          min-width: 127px;
+          padding: 0 10px;
           border: 1px solid #e0e0e0;
 
           a {
@@ -262,7 +271,7 @@ export default {
         .children_nav {
           li {
             height: 41px;
-            width: 111px;
+            min-width: 111px;
 
             a {
               height: 41px;
@@ -283,7 +292,7 @@ export default {
         .children_nav {
           li {
             height: 35px;
-            width: 95px;
+            min-width: 95px;
 
             a {
               height: 35px;
@@ -304,7 +313,7 @@ export default {
         .children_nav {
           li {
             height: 31px;
-            width: 85px;
+            min-width: 85px;
 
             a {
               height: 31px;

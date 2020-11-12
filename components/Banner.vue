@@ -9,7 +9,7 @@
     <div v-if="!!bgText" :style="{ backgroundImage: `url('${bgUrl}')` }" class="other_banna">
       <div :style="{ backgroundImage: `url('${insideBgUrl}')` }" class="bg_little_square">
         <h4 :style="{margin: 0}">{{bgText}}</h4>
-        <p v-if="showDes" class="desText">全球首家基于跨链的分布式域名服务</p>
+        <p v-if="showDes&&bgText2" class="desText">{{bgText2}}</p>
       </div>
     </div>
   </div>
@@ -21,7 +21,7 @@ export default {
     bgUrl: String, //banner背景
     insideBgUrl: String, //文字框背景
     bgText: String, //banner文本
-    squareWidth: String, //框背景宽度
+    bgText2: String, //banner文本
     showDes: Boolean //是否展示描述
   }
 };
@@ -61,6 +61,7 @@ export default {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
   }
 
   .bg_little_square {
@@ -102,8 +103,8 @@ export default {
       height: 437px;
     }
     .bg_little_square {
-      width: 380px;
-      height: 157px;
+      min-width: 380px;
+      min-height: 157px;
       .desText {
         font-weight: normal;
         font-size: 20px;
@@ -126,8 +127,8 @@ export default {
       height: 374px;
     }
     .bg_little_square {
-      width: 330px;
-      height: 134px;
+      min-width: 330px;
+      min-height: 134px;
       .desText {
         font-weight: normal;
         font-size: 17px;
@@ -150,8 +151,8 @@ export default {
       height: 333px;
     }
     .bg_little_square {
-      width: 293px;
-      height: 119px;
+      min-width: 293px;
+      min-height: 119px;
       .desText {
         font-weight: normal;
         font-size: 15px;

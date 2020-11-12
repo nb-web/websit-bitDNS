@@ -4,21 +4,21 @@
       <Banner 
         bgUrl="/imges/banna/banner_economic.png"
         insideBgUrl="/imges/product/littleSquare.png"
-        bgText="经济与治理"
+        :bgText="$t('economic.economicBannerTest')"
       />
     </div>
     <div class="h5">
       <Banner 
         bgUrl="/imges/h5_banner/h5Banner_Economic.png"
         insideBgUrl="/imges/product/littleSquare.png"
-        bgText="经济与治理"
+        :bgText="$t('economic.economicBannerTest')"
       />
     </div>
     <div class="common_container bitDNS_economic">
-      <BlockTit text="BitDNS经济与治理" />
+      <BlockTit :text="$t('economic.economicTit')" />
 
       <div class="bitDNS_economic_content">
-        <p>BitDNS经济和治理在项目的生态及核心业务流程上起到加强协作的重要作用。通过激励行业内各方参与者的加入，推动整个BitDNS生态的价值增长；采取更为合理的分配规则，对整个BitDNS参与方及贡献者进行经济激励，促进BitDNS生态健康持续发展</p>
+        <p>{{$t('economic.economicContent')}}</p>
       </div>
     </div>
 
@@ -26,8 +26,8 @@
       <div class="common_container tokenDesign_content">
         <div class="tokenDesign_content_top">
           <div class="topContent_left">
-            <p>Token设计模型</p>
-            <p>DNS是BitDNS系统中的生态通证，亦是BitDNS的价值支撑，它保证了BitDNS生态系统的去中心化，使生态中的权益者能够自由公平的参与网络治理。当官方开放域名二级交易市场时，DNS将作为支付代币进行域名的买卖。在未来，DNS的使用场景也会不断拓宽。在BitDNS系统上线后，用户注册新的域名也将获得一定数量的DNS作为奖励，BitDNS基金会也将会拿出部分DNS来激励用户注册域名。</p>
+            <p>{{$t('economic.economicTokenTit')}}</p>
+            <p>{{$t('economic.economicTokenContent')}}</p>
           </div>
 
           <div class="topContent_right">
@@ -38,33 +38,24 @@
         <div class="tokenDesign_middleLine"></div>
 
         <div class="tokenDesign_content_bottom">
-          <p>DNS的使用场景</p>
+          <p>{{$t('economic.dnsUsage')}}</p>
           <img class="hr1" src="/imges/Economic/tokenDesign_leftJt.png" alt />
           <div class="tokenflex">
-            <div>治理与投资</div>
-            <div>域名注册</div>
-            <div>跨Dapp应用</div>
+            <div>{{$t('economic.governance')}}</div>
+            <div>{{$t('economic.domainRegistration')}}</div>
+            <div>{{$t('economic.crossDapp')}}</div>
           </div>
         </div>
       </div>
     </div>
 
     <div class="chainResourceAllocation">
-      <BlockTit text="链上资源分配模型" />
+      <BlockTit :text="$t('economic.modelOnChain')" />
 
       <div class="common_container chainResourceAllocation_content">
         <div class="chainimg">
           <img class="web" src="/imges/Economic/resourceAllocation.png" alt="">
           <img class="h5" src="/imges/h5_Economic/resourceAllocation.png" alt="">
-        </div>
-
-        <div class="resourceContent_bottom">
-          <div class="bottom_content">
-            <div class="resourceContent_bottom_left">
-
-      
-            </div>
-          </div>
         </div>
       </div>
     </div>
@@ -73,7 +64,7 @@
       <div class="common_container">
         <div class="tit">
           <i></i>
-          <p>BitDNS经济循环</p>
+          <p>{{$t('economic.economicCycle')}}</p>
           <i></i>
         </div>
         <div class="economicCycle_img" style="text-align: center;">
@@ -182,6 +173,7 @@ export default {
         }
         .tokenflex {
           display: flex;
+          text-align: center;
           div {
             display: flex;
             justify-content: center;
@@ -374,7 +366,7 @@ export default {
             width: 117px;
             height: 39px;
             text-align: center;
-            line-height: 39px;
+            // line-height: 39px;
             font-size: 15px;
           }
         }
@@ -460,7 +452,6 @@ export default {
           }
           p:first-child {
             margin-bottom: 14px;
-            width: 139px;
             height: 28;
             font-size: 20px;
           }
@@ -498,7 +489,7 @@ export default {
             width: 104px;
             height: 35px;
             text-align: center;
-            line-height: 35;
+            // line-height: 35;
             font-size: 13px;
             margin: 0 36px;
           }
@@ -636,7 +627,6 @@ export default {
           }
           p:first-child {
             margin-bottom: 23px;
-            width: 250px;
             height: 45px;
             font-size: 32px;
             font-family: PingFangSC-Semibold, PingFang SC;
@@ -690,7 +680,7 @@ export default {
             width: 210px;
             height: 70px;
             text-align: center;
-            line-height: 70px;
+            // line-height: 70px;
 
             border: 1px solid black;
             color: black;

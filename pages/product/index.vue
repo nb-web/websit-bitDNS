@@ -4,8 +4,8 @@
       <Banner 
         bgUrl="/imges/banna/banner_domainService.png"
         insideBgUrl="/imges/product/littleSquare.png"
-        bgText="BitDNS 域名服务"
-        squareWidth="438px"
+        :bgText="$t('dnsService.bannerText')"
+        :bgText2="$t('dnsService.bannerText2')"
         showDes
       />
     </div>
@@ -14,14 +14,13 @@
         bgUrl="/imges/h5_banner/h5Banner_product.png"
         insideBgUrl="/imges/product/littleSquare.png"
         bgText="BitDNS 域名服务"
-        squareWidth="438px"
         showDes
       />
     </div>
     <div class="common_container systemProblems">
-      <BlockTit text="传统DNS域名系统的问题"/>
+      <BlockTit :text="$t('dnsService.systomProblemTit')"/>
       <div class="systemProblems_content">
-        <p>传统DNS域名系统由于历史原因，设计上高度中心化，整个系统的稳定严重依赖中心节点。DNS作为整个互联网服务的底层基础之一，每天处理来自全球数以十亿计的互联网访问请求。如果DNS服务器宕机，用户就无法接入互联网。由于其体系结构的脆弱性，容易造成大规模的网络瘫痪。因此在dWeb4.0时代，想要防止中心化垄断与作恶则需要全新的DNS系统。</p>
+        <p>{{$t('dnsService.systomProblemContent')}}</p>
       </div>
     </div>
 
@@ -35,8 +34,8 @@
 
         <div class="items_right">
           <p class="items_rightText">
-            <span>2014年2月，</span>
-            <span>全球最大的比特币交易平台Mt.Gox由于交易系统出现漏洞，75万个比特币以及Mt.Gox自身账号中约10万个比特币被窃，损失估计达到4.67亿美元，被迫宣布破产。</span>
+            <span>{{$t('dnsService.systomProblemContent1Date')}}</span>
+            <span>{{$t('dnsService.systomProblemContent1')}}</span>
           </p>
         </div>
       </div>
@@ -86,7 +85,7 @@
     </div>
 
     <div class="bitDNSVsTraditionalDNS">
-        <BlockTit text="BitDNS Vs Traditional DNS"/>
+        <BlockTit :text="$t('dnsService.bitDNSVsTraditionalDNS')"/>
         <img  class="web" src="/imges/product/bitDNSVsTraditionalDNS.png" alt="">
         <img  class="h5" src="/imges/h5_product/bitDNSVsTraditionalDNS.png" alt="">
     </div>
@@ -94,8 +93,8 @@
     <div class="bitDNSTeams">
       <div class="common_container bitDNSTeams_content">
         <div class="topText">
-          <p class="teamsTit">BitDNS域名服务使用场景</p>
-          <p class="teamsDes">基于BitDNS的域名服务可以大幅降低普通用户参与区块链的门槛，通过域名服务，用户再也不用记忆看不懂且难以记忆的文件地址和 Hash 值，只要知道一个单词或一个短语就能进行文件访问、汇款转账、合约调用等。</p>
+          <p class="teamsTit">{{$t('dnsService.domainUsedTit')}}</p>
+          <p class="teamsDes">{{$t('dnsService.domainUsedContent')}}</p>
         </div>
 
         <div class="teamBlocks">
@@ -297,6 +296,11 @@
 
 <script>
 export default {
+  data() {
+    return {
+      locale: this.$store.state.locale,
+    };
+  },
   head: {
     title: '域名服务'
   }
