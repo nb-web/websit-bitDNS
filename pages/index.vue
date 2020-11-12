@@ -64,7 +64,7 @@
       <img class="Tree web" src="/imges/index/index_tree.png" alt />
     </div>
 
-    <BlockTit text="BitDNS 技术优势" />
+    <BlockTit :text="$t('home.jishu')" />
     <div class="jishu">
       <div class="list common_container">
         <div class="swiperList h5">
@@ -115,7 +115,7 @@
       </div>
     </div>
     <!-- BITDNS 核心功能 -->
-    <BlockTit text="BitDNS 核心功能" />
+    <BlockTit :text="$t('home.gn')" />
     <div class="gn">
       <div>
         <div class="con common_container">
@@ -170,7 +170,7 @@
       </div>
     </div>
     <!-- BitDNS路线图 -->
-    <BlockTit text="BitDNS 路线图" />
+    <BlockTit :text="$t('home.tree')" />
     <div class="route">
       <div class="chart common_container chartMediaWidth">
         <!--时间线-->
@@ -203,7 +203,7 @@
       </div>
     </div>
 
-    <BlockTit text="新闻资讯" />
+    <BlockTit :text="$t('home.newstit')" />
     <div class="news common_container">
       <div class="newsContent">
         <div class="news_left">

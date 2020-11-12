@@ -26,7 +26,7 @@
     </div>
     <div class="core">
       <div class="common_container">
-        <BlockTit text="核心成员" />
+        <BlockTit :text="$t('about.core')" />
         <ul>
           <li class="img1">
             <div>
@@ -61,7 +61,7 @@
 
     <div class="adviser">
       <div class="common_container">
-        <BlockTit text="顾问团队" />
+        <BlockTit :text="$t('about.adviser')" />
         <ul>
           <li class="img4">
             <div>

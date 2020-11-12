@@ -232,7 +232,7 @@
     <div class="common_container exchangeAndWallet">
 
       <div class="corn_exchangeAndWallet">
-        <BlockTit text="CORN上线交易所及钱包"/>
+        <BlockTit :text="$t('dnsService.CORN')"/>
 
         <div class="exchangeItems">
           <p>交易所</p>
@@ -257,7 +257,7 @@
             </div>
           </div>
         </div>
-  <BlockTit text="DNS上线交易所及钱包"/>
+  <BlockTit :text="$t('dnsService.DNS')"/>
    <div class="exchangeItems">
           <p>交易所</p>
           <div class="exchangeImgs">

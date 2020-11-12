@@ -20,7 +20,9 @@
       "tokenBonuscontent":"CORN is the first mining token in the BitDNS domain name system, it is also the domain name value mapping token in the BitDNS ecosystem, and it is an important part of the BitDNS ecosystem. BitDNS adds part of the dividends in the future domain name sales system to the fund pool which can generate CORN. Unlike other DeFi projects, CORN has a valuable support. CORN has a total issuance of 100,000, and it is all produced by liquidity mining. Holders of CORN will also enjoy the commission dividends for future domain name sales.。",
       "tokenBonusbtn1":"Domain Name Sales Dividend",
       "tokenBonusbtn2":"Handling fee dividend",
-      "tokenBonusbtn3":"获取Corn"
+      "tokenBonusbtn3":"获取Corn",
+      "CORN":"Cornonline exchange and wallet",
+      "DNS":"DNS online exchange and wallet"
     },
     "economic": {
       "economicBannerTest": "Economy and Governance",
@@ -69,14 +71,19 @@
       "gn3":"Support domain name resolution services, domain name registration and sale, domain name resolution settings, traditional domain name mapping, domain name exclusive nicknames, and dynamic domain name resolution.",
       "gn3tit":"Domain Name System",
       "gn4":"dMail encrypted mailbox, dWeb distributed website, dSNS social network, dChat distributed chat, dVideo short video, dGame game/VR.",
-      "gn4tit":"Application market"
+      "gn4tit":"Application market",
+      "jishu":"Advantages of bitdns Technology",
+      "gn":"Bitdns core functions",
+      "tree":"Bitdns Roadmap",
+      "newstit":"News information"
     },
     "about": {
       "title": "About",
       "tit_top":"About us",
       "brief":"Blockchain Technology as the key infrastructure building block of dWeb4.0",
       "bitDnsTeamTit": "BitDNS team",
-      "bitDnsTeamContent": "BitDNS headquarters is located in Singapore with an international in Singapore and Russia. The core team is from Mildsoft, Alibaba, Baidu, PricewaterhouseCoopers, Kenxi, and etc. The founding team are experts in digital assets. And our development team have deep understanding of the Blockchain Technology. "
-
+      "bitDnsTeamContent": "BitDNS headquarters is located in Singapore with an international in Singapore and Russia. The core team is from Mildsoft, Alibaba, Baidu, PricewaterhouseCoopers, Kenxi, and etc. The founding team are experts in digital assets. And our development team have deep understanding of the Blockchain Technology. ",
+      "core":"Core members",
+      "adviser":"Consultant team"
     }
 }

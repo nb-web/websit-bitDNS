@@ -21,7 +21,9 @@
       "tokenBonuscontent":"Corn是BitDNS域名系统中首个抵押挖矿代币，也是BitDNS生态中的域名价值映射Token，更是BitDNS生态的重要组成部分。BitDNS将未来域名销售系统中的部分分红，添加在资金池，生成Corn，与其他DeFi项目不同，Corn是有价值支撑的，绝非是一个虚无的空气资产。Corn的发行总量为100,000，并且全部由流动性挖矿产出。持有Corn还将享受未来域名销售的手续费分红。",
       "tokenBonusbtn1":"域名销售分红",
       "tokenBonusbtn2":"手续费分红",
-      "tokenBonusbtn3":"获取Corn"
+      "tokenBonusbtn3":"获取Corn",
+        "CORN":"CORN上线交易所及钱包",
+        "DNS":"DNS上线交易所及钱包"
 
     },
     "economic": {
@@ -71,7 +73,12 @@
       "gn3":"支持域名解析服务、注册买卖域名、域名解析设置、传统域名映射、域名专属昵称、域名动态解析。",
       "gn3tit":"域名系统",
       "gn4":"dMail加密邮箱、dWeb分布式网站、dSNS社交网络、dChat分布式聊天、dVideo短视频、dGame游戏/VR。",
-      "gn4tit":"应用市场"
+      "gn4tit":"应用市场",
+      "jishu":"BitDNS 技术优势",
+      "gn":"BitDNS 核心功能",
+      "tree":"BitDNS 路线图",
+      "newstit":"新闻资讯"
+
       
     },
     "about": {
@@ -79,7 +86,9 @@
       "tit_top":"关于我们",
       "brief":"BitDNS基金会位于新加坡，致力于打造全球首个区块链域名系统，构建连接信息互联网与价值区块链的超级枢纽，为区块链及分布式WEB4.0的发展贡献自己的力量。",
       "bitDnsTeamTit": "BitDNS团队",
-      "bitDnsTeamContent": "BitDNS在新加坡设有办公场所,且团队国际化水平较高,核心人员来自黴软、阿里、百度、普华永道、肯锡等,每始团队及核自开发团队均是数字资产早期业者,以及区块链的行业专家,在区块链行业有较深的从背,以及技术优势。"
+      "bitDnsTeamContent": "BitDNS在新加坡设有办公场所,且团队国际化水平较高,核心人员来自黴软、阿里、百度、普华永道、肯锡等,每始团队及核自开发团队均是数字资产早期业者,以及区块链的行业专家,在区块链行业有较深的从背,以及技术优势。",
+      "core":"核心成员",
+      "adviser":"顾问团队"
     }
 
 }
