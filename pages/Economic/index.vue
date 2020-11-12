@@ -2,15 +2,13 @@
   <div class="economic ">
     <div class="web">
       <Banner 
-        bgUrl="/imges/banna/banner_economic.png"
-        insideBgUrl="/imges/product/littleSquare.png"
+        insideImgUrl="/imges/banna/economic_BanImg.png"
         :bgText="$t('economic.economicBannerTest')"
       />
     </div>
     <div class="h5">
       <Banner 
-        bgUrl="/imges/h5_banner/h5Banner_Economic.png"
-        insideBgUrl="/imges/product/littleSquare.png"
+        insideImgUrl="/imges/banna/economic_BanImg.png"
         :bgText="$t('economic.economicBannerTest')"
       />
     </div>

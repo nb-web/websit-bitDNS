@@ -2,16 +2,16 @@
   <div class="about">
     <div class="web">
       <Banner 
-        bgUrl="/imges/banna/banner_about.png"
-        insideBgUrl="/imges/product/littleSquare.png"
+        insideImgUrl="/imges/banna/aboutUs_BanImg.png"
         :bgText="$t('about.tit_top')"
+        :bgText2="$t('about.brief')"
       />
     </div>
     <div class="h5">
       <Banner 
-        bgUrl="/imges/h5_banner/h5Banner_about.png"
-        insideBgUrl="/imges/product/littleSquare.png"
+        insideImgUrl="/imges/banna/aboutUs_BanImg.png"
         :bgText="$t('about.tit_top')"
+        :bgText2="$t('about.brief')"
       />
     </div>
     <div class="content">

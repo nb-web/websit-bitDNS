@@ -1,6 +1,6 @@
 {
     "dnsService": {
-      "bannerText": "BitDNS DNS services",
+      "bannerText": "The world's first cross chain based distributed domain name service",
       "bannerText2": "The world's first cross chain based distributed domain name service",
       "systomProblemTit": "Major Internet incidents caused by attacks on traditional DNS",
       "systomProblemContent": "The traditional DNS system is highly centralized.  The stability of the entire system relies heavily on the central node. DNS is the foundation of the entire Internet service; it processes billions of Internet access requests from all around the world every day. If the DNS stop operating, users will lose access to the Internet. To avoid such mishaps, a new DNS system is needed to prevent centralized monopolisation. We name this new era dWeb4.0.",

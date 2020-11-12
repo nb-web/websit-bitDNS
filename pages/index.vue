@@ -1,8 +1,8 @@
 <template>
   <div class="container">
     <Banner 
-      bgUrl="/imges/banna/banna_index.png"
-      insideBgUrl="/imges/banna/big_box.png"/>
+      :bgText="$t('home.bannerText')"
+      indexBanner/>
     <div style="background: rgb(242,245,245);width:100%">
     <div class="block common_container">
       <ul>

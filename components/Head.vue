@@ -197,7 +197,7 @@ export default {
   .top {
     height: 88px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     margin: 0 auto;
   }

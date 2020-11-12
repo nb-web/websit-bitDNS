@@ -2,19 +2,16 @@
   <div class="domainService">
     <div class="web">
       <Banner 
-        bgUrl="/imges/banna/banner_domainService.png"
-        insideBgUrl="/imges/product/littleSquare.png"
+        insideImgUrl="/imges/banna/domainService_BanImg.png"
         :bgText="$t('dnsService.bannerText')"
-        :bgText2="$t('dnsService.bannerText2')"
-        showDes
+        specialImg
       />
     </div>
     <div class="h5">
       <Banner 
-        bgUrl="/imges/h5_banner/h5Banner_product.png"
-        insideBgUrl="/imges/product/littleSquare.png"
-        bgText="BitDNS 域名服务"
-        showDes
+        insideImgUrl="/imges/h5_banner/domainService_h5BanImg.png"
+        :bgText="$t('dnsService.bannerText')"
+        specialImg
       />
     </div>
     <div class="common_container systemProblems">
@@ -328,44 +325,20 @@ export default {
     font-size: 18px;
     line-height: 35px;
   }
-  @media (min-width:1921px){
-    .imgAndText_block{
-      max-width: 1920px;
-    }
-  }
-  
-  @media (min-width:1440px) and (max-width:1680px) {
-    .imgAndText_block{
-      max-width: 1680px;
-    }
-  }
-
-  @media (min-width:1280px) and (max-width:1440px) {
-    .imgAndText_block{
-      max-width: 1440px;
-    }
-  }
-
-  @media (min-width:1024px) and (max-width:1280px) {
-    .imgAndText_block{
-      max-width: 1280px;
-    }
-  }
-
-  
 
   .imgAndText_block{
     margin: 0 auto;
     width: 100%;
-      .bg{
-        background: url("/imges/product/sercicebg.png") no-repeat;
-        // background: red;
-        }
+    .bg{
+      background: url("/imges/product/sercicebg.png") no-repeat;
+      background-size: cover;
+    }
     .imgAndText_block_item{
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       width: 100%;
+      background-color: #fff;
      .Service1{
          
          width: 534px;
@@ -387,6 +360,9 @@ export default {
         align-items: center;
         justify-content: flex-end;
         flex: 1;
+        img{
+          margin: 0 88px;
+        }
       }
       
       .items_right{
@@ -420,7 +396,7 @@ export default {
 
   .bitDNSTeams{
     height:479px;
-background: #F3F8FF;
+    background: #F3F8FF;
     .bitDNSTeams_content{
       // display: flex;
       .topText{
@@ -443,7 +419,7 @@ background: #F3F8FF;
       .teamBlocks{
         display: flex;
         flex-direction: column;
-        margin-top: 70px;
+        margin-top: 80px;
         margin-left: 50px;
         .teamBlocksItems{
           display: flex;
@@ -452,9 +428,10 @@ background: #F3F8FF;
 
           .teamBlocksItem{
             display: flex;
-            height: 100px;
+            height: 136px;
             width: 136px;
             padding-top: 36px;
+            box-sizing: border-box;
             background: url("/imges/product/bitDNSTeams_whiteBg.png") no-repeat;
             background-size: cover;
             background-position: center;
@@ -685,10 +662,6 @@ background: #F3F8FF;
  @media (min-width:1440px)and(max-width:1680px) {
     .imgAndText_block{
       .imgAndText_block_item{
-  
-        .items_left, .items_right{
-          height: 405px;
-        }
 
         .items_rightText, .items_leftText{
           width: auto;
@@ -700,26 +673,17 @@ background: #F3F8FF;
       background-color: #F0F2F5;
       height: 700px;
         img{
-          height: 386px;
-          width: 1043px;
+          // height: 386px;
+          // width: 1043px;
         }
       
     }
 
     .bitDNSTeams{
-      height: 644px;
+      // height: 644px;
       .bitDNSTeams_content{
         display: flex;
         width: 990px;
-        .teamBlocks{
-          margin-top: 30px;
-
-          
-        }
-        .topText .teamsTit{
-          padding: 73px 0 29px;  
-              //  
-        }
       } 
     }
 
@@ -783,9 +747,6 @@ background: #F3F8FF;
     }
     .imgAndText_block{
       .imgAndText_block_item{
-        .items_left, .items_right{
-          height: 347px;
-        }
 
         .items_rightText, .items_leftText{
           width: auto;
@@ -795,7 +756,7 @@ background: #F3F8FF;
 
     .bitDNSVsTraditionalDNS{
       height: 600px;
-background-color: #F0F2F5;
+      background-color: #F0F2F5;
       img{
         height: 331px;
         width: 894px;
@@ -803,16 +764,10 @@ background-color: #F0F2F5;
     }
 
     .bitDNSTeams{
-      height: 552px;
+      // height: 552px;
       .bitDNSTeams_content{
         display: flex;
         width: 960px;
-        .teamBlocks{
-          margin-top: 30px;
-        }
-        .topText .teamsTit{
-          padding: 22px 0 18px;  
-        }
       } 
     }
     .tokenBonus{
@@ -878,13 +833,10 @@ background-color: #F0F2F5;
     }
   .imgAndText_block{
     .imgAndText_block_item{
-      .items_left, .items_right{
-        height: 309px;
-      }
 
       .items_rightText, .items_leftText{
         width: auto;
-        line-height: normal;
+        line-height: 33px;
       }
     }
   }
@@ -892,32 +844,28 @@ background-color: #F0F2F5;
   .bitDNSVsTraditionalDNS{
     height: 533px;
     background-color: #F0F2F5;
-      img{
-        height: 294px;
-        width: 795px;
-      }
   }
 
   .bitDNSTeams{
-      height: 491px;
+      // height: 491px;
       .bitDNSTeams_content{
-        width: 890px;
-        padding: 22px 0 20px;
+        // width: 890px;
+        // padding: 22px 0 20px;
         // width: 1080px;
         display: flex;
         .teamBlocks{
-          margin-top: 22px;
+          // margin-top: 22px;
         }
         .topText{
           .teamsTit{
-            padding: 16px 0 8px; 
-            font-size: 20px;
+            // padding: 16px 0 8px; 
+            // font-size: 20px;
           }
 
           .teamsDes{
             width: 419px;
-            font-size: 12px;
-            line-height: normal;
+            // font-size: 12px;
+            // line-height: normal;
           }
         }
       }
@@ -1024,11 +972,11 @@ background-color: #F0F2F5;
       }
       
     .imgAndText_block_item{
-      
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       width: 100%;
+      padding: 55px 0;
       .items_left, .items_right{
         height: 350px;
         display: flex;
@@ -1036,11 +984,6 @@ background-color: #F0F2F5;
         justify-content: flex-end;
         flex: 1;
         img{
-         
-          // width: 100%;
-          // height: 100%;
-          // max-width: 750px;
-          // max-height: 362px;
           margin: 0 auto;
         }
       }
@@ -1078,7 +1021,7 @@ background-color: #F0F2F5;
     .bitDNSTeams{
           padding: 0 30px 155px;
           height: 850px;
-background: #F3F8FF;
+          background: #F3F8FF;
 
           .bitDNSTeams_content{
             // display: flex;
