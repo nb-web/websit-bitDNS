@@ -277,15 +277,15 @@ export default {
       show7: false,
       show8: false,
       locale: this.$store.state.locale,
-      technologyAdvantageList: home_technologyAdvantage,
+      technologyAdvantageList: this.$store.state.locale == 'en-US' ? home_technologyAdvantage2 : home_technologyAdvantage,
       // technologyAdvantageList2:,
-      swiperList2: swiperList,
-      newLinkList: newLink,
+      swiperList2: this.$store.state.locale == 'en-US' ? swiperList3 : swiperList,
+      newLinkList: this.$store.state.locale == 'en-US' ? newLinkEn :newLink,
       activeName: "1",
-      newsTit: "Corn.BitDNS以价值锚定收益 创新经济模型打开DeFi新格局",
-      newsDate: "2020/10/31",
-      newsMonth: "Oct",
-      newsDay: "31",
+      newsTit: this.$store.state.locale == 'en-US' ? newLinkEn[0].title :newLink[0].title,
+      newsDate: this.$store.state.locale == 'en-US' ? newLinkEn[0].date :newLink[0].date,
+      newsMonth: this.$store.state.locale == 'en-US' ? newLinkEn[0].month :newLink[0].month,
+      newsDay: this.$store.state.locale == 'en-US' ? newLinkEn[0].day :newLink[0].day,
 
       swiperOptions: {
         loop: false,
@@ -303,7 +303,7 @@ export default {
         }
       },
       // 时间线
-      timeLineList: timeLineList,
+      timeLineList: this.$store.state.locale == 'en-US' ? timeLineList2 : timeLineList,
       windowWidth: 0 //实时屏幕宽度
     };
   },
