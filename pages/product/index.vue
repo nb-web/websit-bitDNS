@@ -94,7 +94,7 @@
           <p class="teamsDes">{{$t('dnsService.domainUsedContent')}}</p>
         </div>
 
-        <div class="teamBlocks">
+        <div class="teamBlocks web">
           <div class="teamBlocksItems">
             <div class="teamBlocksItem">
                 <!-- <div class="teamImg1"> </div> -->
@@ -141,6 +141,60 @@
             </div>
 
             <div class="teamBlocksItem">
+              <img src="/imges/product/teams7.png" class="web" alt="">
+              <img src="/imges/h5_product/teams7.png"  class="h5" alt="">
+              <p>{{$t('dnsService.text7')}}</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="teamBlocks h5">
+          <div class="teamBlocksItems">
+            <div class="teamBlocksItem" :class="this.$store.state.locale == 'en-US' ? 'teamBlocksItemEn' : ''">
+                <!-- <div class="teamImg1"> </div> -->
+
+             
+              <img src="/imges/h5_product/teams1.png" class="h5" alt="">
+              <img src="/imges/product/teams1.png" class="web" alt="">
+
+              <p>{{$t('dnsService.text1')}}</p>
+            </div>
+
+            <div class="teamBlocksItem" :class="this.$store.state.locale == 'en-US' ? 'teamBlocksItemEn' : ''" >
+
+              <img src="/imges/h5_product/teams2.png"  class="h5" alt="">
+              <img src="/imges/product/teams2.png"  class="web" alt="">
+              <p>{{$t('dnsService.text2')}}</p>
+            </div>
+
+            <div class="teamBlocksItem" :class="this.$store.state.locale == 'en-US' ? 'teamBlocksItemEn' : ''" >
+              <img src="/imges/h5_product/teams3.png"  class="h5" alt="">
+              <img src="/imges/product/teams3.png"  class="web" alt="">
+              <p>{{$t('dnsService.text3')}}</p>
+            </div>
+          </div>
+
+          <div class="teamBlocksItems">
+            <div class="teamBlocksItem" :class="this.$store.state.locale == 'en-US' ? 'teamBlocksItemEn' : ''" >
+              <img src="/imges/h5_product/teams4.png"  class="h5" alt="">
+              <img src="/imges/product/teams4.png"  class="web" alt="">
+              <p>{{$t('dnsService.text4')}}</p>
+            </div>
+
+            <div class="teamBlocksItem" :class="this.$store.state.locale == 'en-US' ? 'teamBlocksItemEn' : ''" >
+              <img src="/imges/h5_product/teams5.png"  class="h5" alt="">
+              <img src="/imges/product/teams5.png"  class="web" alt="">
+              <p>{{$t('dnsService.text5')}}</p>
+            </div>
+
+            <div class="teamBlocksItem" :class="this.$store.state.locale == 'en-US' ? 'teamBlocksItemEn' : ''" >
+              <img src="/imges/h5_product/teams6.png"  class="h5" alt="">
+              <img src="/imges/product/teams6.png"  class="web" alt="">
+
+              <p>{{$t('dnsService.text6')}}</p>
+            </div>
+
+            <div class="teamBlocksItem" :class="this.$store.state.locale == 'en-US' ? 'teamBlocksItemEn' : ''" >
               <img src="/imges/product/teams7.png" class="web" alt="">
               <img src="/imges/h5_product/teams7.png"  class="h5" alt="">
               <p>{{$t('dnsService.text7')}}</p>
@@ -948,13 +1002,15 @@ box-shadow: 0px 2px 4px 0px rgba(131, 131, 131, 0.5);
     }
   }
 
-
+.h5{
+    display:none !important;
+  }
 @media (max-width:980px) {
   .web{
       display: none;
   }
   .h5{
-    display: inline-block;
+    display: inline-block !important;
     width: 100%;
   }
   .systemProblems{
@@ -1088,7 +1144,7 @@ box-shadow: 0px 2px 4px 0px rgba(131, 131, 131, 0.5);
                   align-items: center;
                   flex-direction: column;
                   margin-right: 20px;
-box-shadow: 0px 2px 4px 0px rgba(131, 131, 131, 0.5);
+                  box-shadow: 0px 2px 4px 0px rgba(131, 131, 131, 0.5);
                   img{
                       width: 28px;
                       height: 28px;
@@ -1100,7 +1156,12 @@ box-shadow: 0px 2px 4px 0px rgba(131, 131, 131, 0.5);
                     // max-width: 84px;
                     text-align: center;
                   }
-                }          
+                }     
+                
+                .teamBlocksItemEn{
+                  width: 150px;
+                  height: 150px;
+                }
               }
 
               .teamBlocksItems:nth-child(1){

@@ -1395,7 +1395,7 @@ background: #F3F8FF;
         }
 
         .over {
-          line-height: normal;
+          line-height: 30px;
           overflow: initial;
         }
       }
@@ -1506,7 +1506,7 @@ background: #F3F8FF;
     .route {
       .chart {
         position: relative;
-        height: 300px;
+        height: 320px;
         width: 690px;
         padding-top: 110px;
         background: url("/imges/h5_index/index_ditu.png") no-repeat;
@@ -1517,7 +1517,7 @@ background: #F3F8FF;
       }
       .timg {
         position: absolute;
-        top: 250px;
+        top: 280px;
         right: 34px;
         img {
           width: 41px;
@@ -1578,6 +1578,8 @@ background: #F3F8FF;
           padding-top: 0;
           font-size: 12px;
           color: #888888;
+          min-width: 60px;
+          min-height: 42px;
         }
       }
     }
