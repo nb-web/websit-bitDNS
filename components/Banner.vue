@@ -3,6 +3,11 @@
     <div v-if="!!indexBanner" class="index_banna">
       <div class="bannerContent common_container">
         <div class="bannerContent_leftText">
+          <ul class="indexBannerLeftSquare">
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
           <p>{{bgText}}</p>
         </div>
       </div>
@@ -65,6 +70,24 @@ export default {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        .indexBannerLeftSquare{
+          display: flex;
+          flex-direction: row;
+          margin-bottom: 37px;
+          li{
+            height: 16px;
+            width: 16px;
+            margin-right: 15px;
+            float: left;
+            background-color: #fff;
+          }
+          li:nth-child(2){
+            opacity: 0.53;
+          }
+          li:nth-child(3){
+            opacity: 0.3;
+          }
+        }
         p{
           font-size: 30px;
           color: #ffffff;
@@ -116,6 +139,25 @@ export default {
       height: 927px;
     }
   }
+  @media (min-width: 1024px) and (max-width: 1440px) {
+    .index_banna {
+      min-height: 506px;
+    }
+    .other_banna {
+      min-height: 412px;
+      .bannerContent{
+        .bannerContent_rightImg{
+          max-width: 340px;
+          max-height: 398px;
+        }
+
+        .economicBannerRightImg{
+          height: 372px;
+          width: 344px;
+        }
+      }
+    }
+  }
 
   @media (max-width: 980px) {
     .index_banna, .other_banna{
@@ -131,6 +173,9 @@ export default {
     .index_banna {
       min-height: 500px;
       background-image: url('/imges/h5_banner/h5Banner_index.png');
+      .indexBannerLeftSquare{
+        margin: 0 auto;
+      }
     }
     .other_banna {
       min-height: 828px;

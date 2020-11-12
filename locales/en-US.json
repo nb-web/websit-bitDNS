@@ -6,6 +6,13 @@
       "systomProblemContent": "The traditional DNS system is highly centralized.  The stability of the entire system relies heavily on the central node. DNS is the foundation of the entire Internet service; it processes billions of Internet access requests from all around the world every day. If the DNS stop operating, users will lose access to the Internet. To avoid such mishaps, a new DNS system is needed to prevent centralized monopolisation. We name this new era dWeb4.0.",
       "systomProblemContent1Date": "In February 2014, ",
       "systomProblemContent1": "Mt.Gox - the world's largest bitcoin trading platform had 750,000 bitcoins and approximately 100,000 bitcoins in the trading system were lost due to a loophole in the trading system.",
+
+      "systomProblemContent2Date": "In September 2014, ",
+      "systomProblemContent2": " about 5 million Google account and password databases were leaked to a Russian Internet Security Forum. Most of these users use Gmail mail service and other products of American Internet giants.",
+
+      "systomProblemContent3Date": "In December 2014,",
+      "systomProblemContent3": "Sony Pictures was attacked by hackers. The impact of the hacker's attack on Sony Pictures is shocking: sensitive data such as shooting plans, star privacy and unpublished scripts are stolen by hackers and gradually published on the network, including personal information of Sony Pictures employees.",
+
       "bitDNSVsTraditionalDNS": "BitDNS Vs Traditional DNS",
       "domainUsedTit": "BitDNS domain name service usage scenarios",
       "domainUsedContent": "The domain name service based on BitDNS can greatly . accelerate mass adoption of the Blockchain technology. Through the domain name service, users no longer have to memorise file addresses and hash values that are incomprehensible and difficult to remember. Users can send cryptos, access data and smart contract with a word or phrase.",
@@ -20,9 +27,17 @@
       "tokenBonuscontent":"CORN is the first mining token in the BitDNS domain name system, it is also the domain name value mapping token in the BitDNS ecosystem, and it is an important part of the BitDNS ecosystem. BitDNS adds part of the dividends in the future domain name sales system to the fund pool which can generate CORN. Unlike other DeFi projects, CORN has a valuable support. CORN has a total issuance of 100,000, and it is all produced by liquidity mining. Holders of CORN will also enjoy the commission dividends for future domain name sales.。",
       "tokenBonusbtn1":"Domain Name Sales Dividend",
       "tokenBonusbtn2":"Handling fee dividend",
-      "tokenBonusbtn3":"获取Corn",
       "CORN":"Cornonline exchange and wallet",
-      "DNS":"DNS online exchange and wallet"
+      "DNS":"DNS online exchange and wallet",
+      "tokenBonusbtn3":"Get Corn",
+
+      "text1": "File name",
+      "text2": "Simplified hash value",
+      "text3": "Mailing address",
+      "text4": "Nickname transfer",
+      "text5": "Public key nickname",
+      "text6": "Subdomain name",
+      "text7": "Special domain name collection level transaction"
     },
     "economic": {
       "economicBannerTest": "Economy and Governance",
@@ -85,5 +100,9 @@
       "bitDnsTeamContent": "BitDNS headquarters is located in Singapore with an international in Singapore and Russia. The core team is from Mildsoft, Alibaba, Baidu, PricewaterhouseCoopers, Kenxi, and etc. The founding team are experts in digital assets. And our development team have deep understanding of the Blockchain Technology. ",
       "core":"Core members",
       "adviser":"Consultant team"
+    },
+    "footer": {
+      "contactUs": "Contact us",
+      "official": "Bitdns official social platform"
     }
 }

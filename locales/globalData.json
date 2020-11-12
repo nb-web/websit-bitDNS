@@ -1,9 +1,17 @@
 {
   "newLink":[
     {"linkurl": "https://www.jinse.com/news/blockchain/894523.html","date":"2020/10/31", "month":"Oct", "day":"31", "title": "Corn.BitDNS以价值锚定收益 创新经济模型打开DeFi新格局", "des":"热门新加坡项目BitDNS于上个月登陆中国市场，引发了众多技术爱好者与投资者的关注。两天前BitDNS首个DeFi产品Corn.BitDNS正式开启了流动性凭证挖矿，激活了Corn和DNS的流动性，该矿池一经上线，最高APY高达5000%。"},
-    {"linkurl": "https://new.qq.com/omn/20201001/20201001A03IJM00.html","date":"2020/10/01", "month":"Oct", "day":"01", "title": "BitDNS Corn：DeFi泡沫爆裂之后，价值支撑的东西才会出来", "des":"热门新加坡项目BitDNS于上个月登陆中国市场，引发了众多技术爱好者与投资者的关注。两天前BitDNS首个DeFi产品Corn.BitDNS正式开启了流动性凭证挖矿，激活了Corn和DNS的流动性，该矿池一经上线，最高APY高达5000%。"},
+    {"linkurl": "https://new.qq.com/omn/20201001/20201001A03IJM00.html","date":"2020/10/01", "month":"Oct", "day":"01", "title": "BitDNS Corn：DeFi泡沫爆裂之后，价值支撑的东西才会出来", "des":"去中心化金融（DeFi）逐渐走向大众视线，成为了币圈焦点，流动性挖虽然 已经走到了下半场，但是依旧不能阻挡科学家们亢奋的情绪。"},
     {"linkurl": "https://www.jinse.com/news/blockchain/846524.html","date":"2020/09/28", "month":"Sep", "day":"28", "title": "BitDNS硬核赋能域名系统 Corn的价值回归", "des":"域名解析系统 DNS 已经运行数十年，是处理互联网数十亿次访问需求的基础设施。但在传统域名系统里，域名的交易、续租都必须依赖于几个主要的域名服务提供商，原始根域名服务器全世界只有13台，换而言之，也就是非常的中心化"},
     {"linkurl": "https://baijiahao.baidu.com/s?id=1678610829981707154&wfr=spider&for=pc","date":"2020/09/23", "month":"Sep", "day":"23", "title": "BitDNS在web3.0中的实践与破局", "des":"9月22日，区块链跨链域名解决方案项目BitDNS作客快链头条第60期直播间，CEO Karen小姐分享关于BitDNS的重要内容。本次直播同步转播快链头条自有20+社群，并转播三大直播平台，获得百家媒体支持。"}
+  ],
+
+  "newLinkEn":[
+    {"linkurl": "https://link.medium.com/39k5C0iSMab","date":"2020/10/22", "month":"Oct", "day":"22", "title": "Interview with BitDNS CTO – KINGSLEY LOW", "des":"Nowadays the topic of domain name is becoming extremely popular in the entire Internet. Today we invited Kingsley Low, CTO of BitDNS. He will share with us the distributed domain name resolution’s technology details and its advantages."},
+    {"linkurl": "https://link.medium.com/l3GsFXP9Aab","date":"2020/10/15", "month":"Oct", "day":"15", "title": "AMA with BitDNS CEO - Karen", "des":"On October 13th 2020, at 2pm (GMT+8), BitCherry and Freecoins24 held a jointly (Ask me anything) AMA event. We are honoured to have BitDNS CEO- Miss Karen New in the session. This AMA has attracted a lot of users with many of their questions answered."},
+    {"linkurl": "https://link.medium.com/bB01fq34jbb","date":"2020/10/05", "month":"Oct", "day":"05", "title": "BitDNS mining rates continues to be good; Corn uses its value to support DeFi in the second half", "des":"Decentralized finance (DeFi) has gradually become popular and has become the focus of the currency circle. Although liquidity mining has reached the second half, it still cannot stop the excitement of the crypto scientists."},
+    {"linkurl": "https://link.medium.com/mWgZkY84jbb","date":"2020/09/21", "month":"Sep", "day":"21", "title": "What is DNS-Detailed Description", "des":"Detailed description which will help to understand the DNS global exchange plan"},
+    {"linkurl": "https://link.medium.com/pwOaPIb5jbb","date":"2020/09/15", "month":"Sep", "day":"15", "title": "Technical advantages of BitDNS", "des":"Due to the importance of DNS core key facility, BITDNS requires a high performance main chain infrastructure. The current Ethereum is certainly cannot satisfy all the demands. Therefore, we adopt an excellent high performance main chain to operate."}
   ],
 
   "swiperList":[

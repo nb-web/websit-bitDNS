@@ -7,6 +7,13 @@
       "systomProblemContent": "传统DNS城名系统由于历史原因，设计上高度中心化，整个系统的稳定严重依赖中心节点。DNS作为整个互联网服务底层基础之一，每天处理来自全球数以十亿计的互联网访问请求。如果DNS服务器宕机，用户就无法接入互联网。由于其体系结构的脆弱性，容易造成大规模的瘫痪。因此在dWeb4.0时代，想要防止中心化垄断与作恶则需要全新的DNS系统。",
       "systomProblemContent1Date": "2014年2月，",
       "systomProblemContent1": "全球最大的比特币交易平台Mt.Gox由于交易系统出现漏洞，75万个比特币以及Mt.Gox自身账号中约10万个比特币。",
+
+      "systomProblemContent2Date": "2014年9月，",
+      "systomProblemContent2": "大约有500万谷歌的账户和密码的数据库被泄露给一家俄罗斯互联网网络安全论坛。这些用户大多使用了Gmail邮件服务和美国互联网巨头的其他产品。",
+
+      "systomProblemContent3Date": "2014年12月，",
+      "systomProblemContent3": "索尼影业公司被黑客攻击。黑客对索尼影业公司发动的这次攻击影响令人感到震惊：摄制计划、明星隐私、未发表的剧本等敏感数据都被黑客窃取，并逐步公布在网络上，甚至包括到索尼影业员工的个人信息。",
+
       "bitDNSVsTraditionalDNS": "BitDNS与传统DNS",
       "domainUsedTit": "BitDNS域名服务使用场景",
       "domainUsedContent": "基于BitDNS的域名服务可以大幅降低普通用户参与区块链的门槛，通过域名服务，用户再也不用记忆看不懂且难以记忆的文件地址和 Hash 值，只要知道一个单词或一个短语就能进行文件访问、汇款转账、合约调用等。",
@@ -22,8 +29,16 @@
       "tokenBonusbtn1":"域名销售分红",
       "tokenBonusbtn2":"手续费分红",
       "tokenBonusbtn3":"获取Corn",
-        "CORN":"CORN上线交易所及钱包",
-        "DNS":"DNS上线交易所及钱包"
+      "CORN":"CORN上线交易所及钱包",
+      "DNS":"DNS上线交易所及钱包",
+
+      "text1": "文件名",
+      "text2": "简化哈希值",
+      "text3": "邮件通信地址",
+      "text4": "昵称转账",
+      "text5": "公钥昵称",
+      "text6": "子域名",
+      "text7": "特殊域名收藏级交易"
 
     },
     "economic": {
@@ -89,6 +104,10 @@
       "bitDnsTeamContent": "BitDNS在新加坡设有办公场所,且团队国际化水平较高,核心人员来自黴软、阿里、百度、普华永道、肯锡等,每始团队及核自开发团队均是数字资产早期业者,以及区块链的行业专家,在区块链行业有较深的从背,以及技术优势。",
       "core":"核心成员",
       "adviser":"顾问团队"
+    },
+    "footer": {
+      "contactUs": "联系我们",
+      "official": "BitDNS官方社交平台"
     }
 
 }

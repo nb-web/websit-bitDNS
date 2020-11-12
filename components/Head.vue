@@ -339,6 +339,9 @@ export default {
     .top {
       justify-content: space-between;
     }
+    .route{
+      width: 70%;
+    }
   }
 }
 
@@ -350,6 +353,7 @@ export default {
     position: relative;
     max-width: 100% !important;
     .top {
+      height: 118px;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -371,8 +375,7 @@ export default {
     }
     .caidans {
       width: 100%;
-      border-top: 1px solid #bcbcbc;
-      border-bottom: 1px solid #bcbcbc;
+      box-shadow: 0px 4px 35px 4px rgba(145,145,145,0.38);
       position: absolute;
       background: white;
       ul {

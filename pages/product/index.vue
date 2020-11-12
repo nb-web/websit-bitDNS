@@ -40,8 +40,8 @@
         <div class="imgAndText_block_item" >
           <div class="items_left">
             <p class="items_rightText">
-              <span>2014年9月，</span>
-              <span>大约有500万谷歌的账户和密码的数据库被泄露给一家俄罗斯互联网网络安全论坛。这些用户大多使用了Gmail邮件服务和美国互联网巨头的其他产品。</span>
+              <span>{{$t('dnsService.systomProblemContent2Date')}}</span>
+              <span>{{$t('dnsService.systomProblemContent2')}}</span>
             </p>
           </div>
 
@@ -59,8 +59,8 @@
 
           <div class="items_left">
             <p class="items_rightText">
-              <span>2014年9月，</span>
-              <span>大约有500万谷歌的账户和密码的数据库被泄露给一家俄罗斯互联网网络安全论坛。这些用户大多使用了Gmail邮件服务和美国互联网巨头的其他产品。</span>
+              <span>{{$t('dnsService.systomProblemContent2Date')}}</span>
+              <span>{{$t('dnsService.systomProblemContent2')}}</span>
             </p>
           </div>
         </div>
@@ -74,8 +74,8 @@
         </div>
         <div class="items_right">
           <p class="items_rightText">
-            <span>2014年12月，</span>
-            <span>索尼影业公司被黑客攻击。黑客对索尼影业公司发动的这次攻击影响令人感到震惊：摄制计划、明星隐私、未发表的剧本等敏感数据都被黑客窃取，并逐步公布在网络上，甚至包括到索尼影业员工的个人信息。</span>
+            <span>{{$t('dnsService.systomProblemContent3Date')}}</span>
+            <span>{{$t('dnsService.systomProblemContent3')}}</span>
           </p>
         </div>
       </div>
@@ -103,20 +103,20 @@
               <img src="/imges/h5_product/teams1.png" class="h5" alt="">
               <img src="/imges/product/teams1.png" class="web" alt="">
 
-              <p>文件名</p>
+              <p>{{$t('dnsService.text1')}}</p>
             </div>
 
             <div class="teamBlocksItem">
 
               <img src="/imges/h5_product/teams2.png"  class="h5" alt="">
               <img src="/imges/product/teams2.png"  class="web" alt="">
-              <p>简化哈希值</p>
+              <p>{{$t('dnsService.text2')}}</p>
             </div>
 
             <div class="teamBlocksItem">
               <img src="/imges/h5_product/teams3.png"  class="h5" alt="">
               <img src="/imges/product/teams3.png"  class="web" alt="">
-              <p>邮件通信地址</p>
+              <p>{{$t('dnsService.text3')}}</p>
             </div>
           </div>
 
@@ -124,26 +124,26 @@
             <div class="teamBlocksItem">
               <img src="/imges/h5_product/teams4.png"  class="h5" alt="">
               <img src="/imges/product/teams4.png"  class="web" alt="">
-              <p>昵称转账</p>
+              <p>{{$t('dnsService.text4')}}</p>
             </div>
 
             <div class="teamBlocksItem">
               <img src="/imges/h5_product/teams5.png"  class="h5" alt="">
               <img src="/imges/product/teams5.png"  class="web" alt="">
-              <p>公钥昵称</p>
+              <p>{{$t('dnsService.text5')}}</p>
             </div>
 
             <div class="teamBlocksItem">
               <img src="/imges/h5_product/teams6.png"  class="h5" alt="">
               <img src="/imges/product/teams6.png"  class="web" alt="">
 
-              <p>子域名</p>
+              <p>{{$t('dnsService.text6')}}</p>
             </div>
 
             <div class="teamBlocksItem">
-    <img src="/imges/product/teams7.png" class="web" alt="">
+              <img src="/imges/product/teams7.png" class="web" alt="">
               <img src="/imges/h5_product/teams7.png"  class="h5" alt="">
-              <p>特殊域名收藏级交易</p>
+              <p>{{$t('dnsService.text7')}}</p>
             </div>
           </div>
         </div>
@@ -161,7 +161,7 @@
               
                 <img src="/imges/h5_product/serviceFeatures1.png" class="h5" alt="">
               <p>{{$t("dnsService.serviceFeaturesItemtit1")}}</p>
-              <p @mouseover="handleclass=true" @mouseleave="handleclass=false" :class="[handleclass?'leave':'over']">{{$t("dnsService.serviceFeaturesItemcontent1")}}</p>
+              <p @mouseover="handleclass=1" @mouseleave="handleclass=0" :class="[handleclass == 1 ?'over':'leave']">{{$t("dnsService.serviceFeaturesItemcontent1")}}</p>
             </div>
         </el-carousel-item>
         <el-carousel-item>
@@ -169,7 +169,7 @@
               
                 <img src="/imges/h5_product/serviceFeatures2.png" class="h5" alt="">
                <p>{{$t("dnsService.serviceFeaturesItemtit2")}}</p>
-              <p @mouseover="handleclass=true" @mouseleave="handleclass=false" :class="[handleclass?'leave':'over']">{{$t("dnsService.serviceFeaturesItemcontent2")}}</p>
+              <p @mouseover="handleclass=2" @mouseleave="handleclass=0" :class="[handleclass == 2 ?'leave':'over']">{{$t("dnsService.serviceFeaturesItemcontent2")}}</p>
             </div>
         </el-carousel-item>
         <el-carousel-item>
@@ -177,7 +177,7 @@
           
             <img src="/imges/h5_product/serviceFeatures3.png" class="h5"  alt="">
                <p>{{$t("dnsService.serviceFeaturesItemtit3")}}</p>
-              <p @mouseover="handleclass=true" @mouseleave="handleclass=false" :class="[handleclass?'leave':'over']">{{$t("dnsService.serviceFeaturesItemcontent3")}}</p>
+              <p @mouseover="handleclass=3" @mouseleave="handleclass=0" :class="[handleclass == 3?'leave':'over']">{{$t("dnsService.serviceFeaturesItemcontent3")}}</p>
             </div>
         </el-carousel-item>
       </el-carousel>
@@ -188,20 +188,20 @@
           <div class="serviceFeaturesItem">
             <img src="/imges/product/serviceFeatures1.png" class="web" alt="">
             <p>{{$t("dnsService.serviceFeaturesItemtit1")}}</p>
-              <p @mouseover="handleclass=true" @mouseleave="handleclass=false" :class="[handleclass?'leave':'over']">{{$t("dnsService.serviceFeaturesItemcontent1")}}</p>
+              <p @mouseover="handleclass=1" @mouseleave="handleclass=0" :class="[handleclass == 1?'leave':'over']">{{$t("dnsService.serviceFeaturesItemcontent1")}}</p>
           </div>
 
           <div class="serviceFeaturesItem">
             <img src="/imges/product/serviceFeatures2.png" class="web" alt="">
         
               <p>{{$t("dnsService.serviceFeaturesItemtit2")}}</p>
-              <p @mouseover="handleclass=true" @mouseleave="handleclass=false" :class="[handleclass?'leave':'over']">{{$t("dnsService.serviceFeaturesItemcontent2")}}</p>
+              <p @mouseover="handleclass=2" @mouseleave="handleclass=0" :class="[handleclass == 2?'leave':'over']">{{$t("dnsService.serviceFeaturesItemcontent2")}}</p>
           </div>
 
           <div class="serviceFeaturesItem">
             <img src="/imges/product/serviceFeatures3.png" class="web" alt="">
            <p>{{$t("dnsService.serviceFeaturesItemtit3")}}</p>
-              <p @mouseover="handleclass=true" @mouseleave="handleclass=false" :class="[handleclass?'leave':'over']">{{$t("dnsService.serviceFeaturesItemcontent3")}}</p>
+              <p @mouseover="handleclass=3" @mouseleave="handleclass=0" :class="[handleclass == 3?'leave':'over']">{{$t("dnsService.serviceFeaturesItemcontent3")}}</p>
           </div>
         </div>
       </div>
@@ -295,7 +295,7 @@
 export default {
   data() {
     return {
-       handleclass:false,
+       handleclass: 0,
       locale: this.$store.state.locale,
     };
   },
@@ -402,7 +402,7 @@ export default {
       // display: flex;
       .topText{
         .teamsTit{
-          padding: 84px 0 32px;  
+          padding: 74px 0 32px;  
           font-size: 30px;
           font-weight: 600;
           color: black;
@@ -420,7 +420,7 @@ export default {
       .teamBlocks{
         display: flex;
         flex-direction: column;
-        margin-top: 80px;
+        margin-top: 70px;
         margin-left: 50px;
         .teamBlocksItems{
           display: flex;
@@ -431,7 +431,7 @@ export default {
             display: flex;
             height: 136px;
             width: 136px;
-            padding-top: 36px;
+            padding: 36px 10px 10px;
             box-sizing: border-box;
             background: url("/imges/product/bitDNSTeams_whiteBg.png") no-repeat;
             background-size: cover;
@@ -512,19 +512,18 @@ box-shadow: 0px 2px 4px 0px rgba(131, 131, 131, 0.5);
         display: flex;
         flex-direction: row;
         justify-content: center;
-        
+        text-align: center;
         margin-top: 15px;
 
         .serviceFeaturesItem{
           width: 219px;
           height: 240px;
-          // background: #FFFFFF;
-          // box-shadow: 0px 1px 7px 2px rgba(215, 215, 215, 0.5);
           margin: 0 15px;
           display: flex;
           align-items: center;
           flex-direction: column;
-          padding: 10px 20px;
+          padding: 10px 20px 20px;
+          box-sizing: border-box;
           background: url("/imges/index/index_box.png") no-repeat;
           background-position: center;
           background-size: 100% 100%;
@@ -548,12 +547,12 @@ box-shadow: 0px 2px 4px 0px rgba(131, 131, 131, 0.5);
             text-align: center;
             margin-top: 20px;
             box-sizing: border-box;
-                overflow: hidden;
+            overflow: hidden;
             text-overflow: ellipsis;
-          display: box;
-display: -webkit-box;
--webkit-line-clamp: 4;
--webkit-box-orient: vertical;
+            display: box;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
           }
            .leave{
             padding: 0 20px;
@@ -585,7 +584,7 @@ display: -webkit-box;
       flex-direction: column;
 
       .tokenBonus_topContent{
-        margin: 94px 0 71px;
+        margin: 84px 0 61px;
         display: flex;
         justify-content: space-around;
 
@@ -609,6 +608,7 @@ display: -webkit-box;
         .tokenBonus_topContent_right{
           display: flex;
           flex-direction: column;
+          text-align: center;
 
           div{
             height: 95px;
@@ -714,7 +714,7 @@ display: -webkit-box;
       height: 491px;
       .tokenBonus_content{
         .tokenBonus_topContent{
-          margin: 82px 0;
+          margin: 82px 0 42px;
           .tokenBonus_topContent_left{
             p:first-child{
               font-size: 26px;
@@ -797,7 +797,7 @@ display: -webkit-box;
       height: 421px;
       .tokenBonus_content{
         .tokenBonus_topContent{
-          margin: 60px 0;
+          margin: 60px 0 20px;
           .tokenBonus_topContent_left{
             p:first-child{
               font-size: 23px;
@@ -826,7 +826,7 @@ display: -webkit-box;
     }
 
     .exchangeAndWallet{
-      height: 989px;
+      height: 1089px;
       width: 960px;
       .corn_exchangeAndWallet, .DNS_exchangeAndWallet{
         .exchangeItems, .walletItems{
@@ -877,11 +877,11 @@ display: -webkit-box;
         // width: 1080px;
         display: flex;
         .teamBlocks{
-          // margin-top: 22px;
+          margin-top: 32px;
         }
         .topText{
           .teamsTit{
-            // padding: 16px 0 8px; 
+            padding: 30px 0 8px; 
             // font-size: 20px;
           }
 
@@ -895,10 +895,10 @@ display: -webkit-box;
   }
 
   .tokenBonus{
-    height: 374px;
+    height: 470px;
     .tokenBonus_content{
       .tokenBonus_topContent{
-        margin: 63px 0 47px;
+        margin: 63px 0;
         .tokenBonus_topContent_left{
           p:first-child{
             font-size: 20px;
@@ -1193,7 +1193,7 @@ box-shadow: 0px 2px 4px 0px rgba(131, 131, 131, 0.5);
     }
 
     .tokenBonus{
-        height: 756px !important;
+        height: 856px !important;
         background: url("/imges/h5_product/sercicebg.png") no-repeat;
         background-size: cover;
         background-position: center;

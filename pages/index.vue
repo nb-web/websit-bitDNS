@@ -48,7 +48,7 @@
             </div>
             <h5>{{item.name}}</h5>
             <h4>{{item.title}}</h4>
-            <p @mouseover="handleclass=true" @mouseleave="handleclass=false" :class="[handleclass?'leave':'over']">{{item.content}}</p>
+            <p @mouseover="handleclass=index" @mouseleave="handleclass=100" :class="[handleclass === index ?'leave':'over']">{{item.content}}</p>
           </swiper-slide>
 
           <div class="swiper-pagination" slot="pagination"></div>
@@ -254,6 +254,7 @@ import {
   swiperList,
   swiperList3,
   newLink,
+  newLinkEn,
   home_technologyAdvantage,
   home_technologyAdvantage2,
   timeLineList,
@@ -265,7 +266,7 @@ export default {
     return {
       //  screenWidth: false,     // 轮播
       //  screenWidth2: true,     // 列表
-      handleclass:false,
+      handleclass:100,
       ok:true,
       show: false,
       show1: false,
@@ -287,7 +288,7 @@ export default {
       newsDay: "31",
 
       swiperOptions: {
-        loop: true,
+        loop: false,
         slidesPerView: 1,
         spaceBetween: 75,
         observer: true, //修改swiper自己或子元素时，自动初始化swiper
@@ -316,11 +317,21 @@ export default {
           this.technologyAdvantageList=home_technologyAdvantage2
           this.swiperList2=swiperList3
           this.timeLineList=timeLineList2
-          }else{
- this.technologyAdvantageList=home_technologyAdvantage
+          this.newLinkList = newLinkEn
+          this.newsTit = newLinkEn[0].title
+          this.newsDate = newLinkEn[0].date
+          this.newsMonth= newLinkEn[0].month
+          this.newsDay= newLinkEn[0].day
+        }else{
+          this.technologyAdvantageList=home_technologyAdvantage
           this.swiperList2=swiperList
           this.timeLineList=timeLineList
-            }
+          this.newLinkList = newLink
+          this.newsTit = newLink[0].title
+          this.newsDate = newLink[0].date
+          this.newsMonth= newLink[0].month
+          this.newsDay= newLink[0].day
+        }
       },deep:true,
 
     windowWidth(val) {
@@ -503,12 +514,12 @@ background: #F3F8FF;
         font-weight: 400;
         color: #999999;
         line-height: 23px;
-      overflow: hidden;
-text-overflow: ellipsis;
-display: box;
-display: -webkit-box;
--webkit-line-clamp: 4;
--webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: box;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
       }
       .leave{
          font-size: 12px;
@@ -923,7 +934,7 @@ display: -webkit-box;
         height: 18px;
         position: absolute;
         right: 18px;
-        bottom: 26px;
+        bottom: 10px;
       }
       img {
         width: 100%;
@@ -935,8 +946,8 @@ display: -webkit-box;
       }
     }
     .day {
-      height: 84px;
-      width: 84px;
+      min-height: 84px;
+      min-width: 84px;
       background: #669aee;
       color: white;
       // padding: 0 20px;
@@ -1207,8 +1218,8 @@ display: -webkit-box;
         
       }
       .day {
-        max-width: 63px;
-        max-height: 63px;
+        min-width: 63px;
+        min-height: 63px;
         background: #669aee;
         color: white;
 
@@ -1363,7 +1374,7 @@ display: -webkit-box;
       width: 100%;
       height: 512px;
      
-background: #F3F8FF;
+      background: #F3F8FF;
       padding: 11px 57px 0;
       box-sizing: border-box;
       .centens {
@@ -1381,6 +1392,11 @@ background: #F3F8FF;
           font-weight: 400;
           color: #999999;
           line-height: 40px;
+        }
+
+        .over {
+          line-height: normal;
+          overflow: initial;
         }
       }
 

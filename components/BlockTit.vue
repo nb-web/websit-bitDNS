@@ -60,7 +60,7 @@ export default {
 
         @media (min-width: 1024px) and (max-width: 1280px) {
             .commonTit {
-                padding: 51px 0 39px;
+                padding: 41px 0 29px;
                 font-size: 20px;
             }
         }

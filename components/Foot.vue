@@ -2,7 +2,7 @@
   <div class="btm">
     <div class="footer common_container">
       <div class="f_left">
-        <p>联系我们</p>
+        <p>{{ $t('footer.contactUs') }}</p>
         <div class="email">
           <img src="/imges/foot/email.png" class="web" alt />
           <img src="/imges/h5_foot/email.png" class="h5" alt />
@@ -20,7 +20,7 @@
         </div>
       </div>
       <div class="f_right">
-        <p>BitDNS官方社交平台</p>
+        <p>{{ $t('footer.official') }}</p>
         <ul>
           <li>
             <a href="https://tinyurl.com/bitdns-twitter" class="list-item" target="_blank">

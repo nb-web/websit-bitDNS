@@ -59,12 +59,13 @@
     </div>
 
     <div class="economicCycle">
+      <BlockTit :text="$t('economic.economicCycle')" />
       <div class="common_container">
-        <div class="tit">
+        <!-- <div class="tit">
           <i></i>
           <p>{{$t('economic.economicCycle')}}</p>
           <i></i>
-        </div>
+        </div> -->
         <div class="economicCycle_img" style="text-align: center;">
           <img :src="$t('economic.economicCycleweb')" class="web" alt="">
           <img :src="$t('economic.economicCycleh5')" class="h5" alt="">
@@ -370,6 +371,11 @@ export default {
           }
         }
       }
+    }
+    
+    .bitDNS_economic_content{
+      width: 867px;
+      line-height: normal;
     }
 
     .chainResourceAllocation{
