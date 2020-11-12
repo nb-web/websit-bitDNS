@@ -93,8 +93,8 @@ export default {
       }
 
       .bannerContent_rightImg{
-        width: 531px;
-        height: 454px;
+        max-width: 531px;
+        max-height: 454px;
         img{
           height: 100%;
           width: 100%;
@@ -154,8 +154,8 @@ export default {
         }
 
         .bannerContent_rightImg{
-          width: 477px;
-          height: 408px;
+          max-width: 477px;
+          max-height: 408px;
           margin-top: 33px;
           img{
             height: 100%;
