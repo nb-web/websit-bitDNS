@@ -7,11 +7,22 @@
       "systomProblemContent": "传统DNS城名系统由于历史原因，设计上高度中心化，整个系统的稳定严重依赖中心节点。DNS作为整个互联网服务底层基础之一，每天处理来自全球数以十亿计的互联网访问请求。如果DNS服务器宕机，用户就无法接入互联网。由于其体系结构的脆弱性，容易造成大规模的瘫痪。因此在dWeb4.0时代，想要防止中心化垄断与作恶则需要全新的DNS系统。",
       "systomProblemContent1Date": "2014年2月，",
       "systomProblemContent1": "全球最大的比特币交易平台Mt.Gox由于交易系统出现漏洞，75万个比特币以及Mt.Gox自身账号中约10万个比特币。",
-
       "bitDNSVsTraditionalDNS": "BitDNS与传统DNS",
-
       "domainUsedTit": "BitDNS域名服务使用场景",
-      "domainUsedContent": "基于BitDNS的域名服务可以大幅降低普通用户参与区块链的门槛，通过域名服务，用户再也不用记忆看不懂且难以记忆的文件地址和 Hash 值，只要知道一个单词或一个短语就能进行文件访问、汇款转账、合约调用等。"
+      "domainUsedContent": "基于BitDNS的域名服务可以大幅降低普通用户参与区块链的门槛，通过域名服务，用户再也不用记忆看不懂且难以记忆的文件地址和 Hash 值，只要知道一个单词或一个短语就能进行文件访问、汇款转账、合约调用等。",
+      "blockTit":"BitDNS域名服务特点",
+      "serviceFeaturesItemtit1":"去中心化",
+      "serviceFeaturesItemcontent1":"BitDNS的管理和服务均通过智能合约完成，完全去中心化，安全性和可信度非常高。", 
+      "serviceFeaturesItemtit2":"跨链交互",
+      "serviceFeaturesItemcontent2":"BitDNS能够服务已有的公链生态，如以太坊、IPFS等， 让文件访问、地址转账、智能合约调用更方便、更快捷。",
+      "serviceFeaturesItemtit3":"可循环的经济模型",
+      "serviceFeaturesItemcontent3":"BitDNS系统的流通通证DNS内置了激励池，所有系统产出费用会进入激励池，并按比例分配给DNS的持有人。",
+      "tokenBonustit":"Corn—域名系统分红Token",
+      "tokenBonuscontent":"Corn是BitDNS域名系统中首个抵押挖矿代币，也是BitDNS生态中的域名价值映射Token，更是BitDNS生态的重要组成部分。BitDNS将未来域名销售系统中的部分分红，添加在资金池，生成Corn，与其他DeFi项目不同，Corn是有价值支撑的，绝非是一个虚无的空气资产。Corn的发行总量为100,000，并且全部由流动性挖矿产出。持有Corn还将享受未来域名销售的手续费分红。",
+      "tokenBonusbtn1":"域名销售分红",
+      "tokenBonusbtn2":"手续费分红",
+      "tokenBonusbtn3":"获取Corn"
+
     },
     "economic": {
       "economicBannerTest": "经济与治理",
@@ -23,7 +34,6 @@
       "governance": "治理与投资",
       "domainRegistration": "域名注册",
       "crossDapp": "跨Dapp应用",
-
       "modelOnChain": "链上资源分配模型",
       "mining": "挖矿",
       "ecologyContributor": "生态贡献者",
@@ -32,8 +42,13 @@
       "developers": "开发者",
       "donation": "捐赠",
       "other": "其他",
+      "economicCycle": "BitDNS经济循环",
+      "tokenDesignrightImg":"/imges/Economic/tokenDesign_rightImg.png",
+      "chainimgWEB":"/imges/Economic/resourceAllocation.png",
+      "chainimgH5":"/imges/h5_Economic/resourceAllocation.png",
+      "economicCycleweb":"/imges/Economic/token19.png",
+      "economicCycleh5":"/imges/h5_Economic/token19.png"
 
-      "economicCycle": "BitDNS经济循环"
     },
     "links": {
       "home": "首页",
@@ -53,10 +68,8 @@
       "gn1tit":"BitUID",
       "gn2":"支持主流区块链钱包；作为域名系统、BitUID系统、dWeb4.0应用市场的载体；支持PC/手机/路由器多端多设备。",
       "gn2tit":"离线钱包",
-      
       "gn3":"支持域名解析服务、注册买卖域名、域名解析设置、传统域名映射、域名专属昵称、域名动态解析。",
       "gn3tit":"域名系统",
-      
       "gn4":"dMail加密邮箱、dWeb分布式网站、dSNS社交网络、dChat分布式聊天、dVideo短视频、dGame游戏/VR。",
       "gn4tit":"应用市场"
       

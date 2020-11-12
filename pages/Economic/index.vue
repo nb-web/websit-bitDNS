@@ -29,7 +29,7 @@
           </div>
 
           <div class="topContent_right">
-            <img src="/imges/Economic/tokenDesign_rightImg.png" alt="">
+            <img :src="$t('economic.tokenDesignrightImg')" alt="">
           </div>
         </div>
 
@@ -52,8 +52,8 @@
 
       <div class="common_container chainResourceAllocation_content">
         <div class="chainimg">
-          <img class="web" src="/imges/Economic/resourceAllocation.png" alt="">
-          <img class="h5" src="/imges/h5_Economic/resourceAllocation.png" alt="">
+          <img class="web" :src="$t('economic.chainimgWEB')" alt="">
+          <img class="h5" :src="$t('economic.chainimgH5')" alt="">
         </div>
       </div>
     </div>
@@ -66,8 +66,8 @@
           <i></i>
         </div>
         <div class="economicCycle_img" style="text-align: center;">
-          <img src="/imges/Economic/token19.png" class="web" alt="">
-          <img src="/imges/h5_Economic/token19.png" class="h5" alt="">
+          <img :src="$t('economic.economicCycleweb')" class="web" alt="">
+          <img :src="$t('economic.economicCycleh5')" class="h5" alt="">
         </div>
       </div>
     </div>
@@ -77,7 +77,8 @@
 <script>
 export default {
   head: {
-    title: "经济与治理"
+    title: "经济与治理",
+    
   }
 };
 </script>

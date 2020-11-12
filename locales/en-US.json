@@ -6,11 +6,21 @@
       "systomProblemContent": "The traditional DNS system is highly centralized.  The stability of the entire system relies heavily on the central node. DNS is the foundation of the entire Internet service; it processes billions of Internet access requests from all around the world every day. If the DNS stop operating, users will lose access to the Internet. To avoid such mishaps, a new DNS system is needed to prevent centralized monopolisation. We name this new era dWeb4.0.",
       "systomProblemContent1Date": "In February 2014, ",
       "systomProblemContent1": "Mt.Gox - the world's largest bitcoin trading platform had 750,000 bitcoins and approximately 100,000 bitcoins in the trading system were lost due to a loophole in the trading system.",
-
       "bitDNSVsTraditionalDNS": "BitDNS Vs Traditional DNS",
-
       "domainUsedTit": "BitDNS domain name service usage scenarios",
-      "domainUsedContent": "The domain name service based on BitDNS can greatly . accelerate mass adoption of the Blockchain technology. Through the domain name service, users no longer have to memorise file addresses and hash values that are incomprehensible and difficult to remember. Users can send cryptos, access data and smart contract with a word or phrase."
+      "domainUsedContent": "The domain name service based on BitDNS can greatly . accelerate mass adoption of the Blockchain technology. Through the domain name service, users no longer have to memorise file addresses and hash values that are incomprehensible and difficult to remember. Users can send cryptos, access data and smart contract with a word or phrase.",
+      "blockTit":"BitDNS domain name service features",
+      "serviceFeaturesItemtit1":"Decentralized",
+      "serviceFeaturesItemcontent1":"The management and service of BitDNS are completed through smart contracts, which are completely decentralized, with high security and credibility.", 
+      "serviceFeaturesItemtit2":"Cross-chain interaction",
+      "serviceFeaturesItemcontent2":"BitDNS can serve existing public chain ecosystems, such as Ethereum, IPFS, and etc. At the same time making file access, address transfer, and smart contract calls more convenient and faster.",
+      "serviceFeaturesItemtit3":"Recyclable economic model",
+      "serviceFeaturesItemcontent3":"The circulation of DNS in the BitDNS system has a built an incentive pool and all system output fees will enter the incentive pool and will be distributed to DNS holders proportionally.",
+      "tokenBonustit":"CORN—Domain Name System’s Dividend Token",
+      "tokenBonuscontent":"CORN is the first mining token in the BitDNS domain name system, it is also the domain name value mapping token in the BitDNS ecosystem, and it is an important part of the BitDNS ecosystem. BitDNS adds part of the dividends in the future domain name sales system to the fund pool which can generate CORN. Unlike other DeFi projects, CORN has a valuable support. CORN has a total issuance of 100,000, and it is all produced by liquidity mining. Holders of CORN will also enjoy the commission dividends for future domain name sales.。",
+      "tokenBonusbtn1":"Domain Name Sales Dividend",
+      "tokenBonusbtn2":"Handling fee dividend",
+      "tokenBonusbtn3":"获取Corn"
     },
     "economic": {
       "economicBannerTest": "Economy and Governance",
@@ -31,8 +41,12 @@
       "developers": "Developers",
       "donation": "Donation",
       "other": "Other",
-
-      "economicCycle": "BitDNS economic cycle"
+      "economicCycle": "BitDNS economic cycle",
+      "tokenDesignrightImg":"/imges/Economic/etokenDesign_rightImg.png",
+      "chainimgWEB":"/imges/Economic/eresourceAllocation.png",
+      "chainimgH5":"/imges/h5_Economic/eresourceAllocation.png",
+      "economicCycleweb":"/imges/Economic/etoken19.png",
+      "economicCycleh5":"/imges/h5_Economic/etoken19.png"
     },
     "links": {
         "home": "Home",

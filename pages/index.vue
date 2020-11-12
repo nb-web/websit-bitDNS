@@ -42,13 +42,13 @@
     <div class="swipe" v-show="ok">
       <div class="content swiperWidth">
         <swiper ref="mySwiper" :options="swiperOptions">
-          <swiper-slide v-for=" (item,index) in swiperList2" :key="index">
+          <swiper-slide v-for=" (item,index) in swiperList2" :key="index" >
             <div class="spimg">
               <img :src="item.img" alt />
             </div>
             <h5>{{item.name}}</h5>
             <h4>{{item.title}}</h4>
-            <p>{{item.content}}</p>
+            <p @mouseover="handleclass=true" @mouseleave="handleclass=false" :class="[handleclass?'leave':'over']">{{item.content}}</p>
           </swiper-slide>
 
           <div class="swiper-pagination" slot="pagination"></div>
@@ -255,7 +255,9 @@ import {
   swiperList3,
   newLink,
   home_technologyAdvantage,
-  home_technologyAdvantage2
+  home_technologyAdvantage2,
+  timeLineList,
+  timeLineList2
 } from "@/locales/globalData.json";
 
 export default {
@@ -263,6 +265,7 @@ export default {
     return {
       //  screenWidth: false,     // 轮播
       //  screenWidth2: true,     // 列表
+      handleclass:false,
       ok:true,
       show: false,
       show1: false,
@@ -299,57 +302,7 @@ export default {
         }
       },
       // 时间线
-      timeLineList: [
-        {
-          timestamp: "2020.10.31",
-          color: "#333333",
-          fontsize: 12,
-          size: "15",
-          bgcolor: "#373737",
-          icon: "el-iconprev",
-          info: "BitDNS域名系统中域名注册交易网站上线"
-        },
-        {
-          timestamp: "2021.1.31",
-          color: "#333333",
-          fontsize: 12,
-          size: "15",
-          bgcolor: "#373737",
-          info: "BitDNS域名系统完成BitMail邮箱系统核心模块上线"
-        },
-        {
-          timestamp: "2021.3.31",
-          color: "#333333",
-          fontsize: 12,
-          size: "15",
-          bgcolor: "#373737",
-          info: "BitUID系统用户名注册/交易网站上线"
-        },
-        {
-          timestamp: "2021.4.31",
-          color: "#333333",
-          fontsize: 12,
-          size: "15",
-          bgcolor: "#373737",
-          info: "BitMail邮箱系统完成BitDNS钱包v1.0版上线"
-        },
-        {
-          timestamp: "2021.5.30",
-          color: "#333333",
-          fontsize: 12,
-          size: "15",
-          bgcolor: "#373737",
-          info: "BitUID系统完成"
-        },
-        {
-          timestamp: "2021.6.30",
-          color: "#333333",
-          fontsize: 12,
-          size: "15",
-          bgcolor: "#373737",
-          info: "BitDNS钱包v5.0版上线，系统完成"
-        }
-      ],
+      timeLineList: timeLineList,
       windowWidth: 0 //实时屏幕宽度
     };
   },
@@ -362,10 +315,11 @@ export default {
         if(val=="en-US"){
           this.technologyAdvantageList=home_technologyAdvantage2
           this.swiperList2=swiperList3
+          this.timeLineList=timeLineList2
           }else{
  this.technologyAdvantageList=home_technologyAdvantage
           this.swiperList2=swiperList
-
+          this.timeLineList=timeLineList
             }
       },deep:true,
 
@@ -542,13 +496,34 @@ background: #F3F8FF;
         color: #333333;
         min-height: 34px;
       }
-      p {
+      .over {
         font-size: 12px;
+        // height: 100px;
         font-family: PingFangSC-Regular, PingFang SC;
         font-weight: 400;
         color: #999999;
         line-height: 23px;
+      overflow: hidden;
+text-overflow: ellipsis;
+display: box;
+display: -webkit-box;
+-webkit-line-clamp: 4;
+-webkit-box-orient: vertical;
       }
+      .leave{
+         font-size: 12px;
+        height: 100px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #999999;
+        line-height: 23px;
+        // overflow: hidden;
+        overflow: scroll;
+        
+    }
+   .leave::-webkit-scrollbar {
+    display: none;
+  }
     }
     .swiper-container {
       padding: 30px 60px;

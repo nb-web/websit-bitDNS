@@ -17,8 +17,8 @@
     {"img":"/imges/index/swiper1.png","name":"Anh Nguyen","title":"BitDNS - suitable for commercial and personal use","content":"BitDNS accelerates mass adoption with readable domain nameInstead of long wallet address, BitDNS provides a readable domain name, that can be linked to cryptocurrencies address for users to receive and send crypto. Enterprise with a decentralised domain name ensures business continuity as it is secured and belongs to the enterprise forever. "},
     {"img":"/imges/index/swiper2.png","name":"larueer kenbe","title":"BitDNS is an innovative multi-service platform that serves exchange valuable information safely","content":"BitDNS’s infrastructure platform innovates continuously by increasing their product range to keep up with the rapid industry demands. Products includes; BitDNS, BitMail, BitUid, BitChat, BitAPP etc."},
     {"img":"/imges/index/swiper3.png","name":"Luyn Hoang","title":"BitDNS is one of the most secure with light client, with great growth potential","content":"BitDNS is one of the most secure and lightweight client. Light clients are crucial elements in blockchain ecosystems. It helps us access and interact with a blockchain without having to sync the full blockchain. OR By holding on the their governance token- CORN, I receive dividends. It’s great! "},
-    {"img":"/imges/index/swiper4.png","name":"zet david","title":"BitDNS的易用性将更好的鼓励年轻人参与区块链","content":"BitDNS产品的易用性将更好的鼓励年轻人来参与区块链网络。"},
-    {"img":"/imges/index/swiper5.png","name":"Greg Mentayor","title":"BitDNS的技术基于点对点，无需中央管理即可运行","content":"BitDNS支付交易的验证和支付交易的确认通过网络以协商一致的方式进行。"}
+    {"img":"/imges/index/swiper4.png","name":"zet david","title":"The ease of use of BitDNS will better encourage young people to participate in the blockchain","content":"The ease of use of BitDNS products will be better encourage young people to participate in the blockchain network."},
+    {"img":"/imges/index/swiper5.png","name":"Greg Mentayor","title":"The ease of use of BitDNS products will be better encourage young people to participate in the blockchain network.","content":"The ease of use of BitDNS products will be better encourage young people to participate in the blockchain network."}
   ],
   "home_technologyAdvantage":[
     {"name":"多链架构", "detail":"同时支持网关层及Level2层跨链协议（包括波卡和Cosmos），全新分布式多链域名系统。"},
@@ -40,7 +40,110 @@
     {"name":"Cloud router", "detail":"a cloud router supports hardware wallets, smart routers, and home NAS systems as the core. Through blockchain technology we aim to solve the problem of trust between IoT devices and protects users data privacy by preventing camera data leakage."},
     {"name":"IPv8", "detail":"The adaptive dynamic networking technology is based on SWAN technology and can form a double-layer high-speed interconnection network between thousands of nodes on the Internet. These nodes can successfully break through firewall and greatly increase speed of cross-border network access. In the future, it can access SpaceX's StarLink network to form an integrated interconnection network."},
     {"name":"Anti-quantum computing encryption algorithm", "detail":"BitDNS will fully support anti-quantum computing encryption algorithms in subsequent versions and will prepare for quantum computing. BitDNS will be quantum resistant."}
-  ]
+  ],
 
+
+  "timeLineList": [
+    {
+      "timestamp": "2020.10.31",
+      "color": "#333333",
+      "fontsize": 12,
+      "size": "15",
+      "bgcolor": "#373737",
+      "icon": "el-iconprev",
+      "info": "BitDNS域名系统中域名注册交易网站上线"
+    },
+    {
+      "timestamp": "2021.1.31",
+      "color": "#333333",
+      "fontsize": 12,
+      "size": "15",
+      "bgcolor": "#373737",
+      "info": "BitDNS域名系统完成BitMail邮箱系统核心模块上线"
+    },
+    {
+      "timestamp": "2021.3.31",
+      "color": "#333333",
+      "fontsize": 12,
+      "size": "15",
+      "bgcolor": "#373737",
+      "info": "BitUID系统用户名注册/交易网站上线"
+    },
+    {
+      "timestamp": "2021.4.31",
+      "color": "#333333",
+      "fontsize": 12,
+      "size": "15",
+      "bgcolor": "#373737",
+      "info": "BitMail邮箱系统完成BitDNS钱包v1.0版上线"
+    },
+    {
+      "timestamp": "2021.5.30",
+      "color": "#333333",
+      "fontsize": 12,
+      "size": "15",
+      "bgcolor": "#373737",
+      "info": "BitUID系统完成"
+    },
+    {
+      "timestamp": "2021.6.30",
+      "color": "#333333",
+      "fontsize": 12,
+      "size": "15",
+      "bgcolor": "#373737",
+      "info": "BitDNS钱包v5.0版上线，系统完成"
+    }
+  ],
+  "timeLineList2": [
+    {
+      "timestamp": "October 31st, 2020",
+      "color": "#333333",
+      "fontsize": 12,
+      "size": "15",
+      "bgcolor": "#373737",
+      "icon": "el-iconprev",
+      "info": "The domain registration and transaction website of the BitDNS domain name system will be out"
+    },
+    {
+      "timestamp": "January 31st, 2021",
+      "color": "#333333",
+      "fontsize": 12,
+      "size": "15",
+      "bgcolor": "#373737",
+      "info": "BitDNS domain name will complete the launch of the core module of BitMail mailbox system"
+    },
+    {
+      "timestamp": "March 31st, 2021",
+      "color": "#333333",
+      "fontsize": 12,
+      "size": "15",
+      "bgcolor": "#373737",
+      "info": "BitUID system’s username registration / online trading website will be available"
+    },
+    {
+      "timestamp": "April 31st, 2021",
+      "color": "#333333",
+      "fontsize": 12,
+      "size": "15",
+      "bgcolor": "#373737",
+      "info": "Through BitMail mailbox system the launch of BitDNS wallet v1.0 will be completed"
+    },
+    {
+      "timestamp": "May 30th, 2021",
+      "color": "#333333",
+      "fontsize": 12,
+      "size": "15",
+      "bgcolor": "#373737",
+      "info": "BitUID system will be completely ready"
+    },
+    {
+      "timestamp": "June 30th, 2021",
+      "color": "#333333",
+      "fontsize": 12,
+      "size": "15",
+      "bgcolor": "#373737",
+      "info": "BitDNS wallet v5.0 will be available"
+    }
+  ]
 }
  

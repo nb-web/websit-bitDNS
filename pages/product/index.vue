@@ -152,7 +152,7 @@
 
 
     <div class="serviceFeatures">
-      <BlockTit text="BitDNS域名服务特点"/>
+      <BlockTit :text="$t('dnsService.blockTit')"/>
 
       <div class="h5 common_container">
         <el-carousel type="card" height="200px" :loop="true" indicator-position="none" arrow="never" :autoplay="false">
@@ -160,24 +160,24 @@
           <div class="serviceFeaturesItem">
               
                 <img src="/imges/h5_product/serviceFeatures1.png" class="h5" alt="">
-              <p>去中心化</p>
-              <p>BitDNS的管理和服务均通过智能合约完成，完全去中心化，安全性和可信度非常高。</p>
+              <p>{{$t("dnsService.serviceFeaturesItemtit1")}}</p>
+              <p @mouseover="handleclass=true" @mouseleave="handleclass=false" :class="[handleclass?'leave':'over']">{{$t("dnsService.serviceFeaturesItemcontent1")}}</p>
             </div>
         </el-carousel-item>
         <el-carousel-item>
           <div class="serviceFeaturesItem">
               
                 <img src="/imges/h5_product/serviceFeatures2.png" class="h5" alt="">
-              <p>跨链交互</p>
-              <p>BitDNS能够服务已有的公链生态，如以太坊、IPFS等， 让文件访问、地址转账、智能合约调用更方便、更快捷。</p>
+               <p>{{$t("dnsService.serviceFeaturesItemtit2")}}</p>
+              <p @mouseover="handleclass=true" @mouseleave="handleclass=false" :class="[handleclass?'leave':'over']">{{$t("dnsService.serviceFeaturesItemcontent2")}}</p>
             </div>
         </el-carousel-item>
         <el-carousel-item>
           <div class="serviceFeaturesItem">
           
             <img src="/imges/h5_product/serviceFeatures3.png" class="h5"  alt="">
-              <p>可循环的经济模型</p>
-              <p>BitDNS系统的流通通证DNS内置了激励池，所有系统产出费用会进入激励池，并按比例分配给DNS的持有人。</p>
+               <p>{{$t("dnsService.serviceFeaturesItemtit3")}}</p>
+              <p @mouseover="handleclass=true" @mouseleave="handleclass=false" :class="[handleclass?'leave':'over']">{{$t("dnsService.serviceFeaturesItemcontent3")}}</p>
             </div>
         </el-carousel-item>
       </el-carousel>
@@ -187,21 +187,21 @@
         <div class="common_container serviceFeatures_content">
           <div class="serviceFeaturesItem">
             <img src="/imges/product/serviceFeatures1.png" class="web" alt="">
-            <p>去中心化</p>
-            <p>BitDNS的管理和服务均通过智能合约完成，完全去中心化，安全性和可信度非常高。</p>
+            <p>{{$t("dnsService.serviceFeaturesItemtit1")}}</p>
+              <p @mouseover="handleclass=true" @mouseleave="handleclass=false" :class="[handleclass?'leave':'over']">{{$t("dnsService.serviceFeaturesItemcontent1")}}</p>
           </div>
 
           <div class="serviceFeaturesItem">
             <img src="/imges/product/serviceFeatures2.png" class="web" alt="">
         
-            <p>跨链交互</p>
-            <p>BitDNS能够服务已有的公链生态，如以太坊、IPFS等， 让文件访问、地址转账、智能合约调用更方便、更快捷。</p>
+              <p>{{$t("dnsService.serviceFeaturesItemtit2")}}</p>
+              <p @mouseover="handleclass=true" @mouseleave="handleclass=false" :class="[handleclass?'leave':'over']">{{$t("dnsService.serviceFeaturesItemcontent2")}}</p>
           </div>
 
           <div class="serviceFeaturesItem">
             <img src="/imges/product/serviceFeatures3.png" class="web" alt="">
-            <p>可循环的经济模型</p>
-            <p>BitDNS系统的流通通证DNS内置了激励池，所有系统产出费用会进入激励池，并按比例分配给DNS的持有人。</p>
+           <p>{{$t("dnsService.serviceFeaturesItemtit3")}}</p>
+              <p @mouseover="handleclass=true" @mouseleave="handleclass=false" :class="[handleclass?'leave':'over']">{{$t("dnsService.serviceFeaturesItemcontent3")}}</p>
           </div>
         </div>
       </div>
@@ -211,19 +211,19 @@
       <div class="common_container tokenBonus_content">
         <div class="tokenBonus_topContent">
           <div class="tokenBonus_topContent_left">
-            <p>Corn—域名系统分红Token</p>
-            <p>Corn是BitDNS域名系统中首个抵押挖矿代币，也是BitDNS生态中的域名价值映射Token，更是BitDNS生态的重要组成部分。BitDNS将未来域名销售系统中的部分分红，添加在资金池，生成Corn，与其他DeFi项目不同，Corn是有价值支撑的，绝非是一个虚无的空气资产。Corn的发行总量为100,000，并且全部由流动性挖矿产出。持有Corn还将享受未来域名销售的手续费分红。</p>
+            <p>{{$t("dnsService.tokenBonustit")}}</p>
+            <p>{{$t("dnsService.tokenBonuscontent")}}</p>
           </div>
 
           <div class="tokenBonus_topContent_right">
-            <div>域名销售分红</div>
-            <div>手续费分红</div>
+            <div>{{$t("dnsService.tokenBonusbtn1")}}</div>
+            <div>{{$t("dnsService.tokenBonusbtn2")}}</div>
           </div>
         </div>
 
         <div class="tokenBonus_bottomButton">
           <a href="https://corn.bitdns.vip/" target="_blank">
-              获取Corn
+              {{$t("dnsService.tokenBonusbtn3")}}
           </a>
         </div>
       </div>
@@ -295,6 +295,7 @@
 export default {
   data() {
     return {
+       handleclass:false,
       locale: this.$store.state.locale,
     };
   },
@@ -538,7 +539,7 @@ box-shadow: 0px 2px 4px 0px rgba(131, 131, 131, 0.5);
             color: #656565;
           }
 
-          p:last-child{
+          .over{
             padding: 0 20px;
             font-size: 12px;
             font-weight: normal;
@@ -547,7 +548,28 @@ box-shadow: 0px 2px 4px 0px rgba(131, 131, 131, 0.5);
             text-align: center;
             margin-top: 20px;
             box-sizing: border-box;
+                overflow: hidden;
+            text-overflow: ellipsis;
+          display: box;
+display: -webkit-box;
+-webkit-line-clamp: 4;
+-webkit-box-orient: vertical;
           }
+           .leave{
+            padding: 0 20px;
+            font-size: 12px;
+            font-weight: normal;
+            color: #4A4A4A;
+            line-height: 19px;
+            text-align: center;
+            margin-top: 20px;
+            box-sizing: border-box;
+        overflow: scroll;
+        
+    }
+   .leave::-webkit-scrollbar {
+    display: none;
+  }
         }
       }
   }
