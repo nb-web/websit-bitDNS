@@ -377,8 +377,8 @@ export default {
 
         img{
           margin-top: 26px;
-          height: 336px;
-          width: 674px;
+          // height: 336px;
+          // width: 674px;
         }
 
         .resourceContent_bottom {
@@ -511,8 +511,8 @@ export default {
 
         img{
           margin-top: 21px;
-          height: 300px;
-          width: 600px;
+          // height: 300px;
+          // width: 600px;
         }
 
         .resourceContent_bottom {

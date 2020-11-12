@@ -438,6 +438,7 @@ export default {
             align-items: center;
             flex-direction: column;
             margin-right: 20px;
+box-shadow: 0px 2px 4px 0px rgba(131, 131, 131, 0.5);
 
             img{
               margin-bottom: 15px;
@@ -641,8 +642,8 @@ export default {
 
         .exchangeImgs, .walletImgs{
           img{
-            height: 125px;
-            width: 285px;
+            // height: 125px;
+            // width: 285px;
             margin-right: 20px;
             margin-bottom: 38px;
           }
@@ -730,8 +731,8 @@ export default {
 
           .exchangeImgs, .walletImgs{
             img{
-              height: 88px;
-              width: 249px;
+              // height: 88px;
+              // width: 249px;
               margin-right: 18px;
               margin-bottom: 28px;
             }
@@ -814,8 +815,8 @@ export default {
 
           .exchangeImgs, .walletImgs{
             img{
-              height: 75px;
-              width: 214px;
+              // height: 75px;
+              // width: 214px;
               margin-right: 15px;
               margin-bottom: 22px;
             }
@@ -1008,7 +1009,7 @@ export default {
   }
 
   .bitDNSVsTraditionalDNS{
-      height: 1286px;
+      height:1000px;
       background-color: #F0F2F5;
       text-align: center;
       img{
@@ -1020,7 +1021,7 @@ export default {
 
     .bitDNSTeams{
           padding: 0 30px 155px;
-          height: 850px;
+          height: 650px;
           background: #F3F8FF;
 
           .bitDNSTeams_content{
@@ -1055,8 +1056,9 @@ export default {
 
                 .teamBlocksItem{
                   display: flex;
-                  height: 120px;
-                  width: 156px;
+                  height: 136px;
+                  width: 136px;
+                  box-sizing: border-box;
                   padding-top: 36px;
                   background: url("/imges/product/bitDNSTeams_whiteBg.png") no-repeat;
                   background-size: cover;
@@ -1064,6 +1066,7 @@ export default {
                   align-items: center;
                   flex-direction: column;
                   margin-right: 20px;
+box-shadow: 0px 2px 4px 0px rgba(131, 131, 131, 0.5);
                   img{
                       width: 28px;
                       height: 28px;

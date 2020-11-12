@@ -1358,15 +1358,15 @@ background: #F3F8FF;
         display: flex;
         justify-content: center;
         li {
-          width: 167px;
+          min-width: 167px;
           height: 183px;
           background: url("/imges/h5_index/index_box.png") no-repeat;
           background-position: center;
-          background-size: 100%;
+          background-size: 100% 100%;
           text-align: center;
-          line-height: 35px;
+          line-height: normal;
           margin: 0 10px;
-          padding: 0 30px;
+          padding: 0 10px;
           box-sizing: border-box;
           img {
             width: 40px;
