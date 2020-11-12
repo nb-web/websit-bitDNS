@@ -2,8 +2,8 @@
   <div class="container">
     <Banner 
       bgUrl="/imges/banna/banna_index.png"
-      insideBgUrl="/imges/banna/big_box.png"
-    />
+      insideBgUrl="/imges/banna/big_box.png"/>
+    <div style="background: rgb(242,245,245);width:100%">
     <div class="block common_container">
       <ul>
         <li>
@@ -28,7 +28,7 @@
         </li>
       </ul>
     </div>
-
+</div>
     <div class="bitDns">
       <BlockTit text="BitDNS" />
       <div class="centens common_container">
@@ -263,7 +263,7 @@ export default {
     return {
       //  screenWidth: false,     // 轮播
       //  screenWidth2: true,     // 列表
-      ok:false,
+      ok:true,
       show: false,
       show1: false,
       show3: false,
@@ -477,9 +477,9 @@ created(){
   .bitDns {
     width: 100%;
     height: 305px;
-    background: url("/imges/index/index_bit.png") no-repeat;
-    background-position: center;
-    background-size: cover;
+    // background: url("/imges/index/index_bit.png") no-repeat;
+   
+background: #F3F8FF;
     
     .centens {
       border: 1px solid rgba(255, 255, 255, 0.1);
@@ -1387,9 +1387,8 @@ created(){
     .bitDns {
       width: 100%;
       height: 512px;
-      background: url("/imges/h5_index/index_bit.png") no-repeat;
-      background-position: center;
-      background-size: cover;
+     
+background: #F3F8FF;
       padding: 11px 57px 0;
       box-sizing: border-box;
       .centens {

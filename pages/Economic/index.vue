@@ -54,57 +54,15 @@
 
       <div class="common_container chainResourceAllocation_content">
         <div class="chainimg">
-          <img src="/imges/Economic/resourceAllocation.png" alt="">
+          <img class="web" src="/imges/Economic/resourceAllocation.png" alt="">
+          <img class="h5" src="/imges/h5_Economic/resourceAllocation.png" alt="">
         </div>
 
         <div class="resourceContent_bottom">
           <div class="bottom_content">
             <div class="resourceContent_bottom_left">
-              <div>
-                <div class="resource_item">
-                  <span :style="{background: '#6D77E6'}"></span>
-                  <span>生态贡献者</span>
-                </div>
 
-                <div class="resource_item">
-                  <span :style="{background: '#FFC501'}"></span>
-                  <span>挖矿</span>
-                </div>
-              </div>
-
-              <div>
-                <div class="resource_item">
-                  <span :style="{background: '#723EAE'}"></span>
-                  <span>社区基金会</span>
-                </div>
-
-                <div class="resource_item">
-                  <span :style="{background: '#6FD50D'}"></span>
-                  <span>开发者</span>
-                </div>
-              </div>
-
-              <div>
-                <div class="resource_item">
-                  <span :style="{background: '#FF4E78'}"></span>
-                  <span>团队</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="resourceContent_bottom_right">
-              <div>
-                <div class="resource_item">
-                  <span :style="{background: '#A7B0FF'}"></span>
-                  <span>捐赠</span>
-                </div>
-              </div>
-              <div>
-                <div class="resource_item">
-                  <span :style="{background: '#2A34A7'}"></span>
-                  <span>其他</span>
-                </div>
-              </div>
+      
             </div>
           </div>
         </div>
@@ -137,10 +95,11 @@ export default {
 
 <style lang='less'>
 .economic {
+    background-color: #F0F2F5;
 
   .bitDNS_economic{
     height: 413px;
-    background-color: #fff;
+    background-color: #F0F2F5;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -176,14 +135,14 @@ export default {
         .topContent_left {
           p {
             max-width: 558px;
-            color: #fff;
+            color: black;
             line-height: 37px;
           }
 
           p:first-child {
             font-size: 30px;
             font-weight: 600;
-            color: #ffffff;
+            color: black;
             margin-bottom: 20px;
           }
         }
@@ -219,7 +178,7 @@ export default {
         p {
           font-size: 30px;
           font-weight: 600;
-          color: #ffffff;
+          color: black;
         }
         .tokenflex {
           display: flex;
@@ -229,8 +188,8 @@ export default {
             align-items: center;
             height: 52px;
             width: 156px;
-            border: 1px solid #ffffff;
-            color: #fff;
+            border: 1px solid black;
+            color: black;
             margin: 0 50px;
           }
         }
@@ -238,7 +197,7 @@ export default {
     }
 
   .chainResourceAllocation{
-    height: 900px;
+    height: 692px;
 
     .chainResourceAllocation_content{
       display: flex;
@@ -256,8 +215,8 @@ export default {
 
       img{
         margin-top: 21px;
-        height: 448px;
-        width: 899px;
+        height: 329px;
+        width: 827px;
       }
 
       .resourceContent_bottom {
@@ -334,19 +293,19 @@ export default {
         font-size: 30px;
         font-family: PingFangSC-Semibold, PingFang SC;
         font-weight: 600;
-        color: #3c3c3c;
+        color: black;
         line-height: 42px;
     }
     i {
         display: inline-block;
         width: 30px;
         height: 3px;
-        background: #fff;
+        background: blue;
     }
 
     p {
         margin: 0 20px;
-        color: #fff;
+        color: black;
     }
 
   }
@@ -629,7 +588,7 @@ export default {
       width: 100%;
        
       height: 387px;
-      background-color: #fff;
+      background-color: #F0F2F5;
       display: flex;
       align-items: center;
       flex-direction: column;
@@ -672,7 +631,7 @@ export default {
             font-size: 22px;
             font-family: PingFangSC-Regular, PingFang SC;
             font-weight: 400;
-            color: #ffffff;
+            color: black;
             line-height: 37px;
           }
           p:first-child {
@@ -682,7 +641,7 @@ export default {
             font-size: 32px;
             font-family: PingFangSC-Semibold, PingFang SC;
             font-weight: 600;
-            color: #ffffff;
+            color: black;
             line-height: 45px;
           }
         }
@@ -721,7 +680,7 @@ export default {
           margin: 85px 0 49px;
           font-size: 32px;
           font-weight: 600;
-          color: #ffffff;
+          color: black;
         }
         .tokenflex {
           display: flex;
@@ -733,8 +692,8 @@ export default {
             text-align: center;
             line-height: 70px;
 
-            border: 1px solid #ffffff;
-            color: #fff;
+            border: 1px solid black;
+            color: black;
             margin: 0;
           }
 
@@ -747,7 +706,7 @@ export default {
 
     .chainResourceAllocation {
        
-      height: 895px;
+      height: 1000px;
       .chainResourceAllocation_content {
         display: flex;
         flex-direction: column;
@@ -765,10 +724,9 @@ export default {
         .chainimg {
           margin: 0 auto;
           margin-top: 21px;
-         
           img{
-          height: 344px;
-          width: 690px;
+          height: 774px;
+          width: 330px;
           }
         }
 
@@ -820,7 +778,7 @@ export default {
     .economicCycle {
        
       padding: 94px 0;
-      height: 587px;
+      height:800px;
       width: 100%;
       background: url("/imges/h5_Economic/economicCycle.png") no-repeat;
       background-size: cover;
@@ -837,18 +795,18 @@ export default {
       }
 
       .tit {
-        display: none;
+        color: black;
       }
       i {
         display: inline-block;
         width: 30px;
         height: 3px;
-        background: #fff;
+        background: blue;
       }
 
       p {
         margin: 0 20px;
-        color: #fff;
+        color: black;
       }
     }
   }

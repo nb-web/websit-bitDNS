@@ -26,10 +26,10 @@
     </div>
 
     <div class="imgAndText_block">
-      <div class="imgAndText_block_item">
+      <div class="imgAndText_block_item bg">
         <div class="items_left">
-          <img src="/imges/product/domainService1.png" class="web" alt="">
-          <img src="/imges/h5_product/domainService2.png" class="h5" alt="">
+          <img  src="/imges/product/domainService1.png" class="web Service1" alt="">
+          <img src="/imges/h5_product/domainService2.png" class="h5 Service1" alt="">
 
         </div>
 
@@ -41,7 +41,7 @@
         </div>
       </div>
       <div class="web">
-        <div class="imgAndText_block_item">
+        <div class="imgAndText_block_item" >
           <div class="items_left">
             <p class="items_rightText">
               <span>2014年9月，</span>
@@ -50,7 +50,7 @@
           </div>
 
           <div class="items_right">
-              <img src="/imges/product/domainService2.png" alt="" class="web">
+              <img src="/imges/product/domainService2.png" alt="" class="web Service2">
           </div>
         </div>
       </div>
@@ -58,7 +58,7 @@
       <div class="h5">
         <div class="imgAndText_block_item">
           <div class="items_right">
-            <img src="/imges/h5_product/domainService1.png" alt="">
+            <img src="/imges/h5_product/domainService1.png" class="Service2" alt="">
           </div>
 
           <div class="items_left">
@@ -71,10 +71,10 @@
       </div>
       
 
-      <div class="imgAndText_block_item">
+      <div class="imgAndText_block_item bg">
         <div class="items_left">
-         <img src="/imges/product/domainService3.png" class="web" alt="">
-         <img src="/imges/h5_product/domainService3.png"  class="h5" alt="">
+         <img src="/imges/product/domainService3.png" class="web Service3"  alt="">
+         <img src="/imges/h5_product/domainService3.png"  class="h5 Service3" alt="">
         </div>
         <div class="items_right">
           <p class="items_rightText">
@@ -232,7 +232,7 @@
         </div>
       </div>
     </div>
-
+      <div style="background:#f0f2f5">
     <div class="common_container exchangeAndWallet">
 
       <div class="corn_exchangeAndWallet">
@@ -286,7 +286,7 @@
           </div>
         </div>
 
-
+</div>
       </div>
 
      
@@ -353,23 +353,36 @@ export default {
   .imgAndText_block{
     margin: 0 auto;
     width: 100%;
+      .bg{
+        background: url("/imges/product/sercicebg.png") no-repeat;
+        // background: red;
+        }
     .imgAndText_block_item{
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       width: 100%;
+     .Service1{
+         
+         width: 534px;
+         height: 247px;
+        }
+        .Service2{
 
+        width: 374px;
+         height: 344px;
+        }
+        .Service3{
+           
+              width: 451px;
+         height: 301px;
+        }
       .items_left, .items_right{
-        height: 463px;
+        height: 444px;
         display: flex;
         align-items: center;
         justify-content: flex-end;
         flex: 1;
-
-        img{
-          height: 100%;
-          width: 100%;
-        }
       }
       
       .items_right{
@@ -392,7 +405,7 @@ export default {
 
   .bitDNSVsTraditionalDNS{
     height: 800px;
-    background-color: #F3F8FF;
+    background-color: #F0F2F5;
     text-align: center;
 
     img{
@@ -402,25 +415,23 @@ export default {
   }
 
   .bitDNSTeams{
-    height: 736px;
-    background: url("/imges/product/bitDNSTeams.png") no-repeat;
-    background-size: cover;
-    background-position: center;
-
+    height:479px;
+background: #F3F8FF;
     .bitDNSTeams_content{
+      // display: flex;
       .topText{
         .teamsTit{
           padding: 84px 0 32px;  
           font-size: 30px;
           font-weight: 600;
-          color: #FFFFFF;
+          color: black;
         }
 
         .teamsDes{
-          width: 629px;
+          width:507px;
           font-size: 18px;
           font-weight: 400;
-          color: #FFFFFF;
+           color: black;
           line-height: 37px;
         }
       }
@@ -429,7 +440,7 @@ export default {
         display: flex;
         flex-direction: column;
         margin-top: 70px;
-
+        margin-left: 50px;
         .teamBlocksItems{
           display: flex;
           flex-direction: row;
@@ -513,6 +524,7 @@ export default {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    background: #f0f2f5;
     .serviceFeatures_content{
         display: flex;
         flex-direction: row;
@@ -560,7 +572,7 @@ export default {
 
   .tokenBonus{
     height: 561px;
-    background: url("/imges/product/tokenBonusBg.png") no-repeat;
+    background: url("/imges/product/sercicebg.png") no-repeat;
     background-size: cover;
     background-position: center;
 
@@ -633,7 +645,7 @@ export default {
 
   .exchangeAndWallet{
     height: 1484px;
-    background-color: #fff;
+    // background-color: #fff;
 
     .corn_exchangeAndWallet, .DNS_exchangeAndWallet{
 
@@ -661,11 +673,15 @@ export default {
   .h5{
     display: none;
   }
-  
+  @media (min-width:1680px) {
+ .bitDNSTeams_content{
+        display: flex;
+       }
+  }
  @media (min-width:1440px)and(max-width:1680px) {
     .imgAndText_block{
       .imgAndText_block_item{
-
+  
         .items_left, .items_right{
           height: 405px;
         }
@@ -677,6 +693,7 @@ export default {
     }
 
     .bitDNSVsTraditionalDNS{
+      background-color: #F0F2F5;
       height: 700px;
         img{
           height: 386px;
@@ -688,12 +705,16 @@ export default {
     .bitDNSTeams{
       height: 644px;
       .bitDNSTeams_content{
+        display: flex;
         width: 990px;
         .teamBlocks{
           margin-top: 30px;
+
+          
         }
         .topText .teamsTit{
           padding: 73px 0 29px;  
+              //  
         }
       } 
     }
@@ -758,7 +779,6 @@ export default {
     }
     .imgAndText_block{
       .imgAndText_block_item{
-
         .items_left, .items_right{
           height: 347px;
         }
@@ -771,7 +791,7 @@ export default {
 
     .bitDNSVsTraditionalDNS{
       height: 600px;
-
+background-color: #F0F2F5;
       img{
         height: 331px;
         width: 894px;
@@ -781,6 +801,7 @@ export default {
     .bitDNSTeams{
       height: 552px;
       .bitDNSTeams_content{
+        display: flex;
         width: 960px;
         .teamBlocks{
           margin-top: 30px;
@@ -853,7 +874,6 @@ export default {
     }
   .imgAndText_block{
     .imgAndText_block_item{
-
       .items_left, .items_right{
         height: 309px;
       }
@@ -867,6 +887,7 @@ export default {
 
   .bitDNSVsTraditionalDNS{
     height: 533px;
+    background-color: #F0F2F5;
       img{
         height: 294px;
         width: 795px;
@@ -879,6 +900,7 @@ export default {
         width: 890px;
         padding: 22px 0 20px;
         // width: 1080px;
+        display: flex;
         .teamBlocks{
           margin-top: 22px;
         }
@@ -990,7 +1012,6 @@ export default {
       max-width: 1920px;
     }
   }
-
   .imgAndText_block{
       
     margin: 0 auto;
@@ -1004,19 +1025,18 @@ export default {
       flex-direction: column;
       justify-content: space-between;
       width: 100%;
-
-
       .items_left, .items_right{
-        height: 363px;
+        height: 350px;
         display: flex;
         align-items: center;
         justify-content: flex-end;
         flex: 1;
         img{
-          width: 100%;
-          height: 100%;
-          max-width: 750px;
-          max-height: 362px;
+         
+          // width: 100%;
+          // height: 100%;
+          // max-width: 750px;
+          // max-height: 362px;
           margin: 0 auto;
         }
       }
@@ -1042,7 +1062,7 @@ export default {
 
   .bitDNSVsTraditionalDNS{
       height: 1286px;
-      background-color: #F3F8FF;
+      background-color: #F0F2F5;
       text-align: center;
       img{
         height: 791px;
@@ -1053,25 +1073,24 @@ export default {
 
     .bitDNSTeams{
           padding: 0 30px 155px;
-          
-          background: url("/imges/h5_product/bitDNSTeams.png") no-repeat;
-          background-size: cover;
-          background-position: center;
+          height: 850px;
+background: #F3F8FF;
 
           .bitDNSTeams_content{
+            // display: flex;
             .topText{
               .teamsTit{
                 padding: 84px 0 32px;  
                 font-size: 30px;
                 font-weight: 600;
-                color: #FFFFFF;
+                color: black;
               }
 
               .teamsDes{
                 width: 629px;
                 font-size: 18px;
                 font-weight: 400;
-                color: #FFFFFF;
+                color: #777777;
                 line-height: 37px;
               }
             }
@@ -1080,6 +1099,7 @@ export default {
               display: flex;
               flex-direction: column;
               margin-top: 70px;
+                margin-left: 0;
 
               .teamBlocksItems{
                 display: flex;
@@ -1202,7 +1222,7 @@ export default {
 
     .tokenBonus{
         height: 756px !important;
-        background: url("/imges/h5_product/tokenBonusBg.png") no-repeat;
+        background: url("/imges/h5_product/sercicebg.png") no-repeat;
         background-size: cover;
         background-position: center;
 
@@ -1280,7 +1300,7 @@ export default {
       padding: 0 30px;
       box-sizing: border-box;
       height: 1575px;
-      background-color: #fff;
+      // background-color: #fff;
       .corn_exchangeAndWallet, .DNS_exchangeAndWallet{
         .exchangeItems, .walletItems{
           p{

@@ -14,12 +14,6 @@
         bgText="关于我们"
       />
     </div>
-    <div class="about_top common_container">
-      <BlockTit :text='$t("about.tit_top")' />
-      <div class="brief">
-        <p>{{$t("about.brief")}}</p>
-      </div>
-    </div>
     <div class="content">
       <div class="common_container teamContent">
         <div class="text">
@@ -129,10 +123,7 @@ export default {
   .content {
       width: 100%;
       height: 453px;
-      background: url("/imges/about/about_book.png") no-repeat;
-      background-size: cover;
-      box-sizing: border-box;
-
+      text-align: center;
       h4 {
         font-size: 30px;
         font-family: PingFangSC-Semibold, PingFang SC;
@@ -141,7 +132,7 @@ export default {
         line-height: 42px;
       }
       .text {
-        width: 520px;
+        // width: 520px;
         height: 181px;
         font-size: 18px;
         font-family: PingFangSC-Regular, PingFang SC;
@@ -262,7 +253,7 @@ export default {
     .content{
       height: 396px;
       .text {
-        width: 520px;
+        // width: 520px;
         height: 181px;
         font-size: 18px;
         line-height: 43px;
@@ -285,7 +276,7 @@ export default {
         font-size: 28px;
       }
       .text {
-        width: 455px;
+        // width: 455px;
         height: 158px;
         font-size: 16px;
         line-height: 38px;
@@ -318,8 +309,6 @@ export default {
     .content {
       width: 100%;
       height: 508px;
-      background: url("/imges/h5_about/about_book.png") no-repeat;
-      background-size: 100% 100%;
       padding: 92px 29px 57px 29px;
       box-sizing: border-box;
       h4 {
@@ -330,7 +319,7 @@ export default {
         line-height: 45px;
       }
       .text {
-        width: 417px;
+        // width: 417px;
         font-size: 22px;
         font-family: PingFangSC-Regular, PingFang SC;
         font-weight: 400;
@@ -462,7 +451,7 @@ export default {
         font-size: 28px;
       }
       .text {
-        width: 455px;
+        // width: 455px;
         height: 158px;
         font-size: 16px;
         line-height: 38px;
