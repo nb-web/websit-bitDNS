@@ -282,7 +282,7 @@
         </div>
       </div>
     </div>
-      <div style="background:#f0f2f5">
+      <div style="background:#fff">
     <div class="common_container exchangeAndWallet">
 
       <div class="corn_exchangeAndWallet">
@@ -440,7 +440,7 @@ export default {
 
   .bitDNSVsTraditionalDNS{
     height: 800px;
-    background-color: #F0F2F5;
+    background-color: #fff;
     text-align: center;
 
     img{
@@ -450,13 +450,13 @@ export default {
   }
 
   .bitDNSTeams{
-    height:479px;
+    height:100%;
     background: #F3F8FF;
+    padding: 85px 0;
     .bitDNSTeams_content{
-      // display: flex;
       .topText{
         .teamsTit{
-          padding: 74px 0 32px;  
+          padding: 0 0 32px;  
           font-size: 30px;
           font-weight: 600;
           color: black;
@@ -474,7 +474,7 @@ export default {
       .teamBlocks{
         display: flex;
         flex-direction: column;
-        margin-top: 70px;
+        // margin-top: 70px;
         margin-left: 50px;
         .teamBlocksItems{
           display: flex;
@@ -493,7 +493,7 @@ export default {
             align-items: center;
             flex-direction: column;
             margin-right: 20px;
-box-shadow: 0px 2px 4px 0px rgba(131, 131, 131, 0.5);
+            box-shadow: 0px 2px 4px 0px rgba(131, 131, 131, 0.5);
 
             img{
               margin-bottom: 15px;
@@ -557,17 +557,18 @@ box-shadow: 0px 2px 4px 0px rgba(131, 131, 131, 0.5);
   }
 
   .serviceFeatures{
-    height: 503px;
+    height: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background: #f0f2f5;
+    background: #ffffff;
     .serviceFeatures_content{
         display: flex;
         flex-direction: row;
         justify-content: center;
         text-align: center;
         margin-top: 15px;
+        margin-bottom: 100px;
 
         .serviceFeaturesItem{
           width: 219px;
@@ -628,7 +629,7 @@ box-shadow: 0px 2px 4px 0px rgba(131, 131, 131, 0.5);
   }
 
   .tokenBonus{
-    height: 561px;
+    height: 100%;
     background: url("/imges/product/sercicebg.png") no-repeat;
     background-size: cover;
     background-position: center;
@@ -683,7 +684,7 @@ box-shadow: 0px 2px 4px 0px rgba(131, 131, 131, 0.5);
       }
 
       .tokenBonus_bottomButton{
-        margin: 0 auto;
+        margin: 0 auto 84px;
         height: 53px;
         width: 192px;
         background-color: #005FFC;
@@ -747,25 +748,26 @@ box-shadow: 0px 2px 4px 0px rgba(131, 131, 131, 0.5);
     }
 
     .bitDNSVsTraditionalDNS{
-      background-color: #F0F2F5;
-      height: 700px;
-        img{
-          // height: 386px;
-          // width: 1043px;
-        }
-      
+      height: 100%;
+      padding-bottom: 67px;
     }
 
     .bitDNSTeams{
-      // height: 644px;
+      padding: 67px 0;
       .bitDNSTeams_content{
         display: flex;
-        width: 990px;
+        // width: 990px;
       } 
     }
 
+    .serviceFeatures{
+      .serviceFeatures_content{
+        margin-bottom: 67px;
+      }
+    }
+
     .tokenBonus{
-      height: 491px;
+      height: 100%;
       .tokenBonus_content{
         .tokenBonus_topContent{
           margin: 82px 0 42px;
@@ -791,6 +793,9 @@ box-shadow: 0px 2px 4px 0px rgba(131, 131, 131, 0.5);
               margin-bottom: 48px;
             }
           }
+        }
+        .tokenBonus_bottomButton{
+          margin-bottom: 80px;
         }
       }
     }
@@ -832,8 +837,8 @@ box-shadow: 0px 2px 4px 0px rgba(131, 131, 131, 0.5);
     }
 
     .bitDNSVsTraditionalDNS{
-      height: 600px;
-      background-color: #F0F2F5;
+      height: 100%;
+      padding-bottom: 58px;
       img{
         height: 331px;
         width: 894px;
@@ -841,14 +846,21 @@ box-shadow: 0px 2px 4px 0px rgba(131, 131, 131, 0.5);
     }
 
     .bitDNSTeams{
-      // height: 552px;
+      padding: 58px 0;
       .bitDNSTeams_content{
         display: flex;
-        width: 960px;
+        // width: 960px;
       } 
     }
+
+    .serviceFeatures{
+      .serviceFeatures_content{
+        margin-bottom: 58px;
+      }
+    }
+
     .tokenBonus{
-      height: 421px;
+      height: 100%;
       .tokenBonus_content{
         .tokenBonus_topContent{
           margin: 60px 0 20px;
@@ -874,6 +886,9 @@ box-shadow: 0px 2px 4px 0px rgba(131, 131, 131, 0.5);
               margin-bottom: 41px;
             }
           }
+        }
+        .tokenBonus_bottomButton{
+          margin-bottom: 60px;
         }
       }
       
@@ -919,37 +934,26 @@ box-shadow: 0px 2px 4px 0px rgba(131, 131, 131, 0.5);
   }
 
   .bitDNSVsTraditionalDNS{
-    height: 533px;
-    background-color: #F0F2F5;
+    height: 100%;
+    padding-bottom: 41px;
+    img{
+      height: 294px;
+      width: 795px;
+    }
   }
 
   .bitDNSTeams{
-      // height: 491px;
-      .bitDNSTeams_content{
-        // width: 890px;
-        // padding: 22px 0 20px;
-        // width: 1080px;
-        display: flex;
-        .teamBlocks{
-          margin-top: 32px;
-        }
-        .topText{
-          .teamsTit{
-            padding: 30px 0 8px; 
-            // font-size: 20px;
-          }
+      padding: 61px 0;
+  }
 
-          .teamsDes{
-            width: 419px;
-            // font-size: 12px;
-            // line-height: normal;
-          }
-        }
-      }
+  .serviceFeatures{
+    .serviceFeatures_content{
+      margin-bottom: 41px;
+    }
   }
 
   .tokenBonus{
-    height: 470px;
+    height: 100%;
     .tokenBonus_content{
       .tokenBonus_topContent{
         margin: 63px 0;
@@ -976,6 +980,10 @@ box-shadow: 0px 2px 4px 0px rgba(131, 131, 131, 0.5);
           }
         }
       }
+
+      .tokenBonus_bottomButton{
+        margin-bottom: 63px;
+      }
     }
     
   }
@@ -997,6 +1005,20 @@ box-shadow: 0px 2px 4px 0px rgba(131, 131, 131, 0.5);
               margin-bottom: 22px;
             }
           }
+        }
+      }
+    }
+  }
+  
+  @media (min-width:980px) and (max-width:1279px){
+    .bitDNSTeams{
+      padding: 61px 0;
+      .bitDNSTeams_content{
+        display: flex;
+        flex-direction: column;
+        .teamBlocks{
+          margin: 0;
+          margin-top: 20px;
         }
       }
     }
@@ -1088,7 +1110,6 @@ box-shadow: 0px 2px 4px 0px rgba(131, 131, 131, 0.5);
 
   .bitDNSVsTraditionalDNS{
       height:1000px;
-      background-color: #F0F2F5;
       text-align: center;
       img{
         height: 791px;

@@ -86,11 +86,11 @@ export default {
 
 <style lang='less'>
 .economic {
-    background-color: #F0F2F5;
+    background-color: #ffffff;
 
   .bitDNS_economic{
     height: 413px;
-    background-color: #F0F2F5;
+    background-color: #ffffff;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -584,7 +584,7 @@ export default {
       width: 100%;
        
       height: 387px;
-      background-color: #F0F2F5;
+      background-color: #ffffff;
       display: flex;
       align-items: center;
       flex-direction: column;

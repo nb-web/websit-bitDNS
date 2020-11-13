@@ -37,7 +37,10 @@
       "text4": "Nickname transfer",
       "text5": "Public key nickname",
       "text6": "Subdomain name",
-      "text7": "Special domain name collection level transaction"
+      "text7": "Special domain name collection level transaction",
+
+      "exchange": "Exchange",
+      "wallet": "Wallet"
     },
     "economic": {
       "economicBannerTest": "Economy and Governance",

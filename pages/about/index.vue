@@ -122,8 +122,9 @@ export default {
 
   .content {
       width: 100%;
-      height: 453px;
+      height: 100%;
       text-align: center;
+      padding-bottom: 80px;
       h4 {
         font-size: 30px;
         font-family: PingFangSC-Semibold, PingFang SC;
@@ -251,7 +252,8 @@ export default {
 
   @media (min-width: 1440px) and (max-width: 1680px) {
     .content{
-      height: 396px;
+      height: 100%;
+      padding-bottom: 58px;
       .text {
         // width: 520px;
         height: 181px;
@@ -268,7 +270,8 @@ export default {
 
   @media (min-width: 1280px) and (max-width: 1440px) {
     .content{
-      height: 340px;
+      height: 100%;
+      padding-bottom: 47px;
       .teamContent{
         width: 900px;
       }

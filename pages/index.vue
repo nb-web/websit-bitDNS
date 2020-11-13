@@ -3,7 +3,7 @@
     <Banner 
       :bgText="$t('home.bannerText')"
       indexBanner/>
-    <div style="background: rgb(242,245,245);width:100%">
+    <div style="background: #fff;width:100%">
     <div class="block common_container">
       <ul>
         <li>
@@ -442,9 +442,11 @@ created(){
   .bitDns {
     width: 100%;
     height: 305px;
-    // background: url("/imges/index/index_bit.png") no-repeat;
-   
-background: #F3F8FF;
+    background: #F3F8FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     
     .centens {
       border: 1px solid rgba(255, 255, 255, 0.1);
@@ -996,7 +998,7 @@ background: #F3F8FF;
     .bitDns {
       height: 267px;
       .commonTit{
-        padding: 40px 0 30px;
+        padding: 0 0 30px;
       }
     }
     .BITDNS {
@@ -1101,7 +1103,7 @@ background: #F3F8FF;
     .bitDns {
       height: 229px;
       .commonTit{
-        padding: 32px 0 18px;
+        padding: 0 0 18px;
       }
     }
     .BITDNS {
