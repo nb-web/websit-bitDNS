@@ -15,9 +15,10 @@
       />
     </div>
     <div class="content">
+      <BlockTit :text="$t('about.bitDnsTeamTit')" />
       <div class="common_container teamContent">
+        
         <div class="text">
-          <h4>{{$t("about.bitDnsTeamTit")}}</h4>
           <p
             class="bitDnsTeamText"
           >{{$t("about.bitDnsTeamContent")}}</p>
@@ -113,7 +114,7 @@ export default {
         margin: 0 auto;
         text-align: center;
         font-size: 18px;
-        font-family: PingFangSC-Regular, PingFang SC;
+        
         font-weight: 400;
         color: #3c3c3c;
         line-height: 35px;
@@ -127,7 +128,7 @@ export default {
       padding-bottom: 80px;
       h4 {
         font-size: 30px;
-        font-family: PingFangSC-Semibold, PingFang SC;
+        
         font-weight: 600;
         color: #3c3c3c;
         line-height: 42px;
@@ -136,7 +137,7 @@ export default {
         // width: 520px;
         height: 181px;
         font-size: 18px;
-        font-family: PingFangSC-Regular, PingFang SC;
+        
         font-weight: 400;
         color: #3c3c3c;
         line-height: 43px;
@@ -159,13 +160,13 @@ export default {
       div {
         width: 260px;
         font-size: 12px;
-        font-family: PingFangSC-Regular, PingFang SC;
+        
         font-weight: 400;
         color: #787878;
         line-height: 17px;
         h3 {
           font-size: 18px;
-          font-family: PingFangSC-Semibold, PingFang SC;
+          
           font-weight: 600;
           color: #333333;
           line-height: 25px;
@@ -206,7 +207,7 @@ export default {
 
     background: #f3f8ff;
     .peopleText {
-      width: 260px;
+      width: 300px;
       margin-top: 15px;
     }
 
@@ -216,14 +217,14 @@ export default {
       div {
         width: 260px;
         font-size: 12px;
-        font-family: PingFangSC-Regular, PingFang SC;
+        
         font-weight: 400;
         color: #787878;
         line-height: 17px;
         h3 {
           font-size: 18px;
           width: 300px;
-          font-family: PingFangSC-Semibold, PingFang SC;
+          
           font-weight: 600;
           color: #333333;
           line-height: 25px;
@@ -302,7 +303,7 @@ export default {
         height: 144px;
         margin: 0 auto;
         font-size: 22px;
-        font-family: PingFangSC-Regular, PingFang SC;
+        
         font-weight: 400;
         color: #3c3c3c;
         line-height: 45px;
@@ -311,26 +312,27 @@ export default {
 
     .content {
       width: 100%;
-      height: 508px;
-      padding: 92px 29px 57px 29px;
+      height: 100%;
+      min-height: 100%;
+      padding: 0 29px 70px 29px;
       box-sizing: border-box;
       h4 {
         font-size: 32px;
-        font-family: PingFangSC-Semibold, PingFang SC;
+        
         font-weight: 600;
         color: #3c3c3c;
         line-height: 45px;
       }
       .text {
-        // width: 417px;
+        height: 100%;
         font-size: 22px;
-        font-family: PingFangSC-Regular, PingFang SC;
+        
         font-weight: 400;
         color: #3c3c3c;
         line-height: 43px;
         padding-top: 0;
         .bitDnsTeamText {
-          margin-top: 28px;
+          margin-top: 0;
         }
       }
     }
@@ -348,13 +350,13 @@ export default {
       div {
         width: 337px;
         font-size: 16px;
-        font-family: PingFangSC-Regular, PingFang SC;
+        
         font-weight: 400;
         color: #787878;
         line-height: 22px;
         h3 {
           font-size: 22px;
-          font-family: PingFangSC-Semibold, PingFang SC;
+          
           font-weight: 600;
           color: #333333;
           line-height: 30px;
@@ -409,13 +411,13 @@ export default {
         div {
           width: 337px;
           font-size: 16px;
-          font-family: PingFangSC-Regular, PingFang SC;
+          
           font-weight: 400;
           color: #787878;
           line-height: 22px;
           h3 {
             font-size: 22px;
-            font-family: PingFangSC-Semibold, PingFang SC;
+            
             font-weight: 600;
             color: #333333;
             line-height: 30px;

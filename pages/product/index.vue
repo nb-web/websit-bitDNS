@@ -209,7 +209,7 @@
       <BlockTit :text="$t('dnsService.blockTit')"/>
 
       <div class="h5 common_container">
-        <el-carousel type="card" height="200px" :loop="true" indicator-position="none" arrow="never" :autoplay="false">
+        <el-carousel type="card" height="200px" :loop="true" indicator-position="none" arrow="never" ref="carousel" :autoplay="false">
         <el-carousel-item>
           <div class="serviceFeaturesItem">
               
@@ -289,7 +289,7 @@
         <BlockTit :text="$t('dnsService.CORN')"/>
 
         <div class="exchangeItems">
-          <p>交易所</p>
+          <p>{{$t("dnsService.exchange")}}</p>
           <div class="exchangeImgs">
             <img  class="web" src="/imges/product/cornExchange1.png" alt="">
             <img  class="h5" src="/imges/h5_product/cornExchange1.png" alt="">
@@ -297,7 +297,7 @@
         </div>
         
         <div class="walletItems">
-          <p>钱包</p>
+          <p>{{$t("dnsService.wallet")}}</p>
           <div class="walletImgs">
             <div class="web">
               <img src="/imges/product/cornWallet1.png" alt="">
@@ -313,7 +313,7 @@
         </div>
   <BlockTit :text="$t('dnsService.DNS')"/>
    <div class="exchangeItems">
-          <p>交易所</p>
+          <p>{{$t("dnsService.exchange")}}</p>
           <div class="exchangeImgs">
             <img  class="web" src="/imges/product/cornExchange1.png" alt="">
             <img  class="h5" src="/imges/h5_product/cornExchange1.png" alt="">
@@ -321,7 +321,7 @@
         </div>
         
         <div class="walletItems">
-          <p>钱包</p>
+          <p>{{$t("dnsService.wallet")}}</p>
           <div class="walletImgs">
             <div class="web">
               <img src="/imges/product/cornWallet1.png" alt="">
@@ -355,6 +355,58 @@ export default {
   },
   head: {
     title: '域名服务'
+  },
+  mounted(){
+ this.slideBanner();
+  },
+  methods:{
+     slideBanner:function(){
+      var vm=this
+			//选中item的盒子
+			var box = document.querySelector('.el-carousel__container');
+		    //手指起点X坐标
+		    var startPoint = 0;
+			//手指滑动重点X坐标
+			var stopPoint = 0;
+			
+			//重置坐标
+			var resetPoint =  function(){
+				startPoint = 0;
+				stopPoint = 0;
+			}
+		    
+		    //手指按下
+		    box.addEventListener("touchstart",function(e){
+		    	//手指按下的时候停止自动轮播
+		    	// vm.stopAuto();
+		    	//手指点击位置的X坐标
+		        startPoint = e.changedTouches[0].pageX;
+		    });
+		    //手指滑动
+		    box.addEventListener("touchmove",function(e){
+		    	//手指滑动后终点位置X的坐标
+		        stopPoint = e.changedTouches[0].pageX;
+		    });
+		    //当手指抬起的时候，判断图片滚动离左右的距离
+		   	box.addEventListener("touchend",function(e){
+		   		console.log("1："+startPoint);
+		   		console.log("2："+stopPoint);
+				if(stopPoint == 0 || startPoint - stopPoint == 0){
+					resetPoint();
+		   			return;
+		   		}
+		   		if(startPoint - stopPoint > 0){
+		   			resetPoint();
+		   			vm.$refs.carousel.next();
+		   			return;
+		   		}
+		   		if(startPoint - stopPoint < 0){
+		   			resetPoint();
+		   			vm.$refs.carousel.prev();
+		   			return;
+		   		}
+		    });
+		}
   }
 }
 </script>
@@ -362,11 +414,12 @@ export default {
 <style lang="less">
 .domainService{
   .systemProblems{
-    height: 413px;
+    height: 100%;
     background-color: #fff;
     display: flex;
     align-items: center;
     flex-direction: column;
+    padding-bottom: 100px;
   }
 
   .systemProblems_content{
@@ -738,6 +791,9 @@ export default {
        }
   }
  @media (min-width:1440px)and(max-width:1680px) {
+   .systemProblems{
+      padding-bottom: 67px;
+    }
     .imgAndText_block{
       .imgAndText_block_item{
 
@@ -1024,9 +1080,24 @@ export default {
     }
   }
 
+
+
 .h5{
     display:none !important;
   }
+
+  @media (max-width: 1440px) {
+    .systemProblems{
+      padding-bottom: 58px;
+    }
+  }
+
+  @media (min-width: 1024px) and (max-width: 1280px) {
+    .systemProblems{
+      padding-bottom: 41px;
+    }
+  }
+
 @media (max-width:980px) {
   .web{
       display: none;
@@ -1036,13 +1107,13 @@ export default {
     width: 100%;
   }
   .systemProblems{
-    height: 430px;
+    height: 100%;
     background-color: #fff;
     display: flex;
     align-items: center;
     flex-direction: column;
-    
-    
+    padding:0 0 70px;
+    box-sizing: border-box;
   }
 
   .systemProblems_content{
@@ -1119,8 +1190,8 @@ export default {
     }
 
     .bitDNSTeams{
-          padding: 0 30px 155px;
-          height: 650px;
+          padding: 0 30px 70px;
+          height: 100%;
           background: #F3F8FF;
 
           .bitDNSTeams_content{
@@ -1232,10 +1303,14 @@ export default {
         }
     
     .serviceFeatures{
-       height: 620px;
-    
+       height: 100%;
+       padding-bottom: 70px;
+      box-sizing: border-box;
       .el-carousel{
-        padding: 30px;
+        // padding: 30px;
+        .el-carousel__container{
+              margin: 0 10px !important;
+        }
       }
       .serviceFeaturesItem{
         width: 321px;
@@ -1275,7 +1350,8 @@ export default {
     }
 
     .tokenBonus{
-        height: 856px !important;
+        height: 100%;
+        padding-bottom: 70px;
         background: url("/imges/h5_product/sercicebg.png") no-repeat;
         background-size: cover;
         background-position: center;
@@ -1285,12 +1361,12 @@ export default {
           flex-direction: column;
 
           .tokenBonus_topContent{
-            margin: 20px 0 11px;
+            margin: 0;
             display: flex;
             flex-direction: column;
     
             .tokenBonus_topContent_left{
-              padding: 78px 32px 53px;
+              padding: 70px 32px 53px;
                 
               p:first-child{
                 font-size: 20px;
@@ -1342,7 +1418,7 @@ export default {
               justify-content: center;
               align-items: center;
               color: #fff;
-              font-size: 18px;
+              font-size: 30px;
               height: 100%;
               width: 100%;
             }

@@ -1,54 +1,54 @@
 <template>
   <div class="container">
-    <Banner 
-      :bgText="$t('home.bannerText')"
-      indexBanner/>
+    <Banner :bgText="$t('home.bannerText')" indexBanner />
     <div style="background: #fff;width:100%">
-    <div class="block common_container">
-      <ul>
-        <li>
-          <img src="/imges/index/index_chart.png" class="web" alt />
-          <img src="/imges/h5_index/index_chart.png" class="h5" alt />
-          <p>{{$t('home.fourBlock1')}}</p>
-        </li>
-        <li>
-          <img src="/imges/index/index_earth.png" class="web" alt />
-          <img src="/imges/h5_index/index_earth.png" class="h5" alt />
-          <p>{{$t('home.fourBlock2')}}</p>
-        </li>
-        <li>
-          <img src="/imges/index/index_tracking.png" class="web" alt />
-          <img src="/imges/h5_index/index_tracking.png" class="h5" alt />
-          <p>{{$t('home.fourBlock3')}}</p>
-        </li>
-        <li>
-          <img src="/imges/index/index_tools.png" class="web" alt />
-          <img src="/imges/h5_index/index_tools.png" class="h5" alt />
-          <p>{{$t('home.fourBlock4')}}</p>
-        </li>
-      </ul>
+      <div class="block common_container">
+        <ul>
+          <li>
+            <img src="/imges/index/index_chart.png" class="web" alt />
+            <img src="/imges/h5_index/index_chart.png" class="h5" alt />
+            <p>{{$t('home.fourBlock1')}}</p>
+          </li>
+          <li>
+            <img src="/imges/index/index_earth.png" class="web" alt />
+            <img src="/imges/h5_index/index_earth.png" class="h5" alt />
+            <p>{{$t('home.fourBlock2')}}</p>
+          </li>
+          <li>
+            <img src="/imges/index/index_tracking.png" class="web" alt />
+            <img src="/imges/h5_index/index_tracking.png" class="h5" alt />
+            <p>{{$t('home.fourBlock3')}}</p>
+          </li>
+          <li>
+            <img src="/imges/index/index_tools.png" class="web" alt />
+            <img src="/imges/h5_index/index_tools.png" class="h5" alt />
+            <p>{{$t('home.fourBlock4')}}</p>
+          </li>
+        </ul>
+      </div>
     </div>
-</div>
     <div class="bitDns">
       <BlockTit text="BitDNS" />
       <div class="centens common_container">
         <div class="centens_text">
-          <p>
-           {{$t('home.bitDns')}}
-          </p>
+          <p>{{$t('home.bitDns')}}</p>
         </div>
       </div>
     </div>
     <div class="swipe" v-show="ok">
       <div class="content swiperWidth">
         <swiper ref="mySwiper" :options="swiperOptions">
-          <swiper-slide v-for=" (item,index) in swiperList2" :key="index" >
+          <swiper-slide v-for=" (item,index) in swiperList2" :key="index">
             <div class="spimg">
               <img :src="item.img" alt />
             </div>
             <h5>{{item.name}}</h5>
             <h4>{{item.title}}</h4>
-            <p @mouseover="handleclass=index" @mouseleave="handleclass=100" :class="[handleclass === index ?'leave':'over']">{{item.content}}</p>
+            <p
+              @mouseover="handleclass=index"
+              @mouseleave="handleclass=100"
+              :class="[handleclass === index ?'leave':'over']"
+            >{{item.content}}</p>
           </swiper-slide>
 
           <div class="swiper-pagination" slot="pagination"></div>
@@ -67,23 +67,26 @@
     <BlockTit :text="$t('home.jishu')" />
     <div class="jishu">
       <div class="list common_container">
+
+
         <div class="swiperList h5">
           <el-carousel
             type="card"
             :loop="true"
             indicator-position="none"
             arrow="never"
+            ref="carousel"
             :autoplay="false"
+            @change="()=>{show = 0}"
           >
             <el-carousel-item
+          
               v-for="(item,index) in technologyAdvantageList"
               :key="index"
-              @mouseover="show = index+1"
-              @mouseleave="()=>{show = 0}"
               :class="`img${index+1}`"
             >
-              <p>{{item.name}}</p>
-              <div class="model">
+              <p @click="show = index+1">{{item.name}}</p>
+              <div class="model"  @click="()=>{show = 0}">
                 <el-collapse-transition>
                   <div v-show="show == index+1">
                     <div class="transition-box">{{item.detail}}</div>
@@ -92,7 +95,11 @@
               </div>
             </el-carousel-item>
           </el-carousel>
+
+
         </div>
+
+
 
         <ul class="web">
           <li
@@ -120,7 +127,7 @@
       <div>
         <div class="con common_container">
           <div class="con_content">
-             <h3>{{$t("home.gn1tit")}}</h3>
+            <h3>{{$t("home.gn1tit")}}</h3>
             <p>{{$t("home.gn1")}}</p>
           </div>
           <div>
@@ -163,7 +170,7 @@
             <img src="/imges/h5_index/index_4.png" class="h5" alt />
           </div>
           <div class="con_content">
-              <h3>{{$t("home.gn4tit")}}</h3>
+            <h3>{{$t("home.gn4tit")}}</h3>
             <p>{{$t("home.gn4")}}</p>
           </div>
         </div>
@@ -211,9 +218,9 @@
             <h3 style="padding-top:15px">{{this.newsDay}}</h3>
             <p>{{this.newsMonth}}</p>
           </div>
-          <div class="news_left_botText">
-            <p>{{this.newsTit}}</p>
-            <p style="color: #BEBEBE;font-size: 16px;">{{this.newsDate}}</p>
+          <div  class="news_left_botText">
+            <p class="news_top" >{{this.newsTit}}</p>
+            <p style="color: #c0c0c0;">{{this.newsDate}}</p>
           </div>
         </div>
 
@@ -260,14 +267,13 @@ import {
   timeLineList,
   timeLineList2
 } from "@/locales/globalData.json";
-
 export default {
   data() {
     return {
       //  screenWidth: false,     // 轮播
       //  screenWidth2: true,     // 列表
-      handleclass:100,
-      ok:true,
+      handleclass: 100,
+      ok: true,
       show: false,
       show1: false,
       show3: false,
@@ -277,15 +283,29 @@ export default {
       show7: false,
       show8: false,
       locale: this.$store.state.locale,
-      technologyAdvantageList: this.$store.state.locale == 'en-US' ? home_technologyAdvantage2 : home_technologyAdvantage,
+      technologyAdvantageList:
+        this.$store.state.locale == "en-US"
+          ? home_technologyAdvantage2
+          : home_technologyAdvantage,
       // technologyAdvantageList2:,
-      swiperList2: this.$store.state.locale == 'en-US' ? swiperList3 : swiperList,
-      newLinkList: this.$store.state.locale == 'en-US' ? newLinkEn :newLink,
+      swiperList2:
+        this.$store.state.locale == "en-US" ? swiperList3 : swiperList,
+      newLinkList: this.$store.state.locale == "en-US" ? newLinkEn : newLink,
       activeName: 0,
-      newsTit: this.$store.state.locale == 'en-US' ? newLinkEn[0].title :newLink[0].title,
-      newsDate: this.$store.state.locale == 'en-US' ? newLinkEn[0].date :newLink[0].date,
-      newsMonth: this.$store.state.locale == 'en-US' ? newLinkEn[0].month :newLink[0].month,
-      newsDay: this.$store.state.locale == 'en-US' ? newLinkEn[0].day :newLink[0].day,
+      newsTit:
+        this.$store.state.locale == "en-US"
+          ? newLinkEn[0].title
+          : newLink[0].title,
+      newsDate:
+        this.$store.state.locale == "en-US"
+          ? newLinkEn[0].date
+          : newLink[0].date,
+      newsMonth:
+        this.$store.state.locale == "en-US"
+          ? newLinkEn[0].month
+          : newLink[0].month,
+      newsDay:
+        this.$store.state.locale == "en-US" ? newLinkEn[0].day : newLink[0].day,
 
       swiperOptions: {
         loop: false,
@@ -302,37 +322,59 @@ export default {
           prevEl: ".swiper-button-prev"
         }
       },
+       swiperOption2:{
+      //可见图片张数
+        slidesPerView: 3,
+       // 默认选中中间一张
+        centeredSlides: true,
+        //无限循环
+        loop: true,
+        //小圆点（我此处没使用，列出供参考）
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true
+        },
+        //自动轮播
+        autoplay: {
+          stopOnLastSlide: true
+        },
+        //上下按钮点击轮播效果
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev'
+        }
+      },
       // 时间线
-      timeLineList: this.$store.state.locale == 'en-US' ? timeLineList2 : timeLineList,
+      timeLineList:
+        this.$store.state.locale == "en-US" ? timeLineList2 : timeLineList,
       windowWidth: 0 //实时屏幕宽度
     };
   },
 
-
-
   watch: {
-      locallang(val,oldval){
-        console.log(val)
-        if(val=="en-US"){
-          this.technologyAdvantageList=home_technologyAdvantage2
-          this.swiperList2=swiperList3
-          this.timeLineList=timeLineList2
-          this.newLinkList = newLinkEn
-          this.newsTit = newLinkEn[0].title
-          this.newsDate = newLinkEn[0].date
-          this.newsMonth= newLinkEn[0].month
-          this.newsDay= newLinkEn[0].day
-        }else{
-          this.technologyAdvantageList=home_technologyAdvantage
-          this.swiperList2=swiperList
-          this.timeLineList=timeLineList
-          this.newLinkList = newLink
-          this.newsTit = newLink[0].title
-          this.newsDate = newLink[0].date
-          this.newsMonth= newLink[0].month
-          this.newsDay= newLink[0].day
-        }
-      },deep:true,
+    locallang(val, oldval) {
+      console.log(val);
+      if (val == "en-US") {
+        this.technologyAdvantageList = home_technologyAdvantage2;
+        this.swiperList2 = swiperList3;
+        this.timeLineList = timeLineList2;
+        this.newLinkList = newLinkEn;
+        this.newsTit = newLinkEn[0].title;
+        this.newsDate = newLinkEn[0].date;
+        this.newsMonth = newLinkEn[0].month;
+        this.newsDay = newLinkEn[0].day;
+      } else {
+        this.technologyAdvantageList = home_technologyAdvantage;
+        this.swiperList2 = swiperList;
+        this.timeLineList = timeLineList;
+        this.newLinkList = newLink;
+        this.newsTit = newLink[0].title;
+        this.newsDate = newLink[0].date;
+        this.newsMonth = newLink[0].month;
+        this.newsDay = newLink[0].day;
+      }
+    },
+    deep: true,
 
     windowWidth(val) {
       let that = this;
@@ -347,12 +389,13 @@ export default {
     swiper() {
       // return this.$refs.mySwiper.$swiper;
     },
-    locallang(){
-      return this.$store.state.locale
+    locallang() {
+      return this.$store.state.locale;
     }
   },
   mounted() {
-    console.log(this.locale)
+    this.slideBanner();
+    console.log(this.locale);
     var that = this;
     window.fullWidth = document.documentElement.clientWidth;
     that.windowWidth = window.fullWidth; // 宽
@@ -367,13 +410,12 @@ export default {
       })();
     };
   },
-created(){
-  // let that =this
-  // setTimeout(function(){
-  //   that.ok=true
-  // },500)
-
-},
+  created() {
+    // let that =this
+    // setTimeout(function(){
+    //   that.ok=true
+    // },500)
+  },
   methods: {
     prev() {
       this.$refs.mySwiper.$swiper.slidePrev();
@@ -384,14 +426,14 @@ created(){
     moveLeft() {
       let marginLeft = parseInt(this.$refs.mytimeline.style.marginLeft);
       let moveNum = 0;
-      this.windowWidth > 980 ? moveNum = -175 : moveNum = -275
-      if (marginLeft <= 10 && marginLeft >= moveNum) {
+      this.windowWidth > 980 ? (moveNum = -175) : (moveNum = -275);
+      if (marginLeft < 190 && marginLeft >= moveNum) {
         this.$refs.mytimeline.style.marginLeft = marginLeft - 185 + "px";
       }
     },
     moveRight() {
       let marginLeft = parseInt(this.$refs.mytimeline.style.marginLeft);
-      if (marginLeft < -175) {
+      if (marginLeft < 1) {
         this.$refs.mytimeline.style.marginLeft = marginLeft + 185 + "px";
       }
     },
@@ -400,6 +442,56 @@ created(){
       this.newsDate = date;
       this.newsMonth = month;
       this.newsDay = day;
+    },
+    slideBanner:function(){
+      var vm=this
+			//选中item的盒子
+			var box = document.querySelector('.el-carousel__container');
+		    //手指起点X坐标
+		    var startPoint = 0;
+			//手指滑动重点X坐标
+			var stopPoint = 0;
+			
+			//重置坐标
+			var resetPoint =  function(){
+				startPoint = 0;
+				stopPoint = 0;
+			}
+		    
+		    //手指按下
+		    box.addEventListener("touchstart",function(e){
+		    	//手指按下的时候停止自动轮播
+		    	// vm.stopAuto();
+		    	//手指点击位置的X坐标
+		        startPoint = e.changedTouches[0].pageX;
+		    });
+		    //手指滑动
+		    box.addEventListener("touchmove",function(e){
+		    	//手指滑动后终点位置X的坐标
+		        stopPoint = e.changedTouches[0].pageX;
+		    });
+		    //当手指抬起的时候，判断图片滚动离左右的距离
+		   	box.addEventListener("touchend",function(e){
+		   		// console.log("1："+startPoint);
+		   		// console.log("2："+stopPoint);
+				if(stopPoint == 0 || startPoint - stopPoint == 0){
+					resetPoint();
+		   			return;
+		   		}
+		   		if(startPoint - stopPoint > 0){
+		   			resetPoint();
+		   			vm.$refs.carousel.next();
+		   			return;
+		   		}
+		   		if(startPoint - stopPoint < 0){
+		   			resetPoint();
+		   			vm.$refs.carousel.prev();
+		   			return;
+		   		}
+		    });
+    },
+    test(index){
+      console.log(index)
     }
   }
 };
@@ -424,13 +516,13 @@ created(){
         padding: 0 17px;
         box-sizing: border-box;
         img {
-          width: 31px;
-          height: 33px;
+          // width: 31px;
+          // height: 33px;
           margin-top: 78px;
         }
         p {
           font-size: 14px;
-          
+
           font-weight: 600;
           color: #656565;
           line-height: 35px;
@@ -442,12 +534,12 @@ created(){
   .bitDns {
     width: 100%;
     height: 305px;
-    background: #F3F8FF;
+    background: #f3f8ff;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    
+
     .centens {
       border: 1px solid rgba(255, 255, 255, 0.1);
       p {
@@ -455,13 +547,12 @@ created(){
         margin: 0 auto;
         text-align: center;
         font-size: 14px;
-        font-family: PingFangSC-Regular, PingFang SC;
+        
         font-weight: 400;
         color: #3c3c3c;
         line-height: 35px;
       }
     }
-    
   }
 
   .swipe {
@@ -490,21 +581,22 @@ created(){
           width: 100%;
         }
       }
-      .swiper-button-prev:after, .swiper-button-next:after{
+      .swiper-button-prev:after,
+      .swiper-button-next:after {
         color: white;
       }
 
       h5 {
         margin: 16px 0;
         font-size: 14px;
-        font-family: PingFangSC-Medium, PingFang SC;
+        
         font-weight: 500;
         color: #383838;
         line-height: 20px;
       }
       h4 {
         font-size: 12px;
-        font-family: PingFangSC-Regular, PingFang SC;
+        
         font-weight: 400;
         color: #333333;
         min-height: 34px;
@@ -512,7 +604,7 @@ created(){
       .over {
         font-size: 12px;
         // height: 100px;
-        font-family: PingFangSC-Regular, PingFang SC;
+        
         font-weight: 400;
         color: #999999;
         line-height: 23px;
@@ -523,27 +615,26 @@ created(){
         -webkit-line-clamp: 4;
         -webkit-box-orient: vertical;
       }
-      .leave{
-         font-size: 12px;
+      .leave {
+        font-size: 12px;
         height: 100px;
-        font-family: PingFangSC-Regular, PingFang SC;
+        
         font-weight: 400;
         color: #999999;
         line-height: 23px;
         // overflow: hidden;
         overflow: scroll;
-        
-    }
-   .leave::-webkit-scrollbar {
-    display: none;
-  }
+      }
+      .leave::-webkit-scrollbar {
+        display: none;
+      }
     }
     .swiper-container {
       padding: 30px 60px;
     }
     .swiper-slide {
       width: 250px;
-      height: 247px;
+      height:247px;
       background: white;
       padding: 15px;
       box-sizing: border-box;
@@ -557,7 +648,8 @@ created(){
     //    color: white;
     // }
 
-    .swiper-button-prev:after, .swiper-button-next:after{
+    .swiper-button-prev:after,
+    .swiper-button-next:after {
       font-size: 12px;
     }
   }
@@ -579,13 +671,11 @@ created(){
 
   .jishu {
     .list {
-      
       ul {
         display: none;
       }
       .swiperList {
         display: block;
-
       }
 
       .el-carousel-item {
@@ -595,8 +685,6 @@ created(){
         margin: 0 auto;
         margin-top: 38px;
         text-align: center;
-      
-         
       }
       ul {
         width: 100%;
@@ -614,7 +702,7 @@ created(){
         p {
           margin-top: 214px;
           font-size: 24px;
-          
+
           font-weight: 600;
           color: #ffffff;
           line-height: 33px;
@@ -644,7 +732,7 @@ created(){
           padding: 0 10px;
           box-sizing: border-box;
           font-size: 12px;
-          font-family: PingFangSC-Regular, PingFang SC;
+          
           font-weight: 400;
           color: #ffffff;
           line-height: 23px;
@@ -712,7 +800,7 @@ created(){
     }
     h3 {
       font-size: 30px;
-      
+
       font-weight: 600;
       color: #333333;
       line-height: 53px;
@@ -720,7 +808,7 @@ created(){
     p {
       margin-top: 22px;
       font-size: 18px;
-      
+
       font-weight: 600;
       color: #888888;
       line-height: 33px;
@@ -791,7 +879,7 @@ created(){
         width: 123px;
         height: 34px;
         font-size: 12px;
-        
+
         font-weight: 600;
         color: #333333;
         line-height: 17px;
@@ -840,25 +928,18 @@ created(){
   .el-carousel__item--card {
     width: 250px;
   }
-  
 
   .news {
     padding-bottom: 70px;
-    .newsContent{
-      display:flex;
+    .newsContent {
+      display: flex;
       width: 100%;
-      margin:0 auto;
-      justify-content: space-between; 
+      margin: 0 auto;
+      justify-content: space-between;
       flex-wrap: wrap;
     }
 
-    @media screen and (max-width: 750px) {
-      .news_left {
-        width: 650px !important;
-        margin: 0 auto;
-        margin-bottom: 50px;
-      }
-    }
+    
     .news_left {
       width: 519px;
       height: 445px;
@@ -867,7 +948,7 @@ created(){
       background-position: center;
       text-align: center;
       font-size: 20px;
-      font-family: PingFangSC-Medium, PingFang SC;
+      
       font-weight: 500;
       color: #ffffff;
       line-height: 28px;
@@ -880,11 +961,16 @@ created(){
         text-align: right;
         width: 100%;
         p {
-          font-size: 21px;
-          color: #ffffff;
+          font-size: 16px;
+          color: #BEBEBE;
           letter-spacing: 1px;
           padding: 0 26px;
         }
+        .news_top{
+             font-size: 30px;
+             color: white;
+             font-size: 22px !important;
+          }
       }
 
       .day1 {
@@ -900,13 +986,13 @@ created(){
         left: 0;
         h3 {
           font-size: 40px;
-          font-family: PingFangSC-Medium, PingFang SC;
+          
           font-weight: 500;
           color: #ffffff;
         }
         p {
           font-size: 21px;
-          font-family: PingFangSC-Regular, PingFang SC;
+          
           font-weight: 400;
           color: #ffffff;
           letter-spacing: 1px;
@@ -925,13 +1011,13 @@ created(){
       .content {
         position: relative;
         font-size: 16px;
-        font-family: PingFangSC-Regular, PingFang SC;
+        
         font-weight: 400;
         color: #666666;
         padding: 26px 18px;
         border: 3px solid #f5f5f5;
       }
-      a{
+      a {
         width: 18px;
         height: 18px;
         position: absolute;
@@ -943,8 +1029,8 @@ created(){
         height: 100%;
       }
 
-      .newsText{
-        margin-left:30px
+      .newsText {
+        margin-left: 30px;
       }
     }
     .day {
@@ -955,13 +1041,13 @@ created(){
       // padding: 0 20px;
       h3 {
         font-size: 53px;
-        font-family: PingFangSC-Medium, PingFang SC;
+        
         font-weight: 500;
         color: #ffffff;
       }
       p {
         font-size: 21px;
-        font-family: PingFangSC-Regular, PingFang SC;
+        
         font-weight: 400;
         color: #ffffff;
         letter-spacing: 1px;
@@ -997,7 +1083,7 @@ created(){
     }
     .bitDns {
       height: 267px;
-      .commonTit{
+      .commonTit {
         padding: 0 0 30px;
       }
     }
@@ -1054,8 +1140,8 @@ created(){
         line-height: normal;
       }
     }
-    .news{
-      .newsContent{
+    .news {
+      .newsContent {
         width: 100%;
       }
     }
@@ -1069,7 +1155,7 @@ created(){
       align-items: center;
       .centens_text {
         width: 750px;
-        p{
+        p {
           line-height: 19px;
         }
       }
@@ -1078,7 +1164,6 @@ created(){
     .block {
       padding: 72px 0;
       ul {
-
         li {
           width: 178px;
           height: 193px;
@@ -1102,7 +1187,7 @@ created(){
     }
     .bitDns {
       height: 229px;
-      .commonTit{
+      .commonTit {
         padding: 0 0 18px;
       }
     }
@@ -1157,25 +1242,25 @@ created(){
         line-height: normal;
       }
     }
-    .route{
-      .chart{
+    .route {
+      .chart {
         padding-top: 116px;
-        .timeLine .my_timeline_item_line{
+        .timeLine .my_timeline_item_line {
           width: 130px;
         }
       }
-      .chartMediaWidth{
+      .chartMediaWidth {
         width: 903px;
         height: 355px;
       }
     }
 
     .news {
-      .newsContent{
-        display:flex;
+      .newsContent {
+        display: flex;
         width: 908px;
-        margin:0 auto;
-        justify-content: space-between; 
+        margin: 0 auto;
+        justify-content: space-between;
         flex-wrap: wrap;
       }
       .el-carousel__item h3 {
@@ -1200,14 +1285,20 @@ created(){
 
         .news_left_botText {
           bottom: 21px;
+         
           p {
-            font-size: 15px;
+            font-size: 16px;
             line-height: normal;
             padding: 0 26px;
+            color: #C0C0C0;
+          }
+           .news_top{
+             font-size: 20px;
+             color: white;
           }
         }
       }
-      
+
       .news_right {
         margin: 0 auto;
         height: 334px;
@@ -1217,7 +1308,6 @@ created(){
           padding: 26px 18px;
           border: 2px solid #f5f5f5;
         }
-        
       }
       .day {
         min-width: 63px;
@@ -1241,7 +1331,6 @@ created(){
   //     width: 243px;
   //   }
   // }
-
 
   @media (min-width: 980px) and (max-width: 1279px) {
     .BITDNS {
@@ -1318,15 +1407,14 @@ created(){
       }
     }
     .news {
-      .newsContent{
+      .newsContent {
         width: 100%;
         justify-content: center;
       }
-      .news_left{
+      .news_left {
         margin: 0 auto;
         margin-bottom: 50px;
       }
-      
     }
   }
 
@@ -1344,10 +1432,11 @@ created(){
       padding: 69px 0;
       ul {
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
         li {
-          min-width: 167px;
-          height: 183px;
+          width: 340px;
+          height: 382px;
           background: url("/imges/h5_index/index_box.png") no-repeat;
           background-position: center;
           background-size: 100% 100%;
@@ -1357,16 +1446,19 @@ created(){
           padding: 0 10px;
           box-sizing: border-box;
           img {
-            width: 40px;
-            height: 40px;
-            margin-top: 27px;
+            width: 70px;
+            height: 70px;
+            margin-top: 90px;
           }
           p {
-            font-size: 20px;
-            margin-top: 16px;
-            font-weight: 400;
+            width: 217px;
+            margin: 0 auto;
+            font-size: 26px;
+            
+            font-weight: 600;
+            margin-top: 30px;
             color: #656565;
-            line-height: 28px;
+            line-height: 37px;
           }
         }
       }
@@ -1374,10 +1466,10 @@ created(){
 
     .bitDns {
       width: 100%;
-      height: 512px;
-     
-      background: #F3F8FF;
-      padding: 11px 57px 0;
+      height: 100%;
+
+      background: #f3f8ff;
+      padding: 0 57px 70px;
       box-sizing: border-box;
       .centens {
         border: 1px solid rgba(255, 255, 255, 0.1);
@@ -1390,7 +1482,7 @@ created(){
         width: 100%;
         p {
           font-size: 22px;
-          font-family: PingFangSC-Regular, PingFang SC;
+          
           font-weight: 400;
           color: #999999;
           line-height: 40px;
@@ -1403,11 +1495,12 @@ created(){
       }
 
       .swiper-container {
-        width: 50% !important;
+        width: 60% !important;
       }
 
       .swiper-slide {
-        height: 430px;
+        width: 100% !important;
+        height: 500px;
       }
       .content .spimg {
         width: 113px;
@@ -1418,14 +1511,17 @@ created(){
       .swiper-container {
         padding: 80px 0;
       }
-.swiper-button-prev, .swiper-container-rtl .swiper-button-next{
-    left: 90px;
-}
-      .swiper-button-next, .swiper-container-rtl .swiper-button-prev{
+      .swiper-button-prev,
+      .swiper-container-rtl .swiper-button-next {
+        left: 90px;
+      }
+      .swiper-button-next,
+      .swiper-container-rtl .swiper-button-prev {
         right: 90px;
       }
 
-      .swiper-button-prev:after, .swiper-button-next:after {
+      .swiper-button-prev:after,
+      .swiper-button-next:after {
         color: white;
       }
     }
@@ -1451,22 +1547,43 @@ created(){
       .el-carousel__container {
         width: 680px;
         overflow: hidden;
-        margin: 0 auto;
+        margin: 67px 58px;
       }
       p {
-        margin-top: 214px;
+       padding-top: 214px;
         font-size: 26px;
-        
+
         font-weight: 600;
         color: #ffffff;
         line-height: 37px;
         text-align: center;
       }
       .model {
-        width: 285px;
+        width:90%;
+      
         // height: 200px;
         position: absolute;
         top: 0px;
+        background: blue;
+        color: white;
+        left: 5%;
+        .transition-box{
+           
+          padding: 10px;
+          box-sizing: border-box;
+          height: 250px;
+          text-align: center;
+          overflow: hidden;
+          text-overflow: ellipsis;
+            display: box;
+          display: -webkit-box;
+          -webkit-line-clamp: 10;
+        -webkit-box-orient: vertical;
+        overflow: scroll;
+        }
+         .transition-box::-webkit-scrollbar {
+        display: none;
+    }
       }
     }
 
@@ -1490,7 +1607,7 @@ created(){
       }
       h3 {
         font-size: 32px;
-        
+
         font-weight: 600;
         color: #333333;
         line-height: 45px;
@@ -1498,7 +1615,7 @@ created(){
       p {
         margin-top: 22px;
         font-size: 24px;
-        
+
         font-weight: 600;
         color: #888888;
         line-height: 39px;
@@ -1508,9 +1625,9 @@ created(){
     .route {
       .chart {
         position: relative;
-        height: 320px;
+        height: 350px;
         width: 690px;
-        padding-top: 110px;
+        padding-top: 0;
         background: url("/imges/h5_index/index_ditu.png") no-repeat;
         background-position: center;
         background-size: cover;
@@ -1529,12 +1646,12 @@ created(){
       // 时间线
       .timeLine {
         width: 10000px;
+          // border: 1px solid red;
+
         .ul_box {
           width: 100%;
-          height: 260px;
+          height: 320px;
           display: inline-block;
-          // float: left;
-          margin-top: -100px;
           overflow: hidden;
         }
         .my_timeline_item {
@@ -1571,10 +1688,10 @@ created(){
           width: 138px;
           height: 120px;
           font-size: 18px;
-          font-family: PingFangSC-Regular, PingFang SC;
+          
           font-weight: 400;
           color: #333333;
-          line-height: 30px;
+          line-height: 20px;
         }
         .my_timeline_itemTop {
           padding-top: 0;
@@ -1586,15 +1703,31 @@ created(){
       }
     }
 
-    .news{
-      .newsContent{
+    .news {
+      .newsContent {
         width: 100%;
       }
-      .news_left{
+
+      .news_left {
+        width: 650px !important;
         margin: 0 auto;
         margin-bottom: 50px;
+        .news_left_botText{
+          p {
+            font-size: 26px;
+            color: #BEBEBE;
+            letter-spacing: 1px;
+            padding: 0 26px;
+          }
+          .news_top{
+             font-size: 30px;
+             color: white;
+             font-size: 30px !important;
+          }
+        }
+        
       }
-      .news_right{
+      .news_right {
         height: 500px;
       }
 

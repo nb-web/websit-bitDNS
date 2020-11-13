@@ -101,6 +101,10 @@ export default {};
   color: white;
   box-sizing: border-box;
 
+  .el-tooltip, .el-tooltip:root{
+    background-color: #020202;
+  }
+
   .footer {
     padding: 90px 100px;
     box-sizing: border-box;
@@ -208,7 +212,7 @@ export default {};
         a{
           
 font-size: 28px;
-font-family: PingFangSC-Medium, PingFang SC;
+
 font-weight: 500;
 color: #FFFFFF;
 line-height: 40px;

@@ -26,7 +26,7 @@ export default {
             padding: 100px 0 45px;
 
             font-size: 30px;
-            font-family: PingFangSC-Semibold, PingFang SC;
+            
             font-weight: 600;
             color: #3c3c3c;
             line-height: 42px;
@@ -40,7 +40,10 @@ export default {
         }
 
         p {
+            max-width: 320px;
             margin: 0 20px;
+            text-align: center;
+            line-height: 1;
         }
 
 
@@ -64,6 +67,14 @@ export default {
                 font-size: 20px;
             }
         }
+
+         @media (max-width: 980px) {
+            .commonTit {
+                padding: 70px 0 38px;
+                font-size: 20px;
+            }
+        }
+
     }
     
 </style>

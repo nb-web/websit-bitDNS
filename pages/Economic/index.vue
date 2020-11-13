@@ -283,7 +283,7 @@ export default {
         padding: 74px 0 45px 0;
 
         font-size: 30px;
-        font-family: PingFangSC-Semibold, PingFang SC;
+        
         font-weight: 600;
         color: black;
         line-height: 42px;
@@ -593,7 +593,7 @@ export default {
     .bitDNS_economic_content {
       display: flex;
       width: 100%;
-      padding: 0 20px;
+      padding: 0 50px;
       box-sizing: border-box;
       word-wrap: break-word;
       justify-content: center;
@@ -625,7 +625,7 @@ export default {
             max-width: 685px;
             height: 255px;
             font-size: 22px;
-            font-family: PingFangSC-Regular, PingFang SC;
+            
             font-weight: 400;
             color: black;
             line-height: 37px;
@@ -634,7 +634,7 @@ export default {
             margin-bottom: 23px;
             height: 45px;
             font-size: 32px;
-            font-family: PingFangSC-Semibold, PingFang SC;
+            
             font-weight: 600;
             color: black;
             line-height: 45px;
@@ -645,8 +645,8 @@ export default {
           margin: 30px auto 0;
         
           img{
-            width: 685px;
-            height: 502px;
+            width: 605px;
+            height:422px;
           }
         }
       }
@@ -772,8 +772,8 @@ export default {
 
     .economicCycle {
        
-      padding: 94px 0;
-      height:800px;
+      height: 100%;
+      padding-bottom: 70px;
       width: 100%;
       background: url("/imges/h5_Economic/economicCycle.png") no-repeat;
       background-size: cover;

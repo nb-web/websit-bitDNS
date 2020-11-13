@@ -216,7 +216,7 @@ export default {
       cursor: pointer;
       p {
         font-size: 14px;
-        font-family: PingFangSC-Semibold, PingFang SC;
+        
         font-weight: 600;
         color: #4a4a4a;
         margin-right: 11px;
@@ -327,7 +327,7 @@ export default {
 
   a {
     font-size: 14px;
-    font-family: PingFangSC-Semibold, PingFang SC;
+    
     font-weight: 600;
     color: #4a4a4a;
     height: 88px;
@@ -386,20 +386,20 @@ export default {
       li {
         width: 100%;
         font-size: 34px;
-        font-family: PingFangSC-Regular, PingFang SC;
+        
         font-weight: 400;
         color: #3c3c3c;
         line-height: 48px;
         a {
           font-size: 34px;
-          font-family: PingFangSC-Regular, PingFang SC;
+          
           font-weight: 400;
           color: #3c3c3c;
           line-height: 48px;
         }
         .ym {
           font-size: 28px;
-          font-family: PingFangSC-Regular, PingFang SC;
+          
           font-weight: 400;
           color: #999999;
           line-height: 40px;

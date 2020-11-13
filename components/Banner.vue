@@ -192,7 +192,7 @@ export default {
           }
           p:last-child{
             line-height: 45px;
-            font-size: 18px;
+            font-size: 22px;
             margin-top: 43px;
             margin-bottom: 33px;
           }
