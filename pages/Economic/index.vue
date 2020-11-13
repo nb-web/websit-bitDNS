@@ -89,7 +89,8 @@ export default {
     background-color: #ffffff;
 
   .bitDNS_economic{
-    height: 413px;
+    height: 100%;
+    padding-bottom: 100px;
     background-color: #ffffff;
     display: flex;
     align-items: center;
@@ -305,12 +306,16 @@ export default {
   .h5{
     display: none;
   }
-  // @media (max-width:1680px){
-
-  // }
+  @media (max-width:1680px){
+    .bitDNS_economic{
+      height: 100%;
+      padding-bottom: 67px;
+    }
+  }
   @media (min-width:1280px) and (max-width:1440px){
     .bitDNS_economic{
-      height: 310px;
+      height: 100%;
+      padding-bottom: 58px;
     }
     .tokenDesign {
       height: 552px;
@@ -503,7 +508,8 @@ export default {
     }
 
     .bitDNS_economic{
-      height: 275px;
+      height: 100%;
+      padding-bottom: 41px;
     }
 
     .chainResourceAllocation{

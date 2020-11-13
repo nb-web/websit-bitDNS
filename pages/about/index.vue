@@ -257,10 +257,10 @@ export default {
       padding-bottom: 58px;
       .text {
         // width: 520px;
-        height: 181px;
+        height: auto;
         font-size: 18px;
         line-height: 43px;
-        padding-top: 88px;
+        padding-top: 0;
 
         .bitDnsTeamText {
           margin-top: 25px;
@@ -281,10 +281,10 @@ export default {
       }
       .text {
         // width: 455px;
-        height: 158px;
+        height: auto;
         font-size: 16px;
         line-height: 38px;
-        padding-top: 68px;
+        padding-top: 0;
 
         .bitDnsTeamText {
           margin-top: 21px;
@@ -448,7 +448,8 @@ export default {
 
   @media (min-width: 980px) and (max-width: 1279px){
     .content{
-      height: 340px;
+      height: 100%;
+      padding-bottom: 41px;
       .teamContent{
         width: 900px;
       }
@@ -457,10 +458,10 @@ export default {
       }
       .text {
         // width: 455px;
-        height: 158px;
+        height: auto;
         font-size: 16px;
         line-height: 38px;
-        padding-top: 68px;
+        padding-top: 0;
 
         .bitDnsTeamText {
           margin-top: 21px;
