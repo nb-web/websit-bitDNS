@@ -281,7 +281,7 @@ export default {
       // technologyAdvantageList2:,
       swiperList2: this.$store.state.locale == 'en-US' ? swiperList3 : swiperList,
       newLinkList: this.$store.state.locale == 'en-US' ? newLinkEn :newLink,
-      activeName: "1",
+      activeName: 0,
       newsTit: this.$store.state.locale == 'en-US' ? newLinkEn[0].title :newLink[0].title,
       newsDate: this.$store.state.locale == 'en-US' ? newLinkEn[0].date :newLink[0].date,
       newsMonth: this.$store.state.locale == 'en-US' ? newLinkEn[0].month :newLink[0].month,
@@ -339,13 +339,13 @@ export default {
       val > 980
         ? (that.swiperOptions.slidesPerView = 3)
         : (that.swiperOptions.slidesPerView = 1);
-      that.swiper.destroy(true, false);
+      // that.swiper.destroy(true, false);
       that.$refs.mySwiper.initSwiper();
     }
   },
   computed: {
     swiper() {
-      return this.$refs.mySwiper.$swiper;
+      // return this.$refs.mySwiper.$swiper;
     },
     locallang(){
       return this.$store.state.locale
@@ -368,10 +368,10 @@ export default {
     };
   },
 created(){
-  let that =this
-  setTimeout(function(){
-    that.ok=true
-  },500)
+  // let that =this
+  // setTimeout(function(){
+  //   that.ok=true
+  // },500)
 
 },
   methods: {
@@ -739,10 +739,10 @@ background: #F3F8FF;
       position: absolute;
       top: 319px;
       right: 34px;
-      img {
-        width: 36px;
-        height: 36px;
-      }
+      // img {
+      //   width: 36px;
+      //   height: 36px;
+      // }
     }
     // 时间线
     .timeLine {
@@ -1519,10 +1519,10 @@ background: #F3F8FF;
         position: absolute;
         top: 280px;
         right: 34px;
-        img {
-          width: 41px;
-          height: 41px;
-        }
+        // img {
+        //   // width: 41px;
+        //   // height: 41px;
+        // }
       }
       // 时间线
       .timeLine {
