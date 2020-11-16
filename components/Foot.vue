@@ -163,6 +163,13 @@ export default {};
 @media (min-width:980px) and (max-width: 1279px) {
   .footer{
     max-width: 100%!important;
+    .f_right {
+        ul {
+          li:last-child{
+            margin-bottom: 0;
+          }
+        }
+      }
   }
 }
   @media (min-width:980px) {
@@ -211,11 +218,11 @@ export default {};
         }
         a{
           
-font-size: 28px;
+          font-size: 28px;
 
-font-weight: 500;
-color: #FFFFFF;
-line-height: 40px;
+          font-weight: 500;
+          color: #FFFFFF;
+          line-height: 40px;
         }
       }
       .f_right {
@@ -231,10 +238,16 @@ line-height: 40px;
           display: flex;
           flex-wrap: wrap;
           margin-top: 52px;
+          
           li {
             margin: 16px;
             margin-left: 0;
           }
+
+          li:last-child{
+            margin-bottom: 0;
+          }
+          
           img {
             width: 100px;
             height: 100px;

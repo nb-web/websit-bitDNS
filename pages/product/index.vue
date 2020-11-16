@@ -444,32 +444,32 @@ export default {
     .imgAndText_block_item{
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
+      justify-content: space-around;
       width: 100%;
       background-color: #fff;
      .Service1{
-         
-         width: 534px;
-         height: 247px;
-        }
-        .Service2{
-
+        max-width: 434px;
+        width: 100%;
+        height: 247px;
+      }
+      .Service2{
         width: 374px;
-         height: 344px;
-        }
-        .Service3{
-           
-              width: 451px;
-         height: 301px;
-        }
+        height: 344px;
+      }
+      .Service3{
+        width: 100%;
+        max-width: 451px;
+        height: 301px;
+      }
       .items_left, .items_right{
         height: 444px;
         display: flex;
         align-items: center;
         justify-content: flex-end;
         flex: 1;
+        width: 100%;
         img{
-          margin: 0 88px;
+          margin: 0 78px;
         }
       }
       
@@ -1071,11 +1071,16 @@ export default {
       padding: 61px 0;
       .bitDNSTeams_content{
         display: flex;
-        flex-direction: column;
-        .teamBlocks{
-          margin: 0;
-          margin-top: 20px;
+        flex-direction: row;
+        .topText{
+          .teamsDes{
+            width:320px;
+          }
         }
+        // .teamBlocks{
+        //   margin: 0;
+        //   margin-top: 20px;
+        // }
       }
     }
   }

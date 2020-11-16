@@ -47,6 +47,9 @@
               >{{$t("about.core2")}}</p>
             </div>
           </li>
+        </ul>
+
+        <ul>
           <li class="img3">
             <div>
               <h3>Kingsley Low（{{$t("about.core3Job")}}）</h3>
@@ -56,6 +59,7 @@
               >{{$t("about.core3")}}</p>
             </div>
           </li>
+          <li class="isNull"></li>
         </ul>
       </div>
     </div>
@@ -135,16 +139,16 @@ export default {
       }
       .text {
         // width: 520px;
-        height: 181px;
+        // height: 181px;
         font-size: 18px;
         
         font-weight: 400;
         color: #3c3c3c;
         line-height: 43px;
-        padding-top: 100px;
+        // padding-top: 100px;
 
         .bitDnsTeamText {
-          margin-top: 27px;
+          // margin-top: 27px;
         }
       }
     }
@@ -266,7 +270,7 @@ export default {
         padding-top: 0;
 
         .bitDnsTeamText {
-          margin-top: 25px;
+          // margin-top: 25px;
         }
       }
     }
@@ -290,7 +294,7 @@ export default {
         padding-top: 0;
 
         .bitDnsTeamText {
-          margin-top: 21px;
+          // margin-top: 21px;
         }
       }
     }
@@ -351,8 +355,9 @@ export default {
     ul {
       display: flex;
       flex-wrap: wrap;
+      justify-content: center;
       div {
-        width: 335px;
+        width: 315px;
         font-size: 16px;
         
         font-weight: 400;
@@ -383,20 +388,20 @@ export default {
         margin: 0 auto;
       }
       .img1 {
-        margin: 0 auto;
+        // margin: 0 auto;
         background: url("/imges/h5_about/1.png") no-repeat;
         background-position: center;
         background-size: 100% 100%;
       }
       .img2 {
         background: url("/imges/h5_about/2.png") no-repeat;
-        margin: 0 auto;
+        // margin: 0 auto;
         background-position: center;
         background-size: 100% 100%;
       }
       .img3 {
         background: url("/imges/h5_about/3.png") no-repeat;
-        margin: 0 auto;
+        // margin: 0 auto;
         background-position: center;
         background-size: 100% 100%;
       }
@@ -415,9 +420,9 @@ export default {
       ul {
         display: flex;
         flex-wrap: wrap;
-
+        justify-content: center;
         div {
-          width: 337px;
+          width: 315px;
           font-size: 16px;
           
           font-weight: 400;
@@ -439,17 +444,23 @@ export default {
           box-sizing: border-box;
         }
         .img4 {
-          margin: 0 auto;
+          margin: 0 21px;
           background: url("/imges/h5_about/4.png") no-repeat;
           background-position: center;
           background-size: 100% 100%;
         }
         .img5 {
           background: url("/imges/h5_about/5.png") no-repeat;
-          margin: 0 auto;
+          margin: 0 21px;
           background-position: center;
           background-size: 100% 100%;
         }
+      }
+    }
+
+    @media (max-width: 690px) {
+      .isNull{
+        display: none;
       }
     }
   }
@@ -472,19 +483,32 @@ export default {
         padding-top: 0;
 
         .bitDnsTeamText {
-          margin-top: 21px;
+          // margin-top: 21px;
+        }
+      }
+    }
+    .core, .adviser{
+      ul{
+        justify-content: flex-start;
+        flex-wrap: initial;
+
+        li{
+          margin: 15px!important;
+          height: 256px;
+        }
+
+        div{
+          width: 220px;
+          font-size: 12px;
+          line-height: normal;
+          h3 {
+            font-size: 16px;
+          }
         }
       }
     }
 
-      ul{
-        justify-content: center;
-      }
-      .core .adviser{
-        ul{
-          justify-content: center;
-        }
-      }
+    
   }
 }
 </style>

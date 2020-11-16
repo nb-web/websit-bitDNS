@@ -580,6 +580,15 @@ export default {
       }
     }
   }
+
+  @media (min-width:980px) and (max-width:1279px){
+    .tokenDesign {
+      .tokenDesign_content_bottom {
+        width: 777px;
+        margin: 0 auto;
+      }
+    }
+  }
   
   @media (max-width: 980px) {
     .web{

@@ -534,12 +534,13 @@ export default {
 
   .bitDns {
     width: 100%;
-    height: 305px;
+    height: 100%;
     background: #f3f8ff;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding-bottom: 88px;
 
     .centens {
       border: 1px solid rgba(255, 255, 255, 0.1);
@@ -1068,7 +1069,7 @@ export default {
       justify-content: center;
       align-items: center;
       .centens_text {
-        height: 215px;
+        max-height: 215px;
         width: 867px;
         display: flex;
         align-items: center;
@@ -1077,9 +1078,6 @@ export default {
     }
     .swipe {
       height: 626px;
-    }
-    .bitDns {
-      height: 458px;
     }
   }
 
@@ -1417,7 +1415,7 @@ export default {
     }
     .news {
       .newsContent {
-        width: 100%;
+        // width: 100%;
         justify-content: center;
       }
       .news_left {
