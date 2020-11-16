@@ -102,7 +102,23 @@
       "bitDnsTeamTit": "BitDNS team",
       "bitDnsTeamContent": "BitDNS headquarters is located in Singapore with an international in Singapore and Russia. The core team is from Mildsoft, Alibaba, Baidu, PricewaterhouseCoopers, Kenxi, and etc. The founding team are experts in digital assets. And our development team have deep understanding of the Blockchain Technology. ",
       "core":"Core members",
-      "adviser":"Consultant team"
+      "adviser":"Consultant team",
+      "core1Job": "CEO",
+      "core1": "Founder and CEO, blockchain industry expert and early practitioner of digital assets, has provided strategic guidance for blockchain projects for many times, and has rich experience in building smart contracts, tokenomics and dapps. She has been rated as the most influential female figure in Asian blockchain industry by well-known media.",
+      "core2": "Director of corporate strategy and application business, with many years of working experience of PricewaterhouseCoopers. He has participated in the strategy formulation and promotion of large multinational companies and governments, and has many years of experience in industrial innovation projects.",
+      "core2Job": "COO",
+      "core3": "Core development member, blockchain technology and computer security experts, open source culture and software freedom pioneer. As an early thought leader of cryptocurrency, he has 20 years of experience in after-sales service and supply chain. It aims to participate in the development of large-scale commercial blockchain for developers to participate in the current large-scale development of blockchain.",
+      "core3Job": "CTO",
+      "adviser1": "Global blockchain technology pioneer, top blockchain and encryption technology experts. Letcoin was founded by Golden River Mining Algorithm and founder of fontas btc-e pump group. He led the development of several underlying blockchain systems. Former colleague of vitalik batlin, founder of Ethereum.",
+      "adviser1Job": "Adviser",
+      "adviser2": "Entrepreneur, business director, cryptocurrency missionary, asset manager; 15 years of experience in consulting and restructuring, mainly involving financial and public sector guidance. Since 2014, he has been engaged in the blockchain industry as an angel investor, co-founder, consultant, community organizer, etc., and has a profound understanding of blockchain economy and technology.",
+      "adviser2Job": "Adviser",
+      "core1Earth": "Singapore",
+      "core2Earth": "Russia",
+      "core3Earth": "Singapore",
+      "adviser1Earth": "Canada",
+      "adviser2Earth": "Britain"
+
     },
     "footer": {
       "contactUs": "Contact us",

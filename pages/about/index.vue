@@ -31,29 +31,29 @@
         <ul>
           <li class="img1">
             <div>
-              <h3>Karen New（CEO）</h3>
-              <p>Singapore</p>
+              <h3>Karen New（{{$t("about.core1Job")}}）</h3>
+              <p>{{$t("about.core1Earth")}}</p>
               <p
                 class="peopleText"
-              >Founder and CEO, blockchain industry expert and early practitioner of digital assets, has provided strategic guidance for blockchain projects for many times, and has rich experience in building smart contracts, tokenomics and dapps. She has been rated as the most influential female figure in Asian blockchain industry by well-known media.</p>
+              >{{$t("about.core1")}}</p>
             </div>
           </li>
           <li class="img2">
             <div>
-              <h3>Sorbon（COO）</h3>
-              <p>Russia</p>
+              <h3>Sorbon（{{$t("about.core2Job")}}）</h3>
+              <p>{{$t("about.core2Earth")}}</p>
               <p
                 class="peopleText"
-              >Director of corporate strategy and application business, with many years of working experience of PricewaterhouseCoopers. He has participated in the strategy formulation and promotion of large multinational companies and governments, and has many years of experience in industrial innovation projects.</p>
+              >{{$t("about.core2")}}</p>
             </div>
           </li>
           <li class="img3">
             <div>
-              <h3>Kingsley Low（CTO）</h3>
-              <p>Singapore</p>
+              <h3>Kingsley Low（{{$t("about.core3Job")}}）</h3>
+              <p>{{$t("about.core3Earth")}}</p>
               <p
                 class="peopleText"
-              >Core development member, blockchain technology and computer security experts, open source culture and software freedom pioneer. As an early thought leader of cryptocurrency, he has 20 years of experience in after-sales service and supply chain. It aims to participate in the development of large-scale commercial blockchain for developers to participate in the current large-scale development of blockchain.</p>
+              >{{$t("about.core3")}}</p>
             </div>
           </li>
         </ul>
@@ -66,20 +66,20 @@
         <ul>
           <li class="img4">
             <div>
-              <h3>Amir Eslampanah（Adviser）</h3>
-              <p>Canada</p>
+              <h3>Amir Eslampanah（{{$t("about.adviser1Job")}}）</h3>
+              <p>{{$t("about.adviser1Earth")}}</p>
               <p
                 class="peopleText"
-              >Global blockchain technology pioneer, top blockchain and encryption technology experts. Letcoin was founded by Golden River Mining Algorithm and founder of fontas btc-e pump group. He led the development of several underlying blockchain systems. Former colleague of vitalik batlin, founder of Ethereum.</p>
+              >{{$t("about.adviser1")}}</p>
             </div>
           </li>
           <li class="img5">
             <div>
-              <h3>Armstrong David（Adviser）</h3>
-              <p>Britain</p>
+              <h3>Armstrong David（{{$t("about.adviser2Job")}}）</h3>
+              <p>{{$t("about.adviser2Earth")}}</p>
               <p
                 class="peopleText"
-              >Entrepreneur, business director, cryptocurrency missionary, asset manager; 15 years of experience in consulting and restructuring, mainly involving financial and public sector guidance. Since 2014, he has been engaged in the blockchain industry as an angel investor, co-founder, consultant, community organizer, etc., and has a profound understanding of blockchain economy and technology.</p>
+              >{{$t("about.adviser2")}}</p>
             </div>
           </li>
         </ul>
@@ -152,6 +152,9 @@ export default {
   .core {
     width: 100%;
     background: #f3f8ff;
+    .peopleText{
+      margin-top: 15px;
+    }
   }
 
   ul {
@@ -354,7 +357,7 @@ export default {
         
         font-weight: 400;
         color: #787878;
-        line-height: 22px;
+        line-height: normal;
         h3 {
           font-size: 22px;
           
@@ -419,7 +422,7 @@ export default {
           
           font-weight: 400;
           color: #787878;
-          line-height: 22px;
+          line-height: normal;
           h3 {
             font-size: 22px;
             

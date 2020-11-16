@@ -1094,7 +1094,13 @@ export default {
 
   @media (min-width: 1024px) and (max-width: 1280px) {
     .systemProblems{
+      height: 100%;
       padding-bottom: 41px;
+    }
+
+    .exchangeAndWallet{
+      height: 100%;
+      padding-bottom: 47px;
     }
   }
 

@@ -313,7 +313,7 @@ export default {
         .children_nav {
           li {
             height: 31px;
-            min-width: 85px;
+            // min-width: 85px;
 
             a {
               height: 31px;
