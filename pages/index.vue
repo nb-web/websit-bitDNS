@@ -676,6 +676,7 @@ export default {
         display: none;
       }
       .swiperList {
+        padding: 0 20px;
         display: block;
       }
 
@@ -900,9 +901,9 @@ export default {
     line-height: 200px;
     margin: 0;
   }
-  .el-carousel__item {
-    margin: 0 auto;
-  }
+  // .el-carousel__item {
+  //   margin: 0 auto;
+  // }
   .el-carousel__item:nth-child(2n) {
     background-color: #99a9bf;
   }
@@ -929,9 +930,6 @@ export default {
   }
   .el-carousel__item:nth-child(2n + 1) {
     background-color: #d3dce6;
-  }
-  .el-carousel__item--card {
-    width: 250px;
   }
 
   .news {
@@ -1282,9 +1280,9 @@ export default {
         height: 63px;
         font-size: 15px;
       }
-      .el-carousel__item--card {
-        width: 250px;
-      }
+      // .el-carousel__item--card {
+      //   width: 250px;
+      // }
 
       .news_left {
         width: 390px;
@@ -1446,8 +1444,8 @@ export default {
         flex-wrap: wrap;
         justify-content: center;
         li {
-          width: 340px;
-          height: 382px;
+          min-width: 300px;
+          min-height: 352px;
           background: url("/imges/h5_index/index_box.png") no-repeat;
           background-position: center;
           background-size: 100% 100%;
@@ -1568,18 +1566,29 @@ export default {
 
     .jishu {
       .el-carousel__container {
-        width: 680px;
+        height: 408px;
+        // min-width: 585px;
+        width: 100%;
         overflow: hidden;
-        margin: 60px;
+        // margin: 25px;
+        // margin-left: 30px;
+        margin: 0 auto;
+        // border: 1px solid red;
+      }
+      .el-carousel__item--card{
+        width: 50%;
+        overflow: hidden;
       }
       p {
-        padding: 160px 10px 0;
+        height: 100%;
+        padding: 230px 10px 100px;
         font-size: 26px;
-
+        // border: 1px solid red;
         font-weight: 600;
         color: #ffffff;
         line-height: 37px;
         text-align: center;
+        box-sizing: border-box;
       }
       .model {
         width:100%;
@@ -1593,7 +1602,7 @@ export default {
         .transition-box{
           padding: 10px;
           box-sizing: border-box;
-          min-height: 270px;
+          min-height: 360px;
           text-align: center;
           
           display: flex;
