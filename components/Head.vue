@@ -54,7 +54,7 @@
       </div>
     </div>
 
-    <div class="head common_container h5">
+    <div class="head h5">
       <div class="top">
         <div class="logo">
           <img src="/logo .png" alt />

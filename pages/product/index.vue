@@ -1217,6 +1217,10 @@ export default {
 
               .teamsDes{
                 width: 629px;
+                
+                @media (max-width: 320px) {
+                  max-width: 580px;
+                }
                 font-size: 18px;
                 font-weight: 400;
                 color: #777777;
@@ -1391,6 +1395,9 @@ export default {
 
               p:last-child{
                 width: 620px;
+                @media (max-width: 320px) {
+                  max-width: 600px;
+                }
                 font-size: 18px;
                 font-weight: 400;
                 color: #333333;

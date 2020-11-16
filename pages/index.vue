@@ -1550,7 +1550,7 @@ export default {
       flex-direction: column;
       align-items: center;
       .Tree {
-        height: 364px;
+        height: 100%;
         width: 100%;
         padding: 30px;
         box-sizing: border-box;
@@ -1657,6 +1657,9 @@ export default {
         height: 350px;
         width: 690px;
         max-width: 650px;
+        @media (max-width: 320px) {
+          max-width: 640px;
+        }
         padding-top: 0;
         background: url("/imges/h5_index/index_ditu.png") no-repeat;
         background-position: center;

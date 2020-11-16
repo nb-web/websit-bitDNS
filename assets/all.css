@@ -25,14 +25,13 @@ li{
         margin: 0 auto;
     }
 }
-@media (max-width:320px) and (min-width:375px){
-    body,html{font-size: 8px;}
-} 
- @media (min-width:375px) and (max-width: 980px) {
+
+ @media (min-width:280px) and (max-width: 980px) {
     body,html{font-size: 8px;}
     .common_container{
         width: 100%;
         max-width: 880px;
+        overflow: hidden;
     }
 }
 

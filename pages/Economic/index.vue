@@ -664,7 +664,7 @@ export default {
           margin: 30px auto 0;
         
           img{
-            width: 605px;
+            width: 600px;
             height:422px;
           }
         }
