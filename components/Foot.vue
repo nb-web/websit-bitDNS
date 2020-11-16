@@ -227,12 +227,13 @@ line-height: 40px;
           font-size: 30px;
         }
         ul {
-          width: 670px;
+          width: 610px;
           display: flex;
           flex-wrap: wrap;
           margin-top: 52px;
           li {
-            margin: 16.5px;
+            margin: 16px;
+            margin-left: 0;
           }
           img {
             width: 100px;

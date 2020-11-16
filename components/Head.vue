@@ -79,7 +79,7 @@
               />
               <!-- <el-divider></el-divider> -->
 
-              <li @click="setshow2()">
+              <li @click="setshow2()" :style="$route.path=='/product' ? {color: '#2060F4'} : ''">
                 {{ $t('links.product') }}
                 <img src="/pull.png" alt />
               </li>
@@ -350,8 +350,11 @@ export default {
     display: none !important;
   }
   .head {
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
     max-width: 100% !important;
+    z-index: 9999999;
     .top {
       height: 118px;
       display: flex;

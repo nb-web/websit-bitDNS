@@ -154,14 +154,14 @@ export default {
         width: 1166px;
         border-top: 1px solid #979797;
         margin: 0 auto;
-        margin: 70px 0 70px 20px;
+        margin: 70px 0;
         // margin-left: 20px;
       }
 
       .tokenDesign_content_bottom {
         display: flex;
         // height: 235px;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
         img {
           width: 28px;
@@ -293,7 +293,7 @@ export default {
         display: inline-block;
         width: 30px;
         height: 3px;
-        background: blue;
+        background: #2365ff;
     }
 
     p {
@@ -362,6 +362,8 @@ export default {
         height: 23px;
       }
       .tokenDesign_content_bottom {
+        width: 875px;
+        justify-content: space-around;
         margin: 0 auto;
         p {
           font-size: 23px;
@@ -490,6 +492,7 @@ export default {
         height: 21px;
       }
       .tokenDesign_content_bottom {
+        width: 810px;
         p {
           // margin: 65px 0 63px;
           font-size: 20px;
@@ -589,7 +592,7 @@ export default {
     .bitDNS_economic {
       width: 100%;
        
-      height: 387px;
+      height: 100%;
       background-color: #ffffff;
       display: flex;
       align-items: center;
@@ -617,6 +620,7 @@ export default {
       background-position: center;
       height: 1257px;
       box-sizing: border-box;
+      padding: 0 20px;
       .tokenDesign_content_top {
         display: flex;
         flex-direction: column;
@@ -659,12 +663,6 @@ export default {
 
       .tokenDesign_middleLine {
         display: none;
-        height: 1px;
-        width: 1166px;
-        border-top: 1px solid #979797;
-        margin: 0 auto;
-        margin: 70px 0 70px 20px;
-        // margin-left: 20px;
       }
       .hr1 {
         width: 28px;
@@ -688,7 +686,7 @@ export default {
           justify-content: initial;
           align-items:initial;
           div {
-            width: 210px;
+            width: 230px;
             height: 70px;
             text-align: center;
             // line-height: 70px;
@@ -696,10 +694,11 @@ export default {
             border: 1px solid black;
             color: black;
             margin: 0;
+            padding: 0 10px;
           }
 
           div:nth-child(2){
-            margin: 0 30px;
+            margin: 0 10px;
           }
         }
       }
@@ -786,7 +785,7 @@ export default {
       background-position: center;
       box-sizing: border-box;
       .economicCycle_img {
-        width: 690px;
+        max-width: 600px;
         height: 387px;
         margin: 0 auto;
         img{
@@ -802,7 +801,7 @@ export default {
         display: inline-block;
         width: 30px;
         height: 3px;
-        background: blue;
+        background: #2365ff;
       }
 
       p {

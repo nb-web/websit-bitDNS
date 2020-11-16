@@ -40,7 +40,7 @@ export default {
         }
 
         p {
-            max-width: 320px;
+            // max-width: 320px;
             margin: 0 20px;
             text-align: center;
             line-height: 1;
@@ -72,6 +72,10 @@ export default {
             .commonTit {
                 padding: 70px 0 38px;
                 font-size: 20px;
+            }
+
+            p {
+                max-width: 320px;
             }
         }
 

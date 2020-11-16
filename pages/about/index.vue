@@ -207,7 +207,7 @@ export default {
 
     background: #f3f8ff;
     .peopleText {
-      width: 300px;
+      width: 100%;
       margin-top: 15px;
     }
 
@@ -215,7 +215,7 @@ export default {
       display: flex;
       flex-wrap: wrap;
       div {
-        width: 260px;
+        // width: 260px;
         font-size: 12px;
         
         font-weight: 400;
@@ -341,6 +341,7 @@ export default {
       width: 100%;
       background: #f3f8ff;
       .peopleText {
+        width: 100%;
         margin-top: 15px;
       }
     }
@@ -348,7 +349,7 @@ export default {
       display: flex;
       flex-wrap: wrap;
       div {
-        width: 337px;
+        width: 335px;
         font-size: 16px;
         
         font-weight: 400;
@@ -360,6 +361,9 @@ export default {
           font-weight: 600;
           color: #333333;
           line-height: 30px;
+        }
+        p{
+          width: 100%;
         }
       }
       li {
@@ -402,6 +406,7 @@ export default {
       background: #f3f8ff;
       .peopleText {
         margin-top: 15px;
+        width: 100%;
       }
 
       ul {

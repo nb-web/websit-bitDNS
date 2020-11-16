@@ -161,6 +161,7 @@ export default {
 
   @media (max-width: 980px) {
     .index_banna, .other_banna{
+      margin-top: 118px;
       padding: 80px 65px;
       box-sizing: border-box;
       .bannerContent{
@@ -173,8 +174,12 @@ export default {
     .index_banna {
       min-height: 500px;
       background-image: url('/imges/h5_banner/h5Banner_index.png');
-      .indexBannerLeftSquare{
-        margin: 0 auto;
+      .bannerContent .bannerContent_leftText p {
+        font-size: 45px;
+        line-height: normal;
+      }
+      .bannerContent .bannerContent_leftText  .indexBannerLeftSquare{
+        display: none;
       }
     }
     .other_banna {

@@ -231,7 +231,6 @@
                 v-for=" (item,index) in newLinkList"
                 :key="index"
                 :name="index"
-                style="margin-bottom: 27px"
                 @click.native="changeNewsLeftContent(item.title, item.date, item.month, item.day)"
               >
                 <template slot="title">
@@ -429,12 +428,14 @@ export default {
       this.windowWidth > 980 ? (moveNum = -175) : (moveNum = -275);
       if (marginLeft < 190 && marginLeft >= moveNum) {
         this.$refs.mytimeline.style.marginLeft = marginLeft - 185 + "px";
+        this.$refs.mytimeline.style.transition = '1s'
       }
     },
     moveRight() {
       let marginLeft = parseInt(this.$refs.mytimeline.style.marginLeft);
       if (marginLeft < 1) {
         this.$refs.mytimeline.style.marginLeft = marginLeft + 185 + "px";
+        this.$refs.mytimeline.style.transition = '1s'
       }
     },
     changeNewsLeftContent(tit, date, month, day) {
@@ -612,12 +613,12 @@ export default {
         text-overflow: ellipsis;
         display: box;
         display: -webkit-box;
-        -webkit-line-clamp: 4;
+        -webkit-line-clamp: 5;
         -webkit-box-orient: vertical;
       }
       .leave {
         font-size: 12px;
-        height: 100px;
+        height: 110px;
         
         font-weight: 400;
         color: #999999;
@@ -918,6 +919,10 @@ export default {
     font-weight: 500;
     color: #333333;
     border: 0;
+
+    span{
+      line-height: normal;
+    }
   }
   .el-collapse-item__content {
     padding: 0;
@@ -1008,6 +1013,9 @@ export default {
       width: 652px;
       overflow: auto;
       overflow-y: none;
+      .el-collapse-item{
+        margin-bottom: 27px;
+      }
       .content {
         position: relative;
         font-size: 16px;
@@ -1156,7 +1164,7 @@ export default {
       .centens_text {
         width: 750px;
         p {
-          line-height: 19px;
+          line-height: 23px;
         }
       }
     }
@@ -1303,9 +1311,12 @@ export default {
         margin: 0 auto;
         height: 334px;
         width: 426px;
+        .el-collapse-item{
+          margin-bottom: 20px;
+        }
         .content {
           font-size: 15px;
-          padding: 26px 18px;
+          padding: 17px;
           border: 2px solid #f5f5f5;
         }
       }
@@ -1480,17 +1491,29 @@ export default {
       height: 750px;
       .content {
         width: 100%;
+        h4,h5{
+          font-size: 22px;
+        }
         p {
           font-size: 22px;
-          
           font-weight: 400;
           color: #999999;
           line-height: 40px;
+          margin-top: 30px;
         }
 
         .over {
+          font-size: 22px;
           line-height: 30px;
-          overflow: initial;
+          height: 100%;
+          overflow: hidden;
+          text-overflow: initial;
+          -webkit-box-orient: initial;
+        }
+        .leave {
+          line-height: 30px;
+          font-size: 22px;
+          height: 100%;
         }
       }
 
@@ -1547,10 +1570,10 @@ export default {
       .el-carousel__container {
         width: 680px;
         overflow: hidden;
-        margin: 67px 58px;
+        margin: 60px;
       }
       p {
-       padding-top: 214px;
+        padding: 160px 10px 0;
         font-size: 26px;
 
         font-weight: 600;
@@ -1559,31 +1582,30 @@ export default {
         text-align: center;
       }
       .model {
-        width:90%;
-      
-        // height: 200px;
+        width:100%;
+
         position: absolute;
         top: 0px;
-        background: blue;
+        background: #2365ff;
         color: white;
-        left: 5%;
+        left: 0;
+        box-sizing: border-box;
         .transition-box{
-           
           padding: 10px;
           box-sizing: border-box;
-          height: 250px;
+          min-height: 270px;
           text-align: center;
-          overflow: hidden;
+          
+          display: flex;
+          justify-content: center;
+          align-items: center;
           text-overflow: ellipsis;
-            display: box;
-          display: -webkit-box;
-          -webkit-line-clamp: 10;
-        -webkit-box-orient: vertical;
-        overflow: scroll;
+          overflow: scroll;
+          
         }
          .transition-box::-webkit-scrollbar {
-        display: none;
-    }
+          display: none;
+        }
       }
     }
 
@@ -1627,6 +1649,7 @@ export default {
         position: relative;
         height: 350px;
         width: 690px;
+        max-width: 650px;
         padding-top: 0;
         background: url("/imges/h5_index/index_ditu.png") no-repeat;
         background-position: center;
@@ -1720,8 +1743,8 @@ export default {
             padding: 0 26px;
           }
           .news_top{
-             font-size: 30px;
              color: white;
+             line-height: normal;
              font-size: 30px !important;
           }
         }

@@ -209,7 +209,7 @@
       <BlockTit :text="$t('dnsService.blockTit')"/>
 
       <div class="h5 common_container">
-        <el-carousel type="card" height="200px" :loop="true" indicator-position="none" arrow="never" ref="carousel" :autoplay="false">
+        <el-carousel type="card" :loop="true" indicator-position="none" arrow="never" ref="carousel" :autoplay="false">
         <el-carousel-item>
           <div class="serviceFeaturesItem">
               
@@ -1119,7 +1119,7 @@ export default {
   .systemProblems_content{
   
     display: flex;
-    width: 685px;
+    width: 639px;
     word-wrap: break-word;
     justify-content: center;
     align-items: center;
@@ -1166,7 +1166,7 @@ export default {
 
       .items_rightText, .items_leftText{
         
-        width: 688px;
+        width: 629px;
         color: #3C3C3C;
         font-size: 20px;
         line-height: 53px;
@@ -1184,7 +1184,7 @@ export default {
       text-align: center;
       img{
         height: 791px;
-        width: 691px;
+        width: 620px;
       }
       
     }
@@ -1251,8 +1251,8 @@ export default {
                 }     
                 
                 .teamBlocksItemEn{
-                  width: 150px;
-                  height: 150px;
+                  min-width: 150px;
+                  min-height: 150px;
                 }
               }
 
@@ -1277,7 +1277,11 @@ export default {
                   }
                 }
                 .teamBlocksItems:nth-child(2){
+                  display: flex;
+                  justify-content: flex-start;
+                  flex-wrap: wrap;
                   .teamBlocksItem:nth-child(1){
+                    margin-bottom: 20px;
                     img{
                       height: 26px;
                       width: 33px
@@ -1303,13 +1307,13 @@ export default {
         }
     
     .serviceFeatures{
-       height: 100%;
-       padding-bottom: 70px;
-      box-sizing: border-box;
+      height: 100%;
+      padding-bottom: 70px;
       .el-carousel{
         // padding: 30px;
         .el-carousel__container{
-              margin: 0 10px !important;
+          height: 353px;
+          margin: 0 auto !important;
         }
       }
       .serviceFeaturesItem{
@@ -1317,13 +1321,13 @@ export default {
         height:353px;
         background: #FFFFFF;
         
-        margin: 0 15px;
+        margin: 0 auto;
         display: flex;
         align-items: center;
         flex-direction: column;
         background: url("/imges/index/index_box.png") no-repeat;
-          background-position: center;
-          background-size: 100% 100%;
+        background-position: center;
+        background-size: 100% 100%;
         img{
           margin: 41px 0 13px;
           height: 38px;
@@ -1375,7 +1379,7 @@ export default {
               }
 
               p:last-child{
-                width: 629px;
+                width: 620px;
                 font-size: 18px;
                 font-weight: 400;
                 color: #333333;
@@ -1387,14 +1391,15 @@ export default {
             .tokenBonus_topContent_right{
               display: flex;
               flex-direction: row;
+              justify-content: space-around;
 
               div{
-                height: 95px;
-                width: 329px;
+                height: 86px;
+                width: 298px;
                 margin: 0 auto;
                 border: 1px solid #A9A9A9;
                 color: #666666;
-                font-size: 30px;
+                font-size: 28px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
