@@ -155,6 +155,12 @@ export default {
           height: 372px;
           width: 344px;
         }
+
+        .bannerContent_leftText{
+          p:first-child{
+            font-size: 30px;
+          }
+      }
       }
     }
   }

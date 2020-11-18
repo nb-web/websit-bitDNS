@@ -161,16 +161,20 @@ export default {};
   }
 }
 @media (min-width:980px) and (max-width: 1279px) {
-  .footer{
-    max-width: 100%!important;
-    .f_right {
-        ul {
-          li:last-child{
-            margin-bottom: 0;
+  .btm{
+    .footer{
+      max-width: 100%!important;
+      padding: 90px 0;
+      .f_right {
+          ul {
+            li:last-child{
+              margin-bottom: 0;
+            }
           }
         }
-      }
+    }
   }
+  
 }
   @media (min-width:980px) {
     .h5{
