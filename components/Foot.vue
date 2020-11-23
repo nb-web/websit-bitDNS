@@ -14,7 +14,7 @@
           <img src="/imges/h5_foot/foot_post.png" class="h5" alt />
           <a
             style="color: #fff"
-            href="https://www.bitdns.vip/images/whitepaper_zh.pdf"
+            :href="this.$store.state.locale == 'en-US' ? 'https://www.bitdns.vip/images/whitepaper_en.pdf' : 'https://www.bitdns.vip/images/whitepaper_zh.pdf'"
             target="_blank"
           >White paper</a>
         </div>
