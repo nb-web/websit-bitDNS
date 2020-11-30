@@ -5,7 +5,8 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no' },
-      { hid: 'description', name: 'description', content: '' }
+      { name: "keywords", content: "BitDNS官网- BitDNS is a domain name resolution system based on blockchain. BitDNS官网- 基于区块链技术,服务于dWeb4.0关键基础设施。"},
+      { name:"description", content: "BitDNS 官网 Foundation is committed to building the World's first Blockchain Domain Name System, building a super hub connecting information internet and value blockchain, and contributing to the development of blockchain and distributed web4.0. BitDNS致力于打造全球首个区块链域名系统，构建连接信息互联网与价值区块链的超级枢纽，为区块链及分布式WEB4.0的发展贡献自己的力量。"},
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
