@@ -1,5 +1,6 @@
 {
   "newLink":[
+    {"linkurl": "https://mp.weixin.qq.com/s?__biz=MzkwNzE4MTc1Ng==&mid=2247483829&idx=1&sn=624084c49c2c891d29891eb851216efe&chksm=c0dc6a66f7abe3701dc1d51bc32ba0e31229149af41cea1509b0bb0e77a3c2834cd2d4223774&token=1676353389&lang=zh_CN#rd","date":"2021/01/02", "month":"Jan", "day":"02", "title": "【公告】区块链域名项目BitDNS获科银资本战略投资", "des":"新加坡时间2021年1月2日，区块链域名项目BitDNS获科银资本战略投资。双方将就去中心化底层设施、技术研发、市场拓展、去中心化域名领域展开合作。"},
     {"linkurl": "https://www.jinse.com/news/blockchain/894523.html","date":"2020/10/31", "month":"Oct", "day":"31", "title": "Corn.BitDNS以价值锚定收益 创新经济模型打开DeFi新格局", "des":"热门新加坡项目BitDNS于上个月登陆中国市场，引发了众多技术爱好者与投资者的关注。两天前BitDNS首个DeFi产品Corn.BitDNS正式开启了流动性凭证挖矿..."},
     {"linkurl": "https://new.qq.com/omn/20201001/20201001A03IJM00.html","date":"2020/10/01", "month":"Oct", "day":"01", "title": "BitDNS Corn：DeFi泡沫爆裂之后，价值支撑的东西才会出来", "des":"去中心化金融（DeFi）逐渐走向大众视线，成为了币圈焦点，流动性挖虽然 已经走到了下半场，但是依旧不能阻挡科学家们亢奋的情绪。"},
     {"linkurl": "https://www.jinse.com/news/blockchain/846524.html","date":"2020/09/28", "month":"Sep", "day":"28", "title": "BitDNS硬核赋能域名系统 Corn的价值回归", "des":"域名解析系统 DNS 已经运行数十年，是处理互联网数十亿次访问需求的基础设施。但在传统域名系统里，域名的交易、续租都必须依赖于几个主要的域名服务提供商..."},
@@ -7,6 +8,7 @@
   ],
 
   "newLinkEn":[
+    {"linkurl": "https://link.medium.com/DeQNxa3fKcb","date":"2021/01/02", "month":"Jan", "day":"02", "title": "We are very honored to announce about the strategic investment of.", "des":"We are very honored to announce about the strategic investment of. CollinStar Capital in BitDNS..."},
     {"linkurl": "https://link.medium.com/39k5C0iSMab","date":"2020/10/22", "month":"Oct", "day":"22", "title": "Interview with BitDNS CTO – KINGSLEY LOW", "des":"Nowadays the topic of domain name is becoming extremely popular in the entire Internet. Today we invited Kingsley Low, CTO of BitDNS..."},
     {"linkurl": "https://link.medium.com/l3GsFXP9Aab","date":"2020/10/15", "month":"Oct", "day":"15", "title": "AMA with BitDNS CEO - Karen", "des":"On October 13th 2020, at 2pm (GMT+8), BitCherry and Freecoins24 held a jointly (Ask me anything) AMA event. We are honoured to have BitDNS CEO- Miss Karen New in the session..."},
     {"linkurl": "https://link.medium.com/bB01fq34jbb","date":"2020/10/05", "month":"Oct", "day":"05", "title": "BitDNS mining rates continues to be good; Corn uses its value to support DeFi in the second half", "des":"Decentralized finance (DeFi) has gradually become popular and has become the focus of the currency circle. Although liquidity mining has..."},
@@ -53,21 +55,13 @@
 
   "timeLineList": [
     {
-      "timestamp": "2020.10.31",
+      "timestamp": "2020.12.31",
       "color": "#333333",
       "fontsize": 12,
       "size": "15",
       "bgcolor": "#373737",
       "icon": "el-iconprev",
-      "info": "BitDNS域名系统中域名注册交易网站上线"
-    },
-    {
-      "timestamp": "2021.1.31",
-      "color": "#333333",
-      "fontsize": 12,
-      "size": "15",
-      "bgcolor": "#373737",
-      "info": "BitDNS域名系统完成BitMail邮箱系统核心模块上线"
+      "info": "BitUID+BitDNS域名注册、交易、管理APP上线"
     },
     {
       "timestamp": "2021.3.31",
@@ -75,23 +69,7 @@
       "fontsize": 12,
       "size": "15",
       "bgcolor": "#373737",
-      "info": "BitUID系统用户名注册/交易网站上线"
-    },
-    {
-      "timestamp": "2021.4.31",
-      "color": "#333333",
-      "fontsize": 12,
-      "size": "15",
-      "bgcolor": "#373737",
-      "info": "BitMail邮箱系统完成BitDNS钱包v1.0版上线"
-    },
-    {
-      "timestamp": "2021.5.30",
-      "color": "#333333",
-      "fontsize": 12,
-      "size": "15",
-      "bgcolor": "#373737",
-      "info": "BitUID系统完成"
+      "info": "BitDNS域名解析客户端/APP上线"
     },
     {
       "timestamp": "2021.6.30",
@@ -99,26 +77,42 @@
       "fontsize": 12,
       "size": "15",
       "bgcolor": "#373737",
-      "info": "BitDNS钱包v5.0版上线，系统完成"
+      "info": "BitDNS钱包1.0版上线、BitMail邮箱系统核心模块上线"
+    },
+    {
+      "timestamp": "2021.12.31",
+      "color": "#333333",
+      "fontsize": 12,
+      "size": "15",
+      "bgcolor": "#373737",
+      "info": "BitDNS 一键上云、一键链化工具上线、BitMail邮箱系统完成"
+    },
+    {
+      "timestamp": "2022.12.31",
+      "color": "#333333",
+      "fontsize": 12,
+      "size": "15",
+      "bgcolor": "#373737",
+      "info": "dWeb4.0系统完成"
+    },
+    {
+      "timestamp": "2023.12.31",
+      "color": "#333333",
+      "fontsize": 12,
+      "size": "15",
+      "bgcolor": "#373737",
+      "info": "IPv8/rTCP去中心化云计算网络建成"
     }
   ],
   "timeLineList2": [
     {
-      "timestamp": "October 31st, 2020",
+      "timestamp": "December 31st, 2020",
       "color": "#333333",
       "fontsize": 12,
       "size": "15",
       "bgcolor": "#373737",
       "icon": "el-iconprev",
-      "info": "The domain registration and transaction website of the BitDNS domain name system will be out"
-    },
-    {
-      "timestamp": "January 31st, 2021",
-      "color": "#333333",
-      "fontsize": 12,
-      "size": "15",
-      "bgcolor": "#373737",
-      "info": "BitDNS domain name will complete the launch of the core module of BitMail mailbox system"
+      "info": "BitUID+BitDNS domain name will be officially launched, transaction and APP will be online"
     },
     {
       "timestamp": "March 31st, 2021",
@@ -126,31 +120,39 @@
       "fontsize": 12,
       "size": "15",
       "bgcolor": "#373737",
-      "info": "BitUID system’s username registration / online trading website will be available"
+      "info": "BitDNS domain name resolution client/APP will be online"
     },
     {
-      "timestamp": "April 31st, 2021",
+      "timestamp": "June 30th, 2020",
       "color": "#333333",
       "fontsize": 12,
       "size": "15",
       "bgcolor": "#373737",
-      "info": "Through BitMail mailbox system the launch of BitDNS wallet v1.0 will be completed"
+      "info": "BitDNS wallet version 1.0 will be launched, BitMail mailbox system core module will be launched"
     },
     {
-      "timestamp": "May 30th, 2021",
+      "timestamp": "December 31st, 2021",
       "color": "#333333",
       "fontsize": 12,
       "size": "15",
       "bgcolor": "#373737",
-      "info": "BitUID system will be completely ready"
+      "info": "BitDNS one-click cloud access, one-click chain tool will be available"
     },
     {
-      "timestamp": "June 30th, 2021",
+      "timestamp": "December 31st, 2022",
       "color": "#333333",
       "fontsize": 12,
       "size": "15",
       "bgcolor": "#373737",
-      "info": "BitDNS wallet v5.0 will be available"
+      "info": "dWeb4.0 system will be completed"
+    },
+    {
+      "timestamp": "December 31st, 2023",
+      "color": "#333333",
+      "fontsize": 12,
+      "size": "15",
+      "bgcolor": "#373737",
+      "info": "IPv8/rTCP decentralized cloud computing network will be completed"
     }
   ]
 }
