@@ -282,61 +282,67 @@
         </div>
       </div>
     </div>
-      <div style="background:#fff">
-    <div class="common_container exchangeAndWallet">
+    <div style="background:#fff">
+      <div class="common_container exchangeAndWallet">
+        <div class="corn_exchangeAndWallet">
+          <BlockTit :text="$t('dnsService.CORN')"/>
 
-      <div class="corn_exchangeAndWallet">
-        <BlockTit :text="$t('dnsService.CORN')"/>
+          <div class="exchangeItems">
+            <p>{{$t("dnsService.exchange")}}</p>
+            <div class="exchangeImgs">
+              <img  class="web" src="/imges/product/cornExchange1.png" alt="">
+              <img  class="h5" src="/imges/h5_product/cornExchange1.png" alt="">
+            </div>
+          </div>
+          
+          <div class="walletItems">
+            <p>{{$t("dnsService.wallet")}}</p>
+            <div class="walletImgs">
+              <div class="web">
+                <img src="/imges/product/cornWallet1.png" alt="">
+                <img src="/imges/product/cornWallet2.png" alt="">
+                <img src="/imges/product/cornWallet3.png" alt="">
+              </div>
+              <div class="h5">
+                <img src="/imges/h5_product/cornWallet1.png" alt="">
+                <img src="/imges/h5_product/cornWallet2.png" alt="">
+                <img src="/imges/h5_product/cornWallet3.png" alt="">
+              </div>
+            </div>
+          </div>
+          <BlockTit :text="$t('dnsService.DNS')"/>
+          <div class="exchangeItems">
+            <p>{{$t("dnsService.exchange")}}</p>
+            <div class="exchangeImgs">
+              <img  class="web" src="/imges/product/cornExchange1.png" alt="">
+              <img  class="h5" src="/imges/h5_product/cornExchange1.png" alt="">
+            </div>
+          </div>
+          
+          <div class="walletItems">
+            <p>{{$t("dnsService.wallet")}}</p>
+            <div class="walletImgs">
+              <div class="web">
+                <img src="/imges/product/cornWallet1.png" alt="">
+                <img src="/imges/product/cornWallet2.png" alt="">
+                <img src="/imges/product/cornWallet3.png" alt="">
+              </div>
+              <div class="h5">
+                <img src="/imges/h5_product/cornWallet1.png" alt="">
+                <img src="/imges/h5_product/cornWallet2.png" alt="">
+                <img src="/imges/h5_product/cornWallet3.png" alt="">
+              </div>
+            </div>
+          </div>
 
-        <div class="exchangeItems">
-          <p>{{$t("dnsService.exchange")}}</p>
-          <div class="exchangeImgs">
-            <img  class="web" src="/imges/product/cornExchange1.png" alt="">
-            <img  class="h5" src="/imges/h5_product/cornExchange1.png" alt="">
-          </div>
-        </div>
-        
-        <div class="walletItems">
-          <p>{{$t("dnsService.wallet")}}</p>
-          <div class="walletImgs">
-            <div class="web">
-              <img src="/imges/product/cornWallet1.png" alt="">
-              <img src="/imges/product/cornWallet2.png" alt="">
-              <img src="/imges/product/cornWallet3.png" alt="">
-            </div>
-            <div class="h5">
-              <img src="/imges/h5_product/cornWallet1.png" alt="">
-              <img src="/imges/h5_product/cornWallet2.png" alt="">
-              <img src="/imges/h5_product/cornWallet3.png" alt="">
+          <BlockTit :text="$t('dnsService.Investment')"/>
+          <div class="exchangeItems">
+            <div class="exchangeImgs">
+              <img  class="web" src="/imges/product/investment.png" alt="">
+              <img  class="h5" src="/imges/product/investment_h5.png" alt="">
             </div>
           </div>
-        </div>
-  <BlockTit :text="$t('dnsService.DNS')"/>
-   <div class="exchangeItems">
-          <p>{{$t("dnsService.exchange")}}</p>
-          <div class="exchangeImgs">
-            <img  class="web" src="/imges/product/cornExchange1.png" alt="">
-            <img  class="h5" src="/imges/h5_product/cornExchange1.png" alt="">
-          </div>
-        </div>
-        
-        <div class="walletItems">
-          <p>{{$t("dnsService.wallet")}}</p>
-          <div class="walletImgs">
-            <div class="web">
-              <img src="/imges/product/cornWallet1.png" alt="">
-              <img src="/imges/product/cornWallet2.png" alt="">
-              <img src="/imges/product/cornWallet3.png" alt="">
-            </div>
-            <div class="h5">
-              <img src="/imges/h5_product/cornWallet1.png" alt="">
-              <img src="/imges/h5_product/cornWallet2.png" alt="">
-              <img src="/imges/h5_product/cornWallet3.png" alt="">
-            </div>
-          </div>
-        </div>
-
-</div>
+      </div>
       </div>
 
      
@@ -756,7 +762,7 @@ export default {
   }
 
   .exchangeAndWallet{
-    height: 1484px;
+    height: 100%;
     // background-color: #fff;
 
     .corn_exchangeAndWallet, .DNS_exchangeAndWallet{
@@ -857,7 +863,7 @@ export default {
     }
 
     .exchangeAndWallet{
-      height: 1199px;
+      height: 100%;
       width: 990px;
       .corn_exchangeAndWallet, .DNS_exchangeAndWallet{
         .exchangeItems, .walletItems{
@@ -951,7 +957,7 @@ export default {
     }
 
     .exchangeAndWallet{
-      height: 1089px;
+      height: 100%;
       width: 960px;
       .corn_exchangeAndWallet, .DNS_exchangeAndWallet{
         .exchangeItems, .walletItems{
@@ -1044,7 +1050,7 @@ export default {
     
   }
   .exchangeAndWallet{
-      height: 989px;
+      height: 100%;
       width: 890px;
       .corn_exchangeAndWallet, .DNS_exchangeAndWallet{
         .exchangeItems, .walletItems{
@@ -1452,7 +1458,7 @@ export default {
     .exchangeAndWallet{
       padding: 0 30px;
       box-sizing: border-box;
-      height: 1575px;
+      height: 100%;
       // background-color: #fff;
       .corn_exchangeAndWallet, .DNS_exchangeAndWallet{
         .exchangeItems, .walletItems{
