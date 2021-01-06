@@ -314,8 +314,11 @@
           <div class="exchangeItems">
             <p>{{$t("dnsService.exchange")}}</p>
             <div class="exchangeImgs">
-              <img  class="web" src="/imges/product/cornExchange1.png" alt="">
-              <img  class="h5" src="/imges/h5_product/cornExchange1.png" alt="">
+              <img src="/imges/product/cornExchange1.png" alt="">
+              <img src="/imges/product/mxc.png" alt="">
+              <img src="/imges/product/btex.png" alt="">
+              <img src="/imges/product/btcmax.png" alt="">
+              <img src="/imges/product/bittok.png" alt="">
             </div>
           </div>
           
@@ -338,8 +341,11 @@
           <BlockTit :text="$t('dnsService.Investment')"/>
           <div class="exchangeItems">
             <div class="exchangeImgs">
-              <img  class="web" src="/imges/product/investment.png" alt="">
-              <img  class="h5" src="/imges/product/investment_h5.png" alt="">
+              <!-- <img  class="web" src="/imges/product/investment.png" alt="">
+              <img  class="h5" src="/imges/product/investment_h5.png" alt=""> -->
+              <img src="/imges/product/investment_h5.png" alt="">
+              <img src="/imges/product/investment2.png" alt="">
+              <img src="/imges/product/investment3.png" alt="">
             </div>
           </div>
       </div>
