@@ -1794,6 +1794,7 @@ export default {
   width: 100%;
   height: 564px;
   background: url('/imges/index/bgDapp.png')no-repeat;
+  background-size: 100% 100%;
   .content{
     padding-top: 62px;
     box-sizing: border-box;
@@ -1823,7 +1824,9 @@ export default {
     .code{
       width: 144px;
       height: 144px;
-      background: #D8D8D8;
+      background: url("/imges/index/qrcode.jpg");
+      background-position: center;
+      background-size: 100% 100%;
       border: 1px solid #979797;
     }
   }
