@@ -251,7 +251,25 @@
           </div>
         </div>
       </div>
+  
     </div>
+          <!-- app下载页面 -->
+        <div class="Dapp">
+          <div class="content common_container">
+          <div class="imgs">
+            <img src="/imges/index/Dapp.png" alt="">
+          </div>
+          <div class="qrcode">
+            <h4>{{$t("home.Dapp")}}</h4>
+            <p>{{$t("home.bDapp")}}</p>
+            <div class="code">
+
+            </div>
+          </div>
+          </div>
+         
+        </div>
+
   </div>
 </template>
 
@@ -1062,6 +1080,7 @@ export default {
     }
   }
 
+
   @media (min-width: 2880px) and (max-width: 3840px) {
     .centens {
       display: flex;
@@ -1770,5 +1789,44 @@ export default {
       }
     }
   }
+
+  .Dapp{
+  width: 100%;
+  height: 564px;
+  background: url('/imges/index/bgDapp.png')no-repeat;
+  .content{
+    padding-top: 62px;
+    box-sizing: border-box;
+    display: flex;
+    // justify-content: center;
+   img{
+     height:502px;
+     width: 518px;
+   }
+  }
+  .qrcode{
+    margin-left: 105px;
+    h4{
+      margin-top: 121px;
+      font-size: 30px;
+      font-family: PingFangSC-Semibold, PingFang SC;
+      font-weight: 600;
+      color: #FFFFFF;
+    }
+    p{
+      margin: 19px 0 39px;
+      font-size: 18px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      color: #FFFFFF;
+    }
+    .code{
+      width: 144px;
+      height: 144px;
+      background: #D8D8D8;
+      border: 1px solid #979797;
+    }
+  }
+}
 }
 </style>
