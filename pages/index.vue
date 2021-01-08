@@ -262,9 +262,7 @@
           <div class="qrcode">
             <h4>{{$t("home.Dapp")}}</h4>
             <p>{{$t("home.bDapp")}}</p>
-            <div class="code">
-
-            </div>
+            <img class="code" src="/imges/index/qrcode.jpg" alt="">
           </div>
           </div>
          
@@ -1080,6 +1078,45 @@ export default {
     }
   }
 
+  .Dapp{
+    width: 100%;
+    height: 564px;
+    background: url('/imges/index/bgDapp.png')no-repeat;
+    background-size: 100% 100%;
+  .content{
+    padding-top: 62px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-start;
+   img{
+     height:502px;
+     width: 518px;
+   }
+
+   .imgs{
+     margin-right: 105px;
+   }
+  }
+  .qrcode{
+    h4{
+      margin-top: 121px;
+      font-size: 30px;
+      font-weight: 600;
+      color: #FFFFFF;
+    }
+    p{
+      margin: 19px 0 39px;
+      font-size: 18px;
+      font-weight: 400;
+      color: #FFFFFF;
+    }
+    .code{
+      width: 144px;
+      height: 144px;
+    }
+  }
+  }
+
 
   @media (min-width: 2880px) and (max-width: 3840px) {
     .centens {
@@ -1788,48 +1825,29 @@ export default {
         min-height: 84px;
       }
     }
-  }
 
-  .Dapp{
-  width: 100%;
-  height: 564px;
-  background: url('/imges/index/bgDapp.png')no-repeat;
-  background-size: 100% 100%;
-  .content{
-    padding-top: 62px;
-    box-sizing: border-box;
-    display: flex;
-    // justify-content: center;
-   img{
-     height:502px;
-     width: 518px;
-   }
-  }
-  .qrcode{
-    margin-left: 105px;
-    h4{
-      margin-top: 121px;
-      font-size: 30px;
-      font-family: PingFangSC-Semibold, PingFang SC;
-      font-weight: 600;
-      color: #FFFFFF;
-    }
-    p{
-      margin: 19px 0 39px;
-      font-size: 18px;
-      font-family: PingFangSC-Regular, PingFang SC;
-      font-weight: 400;
-      color: #FFFFFF;
-    }
-    .code{
-      width: 144px;
-      height: 144px;
-      background: url("/imges/index/qrcode.jpg");
-      background-position: center;
-      background-size: 100% 100%;
-      border: 1px solid #979797;
+    .Dapp{
+        width: 100%;
+        height: 1000px;
+        background: url('/imges/index/bgDapp.png')no-repeat;
+        background-size: 100% 100%;
+        padding: 20px 0;
+      .content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .imgs{
+          margin: 0;
+        }
+        .qrcode{
+          text-align: center;
+          .code{
+            margin: 0 auto;
+          }
+        }
+      }
     }
   }
-}
 }
 </style>

@@ -292,6 +292,7 @@
             <div class="exchangeImgs">
               <img  class="web" src="/imges/product/cornExchange1.png" alt="">
               <img  class="h5" src="/imges/h5_product/cornExchange1.png" alt="">
+              <img src="/imges/product/bittok.png" alt="">
             </div>
           </div>
           
